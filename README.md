@@ -31,6 +31,7 @@ Configurations for the following:
 - git
 - iTerm
 - irb
+- neovim
 - postgres
 - pry
 - rails
@@ -38,7 +39,5 @@ Configurations for the following:
 - rspec
 - shell
 - tmux
-- vim
-- vimperrator
 - vscode
 - zsh

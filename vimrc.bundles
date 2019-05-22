@@ -42,7 +42,6 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 Plug 'beloglazov/vim-online-thesaurus'
 Plug 'kylef/apiblueprint.vim'
-Plug 'vimperator/vimperator.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'JarrodCTaylor/vim-ember-cli-test-runner'

@@ -1,0 +1,300 @@
+{
+  ".": {
+    "prefix": ".",
+    "body": "{\n\t${0}\n}"
+  },
+  "!": {
+    "prefix": "!",
+    "body": "!important"
+  },
+  "$": {
+    "prefix": "$",
+    "body": "$${1:variable}: ${0:value};"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": "@import '${0}';"
+  },
+  "mix": {
+    "prefix": "mix",
+    "body": "@mixin ${1:name}($${2:argument}: ${3:default-value}) {\n\t${0:/* rules... */}\n}"
+  },
+  "inc": {
+    "prefix": "inc",
+    "body": "@include ${1:mixin}(${2});"
+  },
+  "ext": {
+    "prefix": "ext",
+    "body": "@extend ${0};"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": "@function ${1:name}(${2:args}) {\n\t${0}\n}"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "@if ${1:condition} {\n\t${0}\n}"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": "@if ${1:condition} {\n\t${2}\n} @else {\n\t${0}\n}"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": "@else if ${1:condition} {\n\t${0}\n}"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "$${1}: (\n\t${0}\n\t/* \"key\": value, */\n\t/* \"key\": value */\n)"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "@for ${1:$i} from ${2:1} through ${3:3} {\n\t${0}\n}"
+  },
+  "each": {
+    "prefix": "each",
+    "body": "@each $${1:key}, $${2:value} in $${2:items} {\n\t${0}\n}"
+  },
+  "while": {
+    "prefix": "while",
+    "body": "@while ${1:$i} ${2:>} ${3:0} {\n\t${0}\n}"
+  },
+  "lot": {
+    "prefix": "lot",
+    "body": "&:last-of-type {\n\t${0}\n}"
+  },
+  "fot": {
+    "prefix": "fot",
+    "body": "&:first-of-type {\n\t${0}\n}"
+  },
+  "act": {
+    "prefix": "act",
+    "body": "&:active {\n\t${0}\n}"
+  },
+  "hov": {
+    "prefix": "hov",
+    "body": "&:hover {\n\t${0}\n}"
+  },
+  "foc": {
+    "prefix": "foc",
+    "body": "&:focus {\n\t${0}\n}"
+  },
+  "import-bourbon-stack": {
+    "prefix": "import-bourbon-stack",
+    "body": "@import \"bourbon/bourbon\";\n@import \"neat/neat\";\n@import \"base/base\";"
+  },
+  "xm": {
+    "prefix": "xm",
+    "body": "@include margin(${1:null} ${2:null} ${3:null} ${4:null});"
+  },
+  "xp": {
+    "prefix": "xp",
+    "body": "@include padding(${1:null} ${2:null} ${3:null} ${4:null});"
+  },
+  "xpoa": {
+    "prefix": "xpoa",
+    "body": "@include position(absolute, ${1:null} ${2:null} ${3:null} ${4:null});"
+  },
+  "xpor": {
+    "prefix": "xpor",
+    "body": "@include position(relative, ${1:null} ${2:null} ${3:null} ${4:null});"
+  },
+  "xsz": {
+    "prefix": "xsz",
+    "body": "@include size(${1:width} ${2:height});"
+  },
+  "xcon": {
+    "prefix": "xcon",
+    "body": "\tcontrast-switch(${1:background-color}, ${2:dark-text-color}, ${3:light-text-color});"
+  },
+  "omg": {
+    "prefix": "omg",
+    "body": "@include omega(${0});"
+  },
+  "ati": {
+    "prefix": "ati",
+    "body": "#{$all-text-inputs} {\n\t${1}\n}"
+  },
+  "atif": {
+    "prefix": "atif",
+    "body": "#{$all-text-inputs-focus} {\n\t${1}\n}"
+  },
+  "atih": {
+    "prefix": "atih",
+    "body": "#{$all-text-inputs-hover} {\n\t${1}\n}"
+  },
+  "atifh": {
+    "prefix": "atifh",
+    "body": "#{$all-text-inputs-focus},\n#{$all-text-inputs-hover} {\n\t${1}\n}"
+  },
+  "atia": {
+    "prefix": "atia",
+    "body": "#{$all-text-inputs-active} {\n\t${1}\n}"
+  },
+  "ab": {
+    "prefix": "ab",
+    "body": "#{$all-buttons} {\n\t${1}\n}"
+  },
+  "abf": {
+    "prefix": "abf",
+    "body": "#{$all-buttons-focus} {\n\t${1}\n}"
+  },
+  "abh": {
+    "prefix": "abh",
+    "body": "#{$all-buttons-hover} {\n\t${1}\n}"
+  },
+  "abfh": {
+    "prefix": "abfh",
+    "body": "#{$all-buttons-focus},\n#{$all-buttons-hover} {\n\t${1}\n}"
+  },
+  "aba": {
+    "prefix": "aba",
+    "body": "#{$all-buttons-active} {\n\t${1}\n}"
+  },
+  "xww": {
+    "prefix": "xww",
+    "body": "@include word-wrap;"
+  },
+  "xcf": {
+    "prefix": "xcf",
+    "body": "@include clearfix;"
+  },
+  "ximgrep": {
+    "prefix": "ximgrep",
+    "body": "@include hide-text;\nbackground-image: url(logo.png);"
+  },
+  "xlg": {
+    "prefix": "xlg",
+    "body": "@include linear-gradient(${0});"
+  },
+  "xrg": {
+    "prefix": "xrg",
+    "body": "@include radial-gradient(${0});"
+  },
+  "xfil": {
+    "prefix": "xfil",
+    "body": "@include filter(${0});"
+  },
+  "xbg": {
+    "prefix": "xbg",
+    "body": "@include background(${0});"
+  },
+  "xbgi": {
+    "prefix": "xbgi",
+    "body": "@include background-image(${0});"
+  },
+  "xts": {
+    "prefix": "xts",
+    "body": "@include transition(${0});"
+  },
+  "xvg": {
+    "prefix": "xvg",
+    "body": "$visual-grid: true;\n$visual-grid-index: front;"
+  },
+  "xoc": {
+    "prefix": "xoc",
+    "body": "@include outer-container;"
+  },
+  "xsc": {
+    "prefix": "xsc",
+    "body": "@include span-columns(${0});"
+  },
+  "xsh": {
+    "prefix": "xsh",
+    "body": "@include shift(${0});"
+  },
+  "xsic": {
+    "prefix": "xsic",
+    "body": "@include shift-in-context(${0});"
+  },
+  "xfp": {
+    "prefix": "xfp",
+    "body": "@include fill-parent;"
+  },
+  "xmd": {
+    "prefix": "xmd",
+    "body": "@include media(${1}) {\n\n}"
+  },
+  "xrow": {
+    "prefix": "xrow",
+    "body": "@include row();"
+  },
+  "xms": {
+    "prefix": "xms",
+    "body": "font-size: modular-scale(${0});"
+  },
+  "desk": {
+    "prefix": "desk",
+    "body": "@include media($large-screen) {\n\t${0}\n}"
+  },
+  "...": {
+    "prefix": "...",
+    "body": "@include ellipsis(${0:100%} /* max-width */);"
+  },
+  "gx": {
+    "prefix": "gx",
+    "body": "@include grid-collapse;"
+  },
+  "gl": {
+    "prefix": "gl",
+    "body": "@include grid-column(${0});"
+  },
+  "gc": {
+    "prefix": "gc",
+    "body": "@include grid-container;"
+  },
+  "gm": {
+    "prefix": "gm",
+    "body": "@include grid-media() {\n\t${0}\n}"
+  },
+  "gms": {
+    "prefix": "gms",
+    "body": "@include grid-media($small-screen) {\n\t${0}\n}"
+  },
+  "gmm": {
+    "prefix": "gmm",
+    "body": "@include grid-media($medium-screen) {\n\t${0}\n}"
+  },
+  "gml": {
+    "prefix": "gml",
+    "body": "@include grid-media($large-screen) {\n\t${0}\n}"
+  },
+  "gp": {
+    "prefix": "gp",
+    "body": "@include grid-push(${0});"
+  },
+  "gs": {
+    "prefix": "gs",
+    "body": "@include grid-shift(${0});"
+  },
+  "gv": {
+    "prefix": "gv",
+    "body": "@include grid-visual;"
+  },
+  "pal": {
+    "prefix": "pal",
+    "body": [
+      "\\$palettes: (",
+      "  blue: (",
+      "    100: hsl(201, 75%, 66%),",
+      "    200: hsl(201, 75%, 61%),",
+      "    300: hsl(201, 75%, 56%),",
+      "    400: hsl(201, 75%, 51%),",
+      "    500: hsl(201, 75%, 46%),",
+      "    600: hsl(201, 75%, 41%),",
+      "    700: hsl(201, 75%, 36%),",
+      "    800: hsl(201, 75%, 31%),",
+      "    900: hsl(201, 75%, 26%)",
+      "  )",
+      ");",
+      "",
+      "@function palette($palette, $tone: \"base\") {",
+      "  @return map-get(map-get($palettes, $palette), $tone);",
+      "}",
+      "",
+      "// palette(blue, \"700\")",
+      ""
+    ],
+    "description": "Color palette generator"
+  }
+}

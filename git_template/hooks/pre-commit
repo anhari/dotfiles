@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# dir="$HOME"/some/directory
+# if [ "$PWD" = "$dir" ]; then
+#   [ \"$DISABLE_PRETTIER_HOOK\" == \"true\" ] || git rev-parse -q --verify MERGE_HEAD || yarn pretty-quick --staged
+# fi
+
+dotfiles_local_dir="$HOME"/dotfiles-local
+if [ "$PWD" = "$dotfiles_local_dir" ]; then
+  save_code_extensions
+  git add code_extensions
+fi

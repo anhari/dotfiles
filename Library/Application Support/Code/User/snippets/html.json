@@ -1,0 +1,1352 @@
+{
+  "nbs": {
+    "prefix": "nbs",
+    "body": "&nbsp;",
+    "description": "non-breaking-space"
+  },
+  "left": {
+    "prefix": "left",
+    "body": "&#x2190;",
+    "description": "left arrow ←"
+  },
+  "right": {
+    "prefix": "right",
+    "body": "&#x2192;",
+    "description": "right arrow →"
+  },
+  "up": {
+    "prefix": "up",
+    "body": "&#x2191;",
+    "description": "up arrow ↑"
+  },
+  "down": {
+    "prefix": "down",
+    "body": "&#x2193;",
+    "description": "down arrow ↓"
+  },
+  "return": {
+    "prefix": "return",
+    "body": "&#x21A9;",
+    "description": "carriage return ↩ "
+  },
+  "backtab": {
+    "prefix": "backtab",
+    "body": "&#x21E4;",
+    "description": "backtab ⇤ "
+  },
+  "tab": {
+    "prefix": "tab",
+    "body": "&#x21E5;",
+    "description": "tab ⇥ "
+  },
+  "shift": {
+    "prefix": "shift",
+    "body": "&#x21E7;",
+    "description": "shift ⇧ "
+  },
+  "ctrl": {
+    "prefix": "ctrl",
+    "body": "&#x2303;",
+    "description": "ctrl ⌃ "
+  },
+  "enter": {
+    "prefix": "enter",
+    "body": "&#x2305;",
+    "description": "enter ⌅ "
+  },
+  "cmd": {
+    "prefix": "cmd",
+    "body": "&#x2318;",
+    "description": "cmd ⌘ "
+  },
+  "option": {
+    "prefix": "option",
+    "body": "&#x2325;",
+    "description": "option ⌥ "
+  },
+  "delete": {
+    "prefix": "delete",
+    "body": "&#x2326;",
+    "description": "delete ⌦ "
+  },
+  "backspace": {
+    "prefix": "backspace",
+    "body": "&#x232B;",
+    "description": "backspace ⌫ "
+  },
+  "esc": {
+    "prefix": "esc",
+    "body": "&#x238B;",
+    "description": "esc ⎋ "
+  },
+  "//": {
+    "prefix": "//",
+    "body": "<!-- ${1} -->${0}",
+    "description": "comment"
+  },
+  "attr": {
+    "prefix": "attr",
+    "body": "${1:attribute}=\"${0:property}\"",
+    "description": "attribute"
+  },
+  "..": {
+    "prefix": "..",
+    "body": "class=\"${0}\"",
+    "description": "class"
+  },
+  "#": {
+    "prefix": "#",
+    "body": "id=\"${1}\"",
+    "description": "id"
+  },
+  "alt": {
+    "prefix": "alt",
+    "body": "alt=\"${1}\"",
+    "description": "alt-text"
+  },
+  "charset": {
+    "prefix": "charset",
+    "body": "charset=\"${1:utf-8}\"",
+    "description": "charset"
+  },
+  "data": {
+    "prefix": "data",
+    "body": "data-${1}=\"${2:$1}\"",
+    "description": "data-attribute"
+  },
+  "for": {
+    "prefix": "for",
+    "body": "for=\"${1}\"",
+    "description": "for"
+  },
+  "height": {
+    "prefix": "height",
+    "body": "height=\"${1}\"",
+    "description": "height"
+  },
+  "href": {
+    "prefix": "href",
+    "body": "href=\"${1:#}\"",
+    "description": "href"
+  },
+  "lang": {
+    "prefix": "lang",
+    "body": "lang=\"${1:en}\"",
+    "description": "lang"
+  },
+  "media": {
+    "prefix": "media",
+    "body": "media=\"${1}\"",
+    "description": "media"
+  },
+  "name": {
+    "prefix": "name",
+    "body": "name=\"${1}\"",
+    "description": "name"
+  },
+  "rel": {
+    "prefix": "rel",
+    "body": "rel=\"${1}\"",
+    "description": "rel"
+  },
+  "scope": {
+    "prefix": "scope",
+    "body": "scope=\"${1:row}\"",
+    "description": "scope"
+  },
+  "src": {
+    "prefix": "src",
+    "body": "src=\"${1}\"",
+    "description": "source"
+  },
+  "title=": {
+    "prefix": "title=",
+    "body": "title=\"${1}\"",
+    "description": "title"
+  },
+  "type": {
+    "prefix": "type",
+    "body": "type=\"${1}\"",
+    "description": "type"
+  },
+  "value": {
+    "prefix": "value",
+    "body": "value=\"${1}\"",
+    "description": "value"
+  },
+  "width": {
+    "prefix": "width",
+    "body": "width=\"${1}\"",
+    "description": "width"
+  },
+  "a": {
+    "prefix": "a",
+    "body": "<a href=\"${1:#}\">${2}</a>",
+    "description": "anchor"
+  },
+  "a.": {
+    "prefix": "a.",
+    "body": "<a class=\"${1}\" href=\"${2:#}\">${0:$1}</a>",
+    "description": "anchor with class"
+  },
+  "a#": {
+    "prefix": "a#",
+    "body": "<a id=\"${1}\" href=\"${2:#}\">${0:$1}</a>",
+    "description": "anchor with id"
+  },
+  "a:ext": {
+    "prefix": "a:ext",
+    "body": "<a href=\"http://${1:example.com}\">${0:$1}</a>",
+    "description": "anchor with url as text"
+  },
+  "a:mail": {
+    "prefix": "a:mail",
+    "body": "<a href=\"mailto:${1:joe@example.com}?subject=${2:feedback}\">${0:email me}</a>",
+    "description": "email anchor"
+  },
+  "abbr": {
+    "prefix": "abbr",
+    "body": "<abbr title=\"${1}\">${0}</abbr>",
+    "description": "abbreviation"
+  },
+  "address": {
+    "prefix": "address",
+    "body": "<address>\n\t${0}\n</address>",
+    "description": "address"
+  },
+  "area": {
+    "prefix": "area",
+    "body": "<area shape=\"${1:rect}\" coords=\"${2}\" href=\"${3}\" alt=\"${0}\" />",
+    "description": "area"
+  },
+  "area:c": {
+    "prefix": "area:c",
+    "body": "<area shape=\"circle\" coords=\"${1}\" href=\"${2}\" alt=\"${0}\" />",
+    "description": "area circle"
+  },
+  "area:d": {
+    "prefix": "area:d",
+    "body": "<area shape=\"default\" coords=\"${1}\" href=\"${2}\" alt=\"${0}\" />",
+    "description": "area default"
+  },
+  "area:p": {
+    "prefix": "area:p",
+    "body": "<area shape=\"poly\" coords=\"${1}\" href=\"${2}\" alt=\"${0}\" />",
+    "description": "area poly"
+  },
+  "area:r": {
+    "prefix": "area:r",
+    "body": "<area shape=\"rect\" coords=\"${1}\" href=\"${2}\" alt=\"${0}\" />",
+    "description": "area rectangle"
+  },
+  "article": {
+    "prefix": "article",
+    "body": "<article>\n\t${0}\n</article>",
+    "description": "article"
+  },
+  "article.": {
+    "prefix": "article.",
+    "body": "<article class=\"${1}\">\n\t${0}\n</article>",
+    "description": "article with class"
+  },
+  "article#": {
+    "prefix": "article#",
+    "body": "<article id=\"${1}\">\n\t${0}\n</article>",
+    "description": "article with id"
+  },
+  "aside": {
+    "prefix": "aside",
+    "body": "<aside>\n\t${0}\n</aside>",
+    "description": "aside"
+  },
+  "aside.": {
+    "prefix": "aside.",
+    "body": "<aside class=\"${1}\">\n\t${0}\n</aside>",
+    "description": "aside with class"
+  },
+  "aside#": {
+    "prefix": "aside#",
+    "body": "<aside id=\"${1}\">\n\t${0}\n</aside>",
+    "description": "aside with id"
+  },
+  "audio": {
+    "prefix": "audio",
+    "body": "<audio src=\"${1}>${0}</audio>",
+    "description": "audio"
+  },
+  "b": {
+    "prefix": "b",
+    "body": "<b>${0}</b>",
+    "description": "bold"
+  },
+  "base": {
+    "prefix": "base",
+    "body": "<base href=\"${1}\" target=\"${0}\" />",
+    "description": "base"
+  },
+  "bdi": {
+    "prefix": "bdi",
+    "body": "<bdi>${0}</bdo>",
+    "description": "bdi"
+  },
+  "bdo": {
+    "prefix": "bdo",
+    "body": "<bdo dir=\"${1}\">${0}</bdo>",
+    "description": "bdo"
+  },
+  "bdo:l": {
+    "prefix": "bdo:l",
+    "body": "<bdo dir=\"ltr\">${0}</bdo>",
+    "description": "bdo left-to-right"
+  },
+  "bdo:r": {
+    "prefix": "bdo:r",
+    "body": "<bdo dir=\"rtl\">${0}</bdo>",
+    "description": "bdo right-to-left"
+  },
+  "blockquote": {
+    "prefix": "blockquote",
+    "body": "<blockquote>\n\t${0}\n</blockquote>",
+    "description": "blockquote"
+  },
+  "body": {
+    "prefix": "body",
+    "body": "<body>\n\t${0}\n</body>",
+    "description": "body"
+  },
+  "br": {
+    "prefix": "br",
+    "body": "<br />",
+    "description": "linebreak"
+  },
+  "but": {
+    "prefix": "but",
+    "body": "<button>${0}</button>",
+    "description": "button"
+  },
+  "button": {
+    "prefix": "button",
+    "body": "<button type=\"${1:submit}\">${0}</button>",
+    "description": "button with type"
+  },
+  "button.": {
+    "prefix": "button.",
+    "body": "<button class=\"${1:button}\" type=\"${2:submit}\">${0}</button>",
+    "description": "button with class"
+  },
+  "button#": {
+    "prefix": "button#",
+    "body": "<button id=\"${1}\" type=\"${2:submit}\">${0}</button>",
+    "description": "button with id"
+  },
+  "button:s": {
+    "prefix": "button:s",
+    "body": "<button type=\"submit\">${0}</button>",
+    "description": "submit button"
+  },
+  "button:r": {
+    "prefix": "button:r",
+    "body": "<button type=\"reset\">${0}</button>",
+    "description": "reset button"
+  },
+  "canvas": {
+    "prefix": "canvas",
+    "body": "<canvas>\n\t${0}\n</canvas>",
+    "description": "canvas"
+  },
+  "caption": {
+    "prefix": "caption",
+    "body": "<caption>${0}</caption>",
+    "description": "caption"
+  },
+  "cite": {
+    "prefix": "cite",
+    "body": "<cite>${0}</cite>",
+    "description": "cite"
+  },
+  "code": {
+    "prefix": "code",
+    "body": "<code>${0}</code>",
+    "description": "code"
+  },
+  "col": {
+    "prefix": "col",
+    "body": "<col />",
+    "description": "col"
+  },
+  "colgroup": {
+    "prefix": "colgroup",
+    "body": "<colgroup>\n\t${0}\n</colgroup>",
+    "description": "colgroup"
+  },
+  "command": {
+    "prefix": "command",
+    "body": "<command type=\"command\" label=\"${1}\" icon=\"${0}\" />",
+    "description": "command"
+  },
+  "command:c": {
+    "prefix": "command:c",
+    "body": "<command type=\"checkbox\" label=\"${1}\" icon=\"${0}\" />",
+    "description": "command checkbox"
+  },
+  "command:r": {
+    "prefix": "command:r",
+    "body": "<command type=\"radio\" radiogroup=\"${1}\" label=\"${2}\" icon=\"${0}\" />",
+    "description": "command radio"
+  },
+  "datagrid": {
+    "prefix": "datagrid",
+    "body": "<datagrid>\n\t${0}\n</datagrid>",
+    "description": "datagrid"
+  },
+  "datalist": {
+    "prefix": "datalist",
+    "body": "<datalist>\n\t${0}\n</datalist>",
+    "description": "datalist"
+  },
+  "datatemplate": {
+    "prefix": "datatemplate",
+    "body": "<datatemplate>\n\t${0}\n</datatemplate>",
+    "description": "datatemplate"
+  },
+  "dd": {
+    "prefix": "dd",
+    "body": "<dd>${0}</dd>",
+    "description": "dd"
+  },
+  "dd.": {
+    "prefix": "dd.",
+    "body": "<dd class=\"${1}\">${0}</dd>",
+    "description": "dd with class"
+  },
+  "dd#": {
+    "prefix": "dd#",
+    "body": "<dd id=\"${1}\">${0}</dd>",
+    "description": "dd with id"
+  },
+  "del": {
+    "prefix": "del",
+    "body": "<del>${0}</del>",
+    "description": "del"
+  },
+  "details": {
+    "prefix": "details",
+    "body": "<details>${0}</details>",
+    "description": "details"
+  },
+  "dfn": {
+    "prefix": "dfn",
+    "body": "<dfn>${0}</dfn>",
+    "description": "dfn"
+  },
+  "dialog": {
+    "prefix": "dialog",
+    "body": "<dialog>\n\t${0}\n</dialog>",
+    "description": "dialog"
+  },
+  "div": {
+    "prefix": "div",
+    "body": "<div>\n\t${0}\n</div>",
+    "description": "div"
+  },
+  "div.": {
+    "prefix": "div.",
+    "body": "<div class=\"${1}\">\n\t${0}\n</div>",
+    "description": "div with class"
+  },
+  "div#": {
+    "prefix": "div#",
+    "body": "<div id=\"${1}\">\n\t${0}\n</div>",
+    "description": "div with id"
+  },
+  "dl": {
+    "prefix": "dl",
+    "body": "<dl>\n\t<dt>${0}</dt>\n\t<dd></dd>\n</dl>",
+    "description": "dl"
+  },
+  "dl.": {
+    "prefix": "dl.",
+    "body": "<dl class=\"${1}\">\n\t<dt>${0}</dt>\n\t<dd></dd>\n</dl>",
+    "description": "dl with class"
+  },
+  "dl#": {
+    "prefix": "dl#",
+    "body": "<dl id=\"${1}\">\n\t<dt>${0}</dt>\n\t<dd></dd>\n</dl>",
+    "description": "dl with id"
+  },
+  "dt": {
+    "prefix": "dt",
+    "body": "<dt>${0}</dt>",
+    "description": "dt"
+  },
+  "dt.": {
+    "prefix": "dt.",
+    "body": "<dt class=\"${1}\">${0}</dt>",
+    "description": "dt with class"
+  },
+  "dt#": {
+    "prefix": "dt#",
+    "body": "<dt id=\"${1}\">${0}</dt>",
+    "description": "dt with id"
+  },
+  "em": {
+    "prefix": "em",
+    "body": "<em>${0}</em>",
+    "description": "emphasis"
+  },
+  "embed": {
+    "prefix": "embed",
+    "body": "<embed src=\"${1}\" type=\"${0}\" />",
+    "description": "embed"
+  },
+  "fieldset": {
+    "prefix": "fieldset",
+    "body": "<fieldset>\n\t${0}\n</fieldset>",
+    "description": "fieldset"
+  },
+  "fieldset.": {
+    "prefix": "fieldset.",
+    "body": "<fieldset class=\"${1}\">\n\t${0}\n</fieldset>",
+    "description": "fieldset with class"
+  },
+  "fieldset#": {
+    "prefix": "fieldset#",
+    "body": "<fieldset id=\"${1}\">\n\t${0}\n</fieldset>",
+    "description": "fieldset with id"
+  },
+  "figcaption": {
+    "prefix": "figcaption",
+    "body": "<figcaption>${0}</figcaption>",
+    "description": "figure caption"
+  },
+  "figure": {
+    "prefix": "figure",
+    "body": "<figure>${0}</figure>",
+    "description": "figure"
+  },
+  "figure#": {
+    "prefix": "figure#",
+    "body": "<figure id=\"${1}\">\n\t${0}\n</figure>",
+    "description": "figure with id"
+  },
+  "figure.": {
+    "prefix": "figure.",
+    "body": "<figure class=\"${1}\">\n\t${0}\n</figure>",
+    "description": "figure with class"
+  },
+  "footer": {
+    "prefix": "footer",
+    "body": "<footer>\n\t${0}\n</footer>",
+    "description": "footer"
+  },
+  "footer.": {
+    "prefix": "footer.",
+    "body": "<footer class=\"${1}\">\n\t${0}\n</footer>",
+    "description": "footer with class"
+  },
+  "footer#": {
+    "prefix": "footer#",
+    "body": "<footer id=\"${1}\">\n\t${0}\n</footer>",
+    "description": "footer with id"
+  },
+  "form": {
+    "prefix": "form",
+    "body": "<form action=\"${1}\" method=\"${2:post}\">\n\t${0}\n</form>",
+    "description": "form"
+  },
+  "form.": {
+    "prefix": "form.",
+    "body": "<form class=\"${1}\" action=\"${2}\" method=\"${3:post}\">\n\t${0}\n</form>",
+    "description": "form with class"
+  },
+  "form#": {
+    "prefix": "form#",
+    "body": "<form id=\"${1}\" action=\"${2}\" method=\"${3:post}\">\n\t${0}\n</form>",
+    "description": "form with id"
+  },
+  "h1": {
+    "prefix": "h1",
+    "body": "<h1>${0}</h1>",
+    "description": "heading 1"
+  },
+  "h1.": {
+    "prefix": "h1.",
+    "body": "<h1 class=\"${1}\">${0}</h1>",
+    "description": "heading 1 with class"
+  },
+  "h1#": {
+    "prefix": "h1#",
+    "body": "<h1 id=\"${1}\">${0}</h1>",
+    "description": "heading 1 with id"
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": "<h2>${0}</h2>",
+    "description": "heading 1"
+  },
+  "h2.": {
+    "prefix": "h2.",
+    "body": "<h2 class=\"${1}\">${0}</h2>",
+    "description": "heading 2 with class"
+  },
+  "h2#": {
+    "prefix": "h2#",
+    "body": "<h2 id=\"${1}\">${0}</h2>",
+    "description": "heading 2 with id"
+  },
+  "h3": {
+    "prefix": "h3",
+    "body": "<h3>${0}</h3>",
+    "description": "heading 3"
+  },
+  "h3.": {
+    "prefix": "h3.",
+    "body": "<h3 class=\"${1}\">${0}</h3>",
+    "description": "heading 3 with class"
+  },
+  "h3#": {
+    "prefix": "h3#",
+    "body": "<h3 id=\"${1}\">${0}</h3>",
+    "description": "heading 3 with id"
+  },
+  "h4": {
+    "prefix": "h4",
+    "body": "<h4>${0}</h4>",
+    "description": "heading 4"
+  },
+  "h4.": {
+    "prefix": "h4.",
+    "body": "<h4 class=\"${1}\">${0}</h4>",
+    "description": "heading 4 with class"
+  },
+  "h4#": {
+    "prefix": "h4#",
+    "body": "<h4 id=\"${1}\">${0}</h4>",
+    "description": "heading 4 with id"
+  },
+  "h5": {
+    "prefix": "h5",
+    "body": "<h5>${0}</h5>",
+    "description": "heading 5"
+  },
+  "h5.": {
+    "prefix": "h5.",
+    "body": "<h5 class=\"${1}\">${0}</h5>",
+    "description": "heading 5 with class"
+  },
+  "h5#": {
+    "prefix": "h5#",
+    "body": "<h5 id=\"${1}\">${0}</h5>",
+    "description": "heading 5 with id"
+  },
+  "h6": {
+    "prefix": "h6",
+    "body": "<h6>${0}</h6>",
+    "description": "heading 6"
+  },
+  "h6.": {
+    "prefix": "h6.",
+    "body": "<h6 class=\"${1}\">${0}</h6>",
+    "description": "heading 6 with class"
+  },
+  "h6#": {
+    "prefix": "h6#",
+    "body": "<h6 id=\"${1}\">${0}</h6>",
+    "description": "heading 6 with id"
+  },
+  "head": {
+    "prefix": "head",
+    "body": "<head>\n\t<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n\n\t<title>${1:`substitute(vim_endsnippet\n\nsnippets#Filename('', 'Page Title'), '^.', '\\u&', '')`}</title>\n\t${0}\n</head>",
+    "description": "head"
+  },
+  "header": {
+    "prefix": "header",
+    "body": "<header>\n\t${0}\n</header>",
+    "description": "header"
+  },
+  "header.": {
+    "prefix": "header.",
+    "body": "<header class=\"${1}\">\n\t${0}\n</header>",
+    "description": "header with class"
+  },
+  "header#": {
+    "prefix": "header#",
+    "body": "<header id=\"${1}\">\n\t${0}\n</header>",
+    "description": "header with id"
+  },
+  "hgroup": {
+    "prefix": "hgroup",
+    "body": "<hgroup>\n\t${0}\n</hgroup>",
+    "description": "hgroup"
+  },
+  "hgroup.": {
+    "prefix": "hgroup.",
+    "body": "<hgroup class=\"${1}>\n\t${0}\n</hgroup>",
+    "description": "hgroup"
+  },
+  "hr": {
+    "prefix": "hr",
+    "body": "<hr />",
+    "description": "horizontal row"
+  },
+  "html": {
+    "prefix": "html",
+    "body": "<html>\n${0}\n</html>",
+    "description": "html"
+  },
+  "xhtml": {
+    "prefix": "xhtml",
+    "body": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n${0}\n</html>",
+    "description": "xhtml"
+  },
+  "html5": {
+    "prefix": "html5",
+    "body": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width\">\n\t\t<title>${1:`substitute(vim_endsnippet\n\nsnippets#Filename('', 'Page Title'), '^.', '\\u&', '')`}</title>\n\t\t${2:link}\n\t</head>\n\t<body>\n\t\t${0:body}\n\t</body>\n</html>",
+    "description": "html5"
+  },
+  "html5l": {
+    "prefix": "html5l",
+    "body": "<!DOCTYPE html>\n<html lang=\"${1:es}\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width\">\n\t\t<title>${2:`substitute(vim_endsnippet\n\nsnippets#Filename('', 'Page Title'), '^.', '\\u&', '')`}</title>\n\t\t${3:link}\n\t</head>\n\t<body>\n\t\t${0:body}\n\t</body>\n</html>",
+    "description": "html5 with language"
+  },
+  "i": {
+    "prefix": "i",
+    "body": "<i>${0}</i>",
+    "description": "italics"
+  },
+  "iframe": {
+    "prefix": "iframe",
+    "body": "<iframe src=\"${1}\" frameborder=\"0\"></iframe>",
+    "description": "iframe"
+  },
+  "iframe.": {
+    "prefix": "iframe.",
+    "body": "<iframe class=\"${1}\" src=\"${2}\" frameborder=\"0\"></iframe>",
+    "description": "iframe"
+  },
+  "iframe#": {
+    "prefix": "iframe#",
+    "body": "<iframe id=\"${1}\" src=\"${2}\" frameborder=\"0\"></iframe>",
+    "description": "iframe"
+  },
+  "img": {
+    "prefix": "img",
+    "body": "<img src=\"${1}\" alt=\"${2}\" />",
+    "description": "image"
+  },
+  "img.": {
+    "prefix": "img.",
+    "body": "<img class=\"${1}\" src=\"${2}\" alt=\"${3}\" />",
+    "description": "image"
+  },
+  "img#": {
+    "prefix": "img#",
+    "body": "<img id=\"${1}\" src=\"${2}\" alt=\"${3}\" />",
+    "description": "image"
+  },
+  "input": {
+    "prefix": "input",
+    "body": "<input type=\"${1:text/submit/hidden/button/image}\" name=\"${2}\" id=\"${3:$2}\" value=\"${4}\" />",
+    "description": "input"
+  },
+  "input.": {
+    "prefix": "input.",
+    "body": "<input class=\"${1}\" type=\"${2:text/submit/hidden/button/image}\" name=\"${3}\" id=\"${4:$3}\" value=\"${5}\" />",
+    "description": "input"
+  },
+  "input:text": {
+    "prefix": "input:text",
+    "body": "<input type=\"text\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (text)"
+  },
+  "input:submit": {
+    "prefix": "input:submit",
+    "body": "<input type=\"submit\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (submit)"
+  },
+  "input:hidden": {
+    "prefix": "input:hidden",
+    "body": "<input type=\"hidden\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (hidden)"
+  },
+  "input:button": {
+    "prefix": "input:button",
+    "body": "<input type=\"button\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (button)"
+  },
+  "input:image": {
+    "prefix": "input:image",
+    "body": "<input type=\"image\" name=\"${1}\" id=\"${2:$1}\" src=\"${3}\" alt=\"${4}\" />",
+    "description": "input (image)"
+  },
+  "input:checkbox": {
+    "prefix": "input:checkbox",
+    "body": "<input type=\"checkbox\" name=\"${1}\" id=\"${2:$1}\" />",
+    "description": "input (checkbox)"
+  },
+  "input:radio": {
+    "prefix": "input:radio",
+    "body": "<input type=\"radio\" name=\"${1}\" id=\"${2:$1}\" />",
+    "description": "input (radio)"
+  },
+  "input:color": {
+    "prefix": "input:color",
+    "body": "<input type=\"color\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (color)"
+  },
+  "input:date": {
+    "prefix": "input:date",
+    "body": "<input type=\"date\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (date)"
+  },
+  "input:datetime": {
+    "prefix": "input:datetime",
+    "body": "<input type=\"datetime\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (datetime)"
+  },
+  "input:datetime-local": {
+    "prefix": "input:datetime-local",
+    "body": "<input type=\"datetime-local\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (datetime-local)"
+  },
+  "input:email": {
+    "prefix": "input:email",
+    "body": "<input type=\"email\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (email)"
+  },
+  "input:file": {
+    "prefix": "input:file",
+    "body": "<input type=\"file\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (file)"
+  },
+  "input:month": {
+    "prefix": "input:month",
+    "body": "<input type=\"month\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (month)"
+  },
+  "input:number": {
+    "prefix": "input:number",
+    "body": "<input type=\"number\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (number)"
+  },
+  "input:password": {
+    "prefix": "input:password",
+    "body": "<input type=\"password\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (password)"
+  },
+  "input:range": {
+    "prefix": "input:range",
+    "body": "<input type=\"range\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (range)"
+  },
+  "input:reset": {
+    "prefix": "input:reset",
+    "body": "<input type=\"reset\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (reset)"
+  },
+  "input:search": {
+    "prefix": "input:search",
+    "body": "<input type=\"search\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (search)"
+  },
+  "input:time": {
+    "prefix": "input:time",
+    "body": "<input type=\"time\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (time)"
+  },
+  "input:url": {
+    "prefix": "input:url",
+    "body": "<input type=\"url\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (url)"
+  },
+  "input:week": {
+    "prefix": "input:week",
+    "body": "<input type=\"week\" name=\"${1}\" id=\"${2:$1}\" value=\"${3}\" />",
+    "description": "input (week)"
+  },
+  "ins": {
+    "prefix": "ins",
+    "body": "<ins>${0}</ins>",
+    "description": "insert"
+  },
+  "kbd": {
+    "prefix": "kbd",
+    "body": "<kbd>${0}</kbd>",
+    "description": "kbd"
+  },
+  "keygen": {
+    "prefix": "keygen",
+    "body": "<keygen>${0}</keygen>",
+    "description": "keygen"
+  },
+  "label": {
+    "prefix": "label",
+    "body": "<label for=\"${0:$1}\">${1}</label>",
+    "description": "label"
+  },
+  "label:i": {
+    "prefix": "label:i",
+    "body": "<label for=\"${2:$1}\">${1}</label>\n<input type=\"${3:text/submit/hidden/button}\" name=\"${4:$2}\" id=\"${5:$2}\" value=\"${6}\" />",
+    "description": "label with input"
+  },
+  "label:s": {
+    "prefix": "label:s",
+    "body": "<label for=\"${2:$1}\">${1}</label>\n<select name=\"${3:$2}\" id=\"${4:$2}\">\n\t<option value=\"${5}\">${0:$5}</option>\n</select>",
+    "description": "label with select"
+  },
+  "legend": {
+    "prefix": "legend",
+    "body": "<legend>${0}</legend>",
+    "description": "legend"
+  },
+  "li": {
+    "prefix": "li",
+    "body": "<li>${0}</li>",
+    "description": "list item"
+  },
+  "li.": {
+    "prefix": "li.",
+    "body": "<li class=\"${1}\">${0}</li>",
+    "description": "list item with class"
+  },
+  "li+": {
+    "prefix": "li+",
+    "body": "<li>${1}</li>\nli+",
+    "description": "list item with id"
+  },
+  "lia": {
+    "prefix": "lia",
+    "body": "<li><a href=\"${0:#}\">${1}</a></li>",
+    "description": "list item with link"
+  },
+  "link": {
+    "prefix": "link",
+    "body": "<link rel=\"${1}\" href=\"${2}\" title=\"${3}\" type=\"${4}\" />",
+    "description": "link"
+  },
+  "link:atom": {
+    "prefix": "link:atom",
+    "body": "<link rel=\"alternate\" href=\"${1:atom.xml}\" title=\"Atom\" type=\"application/atom+xml\" />",
+    "description": "link (atom)"
+  },
+  "link:s": {
+    "prefix": "link:s",
+    "body": "<link rel=\"stylesheet\" href=\"${1:style.css}\" />",
+    "description": "link (stylesheet)"
+  },
+  "link:css": {
+    "prefix": "link:css",
+    "body": "<link rel=\"stylesheet\" href=\"${1:style.css}\" type=\"text/css\" media=\"${2:all}\" />",
+    "description": "link (css)"
+  },
+  "link:favicon": {
+    "prefix": "link:favicon",
+    "body": "<link rel=\"shortcut icon\" href=\"${1:favicon.ico}\" type=\"image/x-icon\" />",
+    "description": "link (favicon)"
+  },
+  "link:rss": {
+    "prefix": "link:rss",
+    "body": "<link rel=\"alternate\" href=\"${1:rss.xml}\" title=\"RSS\" type=\"application/atom+xml\" />",
+    "description": "link (rss)"
+  },
+  "link:touch": {
+    "prefix": "link:touch",
+    "body": "<link rel=\"apple-touch-icon\" href=\"${1:favicon.png}\" />",
+    "description": "link (touch-icon)"
+  },
+  "main": {
+    "prefix": "main",
+    "body": "<main role=\"main\">\n\t${0}\n</main>",
+    "description": "main"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "<map name=\"${1}\">\n\t${0}\n</map>",
+    "description": "map"
+  },
+  "map.": {
+    "prefix": "map.",
+    "body": "<map class=\"${1}\" name=\"${2}\">\n\t${0}\n</map>",
+    "description": "map with class"
+  },
+  "map#": {
+    "prefix": "map#",
+    "body": "<map name=\"${1}\" id=\"${2:$1}>\n\t${0}\n</map>",
+    "description": "map with id"
+  },
+  "mark": {
+    "prefix": "mark",
+    "body": "<mark>${0}</mark>",
+    "description": "mark"
+  },
+  "menu": {
+    "prefix": "menu",
+    "body": "<menu>\n\t${0}\n</menu>",
+    "description": "menu"
+  },
+  "menu:c": {
+    "prefix": "menu:c",
+    "body": "<menu type=\"context\">\n\t${0}\n</menu>",
+    "description": "menu (context)"
+  },
+  "menu:t": {
+    "prefix": "menu:t",
+    "body": "<menu type=\"toolbar\">\n\t${0}\n</menu>",
+    "description": "menu (toolbar)"
+  },
+  "meta": {
+    "prefix": "meta",
+    "body": "<meta http-equiv=\"${1}\" content=\"${2}\" />",
+    "description": "meta"
+  },
+  "meta:d": {
+    "prefix": "meta:d",
+    "body": "<meta name=\"description\" content=\"${0}\" />",
+    "description": "meta (description)"
+  },
+  "meta:compat": {
+    "prefix": "meta:compat",
+    "body": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=${1:7,8,edge}\" />",
+    "description": "meta (compatible)"
+  },
+  "meta:refresh": {
+    "prefix": "meta:refresh",
+    "body": "<meta http-equiv=\"refresh\" content=\"text/html;charset=UTF-8\" />",
+    "description": "meta (refresh)"
+  },
+  "meta:utf": {
+    "prefix": "meta:utf",
+    "body": "<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />",
+    "description": "meta (utf)"
+  },
+  "meter": {
+    "prefix": "meter",
+    "body": "<meter>${0}</meter>",
+    "description": "meter"
+  },
+  "nav": {
+    "prefix": "nav",
+    "body": "<nav>\n\t${0}\n</nav>",
+    "description": "nav"
+  },
+  "nav.": {
+    "prefix": "nav.",
+    "body": "<nav class=\"${1}\">\n\t${0}\n</nav>",
+    "description": "nav with class"
+  },
+  "nav#": {
+    "prefix": "nav#",
+    "body": "<nav id=\"${1}\">\n\t${0}\n</nav>",
+    "description": "nav with id"
+  },
+  "noscript": {
+    "prefix": "noscript",
+    "body": "<noscript>\n\t${0}\n</noscript>",
+    "description": "noscript"
+  },
+  "object": {
+    "prefix": "object",
+    "body": "<object data=\"${1}\" type=\"${2}\">\n\t${3}\n</object>",
+    "description": "object"
+  },
+  "movie": {
+    "prefix": "movie",
+    "body": "<object width=\"$2\" height=\"$3\" classid=\"clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B\"\ncodebase=\"http://www.apple.com/qtactivex/qtplugin.cab\">\n\t<param name=\"src\" value=\"$1\" />\n\t<param name=\"controller\" value=\"$4\" />\n\t<param name=\"autoplay\" value=\"$5\" />\n\t<embed src=\"${1:movie.mov}\"\n\t\twidth=\"${2:320}\" height=\"${3:240}\"\n\t\tcontroller=\"${4:true}\" autoplay=\"${5:true}\"\n\t\tscale=\"tofit\" cache=\"true\"\n\t\tpluginspage=\"http://www.apple.com/quicktime/download/\" />\n</object>",
+    "description": "movie"
+  },
+  "ol": {
+    "prefix": "ol",
+    "body": "<ol>\n\t${0}\n</ol>",
+    "description": "ordered list"
+  },
+  "ol.": {
+    "prefix": "ol.",
+    "body": "<ol class=\"${1}\">\n\t${0}\n</ol>",
+    "description": "ordered list with class"
+  },
+  "ol#": {
+    "prefix": "ol#",
+    "body": "<ol id=\"${1}\">\n\t${0}\n</ol>",
+    "description": "ordered list with id"
+  },
+  "opt": {
+    "prefix": "opt",
+    "body": "<option value=\"${1}\">${0:$1}</option>",
+    "description": "option"
+  },
+  "optgroup": {
+    "prefix": "optgroup",
+    "body": "<optgroup>\n\t<option value=\"${1}\">${2:$1}</option>\n\topt+${0}\n</optgroup>",
+    "description": "optgroup"
+  },
+  "output": {
+    "prefix": "output",
+    "body": "<output>${0}</output>",
+    "description": "output"
+  },
+  "p": {
+    "prefix": "p",
+    "body": "<p>${0}</p>",
+    "description": "paragaph"
+  },
+  "pb": {
+    "prefix": "pb",
+    "body": "<p>\n\t${0}\n</p>",
+    "description": "paragaph block"
+  },
+  "p.": {
+    "prefix": "p.",
+    "body": "<p class=\"${1}\">${0}</p>",
+    "description": "paragaph with class"
+  },
+  "p#": {
+    "prefix": "p#",
+    "body": "<p id=\"${1}\">${0}</p>",
+    "description": "paragraph with id"
+  },
+  "param": {
+    "prefix": "param",
+    "body": "<param name=\"${1}\" value=\"${2}\" />",
+    "description": "param"
+  },
+  "pre": {
+    "prefix": "pre",
+    "body": "<pre>\n\t${0}\n</pre>",
+    "description": "pre"
+  },
+  "progress": {
+    "prefix": "progress",
+    "body": "<progress>${0}</progress>",
+    "description": "progress"
+  },
+  "q": {
+    "prefix": "q",
+    "body": "<q>${0}</q>",
+    "description": "quote"
+  },
+  "rp": {
+    "prefix": "rp",
+    "body": "<rp>${0}</rp>",
+    "description": "rp"
+  },
+  "rt": {
+    "prefix": "rt",
+    "body": "<rt>${0}</rt>",
+    "description": "rt"
+  },
+  "ruby": {
+    "prefix": "ruby",
+    "body": "<ruby>\n\t<rp><rt>${0}</rt></rp>\n</ruby>",
+    "description": "ruby"
+  },
+  "s": {
+    "prefix": "s",
+    "body": "<s>${0}</s>",
+    "description": "strikethrough"
+  },
+  "samp": {
+    "prefix": "samp",
+    "body": "<samp>\n\t${0}\n</samp>",
+    "description": "samp"
+  },
+  "script": {
+    "prefix": "script",
+    "body": "<script type=\"text/javascript\" charset=\"utf-8\">\n\t${0}\n</script>",
+    "description": "script (one-off)"
+  },
+  "script:i": {
+    "prefix": "script:i",
+    "body": "<script src=\"${0}.js\" type=\"text/javascript\" charset=\"utf-8\"></script>",
+    "description": "script (include)"
+  },
+  "section": {
+    "prefix": "section",
+    "body": "<section>\n\t${0}\n</section>",
+    "description": "section"
+  },
+  "section.": {
+    "prefix": "section.",
+    "body": "<section class=\"${1}\">\n\t${0}\n</section>",
+    "description": "section with class"
+  },
+  "section#": {
+    "prefix": "section#",
+    "body": "<section id=\"${1}\">\n\t${0}\n</section>",
+    "description": "section with id"
+  },
+  "select": {
+    "prefix": "select",
+    "body": "<select name=\"${1}\" id=\"${2:$1}\">\n\t${0}\n</select>",
+    "description": "select"
+  },
+  "select.": {
+    "prefix": "select.",
+    "body": "<select name=\"${1}\" id=\"${2:$1}\" class=\"${3}>\n\t${0}\n</select>",
+    "description": "select with class"
+  },
+  "small": {
+    "prefix": "small",
+    "body": "<small>${0}</small>",
+    "description": "small"
+  },
+  "source": {
+    "prefix": "source",
+    "body": "<source src=\"${1}\" type=\"${2}\" media=\"${0}\" />",
+    "description": "source"
+  },
+  "span": {
+    "prefix": "span",
+    "body": "<span>${0}</span>",
+    "description": "span"
+  },
+  "span.": {
+    "prefix": "span.",
+    "body": "<span class=\"${1}\">${0}</span>",
+    "description": "span with class"
+  },
+  "span#": {
+    "prefix": "span#",
+    "body": "<span id=\"${1}\">${0}</span>",
+    "description": "span with id"
+  },
+  "strong": {
+    "prefix": "strong",
+    "body": "<strong>${0}</strong>",
+    "description": "strong"
+  },
+  "style": {
+    "prefix": "style",
+    "body": "<style type=\"text/css\" media=\"${1:all}\">\n\t${0}\n</style>",
+    "description": "style"
+  },
+  "sub": {
+    "prefix": "sub",
+    "body": "<sub>${0}</sub>",
+    "description": "sub"
+  },
+  "summary": {
+    "prefix": "summary",
+    "body": "<summary>\n\t${0}\n</summary>",
+    "description": "summary"
+  },
+  "sup": {
+    "prefix": "sup",
+    "body": "<sup>${0}</sup>",
+    "description": "sup"
+  },
+  "table": {
+    "prefix": "table",
+    "body": "<table>\n\t${0}\n</table>",
+    "description": "table"
+  },
+  "table.": {
+    "prefix": "table.",
+    "body": "<table class=\"${1}\">\n\t${0}\n</table>",
+    "description": "table with class"
+  },
+  "table#": {
+    "prefix": "table#",
+    "body": "<table id=\"${1}\">\n\t${0}\n</table>",
+    "description": "table with id"
+  },
+  "tbody": {
+    "prefix": "tbody",
+    "body": "<tbody>\n\t${0}\n</tbody>",
+    "description": "table body"
+  },
+  "td": {
+    "prefix": "td",
+    "body": "<td>${0}</td>",
+    "description": "table data"
+  },
+  "td.": {
+    "prefix": "td.",
+    "body": "<td class=\"${1}\">${0}</td>",
+    "description": "table data with class"
+  },
+  "td#": {
+    "prefix": "td#",
+    "body": "<td id=\"${1}\">${0}</td>",
+    "description": "table data with id"
+  },
+  "textarea": {
+    "prefix": "textarea",
+    "body": "<textarea name=\"${1}\" id=\"${2:$1}\" rows=\"${3:8}\" cols=\"${4:40}\">${5}</textarea>",
+    "description": "textarea"
+  },
+  "tfoot": {
+    "prefix": "tfoot",
+    "body": "<tfoot>\n\t${0}\n</tfoot>",
+    "description": "table footer"
+  },
+  "th": {
+    "prefix": "th",
+    "body": "<th>${0}</th>",
+    "description": "table heading"
+  },
+  "th.": {
+    "prefix": "th.",
+    "body": "<th class=\"${1}\">${0}</th>",
+    "description": "table heading with class"
+  },
+  "th#": {
+    "prefix": "th#",
+    "body": "<th id=\"${1}\">${0}</th>",
+    "description": "table heading with id"
+  },
+  "thead": {
+    "prefix": "thead",
+    "body": "<thead>\n\t${0}\n</thead>",
+    "description": "table header"
+  },
+  "time": {
+    "prefix": "time",
+    "body": "<time datetime=\"${1}\" pubdate=\"${2:$1}\">${0:$1}</time>",
+    "description": "time"
+  },
+  "title": {
+    "prefix": "title",
+    "body": "<title>${0:`substitute(vim_endsnippet\n\nsnippets#Filename('', 'Page Title'), '^.', '\\u&', '')`}</title>",
+    "description": "title"
+  },
+  "tr": {
+    "prefix": "tr",
+    "body": "<tr>\n\t${0}\n</tr>",
+    "description": "table row"
+  },
+  "track": {
+    "prefix": "track",
+    "body": "<track src=\"${1}\" srclang=\"${2}\" label=\"${3}\" default=\"${4:default}>${5}</track>",
+    "description": "track"
+  },
+  "ul": {
+    "prefix": "ul",
+    "body": "<ul>\n\t${0}\n</ul>",
+    "description": "unordered list"
+  },
+  "ul.": {
+    "prefix": "ul.",
+    "body": "<ul class=\"${1}\">\n\t${0}\n</ul>",
+    "description": "unordered list with class"
+  },
+  "ul#": {
+    "prefix": "ul#",
+    "body": "<ul id=\"${1}\">\n\t${0}\n</ul>",
+    "description": "unordered list with id"
+  },
+  "var": {
+    "prefix": "var",
+    "body": "<var>${0}</var>",
+    "description": "var"
+  },
+  "video": {
+    "prefix": "video",
+    "body": "<video src=\"${1} height=\"${2}\"idth=\"${3}\" preload=\"${5:none}\" autoplay=\"${6:autoplay}>${7}</video>",
+    "description": "video"
+  },
+  "wbr": {
+    "prefix": "wbr",
+    "body": "<wbr />",
+    "description": "optional break"
+  }
+}

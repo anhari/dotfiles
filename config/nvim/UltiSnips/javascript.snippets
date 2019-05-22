@@ -1,0 +1,200 @@
+################################################################################
+# JavaScript snippets
+################################################################################
+
+extends html
+
+snippet . "code block" i
+{
+	${0}
+}
+endsnippet
+
+snippet > "fat arrow function" i
+($1) => {
+	$0
+};
+endsnippet
+
+snippet ) "implicit return function" i
+($1) => (
+	$0
+);
+endsnippet
+
+snippet imp "import"
+import ${0};
+endsnippet
+
+snippet af "anonymous function" i
+function() {
+	${0}
+}
+endsnippet
+
+snippet , "code block"
+{
+	${0}
+},
+endsnippet
+
+snippet clog "console log"
+console.log(${0});
+endsnippet
+
+snippet ctab "console table"
+console.table(${0});
+endsnippet
+
+snippet if "if"
+if (${1}) {
+	${0}
+}
+endsnippet
+
+snippet ife "if else"
+if (${1}) {
+	${2}
+} else {
+	${0}
+}
+endsnippet
+
+################################################################################
+# React.js
+################################################################################
+
+snippet ctor "React.js constructor"
+constructor(props) {
+	super(props);
+
+	this.state = {
+		${0}
+	};
+}
+endsnippet
+
+snippet gis "React.js get initial state"
+getInitialState() {
+	return {
+		${0}
+	}
+}
+endsnippet
+
+snippet cdm "React.js componentDidMount"
+componentDidMount() {
+	${0}
+}
+endsnippet
+
+snippet cwm "React.js componentWillMount"
+componentWillMount() {
+	${0}
+}
+endsnippet
+
+snippet cwrp "React.js componentWillReceiveProps"
+componentWillReceiveProps() {
+	${0}
+}
+endsnippet
+
+snippet cwu "React.js componentWillUnmount"
+componentWillUnmount() {
+	${0}
+}
+endsnippet
+
+snippet ajax "ajax request"
+$.ajax({
+	url: '${0}',
+	type: 'GET/DELETE/PUT/POST',
+	data: { },
+	success: () => {
+
+	}
+});
+endsnippet
+
+snippet irx "React.js import core library"
+import React from 'react';
+endsnippet
+
+snippet ed "export default"
+export default ${0}
+endsnippet
+
+snippet rnd "render function"
+render() {
+	return (
+		${0}
+	);
+}
+endsnippet
+
+snippet ret "return"
+return ${0};
+endsnippet
+
+snippet s2p "react-redux mapStateToProps"
+mapStateToProps(state) {
+	return {
+		${0}
+	};
+}
+endsnippet
+
+snippet d2p "react-redux mapDispatchToProps"
+mapDispatchToProps(dispatch) {
+	return bindActionCreators({ ${0} }, dispatch);
+}
+endsnippet
+
+snippet edc "react-redux connect"
+export default connect(mapStateToProps, mapDispatchToProps)(${0});
+endsnippet
+
+snippet danger "React.js dangerously set inner html"
+dangerouslySetInnerHTML={{__html: ${0}}}
+endsnippet
+
+################################################################################
+# testing
+################################################################################
+
+snippet aed "after each"
+afterEach(function() {
+	${0}
+});
+endsnippet
+
+snippet bed "before each"
+beforeEach(function() {
+	${0}
+});
+endsnippet
+
+snippet it "it block"
+it("${1}", function() {
+	${0}
+});
+endsnippet
+
+snippet desc "describe block"
+describe("${1}", function() {
+	${0}
+});
+endsnippet
+
+################################################################################
+# stimulus.js
+################################################################################
+
+snippet stimc "stimulus.js controller"
+import { Controller } from 'stimulus';
+
+export default class extends Controller {
+  static targets = [''];
+}
+endsnippet

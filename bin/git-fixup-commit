@@ -1,0 +1,15 @@
+#!/bin/sh
+# Usage: git-fixup-commit
+# Fuzzy find git commit SHA and fixup your staged changes into it
+
+set -e
+
+target_commit=$(
+  git log --oneline --decorate --all --color=always | \
+  fzf-tmux --ansi --no-sort --reverse --tiebreak=index | \
+  cut -d ' ' -f 1
+)
+
+echo $target_commit
+
+git commit --fixup $target_commit

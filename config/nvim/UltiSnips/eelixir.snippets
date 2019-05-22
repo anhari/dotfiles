@@ -1,0 +1,73 @@
+################################################################################
+# Embedded elixir snippets
+################################################################################
+
+extends html
+
+snippet pp "execute elixir" w
+<% ${0} %>
+endsnippet
+
+snippet pe "insert elixir" w
+<%= ${0} %>
+endsnippet
+
+snippet ped "insert elixir block" w
+<%= ${0} do %>
+<% end %>
+endsnippet
+
+snippet end "end" w
+<% end %>
+endsnippet
+
+snippet rnd "render" w
+<%= render "${0}.html" %>
+endsnippet
+
+snippet ff "form_for" w
+<%= form_for @changeset, Routes.$0_path(@conn, :create), fn f -> %>
+	<%= text_input f, :field, placeholder: "fieldname" %>
+	<%= error_tag f, :field %>
+
+	<%= submit "Create" %>
+<% end %>
+endsnippet
+
+snippet inf "inputs_for" w
+<%= inputs_for f, :${0}, fn cf -> %>
+<% end %>
+endsnippet
+
+snippet fl "for loop" w
+<%= for $1 <- @`!p snip.rv = t[1] + "s"` do %>
+<% end %>
+endsnippet
+
+snippet if "if" w
+<%= if ${0} do %>
+
+<% end %>
+endsnippet
+
+snippet lt "link helper" w
+<%= link ${1:text}, to: Routes.${2}_path(@conn, :${3:action}) %>
+endsnippet
+
+snippet ti "text_input" w
+<%= text_input ${1}, :${2:field} %>
+<%= error_tag $1, :$2 %>
+endsnippet
+
+snippet pw "password input" w
+<%= password_input ${1}, :${2:field} %>
+<%= error_tag $1, :$2 %>
+endsnippet
+
+snippet et "error_tag" w
+<%= error_tag ${0}, :field %>
+endsnippet
+
+snippet ph "placeholder" w
+placeholder: "$0"
+endsnippet

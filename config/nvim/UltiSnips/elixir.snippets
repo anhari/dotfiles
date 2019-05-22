@@ -1,0 +1,214 @@
+################################################################################
+# Elixir snippets
+################################################################################
+
+snippet .
+
+|> ${0}
+endsnippet
+
+snippet %
+%{ ${0} }
+endsnippet
+
+snippet al
+alias $0
+endsnippet
+
+snippet d
+def ${0} do
+end
+endsnippet
+
+snippet dm
+defmodule ${0} do
+end
+endsnippet
+
+snippet dd
+defdelegate ${0}, to:
+endsnippet
+
+snippet doc
+@doc """
+${0}
+"""
+endsnippet
+
+snippet ds
+defstruct(
+	${0}
+)
+endsnippet
+
+snippet fn
+fn () -> ${0:operation} end
+endsnippet
+
+snippet hdoc
+"""
+${0}
+"""
+endsnippet
+
+snippet mdoc
+@moduledoc """
+${0}
+"""
+endsnippet
+
+snippet priv
+# private ####################################################################
+endsnippet
+
+snippet rec
+receive do
+	${0:pattern} ->
+		# stuff to do
+end
+endsnippet
+
+################################################################################
+# Phoenix
+################################################################################
+
+################################
+# Router
+################################
+
+snippet pt
+pipe_through :${0}
+endsnippet
+
+snippet res
+resources "/$1", `!p snip.rv = t[1].capitalize()[:-1] + "Controller"`, only: [:${2}]
+endsnippet
+
+################################
+# Contollers
+################################
+
+snippet @i
+def index(conn, _params) do
+	render(conn, :index)${0}
+end
+endsnippet
+
+snippet @s
+def show(conn, %{ "id" => id}) do
+	${1:resource} =
+	render(conn, :show, $1: $1)
+end
+endsnippet
+
+snippet @u
+def update(conn, _params) do
+	${0}
+end
+endsnippet
+
+snippet @e
+def edit(conn, _params) do
+	${0}
+end
+endsnippet
+
+snippet @n
+def new(conn, _params) do
+	changeset = ${0}
+	render(conn, :new, changeset: changeset)
+end
+endsnippet
+
+snippet @c
+def create(conn, _params) do
+	${0}
+end
+endsnippet
+
+snippet @d
+def delete(conn, _params) do
+	${0}
+end
+endsnippet
+
+snippet rcon
+render conn, "${0}.html"
+endsnippet
+
+snippet pf
+put_flash(:info, "$0")
+endsnippet
+
+snippet rd
+redirect(to: Routes.$1_path(conn, :${0:action}))
+endsnippet
+
+snippet test
+test "${0}" do
+end
+endsnippet
+
+snippet uidx
+create unique_index(:${1:table}, [:${0:field}])
+endsnippet
+
+snippet cast
+cast(attrs, [:${0:field}])
+endsnippet
+
+snippet vreq
+validate_required([:${0:field}])
+endsnippet
+
+snippet vlen
+validate_length(:${0:field}, min: 1, max: 1000)
+endsnippet
+
+snippet case
+case $0 do
+	{:ok, something} ->
+end
+endsnippet
+
+snippet ecs
+%Ecto.Changeset{}
+endsnippet
+
+snippet cs "changest" w
+changeset
+endsnippet
+
+################################################################################
+# Migrations
+################################################################################
+
+snippet nf
+null: false
+endsnippet
+
+snippet ho
+has_one :$0
+endsnippet
+
+snippet virt
+virtual: true
+endsnippet
+
+################################################################################
+# Plug
+################################################################################
+
+snippet plug
+defmodule $1 do
+	import Plug.Conn
+
+	alias $0
+
+	def init(opts) do
+	end
+
+	def call(conn, _opts) do
+	end
+end
+endsnippet

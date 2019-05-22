@@ -1,0 +1,1306 @@
+################################################################################
+# HTML snippets
+################################################################################
+
+################################################################################
+# Unicode entities
+################################################################################
+
+snippet nbs "non-breaking-space" w
+&nbsp;
+endsnippet
+
+snippet left "left arrow ←" w
+&#x2190;
+endsnippet
+
+snippet right "right arrow →" w
+&#x2192;
+endsnippet
+
+snippet up "up arrow ↑" w
+&#x2191;
+endsnippet
+
+snippet down "down arrow ↓" w
+&#x2193;
+endsnippet
+
+snippet return "carriage return ↩ " w
+&#x21A9;
+endsnippet
+
+snippet backtab "backtab ⇤ " w
+&#x21E4;
+endsnippet
+
+snippet tab "tab ⇥ " w
+&#x21E5;
+endsnippet
+
+snippet shift "shift ⇧ " w
+&#x21E7;
+endsnippet
+
+snippet ctrl "ctrl ⌃ " w
+&#x2303;
+endsnippet
+
+snippet enter "enter ⌅ " w
+&#x2305;
+endsnippet
+
+snippet cmd "cmd ⌘ " w
+&#x2318;
+endsnippet
+
+snippet option "option ⌥ " w
+&#x2325;
+endsnippet
+
+snippet delete "delete ⌦ " w
+&#x2326;
+endsnippet
+
+snippet backspace "backspace ⌫ " w
+&#x232B;
+endsnippet
+
+snippet esc "esc ⎋ " w
+&#x238B;
+endsnippet
+
+################################################################################
+# Comments
+################################################################################
+
+snippet // "comment" w
+<!-- ${1} -->${0}
+endsnippet
+
+################################################################################
+# Attributes
+################################################################################
+snippet attr "attribute" w
+${1:attribute}="${0:property}"
+endsnippet
+
+snippet .. "class" w
+class="${0}"
+endsnippet
+
+snippet # "id" w
+id="${1}"
+endsnippet
+
+snippet alt "alt-text" w
+alt="${1}"
+endsnippet
+
+snippet charset "charset" w
+charset="${1:utf-8}"
+endsnippet
+
+snippet data "data-attribute" w
+data-${1}="${2:$1}"
+endsnippet
+
+snippet for "for" w
+for="${1}"
+endsnippet
+
+snippet height "height" w
+height="${1}"
+endsnippet
+
+snippet href "href" w
+href="${1:#}"
+endsnippet
+
+snippet lang "lang" w
+lang="${1:en}"
+endsnippet
+
+snippet media "media" w
+media="${1}"
+endsnippet
+
+snippet name "name" w
+name="${1}"
+endsnippet
+
+snippet rel "rel" w
+rel="${1}"
+endsnippet
+
+snippet scope "scope" w
+scope="${1:row}"
+endsnippet
+
+snippet src "source" w
+src="${1}"
+endsnippet
+
+snippet title= "title" w
+title="${1}"
+endsnippet
+
+snippet type "type" w
+type="${1}"
+endsnippet
+
+snippet value "value" w
+value="${1}"
+endsnippet
+
+snippet width "width" w
+width="${1}"
+endsnippet
+
+################################################################################
+# Elements
+################################################################################
+snippet a "anchor" w
+<a href="${1:#}">${2}</a>
+endsnippet
+
+snippet a. "anchor with class" w
+<a class="${1}" href="${2:#}">${0:$1}</a>
+endsnippet
+
+snippet a# "anchor with id" w
+<a id="${1}" href="${2:#}">${0:$1}</a>
+endsnippet
+
+snippet a:ext "anchor with url as text" w
+<a href="http://${1:example.com}">${0:$1}</a>
+endsnippet
+
+snippet a:mail "email anchor" w
+<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${0:email me}</a>
+endsnippet
+
+snippet abbr "abbreviation" w
+<abbr title="${1}">${0}</abbr>
+endsnippet
+
+snippet address "address" w
+<address>
+	${0}
+</address>
+endsnippet
+
+snippet area "area" w
+<area shape="${1:rect}" coords="${2}" href="${3}" alt="${0}" />
+endsnippet
+
+snippet area:c "area circle" w
+<area shape="circle" coords="${1}" href="${2}" alt="${0}" />
+endsnippet
+
+snippet area:d "area default" w
+<area shape="default" coords="${1}" href="${2}" alt="${0}" />
+endsnippet
+
+snippet area:p "area poly" w
+<area shape="poly" coords="${1}" href="${2}" alt="${0}" />
+endsnippet
+
+snippet area:r "area rectangle" w
+<area shape="rect" coords="${1}" href="${2}" alt="${0}" />
+endsnippet
+
+snippet article "article" w
+<article>
+	${0}
+</article>
+endsnippet
+
+snippet article. "article with class" w
+<article class="${1}">
+	${0}
+</article>
+endsnippet
+
+snippet article# "article with id" w
+<article id="${1}">
+	${0}
+</article>
+endsnippet
+
+snippet aside "aside" w
+<aside>
+	${0}
+</aside>
+endsnippet
+
+snippet aside. "aside with class" w
+<aside class="${1}">
+	${0}
+</aside>
+endsnippet
+
+snippet aside# "aside with id" w
+<aside id="${1}">
+	${0}
+</aside>
+endsnippet
+
+snippet audio "audio" w
+<audio src="${1}>${0}</audio>
+endsnippet
+
+snippet b "bold" w
+<b>${0}</b>
+endsnippet
+
+snippet base "base" w
+<base href="${1}" target="${0}" />
+endsnippet
+
+snippet bdi "bdi" w
+<bdi>${0}</bdo>
+endsnippet
+
+snippet bdo "bdo" w
+<bdo dir="${1}">${0}</bdo>
+endsnippet
+
+snippet bdo:l "bdo left-to-right" w
+<bdo dir="ltr">${0}</bdo>
+endsnippet
+
+snippet bdo:r "bdo right-to-left" w
+<bdo dir="rtl">${0}</bdo>
+endsnippet
+
+snippet blockquote "blockquote" w
+<blockquote>
+	${0}
+</blockquote>
+endsnippet
+
+snippet body "body" w
+<body>
+	${0}
+</body>
+endsnippet
+
+snippet br "linebreak" w
+<br />
+endsnippet
+
+snippet but "button" w
+<button>${0}</button>
+endsnippet
+
+snippet button "button with type" w
+<button type="${1:submit}">${0}</button>
+endsnippet
+
+snippet button. "button with class" w
+<button class="${1:button}" type="${2:submit}">${0}</button>
+endsnippet
+
+snippet button# "button with id" w
+<button id="${1}" type="${2:submit}">${0}</button>
+endsnippet
+
+snippet button:s "submit button" w
+<button type="submit">${0}</button>
+endsnippet
+
+snippet button:r "reset button" w
+<button type="reset">${0}</button>
+endsnippet
+
+snippet canvas "canvas" w
+<canvas>
+	${0}
+</canvas>
+endsnippet
+
+snippet caption "caption" w
+<caption>${0}</caption>
+endsnippet
+
+snippet cite "cite" w
+<cite>${0}</cite>
+endsnippet
+
+snippet code "code" w
+<code>${0}</code>
+endsnippet
+
+snippet col "col" w
+<col />
+endsnippet
+
+snippet colgroup "colgroup" w
+<colgroup>
+	${0}
+</colgroup>
+endsnippet
+
+snippet command "command" w
+<command type="command" label="${1}" icon="${0}" />
+endsnippet
+
+snippet command:c "command checkbox" w
+<command type="checkbox" label="${1}" icon="${0}" />
+endsnippet
+
+snippet command:r "command radio" w
+<command type="radio" radiogroup="${1}" label="${2}" icon="${0}" />
+endsnippet
+
+snippet datagrid "datagrid" w
+<datagrid>
+	${0}
+</datagrid>
+endsnippet
+
+snippet datalist "datalist" w
+<datalist>
+	${0}
+</datalist>
+endsnippet
+
+snippet datatemplate "datatemplate" w
+<datatemplate>
+	${0}
+</datatemplate>
+endsnippet
+
+snippet dd "dd" w
+<dd>${0}</dd>
+endsnippet
+
+snippet dd. "dd with class" w
+<dd class="${1}">${0}</dd>
+endsnippet
+
+snippet dd# "dd with id" w
+<dd id="${1}">${0}</dd>
+endsnippet
+
+snippet del "del" w
+<del>${0}</del>
+endsnippet
+
+snippet details "details" w
+<details>${0}</details>
+endsnippet
+
+snippet dfn "dfn" w
+<dfn>${0}</dfn>
+endsnippet
+
+snippet dialog "dialog" w
+<dialog>
+	${0}
+</dialog>
+endsnippet
+
+snippet div "div" w
+<div>
+	${0}
+</div>
+endsnippet
+
+snippet div. "div with class" w
+<div class="${1}">
+	${0}
+</div>
+endsnippet
+
+snippet div# "div with id" w
+<div id="${1}">
+	${0}
+</div>
+endsnippet
+
+snippet dl "dl" w
+<dl>
+	<dt>${0}</dt>
+	<dd></dd>
+</dl>
+endsnippet
+
+snippet dl. "dl with class" w
+<dl class="${1}">
+	<dt>${0}</dt>
+	<dd></dd>
+</dl>
+endsnippet
+
+snippet dl# "dl with id" w
+<dl id="${1}">
+	<dt>${0}</dt>
+	<dd></dd>
+</dl>
+endsnippet
+
+snippet dt "dt" w
+<dt>${0}</dt>
+endsnippet
+
+snippet dt. "dt with class" w
+<dt class="${1}">${0}</dt>
+endsnippet
+
+snippet dt# "dt with id" w
+<dt id="${1}">${0}</dt>
+endsnippet
+
+snippet em "emphasis" w
+<em>${0}</em>
+endsnippet
+
+snippet embed "embed" w
+<embed src="${1}" type="${0}" />
+endsnippet
+
+snippet fieldset "fieldset" w
+<fieldset>
+	${0}
+</fieldset>
+endsnippet
+
+snippet fieldset. "fieldset with class" w
+<fieldset class="${1}">
+	${0}
+</fieldset>
+endsnippet
+
+snippet fieldset# "fieldset with id" w
+<fieldset id="${1}">
+	${0}
+</fieldset>
+endsnippet
+
+snippet figcaption "figure caption" w
+<figcaption>${0}</figcaption>
+endsnippet
+
+snippet figure "figure" w
+<figure>${0}</figure>
+endsnippet
+
+snippet figure# "figure with id" w
+<figure id="${1}">
+	${0}
+</figure>
+endsnippet
+
+snippet figure. "figure with class" w
+<figure class="${1}">
+	${0}
+</figure>
+endsnippet
+
+snippet footer "footer" w
+<footer>
+	${0}
+</footer>
+endsnippet
+
+snippet footer. "footer with class" w
+<footer class="${1}">
+	${0}
+</footer>
+endsnippet
+
+snippet footer# "footer with id" w
+<footer id="${1}">
+	${0}
+</footer>
+endsnippet
+
+snippet form "form" w
+<form action="${1}" method="${2:post}">
+	${0}
+</form>
+endsnippet
+
+snippet form. "form with class" w
+<form class="${1}" action="${2}" method="${3:post}">
+	${0}
+</form>
+endsnippet
+
+snippet form# "form with id" w
+<form id="${1}" action="${2}" method="${3:post}">
+	${0}
+</form>
+endsnippet
+
+snippet h1 "heading 1" w
+<h1>${0}</h1>
+endsnippet
+
+snippet h1. "heading 1 with class" w
+<h1 class="${1}">${0}</h1>
+endsnippet
+
+snippet h1# "heading 1 with id" w
+<h1 id="${1}">${0}</h1>
+endsnippet
+
+snippet h2 "heading 1" w
+<h2>${0}</h2>
+endsnippet
+
+snippet h2. "heading 2 with class" w
+<h2 class="${1}">${0}</h2>
+endsnippet
+
+snippet h2# "heading 2 with id" w
+<h2 id="${1}">${0}</h2>
+endsnippet
+
+snippet h3 "heading 3" w
+<h3>${0}</h3>
+endsnippet
+
+snippet h3. "heading 3 with class" w
+<h3 class="${1}">${0}</h3>
+endsnippet
+
+snippet h3# "heading 3 with id" w
+<h3 id="${1}">${0}</h3>
+endsnippet
+
+snippet h4 "heading 4" w
+<h4>${0}</h4>
+endsnippet
+
+snippet h4. "heading 4 with class" w
+<h4 class="${1}">${0}</h4>
+endsnippet
+
+snippet h4# "heading 4 with id" w
+<h4 id="${1}">${0}</h4>
+endsnippet
+
+snippet h5 "heading 5" w
+<h5>${0}</h5>
+endsnippet
+
+snippet h5. "heading 5 with class" w
+<h5 class="${1}">${0}</h5>
+endsnippet
+
+snippet h5# "heading 5 with id" w
+<h5 id="${1}">${0}</h5>
+endsnippet
+
+snippet h6 "heading 6" w
+<h6>${0}</h6>
+endsnippet
+
+snippet h6. "heading 6 with class" w
+<h6 class="${1}">${0}</h6>
+endsnippet
+
+snippet h6# "heading 6 with id" w
+<h6 id="${1}">${0}</h6>
+endsnippet
+
+snippet head "head" w
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>${1:`substitute(vim_endsnippet
+
+snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+	${0}
+</head>
+endsnippet
+
+snippet header "header" w
+<header>
+	${0}
+</header>
+endsnippet
+
+snippet header. "header with class" w
+<header class="${1}">
+	${0}
+</header>
+endsnippet
+
+snippet header# "header with id" w
+<header id="${1}">
+	${0}
+</header>
+endsnippet
+
+snippet hgroup "hgroup" w
+<hgroup>
+	${0}
+</hgroup>
+endsnippet
+
+snippet hgroup. "hgroup" w
+<hgroup class="${1}>
+	${0}
+</hgroup>
+endsnippet
+
+snippet hr "horizontal row" w
+<hr />
+endsnippet
+
+snippet html "html" w
+<html>
+${0}
+</html>
+endsnippet
+
+snippet xhtml "xhtml" w
+<html xmlns="http://www.w3.org/1999/xhtml">
+${0}
+</html>
+endsnippet
+
+snippet html5 "html5" w
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>${1:`substitute(vim_endsnippet
+
+snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		${2:link}
+	</head>
+	<body>
+		${0:body}
+	</body>
+</html>
+endsnippet
+
+snippet html5l "html5 with language" w
+<!DOCTYPE html>
+<html lang="${1:es}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>${2:`substitute(vim_endsnippet
+
+snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		${3:link}
+	</head>
+	<body>
+		${0:body}
+	</body>
+</html>
+endsnippet
+
+snippet i "italics" w
+<i>${0}</i>
+endsnippet
+
+snippet iframe "iframe" w
+<iframe src="${1}" frameborder="0"></iframe>
+endsnippet
+
+snippet iframe. "iframe" w
+<iframe class="${1}" src="${2}" frameborder="0"></iframe>
+endsnippet
+
+snippet iframe# "iframe" w
+<iframe id="${1}" src="${2}" frameborder="0"></iframe>
+endsnippet
+
+snippet img "image" w
+<img src="${1}" alt="${2}" />
+endsnippet
+
+snippet img. "image" w
+<img class="${1}" src="${2}" alt="${3}" />
+endsnippet
+
+snippet img# "image" w
+<img id="${1}" src="${2}" alt="${3}" />
+endsnippet
+
+snippet input "input" w
+<input type="${1:text/submit/hidden/button/image}" name="${2}" id="${3:$2}" value="${4}" />
+endsnippet
+
+snippet input. "input" w
+<input class="${1}" type="${2:text/submit/hidden/button/image}" name="${3}" id="${4:$3}" value="${5}" />
+endsnippet
+
+snippet input:text "input (text)" w
+<input type="text" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:submit "input (submit)" w
+<input type="submit" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:hidden "input (hidden)" w
+<input type="hidden" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:button "input (button)" w
+<input type="button" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:image "input (image)" w
+<input type="image" name="${1}" id="${2:$1}" src="${3}" alt="${4}" />
+endsnippet
+
+snippet input:checkbox "input (checkbox)" w
+<input type="checkbox" name="${1}" id="${2:$1}" />
+endsnippet
+
+snippet input:radio "input (radio)" w
+<input type="radio" name="${1}" id="${2:$1}" />
+endsnippet
+
+snippet input:color "input (color)" w
+<input type="color" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:date "input (date)" w
+<input type="date" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:datetime "input (datetime)" w
+<input type="datetime" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:datetime-local "input (datetime-local)" w
+<input type="datetime-local" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:email "input (email)"
+<input type="email" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:file "input (file)" w
+<input type="file" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:month "input (month)" w
+<input type="month" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:number "input (number)" w
+<input type="number" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:password "input (password)" w
+<input type="password" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:range "input (range)" w
+<input type="range" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:reset "input (reset)" w
+<input type="reset" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:search "input (search)" w
+<input type="search" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:time "input (time)" w
+<input type="time" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:url "input (url)" w
+<input type="url" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet input:week "input (week)" w
+<input type="week" name="${1}" id="${2:$1}" value="${3}" />
+endsnippet
+
+snippet ins "insert" w
+<ins>${0}</ins>
+endsnippet
+
+snippet kbd "kbd" w
+<kbd>${0}</kbd>
+endsnippet
+
+snippet keygen "keygen" w
+<keygen>${0}</keygen>
+endsnippet
+
+snippet label "label" w
+<label for="${0:$1}">${1}</label>
+endsnippet
+
+snippet label:i "label with input" w
+<label for="${2:$1}">${1}</label>
+<input type="${3:text/submit/hidden/button}" name="${4:$2}" id="${5:$2}" value="${6}" />
+endsnippet
+
+snippet label:s "label with select" w
+<label for="${2:$1}">${1}</label>
+<select name="${3:$2}" id="${4:$2}">
+	<option value="${5}">${0:$5}</option>
+</select>
+endsnippet
+
+snippet legend "legend" w
+<legend>${0}</legend>
+endsnippet
+
+snippet li "list item" w
+<li>${0}</li>
+endsnippet
+
+snippet li. "list item with class" w
+<li class="${1}">${0}</li>
+endsnippet
+
+snippet li+ "list item with id" w
+<li>${1}</li>
+li+
+endsnippet
+
+snippet lia "list item with link" w
+<li><a href="${0:#}">${1}</a></li>
+endsnippet
+
+snippet link "link" w
+<link rel="${1}" href="${2}" title="${3}" type="${4}" />
+endsnippet
+
+snippet link:atom "link (atom)" w
+<link rel="alternate" href="${1:atom.xml}" title="Atom" type="application/atom+xml" />
+endsnippet
+
+snippet link:s "link (stylesheet)" w
+<link rel="stylesheet" href="${1:style.css}" />
+endsnippet
+
+snippet link:css "link (css)" w
+<link rel="stylesheet" href="${1:style.css}" type="text/css" media="${2:all}" />
+endsnippet
+
+snippet link:favicon "link (favicon)" w
+<link rel="shortcut icon" href="${1:favicon.ico}" type="image/x-icon" />
+endsnippet
+
+snippet link:rss "link (rss)" w
+<link rel="alternate" href="${1:rss.xml}" title="RSS" type="application/atom+xml" />
+endsnippet
+
+snippet link:touch "link (touch-icon)" w
+<link rel="apple-touch-icon" href="${1:favicon.png}" />
+endsnippet
+
+snippet main "main" w
+<main role="main">
+	${0}
+</main>
+endsnippet
+
+snippet map "map" w
+<map name="${1}">
+	${0}
+</map>
+endsnippet
+
+snippet map. "map with class" w
+<map class="${1}" name="${2}">
+	${0}
+</map>
+endsnippet
+
+snippet map# "map with id" w
+<map name="${1}" id="${2:$1}>
+	${0}
+</map>
+endsnippet
+
+snippet mark "mark" w
+<mark>${0}</mark>
+endsnippet
+
+snippet menu "menu" w
+<menu>
+	${0}
+</menu>
+endsnippet
+
+snippet menu:c "menu (context)" w
+<menu type="context">
+	${0}
+</menu>
+endsnippet
+
+snippet menu:t "menu (toolbar)" w
+<menu type="toolbar">
+	${0}
+</menu>
+endsnippet
+
+snippet meta "meta" w
+<meta http-equiv="${1}" content="${2}" />
+endsnippet
+
+snippet meta:d "meta (description)" w
+<meta name="description" content="${0}" />
+endsnippet
+
+snippet meta:compat "meta (compatible)" w
+<meta http-equiv="X-UA-Compatible" content="IE=${1:7,8,edge}" />
+endsnippet
+
+snippet meta:refresh "meta (refresh)" w
+<meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+endsnippet
+
+snippet meta:utf "meta (utf)" w
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+endsnippet
+
+snippet meter "meter" w
+<meter>${0}</meter>
+endsnippet
+
+snippet nav "nav" w
+<nav>
+	${0}
+</nav>
+endsnippet
+
+snippet nav. "nav with class" w
+<nav class="${1}">
+	${0}
+</nav>
+endsnippet
+
+snippet nav# "nav with id" w
+<nav id="${1}">
+	${0}
+</nav>
+endsnippet
+
+snippet noscript "noscript" w
+<noscript>
+	${0}
+</noscript>
+endsnippet
+
+snippet object "object" w
+<object data="${1}" type="${2}">
+	${3}
+</object>
+endsnippet
+
+# Embed QT Movie
+snippet movie "movie" w
+<object width="$2" height="$3" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
+codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+	<param name="src" value="$1" />
+	<param name="controller" value="$4" />
+	<param name="autoplay" value="$5" />
+	<embed src="${1:movie.mov}"
+		width="${2:320}" height="${3:240}"
+		controller="${4:true}" autoplay="${5:true}"
+		scale="tofit" cache="true"
+		pluginspage="http://www.apple.com/quicktime/download/" />
+</object>
+endsnippet
+
+snippet ol "ordered list" w
+<ol>
+	${0}
+</ol>
+endsnippet
+
+snippet ol. "ordered list with class" w
+<ol class="${1}">
+	${0}
+</ol>
+endsnippet
+
+snippet ol# "ordered list with id" w
+<ol id="${1}">
+	${0}
+</ol>
+endsnippet
+
+snippet opt "option" w
+<option value="${1}">${0:$1}</option>
+endsnippet
+
+snippet optgroup "optgroup" w
+<optgroup>
+	<option value="${1}">${2:$1}</option>
+	opt+${0}
+</optgroup>
+endsnippet
+
+snippet output "output" w
+<output>${0}</output>
+endsnippet
+
+snippet p "paragaph" w
+<p>${0}</p>
+endsnippet
+
+snippet pb "paragaph block" w
+<p>
+	${0}
+</p>
+endsnippet
+
+snippet p. "paragaph with class" w
+<p class="${1}">${0}</p>
+endsnippet
+
+snippet p# "paragraph with id" w
+<p id="${1}">${0}</p>
+endsnippet
+
+snippet param "param" w
+<param name="${1}" value="${2}" />
+endsnippet
+
+snippet pre "pre" w
+<pre>
+	${0}
+</pre>
+endsnippet
+
+snippet progress "progress" w
+<progress>${0}</progress>
+endsnippet
+
+snippet q "quote" w
+<q>${0}</q>
+endsnippet
+
+snippet rp "rp" w
+<rp>${0}</rp>
+endsnippet
+
+snippet rt "rt" w
+<rt>${0}</rt>
+endsnippet
+
+snippet ruby "ruby" w
+<ruby>
+	<rp><rt>${0}</rt></rp>
+</ruby>
+endsnippet
+
+snippet s "strikethrough" w
+<s>${0}</s>
+endsnippet
+
+snippet samp "samp" w
+<samp>
+	${0}
+</samp>
+endsnippet
+
+snippet script "script (one-off)" w
+<script type="text/javascript" charset="utf-8">
+	${0}
+</script>
+endsnippet
+
+snippet script:i "script (include)" w
+<script src="${0}.js" type="text/javascript" charset="utf-8"></script>
+endsnippet
+
+snippet section "section" w
+<section>
+	${0}
+</section>
+endsnippet
+
+snippet section. "section with class" w
+<section class="${1}">
+	${0}
+</section>
+endsnippet
+
+snippet section# "section with id" w
+<section id="${1}">
+	${0}
+</section>
+endsnippet
+
+snippet select "select" w
+<select name="${1}" id="${2:$1}">
+	${0}
+</select>
+endsnippet
+
+snippet select. "select with class" w
+<select name="${1}" id="${2:$1}" class="${3}>
+	${0}
+</select>
+endsnippet
+
+snippet small "small" w
+<small>${0}</small>
+endsnippet
+
+snippet source "source" w
+<source src="${1}" type="${2}" media="${0}" />
+endsnippet
+
+snippet span "span" w
+<span>${0}</span>
+endsnippet
+
+snippet span. "span with class" w
+<span class="${1}">${0}</span>
+endsnippet
+
+snippet span# "span with id" w
+<span id="${1}">${0}</span>
+endsnippet
+
+snippet strong "strong" w
+<strong>${0}</strong>
+endsnippet
+
+snippet style "style" w
+<style type="text/css" media="${1:all}">
+	${0}
+</style>
+endsnippet
+
+snippet sub "sub" w
+<sub>${0}</sub>
+endsnippet
+
+snippet summary "summary" w
+<summary>
+	${0}
+</summary>
+endsnippet
+
+snippet sup "sup" w
+<sup>${0}</sup>
+endsnippet
+
+snippet table "table" w
+<table>
+	${0}
+</table>
+endsnippet
+
+snippet table. "table with class" w
+<table class="${1}">
+	${0}
+</table>
+endsnippet
+
+snippet table# "table with id" w
+<table id="${1}">
+	${0}
+</table>
+endsnippet
+
+snippet tbody "table body" w
+<tbody>
+	${0}
+</tbody>
+endsnippet
+
+snippet td "table data" w
+<td>${0}</td>
+endsnippet
+
+snippet td. "table data with class" w
+<td class="${1}">${0}</td>
+endsnippet
+
+snippet td# "table data with id" w
+<td id="${1}">${0}</td>
+endsnippet
+
+snippet textarea "textarea" w
+<textarea name="${1}" id="${2:$1}" rows="${3:8}" cols="${4:40}">${5}</textarea>
+endsnippet
+
+snippet tfoot "table footer" w
+<tfoot>
+	${0}
+</tfoot>
+endsnippet
+
+snippet th "table heading" w
+<th>${0}</th>
+endsnippet
+
+snippet th. "table heading with class" w
+<th class="${1}">${0}</th>
+endsnippet
+
+snippet th# "table heading with id" w
+<th id="${1}">${0}</th>
+endsnippet
+
+snippet thead "table header" w
+<thead>
+	${0}
+</thead>
+endsnippet
+
+snippet time "time" w
+<time datetime="${1}" pubdate="${2:$1}">${0:$1}</time>
+endsnippet
+
+snippet title "title" w
+<title>${0:`substitute(vim_endsnippet
+
+snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+endsnippet
+
+snippet tr "table row" w
+<tr>
+	${0}
+</tr>
+endsnippet
+
+snippet track "track" w
+<track src="${1}" srclang="${2}" label="${3}" default="${4:default}>${5}</track>
+endsnippet
+
+snippet ul "unordered list" w
+<ul>
+	${0}
+</ul>
+endsnippet
+
+snippet ul. "unordered list with class" w
+<ul class="${1}">
+	${0}
+</ul>
+endsnippet
+
+snippet ul# "unordered list with id" w
+<ul id="${1}">
+	${0}
+</ul>
+endsnippet
+
+snippet var "var" w
+<var>${0}</var>
+endsnippet
+
+snippet video "video" w
+<video src="${1} height="${2}" width="${3}" preload="${5:none}" autoplay="${6:autoplay}>${7}</video>
+endsnippet
+
+snippet wbr "optional break"
+<wbr />
+endsnippet

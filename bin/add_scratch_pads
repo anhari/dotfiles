@@ -1,0 +1,11 @@
+#! /bin/sh
+
+touch SCRATCH_PAD_ELASTICSEARCH.es
+touch SCRATCH_PAD_ELIXIR.exs
+touch SCRATCH_PAD_JAVASCRIPT.js
+touch SCRATCH_PAD_MARKDOWN.md
+touch SCRATCH_PAD_POSTGRES.pgsql
+touch SCRATCH_PAD_RUBY.rb
+touch SCRATCH_PAD_TYPESCRIPT.ts
+cp $HOME/.scratch_pads/ES_CAT_API.es ./
+cp $HOME/.scratch_pads/ES_CLUSTER_API.es ./

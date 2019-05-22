@@ -1,0 +1,15 @@
+#!/bin/sh
+# Usage: git-apply-stash
+# Fuzzy find and apply git stash
+
+set -e
+
+target_stash=$(
+  git stash list --oneline --decorate --color=always | \
+  fzf-tmux --ansi --no-sort --reverse --tiebreak=index | \
+  cut -d ' ' -f 1
+)
+
+echo $target_commit
+
+git stash apply $target_commit

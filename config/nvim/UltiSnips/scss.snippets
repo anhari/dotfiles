@@ -1,0 +1,351 @@
+################################################################################
+# Scss snippets
+################################################################################
+
+extends css
+
+snippet $
+$${1:variable}: ${0:value};
+endsnippet
+
+snippet imp
+@import '${0}';
+endsnippet
+
+snippet mix
+@mixin ${1:name}($${2:argument}: ${3:default-value}) {
+	${0:/* rules... */}
+}
+endsnippet
+
+snippet inc
+@include ${1:mixin}(${2});
+endsnippet
+
+snippet ext
+@extend ${0};
+endsnippet
+
+snippet fun
+@function ${1:name}(${2:args}) {
+	${0}
+}
+endsnippet
+
+snippet if
+@if ${1:condition} {
+	${0}
+}
+endsnippet
+
+snippet ife
+@if ${1:condition} {
+	${2}
+} @else {
+	${0}
+}
+endsnippet
+
+snippet eif
+@else if ${1:condition} {
+	${0}
+}
+endsnippet
+
+snippet map
+$${1}: (
+	${0}
+	/* "key": value, */
+	/* "key": value */
+)
+endsnippet
+
+snippet for
+@for ${1:$i} from ${2:1} through ${3:3} {
+	${0}
+}
+endsnippet
+
+snippet each
+@each $${1:key}, $${2:value} in $${2:items} {
+	${0}
+}
+endsnippet
+
+snippet while
+@while ${1:$i} ${2:>} ${3:0} {
+	${0}
+}
+endsnippet
+
+snippet lot
+&:last-of-type {
+	${0}
+}
+endsnippet
+
+snippet fot
+&:first-of-type {
+	${0}
+}
+endsnippet
+
+snippet act
+&:active {
+	${0}
+}
+endsnippet
+
+snippet hov
+&:hover {
+	${0}
+}
+endsnippet
+
+snippet foc
+&:focus {
+	${0}
+}
+endsnippet
+
+################################################################################
+# Bourbon.io endsnippet snippets
+################################################################################
+
+snippet import-bourbon-stack
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+endsnippet
+
+snippet xm
+@include margin(${1:null} ${2:null} ${3:null} ${4:null});
+endsnippet
+
+snippet xp
+@include padding(${1:null} ${2:null} ${3:null} ${4:null});
+endsnippet
+
+snippet xpoa
+@include position(absolute, ${1:null} ${2:null} ${3:null} ${4:null});
+endsnippet
+
+snippet xpor
+@include position(relative, ${1:null} ${2:null} ${3:null} ${4:null});
+endsnippet
+
+snippet xsz
+@include size(${1:width} ${2:height});
+endsnippet
+
+snippet xcon
+	contrast-switch(${1:background-color}, ${2:dark-text-color}, ${3:light-text-color});
+endsnippet
+
+snippet omg
+@include omega(${0});
+endsnippet
+
+snippet ati
+#{$all-text-inputs} {
+	${1}
+}
+endsnippet
+
+snippet atif
+#{$all-text-inputs-focus} {
+	${1}
+}
+endsnippet
+
+snippet atih
+#{$all-text-inputs-hover} {
+	${1}
+}
+endsnippet
+
+snippet atifh
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+	${1}
+}
+endsnippet
+
+snippet atia
+#{$all-text-inputs-active} {
+	${1}
+}
+endsnippet
+
+snippet ab
+#{$all-buttons} {
+	${1}
+}
+endsnippet
+
+snippet abf
+#{$all-buttons-focus} {
+	${1}
+}
+endsnippet
+
+snippet abh
+#{$all-buttons-hover} {
+	${1}
+}
+endsnippet
+
+snippet abfh
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+	${1}
+}
+endsnippet
+
+snippet aba
+#{$all-buttons-active} {
+	${1}
+}
+endsnippet
+
+snippet xww
+@include word-wrap;
+endsnippet
+
+snippet xcf
+@include clearfix;
+endsnippet
+
+snippet ximgrep
+@include hide-text;
+background-image: url(logo.png);
+endsnippet
+
+snippet xlg
+@include linear-gradient(${0});
+endsnippet
+
+snippet xrg
+@include radial-gradient(${0});
+endsnippet
+
+snippet xfil
+@include filter(${0});
+endsnippet
+
+snippet xbg
+@include background(${0});
+endsnippet
+
+snippet xbgi
+@include background-image(${0});
+endsnippet
+
+snippet xts
+@include transition(${0});
+endsnippet
+
+################################################################################
+# Neat snippets
+################################################################################
+
+snippet xvg
+$visual-grid: true;
+$visual-grid-index: front;
+endsnippet
+
+snippet xoc
+@include outer-container;
+endsnippet
+
+snippet xsc
+@include span-columns(${0});
+endsnippet
+
+snippet xsh
+@include shift(${0});
+endsnippet
+
+snippet xsic
+@include shift-in-context(${0});
+endsnippet
+
+snippet xfp
+@include fill-parent;
+endsnippet
+
+snippet xmd
+@include media(${1}) {
+
+}
+endsnippet
+
+snippet xrow
+@include row();
+endsnippet
+
+snippet xms
+font-size: modular-scale(${0});
+endsnippet
+
+snippet desk
+@include media($large-screen) {
+	${0}
+}
+endsnippet
+
+snippet ...
+@include ellipsis(${0:100%} /* max-width */);
+endsnippet
+
+################################################################################
+# Neat 2.0 snippets
+################################################################################
+
+snippet gx
+@include grid-collapse;
+endsnippet
+
+snippet gl
+@include grid-column(${0});
+endsnippet
+
+snippet gc
+@include grid-container;
+endsnippet
+
+snippet gm
+@include grid-media() {
+	${0}
+}
+endsnippet
+
+snippet gms
+@include grid-media($small-screen) {
+	${0}
+}
+endsnippet
+
+snippet gmm
+@include grid-media($medium-screen) {
+	${0}
+}
+endsnippet
+
+snippet gml
+@include grid-media($large-screen) {
+	${0}
+}
+endsnippet
+
+snippet gp
+@include grid-push(${0});
+endsnippet
+
+snippet gs
+@include grid-shift(${0});
+endsnippet
+
+snippet gv
+@include grid-visual;
+endsnippet

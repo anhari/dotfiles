@@ -1,0 +1,90 @@
+################################################################################
+# Haml snippets
+################################################################################
+
+snippet cache "russian doll caching" w
+- cache ${0} do
+endsnippet
+
+snippet t
+%table
+	%tr
+		%th
+			${1:headers}
+	%tr
+		%td
+			${0:headers}
+endsnippet
+
+snippet ul
+%ul
+	%li
+		${0:item}
+	%li
+endsnippet
+
+snippet rnd
+= render "${0:item}"
+endsnippet
+
+snippet lt
+= link_to ${1:name}, ${2:dest}
+endsnippet
+
+snippet mt
+= mail_to ${1:email_address}, ${2:name}
+endsnippet
+
+snippet mts
+= mail_to ${1:email_address}, ${2:name}, :subject => ${3}, :body => ${4}
+endsnippet
+
+snippet ife
+- if ${1:condition}
+	${2}
+- else
+	${0}
+endsnippet
+
+snippet sff
+= simple_form_for @${1:model} do |f|
+	= f.input :${2:field}
+	= f.button :submit
+endsnippet
+
+snippet ff
+= form_for @${1:model} do |f|
+	= f.label :${2:field}
+	= f.text_field :${0:$2}
+	= f.submit
+endsnippet
+
+snippet flash
+.flash
+	%p.notice= notice
+	%p.alert= alert
+endsnippet
+
+snippet md
+method: :delete
+endsnippet
+
+snippet mdc
+method: :delete, data: { confirm: "${1}" }
+endsnippet
+
+snippet roof
+= raise 'roof'
+endsnippet
+
+snippet ddw
+data: { disable_with: '${1}' }
+endsnippet
+
+snippet rxc
+= react_component '${0}'
+endsnippet
+
+snippet cf
+- content_for :${0} do
+endsnippet

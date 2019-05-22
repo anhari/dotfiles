@@ -1,0 +1,78 @@
+[init]
+  templatedir = ~/.git_template
+[push]
+  default = current
+[color]
+  ui = auto
+[alias]
+  aa = add --all
+  amend = commit --amend
+  ap = add --patch
+  b = branch
+  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+  browse = !hub browse
+  cached = diff --cached
+  can = commit --amend --no-edit
+  cherry = cherry-pick
+  ci = commit -v
+  co = checkout
+  compare = !hub compare
+  conflicted = !vim +Conflicted
+  count = changed-file-count
+  d = diff
+  df = diff
+  ecm = commit --allow-empty
+  fcm = fixup-commit
+  gogo = rebase --continue
+  greplog = log -E -i --grep
+  ir = interactive-rebase
+  issues = !hub browse -- issues
+  l = log --pretty=colored
+  loslos = rebase --continue
+  mup = !git checkout master && git up && git checkout -
+  ns = diff --numstat
+  pf = push --force-with-lease
+  praise = blame
+  remote = remote -v
+  sa = apply-stash
+  searchlog = log -S
+  sh = shalector
+  sla = log --oneline --decorate --graph --all
+  ss = diff --shortstat
+  st = status
+  staged = diff --cached
+  uncommit = reset --soft HEAD^
+  unpushed-changes = diff @{u}..
+  unpushed-commits = log @{u}..
+  unrebase = reset --hard ORIG_HEAD
+  unstage = reset
+  vamos = rebase --continue
+[commit]
+  template = ~/.gitmessage
+[core]
+  autocrlf = input
+  editor = "nvim"
+  excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less --tabs=1,5 -R
+[credential]
+  helper = osxkeychain
+[diff]
+  colorMoved = zebra
+[fetch]
+  prune = true
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[github]
+  user = anhari
+[merge]
+  ff = only
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[rebase]
+  autosquash = true
+[user]
+  user = anhari
+  name = Michael Anhari
+  email = mpanhari@gmail.com

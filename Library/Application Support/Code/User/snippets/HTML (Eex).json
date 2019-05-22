@@ -1,0 +1,72 @@
+{
+  "pp": {
+    "prefix": "pp",
+    "body": "<% ${0} %>",
+    "description": "execute elixir"
+  },
+  "pe": {
+    "prefix": "pe",
+    "body": "<%= ${0} %>",
+    "description": "insert elixir"
+  },
+  "ped": {
+    "prefix": "ped",
+    "body": "<%= ${0} do %>\n<% end %>",
+    "description": "insert elixir block"
+  },
+  "end": {
+    "prefix": "end",
+    "body": "<% end %>",
+    "description": "end"
+  },
+  "rnd": {
+    "prefix": "rnd",
+    "body": "<%= render \"${0}.html\" %>",
+    "description": "render"
+  },
+  "ff": {
+    "prefix": "ff",
+    "body": "<%= form_for @changeset, Routes.$0_path(@conn, :create), fn f -> %>\n\t<%= text_input f, :field, placeholder: \"fieldname\" %>\n\t<%= error_tag f, :field %>\n\n\t<%= submit \"Create\" %>\n<% end %>",
+    "description": "form_for"
+  },
+  "inf": {
+    "prefix": "inf",
+    "body": "<%= inputs_for f, :${0}, fn cf -> %>\n<% end %>",
+    "description": "inputs_for"
+  },
+  "fl": {
+    "prefix": "fl",
+    "body": "<%= for $1 <- @`!p snip.rv = t[1] + \"s\"` do %>\n<% end %>",
+    "description": "for loop"
+  },
+  "if": {
+    "prefix": "if",
+    "body": "<%= if ${0} do %>\n\n<% end %>",
+    "description": "if"
+  },
+  "lt": {
+    "prefix": "lt",
+    "body": "<%= link ${1:text}, to: Routes.${2}_path(@conn, :${3:action}) %>",
+    "description": "link helper"
+  },
+  "ti": {
+    "prefix": "ti",
+    "body": "<%= text_input ${1}, :${2:field} %>\n<%= error_tag $1, :$2 %>",
+    "description": "text_input"
+  },
+  "pw": {
+    "prefix": "pw",
+    "body": "<%= password_input ${1}, :${2:field} %>\n<%= error_tag $1, :$2 %>",
+    "description": "password input"
+  },
+  "et": {
+    "prefix": "et",
+    "body": "<%= error_tag ${0}, :field %>",
+    "description": "error_tag"
+  },
+  "ph": {
+    "prefix": "ph",
+    "body": "placeholder: \"$0\"",
+    "description": "placeholder"
+  }
+}

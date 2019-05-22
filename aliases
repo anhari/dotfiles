@@ -1,0 +1,73 @@
+# aliases
+
+alias .....='cd ../../../../'
+alias ....='cd ../../../'
+alias ...='cd ../../'
+alias ..='cd ../'
+alias b="bundle"
+alias back='cd -'
+alias be='bundle exec'
+alias blog-ideas='ls -1 ~/Development/anhari.github.io/_drafts'
+alias blog-preview='bundle exec jekyll serve --drafts --livereload'
+alias blog='cd ~/Development/anhari.github.io && tat'
+alias bourbon-neat='bourbon install && neat install && bitters install'
+alias c='clear'
+alias cya='pkill -f zoom'
+alias d='cd ~/dotfiles && tat'
+alias dev='cd ~/Development'
+alias dwarf='cd ~/dwarfcode'
+alias e="$EDITOR"
+alias fetch-rubies='brew update && brew upgrade rbenv ruby-build'
+alias fix-python2-neovim='~/.asdf/installs/python/2.7.14/bin/pip2 install --upgrade --force-reinstall --no-cache-dir neovim'
+alias fix-python3-neovim='~/.asdf/installs/python/3.6.3/bin/pip3.6 install --upgrade --force-reinstall --no-cache-dir neovim'
+alias ink="cd ~/Writings"
+alias italics-plz='tic -o ~/.terminfo ~/.xterm-256color.terminfo.txt && tic -x ~/.tmux.terminfo'
+alias kill-pry-remote='kill -9 $(lsof -ti tcp:9876)'
+alias ll="ls -al"
+alias ll="ls -lsh"
+alias ln="ln -v"
+alias lsgpg="gpg --list-secret-keys --keyid-format LONG"
+alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
+alias mit='cd ~/Development/mit-6-3'
+alias mkdir="mkdir -p"
+alias myrspec="cp ~/.rspec ./"
+alias nf="cd ~/Northfurr"
+alias oc="code -r ."
+alias p="ps aux | grep"
+alias path='echo $PATH | tr -s ":" "\n"'
+alias phxmigrate="mix ecto.migrate && mix ecto.rollback && mix ecto.migrate"
+alias pippin='pip install -r ~/.requirements.txt'
+alias plog="tail -f ~/Library/Logs/puma-dev.log"
+alias pomo='open focus://focus?mintues=25'
+alias postgres-logs='vim /usr/local/var/postgres/server.log'
+alias postgres-start-with-logs='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias readme='vim ~/readme/README.md'
+alias reset-elasticsearch='curl -X DELETE "http://localhost:9200/_all"'
+alias restart-postgres='rm /usr/local/var/postgres/postmaster.pid'
+alias sed="sed -E"
+alias start='vim ~/Documents/start-checklist.md'
+alias sz='source ~/.zshrc'
+alias t='bundle exec rspec'
+alias tail-dev='tail -f log/development.log'
+alias tail-heroku='heroku logs --tail'
+alias tail-test='tail -f log/test.log'
+alias tas='tmux a -t'
+alias textplay='textplay -w'
+alias tko='tmux kill-server'
+alias tl='tmuxinator local'
+alias tle='code .tmuxinator.yml'
+alias tls='tmux list-sessions'
+alias tree='tree -C'
+alias tsl='tmuxinator stop local'
+alias undoplz='git add .; git stash; git stash drop'
+alias upgrade-postgres-db='brew postgresql-upgrade-database'
+alias v="$VISUAL"
+alias wat='asdf current'
+alias ytc='yarn test -- --coverage'
+
+# neovim
+if type nvim > /dev/null 2>&1; then
+  alias vim='MIX_ENV=edit nvim'
+  alias vi='MIX_ENV=edit nvim'
+  alias v='MIX_ENV=edit nvim'
+fi

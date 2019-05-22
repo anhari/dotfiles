@@ -1,0 +1,7 @@
+#!/bin/sh
+# Usage: git-file-count
+# Find how many files have been changed in the current branch compared to master
+
+set -e
+
+git diff --name-only origin/master | wc -l

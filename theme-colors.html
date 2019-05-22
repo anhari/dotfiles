@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto,
+          "Segoe UI", sans-serif;
+      }
+
+      .color-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(7, calc(100vw / 9 - 7px));
+        grid-gap: 7px;
+      }
+
+      .color-controls {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 956px;
+      }
+
+      .color-controls > div {
+        display: grid;
+      }
+
+      @media (min-width: 415px) {
+        .color-controls > div {
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 14px;
+        }
+      }
+
+      .color-controls > div > label {
+        display: grid;
+        grid-column-gap: 14px;
+        padding: 14px 0;
+      }
+
+      .color-controls input {
+        width: 100%;
+      }
+
+      .css-area {
+        padding: 7px;
+        background: #ccc;
+      }
+    </style>
+
+    <style id="theme"></style>
+  </head>
+  <body>
+    <div class="color-controls"></div>
+
+    <div class="color-grid"></div>
+
+    <pre class="css-area"></pre>
+
+    <script>
+      const DEFAULT_COLOR_SCHEME = [
+        // { name: "primary", hex: "#37689D", lMin: 15, lMax: 90 },
+        { name: "primary", hex: "#4D3B97", lMin: 15, lMax: 90 },
+        { name: "secondary", hex: "#3c8ea3", lMin: 15, lMax: 90 },
+        { name: "info", hex: "#4c8f87", lMin: 15, lMax: 90 },
+        { name: "success", hex: "#4f9a5f", lMin: 15, lMax: 90 },
+        { name: "warning", hex: "#f6d55c", lMin: 15, lMax: 90 },
+        { name: "error", hex: "#a83029", lMin: 15, lMax: 90 },
+        { name: "grey", hex: "#222933", lMin: 15, lMax: 90 }
+      ];
+      const colorScheme = DEFAULT_COLOR_SCHEME.map(colorType => ({
+        ...colorType
+      }));
+      const style = document.querySelector("#theme");
+      const colorControls = document.querySelector(".color-controls");
+      const grid = document.querySelector(".color-grid");
+      const cssArea = document.querySelector(".css-area");
+
+      createColorControls();
+      createGrid();
+      createStyles();
+
+      function changeColor(index, hex) {
+        Object.assign(colorScheme[index], { hex });
+        createStyles();
+      }
+
+      function changeMinLightness(index, lMin) {
+        Object.assign(colorScheme[index], { lMin });
+        createStyles();
+      }
+
+      function changeMaxLightness(index, lMax) {
+        Object.assign(colorScheme[index], { lMax });
+        createStyles();
+      }
+
+      function createStyles() {
+        [style, cssArea].forEach(element => {
+          element.innerHTML = colorScheme
+            .map(({ name, hex, lMin, lMax }) => ({
+              name,
+              ...hexToHsl(hex),
+              lMin,
+              lMax
+            }))
+            .map(({ name, h, s, l, lMin, lMax }) =>
+              [
+                ...[0, 1, 2, 3].map(i => lMin + (i * (l - lMin)) / 4),
+                l,
+                ...[1, 2, 3, 4].map(i => l + (i * (lMax - l)) / 4)
+              ]
+                .map(
+                  (l, i) =>
+                    `.${name.toLowerCase()}${900 -
+                      i * 100}{background: hsl(${h},${s}%,${l}%);}`
+                )
+                .join("\n")
+            )
+            .join("\n");
+        });
+      }
+
+      function createColorControls() {
+        colorControls.innerHTML = colorScheme
+          .map(
+            ({ name, hex, lMin, lMax }, i) => `
+                    <div>
+                        <label>
+                            ${name[0].toUpperCase()}${name.slice(1)}
+                            <input type="color" value="${hex}" onchange="changeColor(${i}, this.value);">
+                        </label>
+                        <label>
+                            Min lightness
+                            <input type="range" value="${lMin}" oninput="changeMinLightness(${i}, parseInt(this.value, 10));">
+                        </label>
+                        <label>
+                            Max lightness
+                            <input type="range" value="${lMax}" oninput="changeMaxLightness(${i}, parseInt(this.value, 10));">
+                        </label>
+                    </div>
+                `
+          )
+          .join("\n");
+      }
+
+      function createGrid() {
+        colorScheme.forEach(({ name }) => {
+          for (let shade = 900; shade >= 100; shade -= 100) {
+            const colorBox = document.createElement("div");
+
+            colorBox.setAttribute("class", `${name}${shade}`);
+            grid.appendChild(colorBox);
+          }
+        });
+      }
+
+      function hexToHsl(hex) {
+        const [, r, g, b] = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
+          .exec(hex)
+          .map(x => parseInt(x, 16) / 255);
+        const max = Math.max(r, g, b);
+        const min = Math.min(r, g, b);
+        const l = (max + min) / 2;
+
+        if (max === min) {
+          return {
+            h: 0,
+            s: 0,
+            l: Math.round(100 * l)
+          };
+        } else {
+          let h =
+            (r === max
+              ? (g - b) / (max - min) + (g < b ? 6 : 0)
+              : g === max
+              ? (b - r) / (max - min) + 2
+              : (r - g) / (max - min) + 4) / 6;
+
+          let s =
+            l > 0.5
+              ? (max - min) / (2 - (max + min))
+              : (max - min) / (max + min);
+
+          return {
+            h: Math.round(360 * h),
+            s: Math.round(100 * s),
+            l: Math.round(100 * l)
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

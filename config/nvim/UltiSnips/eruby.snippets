@@ -1,0 +1,121 @@
+################################################################################
+# Embedded ruby snippets
+################################################################################
+
+extends html
+
+snippet cache "russian doll caching" w
+<% cache ${0} do %>
+<% end %>
+endsnippet
+
+snippet cfor
+<% content_for :${1} do %>
+	${0}
+<% end %>
+endsnippet
+
+snippet pp "execute ruby" w
+<% ${0} %>
+endsnippet
+
+snippet pe "insert ruby" w
+<%= ${0} %>
+endsnippet
+
+snippet = "insert ruby" w
+<%= ${0} %>
+endsnippet
+
+snippet else "else" w
+<% else %>
+endsnippet
+
+snippet end "end" w
+<% end %>
+endsnippet
+
+snippet each "each block" w
+<% ${0}.each do || %>
+<% end %>
+endsnippet
+
+snippet ff "form_for" w
+<%= form_for @${1:model} do |f| %>
+	<%= f.label :${2:attribute} %>:
+	<%= f.text_field :${0:$2} %>
+	<br />
+
+	<%= f.submit %>
+<% end %>
+endsnippet
+
+snippet rnd "render" w
+<%= render '${1}' %>
+endsnippet
+
+snippet lt "link_to" w
+<%= link_to ${1}, ${0} %>
+endsnippet
+
+snippet bt "button_to" w
+<%= button_to ${1}, ${0} %>
+endsnippet
+
+snippet flash "flash messages" w
+<div class="flash">
+	<% if notice %>
+	<p class="notice"><%= notice %></p>
+	<% elsif alert %>
+	<p class="alert"><%= alert %></p>
+	<% end %>
+</div>
+endsnippet
+
+snippet if "if" w
+<% if ${0} %>
+<% end %>
+endsnippet
+
+snippet ife "if else" w
+<% if ${0} %>
+<% else %>
+<% end %>
+endsnippet
+
+snippet md "method delete" w
+method: :delete
+endsnippet
+
+snippet mdc "method delete (confirm)" w
+method: :delete, data: { confirm: "${1}"}
+endsnippet
+
+snippet cons "console" w
+<%= console %>
+endsnippet
+
+snippet roof
+<%= raise "roof" %>
+endsnippet
+
+snippet rxc "react component" w
+<%= react_component '${0}' %>
+endsnippet
+
+################################################################################
+# simple_form
+# https://github.com/plataformatec/simple_form
+################################################################################
+
+snippet sff "simple_form_for" w
+<%= simple_form_for @${1:model} do |f| %>
+	<%= f.input :${2:field} %>
+
+	<%= f.button :submit %>
+<% end %>
+endsnippet
+
+snippet sfradio
+<%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>
+endsnippet

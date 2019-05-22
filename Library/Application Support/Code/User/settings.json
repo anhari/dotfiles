@@ -1,0 +1,570 @@
+{
+  "editor.autoClosingBrackets": "always",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.cursorBlinking": "solid",
+  "editor.fontWeight": "100",
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": false,
+  "editor.rulers": [80],
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //  Find scopes via command: > Developer: Inspect TM Scopes data
+          //following will be in italic
+          "comment",
+          "emphasis",
+          "entity.name.method.js",
+          "entity.name.class.js",
+          "entity.name.tag.doctype",
+          "entity.other.attribute-name",
+          "entity.other.attribute-name.tag.jade",
+          "entity.other.attribute-name.tag.pug",
+          "keyword.control",
+          "keyword.operator.comparison",
+          "keyword.control.flow.js",
+          "keyword.control.flow.ts",
+          "keyword.control.flow.tsx",
+          "keyword.control.ruby",
+          "keyword.control.module.ruby",
+          "keyword.control.class.ruby",
+          "keyword.control.def.ruby",
+          "keyword.control.loop.js",
+          "keyword.control.loop.ts",
+          "keyword.control.import.js",
+          "keyword.control.import.ts",
+          "keyword.control.import.tsx",
+          "keyword.control.from.js",
+          "keyword.control.from.ts",
+          "keyword.control.from.tsx",
+          "keyword.operator.expression.delete",
+          "keyword.operator.new",
+          "keyword.operator.expression",
+          "keyword.operator.cast",
+          "keyword.operator.relational",
+          "keyword.operator.sizeof",
+          "keyword.operator.logical.python",
+          "italic",
+          "markup.italic",
+          "markup.quote",
+          "markup.changed",
+          "markup.italic.markdown",
+          "markup.quote.markdown",
+          "markup.deleted.diff",
+          "markup.inserted.diff",
+          "meta.delimiter.period",
+          "meta.diff.header.git",
+          "meta.diff.header.from-file",
+          "meta.diff.header.to-file",
+          "meta.tag.sgml.doctype",
+          "meta.class meta.method.declaration meta.var.expr storage.type.js",
+          "meta.decorator punctuation.decorator",
+          "meta.selector",
+          "punctuation.accessor",
+          "punctuation.definition.comment",
+          "punctuation.definition.template-expression.begin",
+          "punctuation.definition.template-expression.end",
+          "quote",
+          "support.class.component.js",
+          "support.type.property-name.json",
+          "source.js constant.other.object.key.js string.unquoted.label.js",
+          "storage",
+          "storage.type",
+          "storage.modifier",
+          "storage.type.property.js",
+          "storage.type.property.ts",
+          "storage.type.property.tsx",
+          "tag.decorator.js entity.name.tag.js",
+          "tag.decorator.js",
+          "text.html.basic entity.other.attribute-name.html",
+          "text.html.basic entity.other.attribute-name",
+          "variable.language",
+          "variable.parameter.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "html.erb": "html",
+    "javascript": "javascriptreact",
+    "HTML (Eex)": "html"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "files.autoGuessEncoding": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": false,
+  "ruby.specFocusTerminal": false,
+  "ruby.specSaveFile": true,
+  "ruby.codeCompletion": "rcodetools",
+  "search.useIgnoreFiles": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontSize": 10,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.leader": ",",
+  "vim.useSystemClipboard": false,
+  "vim.visualstar": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+    },
+    {
+      "before": ["z", "g"],
+      "commands": ["cSpell.addWordToUserDictionary"]
+    },
+    // Scroll the viewport faster
+    {
+      "before": ["ctrl+e"],
+      "after": ["2", "5", "ctrl+e"]
+    },
+    {
+      "before": ["ctrl+y"],
+      "after": ["2", "5", "ctrl+y"]
+    },
+    // Make j&k work on wrapped lines as expected
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "extension.runSpecLine"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        "extension.runLastSpec"
+      ]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        "extension.runFileSpecs"
+      ]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle exec rspec\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "v", "v"],
+      "commands": [
+        {
+          "command": "expandLineSelection"
+        },
+        {
+          "command": "workbench.action.terminal.runSelectedText"
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "c"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle exec rails console\r"
+          }
+        },
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "g"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle exec rails generate "
+          }
+        },
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": ["<leader>", "m", "i"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "migrate\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "m", "b"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle exec rake db:rollback\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle exec rake routes | grep "
+          }
+        },
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "g diff\r"
+          }
+        },
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "s"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "g status\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "l"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "g log\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "g", "b"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "g browse\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "b", "i"],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\r"
+          }
+        },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bundle install\r"
+          }
+        }
+      ]
+    },
+    {
+      "before": ["]", "q"],
+      "commands": ["search.action.focusNextSearchResult"]
+    },
+    {
+      "before": ["[", "q"],
+      "commands": ["search.action.focusPreviousSearchResult"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["<leader>", "f", "t"],
+      "after": [],
+      "command": "workbench.action.tasks.runTask",
+      "args": "mocha:spec"
+    }
+  ],
+  "cSpell.userWords": [
+    "Checkins",
+    "Havanese",
+    "Topbar",
+    "alignitems",
+    "allowfullscreen",
+    "amaranta",
+    "anhari",
+    "antialiased",
+    "barebones",
+    "bellbird",
+    "blueprintjs",
+    "bools",
+    "browserslist",
+    "bugsnag",
+    "camelize",
+    "card",
+    "checkboxes",
+    "checkin",
+    "cockatiel",
+    "commentable",
+    "datetime",
+    "debounce",
+    "debounced",
+    "denormalize",
+    "denormalized",
+    "devtool",
+    "devtools",
+    "dompurify",
+    "downvotable",
+    "downvote",
+    "downvotes",
+    "dropzone",
+    "dwarfcode",
+    "evenodd",
+    "extension",
+    "favoritable",
+    "favorited",
+    "fetch",
+    "fontawesome",
+    "fortawesome",
+    "frameborder",
+    "frontmatter",
+    "fsevents",
+    "fulltext",
+    "fulltexts",
+    "gatsbyjs",
+    "glassdoor",
+    "hstore",
+    "infinite",
+    "jordon",
+    "justifycontent",
+    "keyframes",
+    "linebreak",
+    "linkify",
+    "metadatum",
+    "mounter",
+    "noopener",
+    "noreferrer",
+    "normalizr",
+    "onboarding",
+    "onboardings",
+    "petfinder",
+    "petrie",
+    "pinnable",
+    "postgre",
+    "postgres",
+    "postgresql",
+    "precommit",
+    "react",
+    "rebeccapurple",
+    "redux",
+    "reonboarding",
+    "reselect",
+    "route",
+    "rsvp",
+    "rsvped",
+    "scroller",
+    "semibold",
+    "shopify",
+    "snakify",
+    "sql",
+    "style",
+    "subreducers",
+    "svg",
+    "svgs",
+    "textalign",
+    "todos",
+    "turbolinks",
+    "type",
+    "types",
+    "unarchive",
+    "unarchived",
+    "unmount",
+    "unnested",
+    "upvote",
+    "upvoted",
+    "upvotes",
+    "url",
+    "wysihtml",
+    "xmlhttprequest",
+    "xmlns",
+    "xsmall",
+    "yolo"
+  ],
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "zenMode.restore": true,
+  "[ruby]": {
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "vim.disableExtension": false,
+  "workbench.colorCustomizations": {
+    "[Palenight Operator]": {
+      "statusBar.background": "#0A0E14",
+      "statusBar.noFolderBackground": "#0A0E14",
+      "statusBar.debuggingBackground": "#0A0E14",
+      "sideBar.background": "#242839",
+      "activityBar.background": "#242839",
+      "panel.background": "#242839",
+      "terminal.background": "#242839",
+      "editorRuler.foreground": "#212432"
+    },
+    "[Monokai Pro (Filter Octagon)]": {
+      "editorCursor.foreground": "#ffffff6e",
+      "terminalCursor.foreground": "#ffffff6e"
+    }
+  },
+  "explorer.confirmDelete": false,
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "gitHistory.hideCommitViewExplorer": true,
+  "git.fetchOnPull": true,
+  "git.showPushSuccessNotification": true,
+  "git.allowForcePush": true,
+  "git.enableSmartCommit": true,
+  "git.rebaseWhenSync": true,
+  "git.inputValidationSubjectLength": 50,
+  "material-icon-theme.folders.theme": "classic",
+  "editor.lineNumbers": "relative",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.startupEditor": "newUntitledFile",
+  "breadcrumbs.enabled": true
+}

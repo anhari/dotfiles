@@ -1,0 +1,15 @@
+#!/bin/sh
+# Usage: git-interactive-rebase
+# Fuzzy find git commit SHA and perform interactive rebase to that point
+
+set -e
+
+target_commit=$(
+  git log --oneline --decorate --all --color=always | \
+  fzf-tmux --ansi --no-sort --reverse --tiebreak=index | \
+  cut -d ' ' -f 1
+)
+
+echo $target_commit
+
+git rebase -i $target_commit

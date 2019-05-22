@@ -1,0 +1,50 @@
+#!/bin/sh
+
+set -e
+
+shopt -s dotglob
+
+if [ -e "$HOME"/.vim/autoload/plug.vim ]; then
+  vim -E -s +PlugUpgrade +qa
+else
+  curl -fLo "$HOME"/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+vim -u "$HOME"/.vimrc.bundles +PlugUpdate +PlugClean! +qa
+
+reset -Q
+
+# detect old OS X broken /etc/zshenv and suggest rename
+if grep -qw path_helper /etc/zshenv 2>/dev/null; then
+  dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+
+  cat <<MSG >&2
+Warning: \`/etc/zshenv' configuration file on your system may cause unexpected
+PATH changes on subsequent invocations of the zsh shell. The solution is to
+rename the file to \`zprofile':
+  sudo mv /etc/{zshenv,zprofile}
+
+(called from ${dir}/post-up:${LINENO})
+
+MSG
+fi
+
+for dir in "$HOME"/.vim/*; do
+  if [ -d "$dir" ]; then
+    directory_name=$(basename "$dir")
+
+    if [ ! -e "$HOME"/.config/nvim/"$directory_name" ]; then
+      ln -sf "$dir" "$HOME"/.config/nvim/"$directory_name"
+    fi
+  fi
+done
+
+if [ ! -d "$HOME"/.fzf ]; then
+  echo "Installing FZF"
+  git clone --depth 1 https://github.com/junegunn/fzf.git "$HOME"/.fzf
+  "$HOME"/.fzf/install
+fi
+
+"$HOME"/dotfiles-local/bin/install_code_extensions
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false

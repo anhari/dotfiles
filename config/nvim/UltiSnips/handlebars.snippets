@@ -1,0 +1,86 @@
+################################################################################
+# Handlebars snippets
+################################################################################
+
+snippet act
+{{action '${0}'}}
+endsnippet
+
+snippet each
+{{#each ${0}}}
+{{/each}}
+endsnippet
+
+snippet ee
+{{#each ${0}}}
+{{else}}
+{{/each}}
+endsnippet
+
+snippet eachin
+{{#each-in ${0}}}
+{{/each-in}}
+endsnippet
+
+snippet lt
+{{link-to ${0}}}
+endsnippet
+
+snippet ltb
+{{#link-to '${0}'}}
+{{/link-to}}
+endsnippet
+
+snippet if
+{{if ${0}}}
+endsnippet
+
+snippet ifb
+{{#if ${0}}}
+{{/if}}
+endsnippet
+
+snippet unl
+{{unless ${0}}}
+endsnippet
+
+snippet unlb
+{{#unless ${0}}}
+{{/unless}}
+endsnippet
+
+snippet else
+{{else}}
+	${0}
+endsnippet
+
+snippet comp
+{{#${1}}}
+
+{{/${0:$1}}}
+endsnippet
+
+snippet hbb
+<button {{action '${0}'}}></button>
+endsnippet
+
+snippet hbf
+<form {{action "save" on="submit"}}>
+	${0}
+
+	<input type="submit" value="Save">
+	<button {{action "cancel"}}>Cancel</button>
+</form>
+endsnippet
+
+snippet hbi
+{{input value=${0}}}
+endsnippet
+
+snippet hbcbox
+{{input type="checkbox" name=${0}}}
+endsnippet
+
+snippet out
+{{outlet}}
+endsnippet

@@ -29,3 +29,16 @@ Configurations for the following:
 - shell
 - iTerm
 - alfred
+- postgres
+- rails
+- vimperrator 
+- ctags
+- ember
+- eslint
+- pry
+- rcm
+- rspec
+- zsh
+- bundler
+- asdf
+- irb

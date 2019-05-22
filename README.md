@@ -22,23 +22,23 @@ From there on out you can use `rcup` to create
 
 Configurations for the following:
 
-- git
-- vim
-- tmux
-- vscode
-- shell
-- iTerm
 - alfred
-- postgres
-- rails
-- vimperrator 
+- asdf
+- bundler
 - ctags
 - ember
 - eslint
+- git
+- iTerm
+- irb
+- postgres
 - pry
+- rails
 - rcm
 - rspec
+- shell
+- tmux
+- vim
+- vimperrator
+- vscode
 - zsh
-- bundler
-- asdf
-- irb

@@ -11,4 +11,4 @@ nnoremap <leader>rp :!replace<space>
 nnoremap <leader>uu gUU
 
 " Open dotfiles
-nnoremap <leader>df :VtrSendCommandToRunner! cd ~/dotfiles-local<cr>
+nnoremap <leader>df :VtrSendCommandToRunner! cd ~/dotfiles<cr>

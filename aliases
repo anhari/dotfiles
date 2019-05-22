@@ -24,7 +24,6 @@ alias ink="cd ~/Writings"
 alias italics-plz='tic -o ~/.terminfo ~/.xterm-256color.terminfo.txt && tic -x ~/.tmux.terminfo'
 alias kill-pry-remote='kill -9 $(lsof -ti tcp:9876)'
 alias ll="ls -al"
-alias ll="ls -lsh"
 alias ln="ln -v"
 alias lsgpg="gpg --list-secret-keys --keyid-format LONG"
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"

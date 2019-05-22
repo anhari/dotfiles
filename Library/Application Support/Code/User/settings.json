@@ -110,6 +110,7 @@
   "files.trimTrailingWhitespace": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "prettier.requireConfig": false,
+  "ruby.intellisense": "rubyLocate",
   "ruby.specFocusTerminal": false,
   "ruby.specSaveFile": true,
   "ruby.codeCompletion": "rcodetools",

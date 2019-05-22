@@ -12,3 +12,9 @@ nnoremap <leader>uu gUU
 
 " Open dotfiles
 nnoremap <leader>df :VtrSendCommandToRunner! cd ~/dotfiles<cr>
+
+" Switch between the last two files
+nnoremap <Leader><Leader> <C-^>
+
+" Run commands that require an interactive shell
+nnoremap <Leader>r :RunInInteractiveShell<Space>

@@ -2,9 +2,6 @@
 " Lean & mean status/tabline for vim that's light as air.
 " https://github.com/vim-airline/vim-airline
 
-" Milliseconds to wait for a key entry to complete
-set ttimeoutlen=50
-
 " Hide # of changed hunks
 let g:airline#extensions#hunks#enabled = 0
 

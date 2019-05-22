@@ -12,7 +12,7 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
 Install dotfiles:
 
-    git clone git://github.com/thoughtbot/dotfiles.git
+    git clone git://github.com/anhari/dotfiles.git
     env RCRC=$HOME/dotfiles/rcrc rcup
 
 From there on out you can use `rcup` to create

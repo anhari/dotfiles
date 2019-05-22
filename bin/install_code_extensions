@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo "Installing VSCode extensions..."
-cat "$HOME"/dotfiles-local/code_extensions | xargs -L 1 code --install-extension
+cat "$HOME"/dotfiles/code_extensions | xargs -L 1 code --install-extension

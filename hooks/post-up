@@ -45,6 +45,6 @@ if [ ! -d "$HOME"/.fzf ]; then
   "$HOME"/.fzf/install
 fi
 
-"$HOME"/dotfiles-local/bin/install_code_extensions
+"$HOME"/dotfiles/bin/install_code_extensions
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false

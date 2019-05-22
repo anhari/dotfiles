@@ -37,7 +37,6 @@ _load_settings "$HOME/.zsh/configs"
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-export EDITOR="/usr/local/bin/code"
 eval "$(hub alias -s)"
 CASE_SENSITIVE="false"
 export NODEJS_CHECK_SIGNATURES=no

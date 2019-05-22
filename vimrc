@@ -171,11 +171,6 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
-
 " anhari's VIM file.
 " first created on Aug 6 2015
 " most customizations can be found in vim/plugins

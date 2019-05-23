@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Installs to ~/.terminfo
+
+echo "Installing italics-capable terminfo files..."
+
+if ! [ -f ~/.terminfo/78/xterm-256color ]; then
+  mkdir -p ~/.terminfo
+  cp -r $HOME/dotfiles/terminfo/78 ~/.terminfo/
+fi

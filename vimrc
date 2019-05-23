@@ -75,3 +75,7 @@ let g:is_posix = 1
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
+
+" Enforce italics
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"

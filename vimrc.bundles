@@ -72,8 +72,8 @@ Plug 'tpope/vim-db'
 Plug 'slashmili/alchemist.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'hzchirs/vim-material'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'Shougo/echodoc.vim'
 
 if &compatible
   set nocompatible

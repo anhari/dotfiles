@@ -9,6 +9,6 @@ let g:gruvbox_italic = 1
 let g:gruvbox_bold = 1
 
 " Set contrast level (defaults to medium)
-let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'medium'
 
 let g:gruvbox_undercurl = 1

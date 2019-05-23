@@ -9,6 +9,15 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 
+nnoremap <silent> L :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
 " Jump to definition
 nnoremap <silent> <leader>dd <Plug>(coc-definition)
 " See references
@@ -30,8 +39,8 @@ let g:coc_global_extensions = [
     \ ]
 
 inoremap <silent><expr> <c-space> coc#refresh()
-nmap <silent> [c <Plug>(coc-diagnostic-prev)
-nmap <silent> ]c <Plug>(coc-diagnostic-next)
+nmap <silent> [r <Plug>(coc-diagnostic-prev)
+nmap <silent> ]r <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)

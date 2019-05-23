@@ -12,8 +12,3 @@ let g:gruvbox_bold = 1
 let g:gruvbox_contrast_dark = 'hard'
 
 let g:gruvbox_undercurl = 1
-
-" colorscheme overrides
-augroup gruvbox-overrides
-  autocmd!
-augroup END

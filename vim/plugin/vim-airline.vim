@@ -12,7 +12,8 @@ let g:airline#extensions#hunks#enabled = 0
 let g:airline_section_y=''
 
 " Theme
-let g:airline_theme = 'base16'
+" let g:airline_theme = 'base16'
+let g:airline_theme = 'gruvbox'
 
 " Only show the tail, e.g. a branch 'feature/foo' becomes 'foo'
 let g:airline#extensions#branch#format = 1

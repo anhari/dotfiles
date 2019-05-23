@@ -6,7 +6,6 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-
 set encoding=utf-8
 
 " Leader
@@ -34,7 +33,9 @@ set backspace=indent,eol,start    " Backspace deletes like usual
 set background=dark               " Use a dark background
 syntax enable                     " enable syntax highlighting
 set termguicolors                 " set termguicolors
-colorscheme base16-monokai        " set color scheme
+
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 " Numbers
 set number

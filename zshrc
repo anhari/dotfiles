@@ -68,9 +68,6 @@ fi
 }
 
 # Prompt
-# precmd () { PS1="%{%F{4}%}%~%{%F{010}%}$(git_prompt_info) %{%f%}% %% "; }
-
-# Tomorrow Night Prompt
 precmd () { PS1="%{%F{4}%}%~%{%F{002}%}$(git_prompt_info) %{%f%}% %% "; }
 
 # set gruvbox colors
@@ -116,10 +113,22 @@ zle -N fuzzy-git-branches _fuzzy_git_branches
 bindkey '^g^b' fuzzy-git-branches
 
 # Git files
+_fuzzy_git_shalector() {
+  commit=$(
+  git log --color=always --oneline --decorate --all | \
+    fzf-tmux --ansi --reverse --no-sort
+  )
+  zle -U "$(echo $commit | cut -d ' ' -f 1)"
+  zle -M "$commit"
+}
+zle -N fuzzy-git-shalector _fuzzy_git_shalector
+bindkey '^g^g' fuzzy-git-shalector
+
+# Non-tmux version (VSCode)
 # _fuzzy_git_shalector() {
 #   commit=$(
 #   git log --color=always --oneline --decorate --all | \
-#     fzf-tmux --ansi --reverse --no-sort
+#     fzf --ansi --reverse --no-sort
 #   )
 #   zle -U "$(echo $commit | cut -d ' ' -f 1)"
 #   zle -M "$commit"
@@ -127,15 +136,4 @@ bindkey '^g^b' fuzzy-git-branches
 # zle -N fuzzy-git-shalector _fuzzy_git_shalector
 # bindkey '^g^g' fuzzy-git-shalector
 
-# Non-tmux version (VSCode)
-_fuzzy_git_shalector() {
-  commit=$(
-  git log --color=always --oneline --decorate --all | \
-    fzf --ansi --reverse --no-sort
-  )
-  zle -U "$(echo $commit | cut -d ' ' -f 1)"
-  zle -M "$commit"
-}
-zle -N fuzzy-git-shalector _fuzzy_git_shalector
-bindkey '^g^g' fuzzy-git-shalector
 export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig

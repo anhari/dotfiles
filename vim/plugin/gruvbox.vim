@@ -39,6 +39,10 @@ augroup gruvbox-overrides
 
   " JSON
   autocmd ColorScheme gruvbox highlight jsonKeyword cterm=italic gui=italic ctermfg=142 guifg=#b8bb26
+
+  "JavaScript
+  autocmd ColorScheme gruvbox highlight jsFunction cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
+  autocmd ColorScheme gruvbox highlight jsStorageClass cterm=italic gui=italic ctermfg=208 guifg=#fe8019
 augroup END
 
 colorscheme gruvbox

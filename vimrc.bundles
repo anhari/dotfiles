@@ -74,6 +74,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'Shougo/echodoc.vim'
+Plug 'rhysd/devdocs.vim'
 
 if &compatible
   set nocompatible

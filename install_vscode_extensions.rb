@@ -2,7 +2,7 @@ code_extensions = `cat "$HOME"/dotfiles/code_extensions`.lines.sort
 installed_extensions = `code --list-extensions`.lines.sort
 uninstalled_extensions = code_extensions - installed_extensions
 
-print "Checking for uninstalled VSCode extensions..."
+print 'Checking for uninstalled VSCode extensions...'
 
 if uninstalled_extensions.empty?
   print "all good!\r\n"

@@ -1,8 +1,10 @@
 #!/bin/sh
 
-set -e
+touch "$HOME"/.psqlrc.local
 
-shopt -s dotglob
+ruby $HOME/dotfiles/install_vscode_extensions.rb
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 
 if [ -e "$HOME"/.vim/autoload/plug.vim ]; then
   vim -E -s +PlugUpgrade +qa
@@ -44,7 +46,3 @@ if [ ! -d "$HOME"/.fzf ]; then
   git clone --depth 1 https://github.com/junegunn/fzf.git "$HOME"/.fzf
   "$HOME"/.fzf/install
 fi
-
-"$HOME"/dotfiles/bin/install_code_extensions
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false

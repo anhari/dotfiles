@@ -6,7 +6,7 @@
 let g:gruvbox_bold = 1
 
 " Set contrast level (defaults to medium)
-let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'medium'
 
 " Enable squigglies
 let g:gruvbox_undercurl = 1
@@ -31,6 +31,9 @@ augroup gruvbox-overrides
 
   " Ruby
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
+  autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
+  autocmd ColorScheme gruvbox highlight rubyTestAction ctermfg=229 guifg=#fbf1c7
+  autocmd ColorScheme gruvbox highlight rubyAssertion ctermfg=229 guifg=#fbf1c7
 
   " TypeScript
   autocmd ColorScheme gruvbox highlight typescriptStorageClass cterm=italic gui=italic ctermfg=208 guifg=#fe8019

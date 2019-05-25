@@ -22,22 +22,20 @@ From there on out you can use `rcup` to create
 
 Configurations for the following:
 
-- alfred
-- asdf
-- bundler
-- ctags
-- ember
-- eslint
-- git
-- iTerm
-- irb
-- neovim
-- postgres
-- pry
-- rails
-- rcm
-- rspec
-- shell
-- tmux
-- vscode
-- zsh
+- [asdf](https://github.com/asdf-vm/asdf)
+- [bundler](https://bundler.io/)
+- [ember](https://emberjs.com/)
+- [eslint](https://eslint.org/)
+- [exuberant ctags](http://ctags.sourceforge.net/)
+- [git](https://git-scm.com/)
+- [iTerm](https://www.iterm2.com/)
+- [irb](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell)
+- [neovim](https://neovim.io/)
+- [postgres](https://www.postgresql.org/)
+- [pry](http://pryrepl.org/)
+- [rails](https://rubyonrails.org/)
+- [rcm](http://thoughtbot.github.io/rcm/rcm.7.html)
+- [rspec](https://rspec.info/)
+- [tmux](https://github.com/tmux/tmux)
+- [vscode](https://code.visualstudio.com/)
+- [zsh](https://www.zsh.org/)

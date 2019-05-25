@@ -60,7 +60,6 @@ alias tle='vim .tmuxinator.yml'
 alias tls='tmux list-sessions'
 alias tree='tree -C'
 alias tsl='tmuxinator stop local'
-alias undoplz='git add .; git stash; git stash drop'
 alias upgrade-postgres-db='brew postgresql-upgrade-database'
 alias v="$VISUAL"
 alias wat='asdf current'

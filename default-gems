@@ -11,6 +11,7 @@ neovim
 powder
 pry
 rcodetools
+rouge
 rubocop
 ruby-debug-ide
 rufo

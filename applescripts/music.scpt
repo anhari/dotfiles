@@ -28,7 +28,7 @@ else if itunes_state is equal to "playing" then
     return loved_status & "♫ " & track_name & " - #[bold]" & artist_name & "#[nobold]"
   end tell
 else
-  return "Nothing playing :("
+  return ""
 end if
 
 on is_app_running(app_name)

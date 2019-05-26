@@ -68,7 +68,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/fountain.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'tpope/vim-db'
+Plug 'tpope/vim-dadbod'
 Plug 'slashmili/alchemist.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}

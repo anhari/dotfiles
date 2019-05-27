@@ -3,7 +3,7 @@
 " https://github.com/tpope/vim-rails
 
 nnoremap <leader>db :Tschema<cr>
-nnoremap <leader>gm :Egems<cr>
+nnoremap <leader>eg :Egems<cr>
 nnoremap <leader>mg :Emigration<cr>
 
 let g:rails_projections = {

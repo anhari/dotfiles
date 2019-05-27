@@ -34,6 +34,7 @@ augroup gruvbox-overrides
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
   autocmd ColorScheme gruvbox highlight rubyTestAction ctermfg=229 guifg=#fbf1c7
   autocmd ColorScheme gruvbox highlight rubyAssertion ctermfg=229 guifg=#fbf1c7
+  autocmd ColorScheme gruvbox highlight rubyResponse ctermfg=229 guifg=#fbf1c7
 
   " TypeScript
   autocmd ColorScheme gruvbox highlight typescriptStorageClass cterm=italic gui=italic ctermfg=208 guifg=#fe8019

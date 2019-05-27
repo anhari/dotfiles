@@ -72,6 +72,7 @@ Plug 'Shougo/echodoc.vim'
 Plug 'rhysd/devdocs.vim'
 Plug 'amadeus/vim-xml'
 Plug 'chemzqm/vim-jsx-improve'
+Plug 'rhysd/git-messenger.vim'
 
 if &compatible
   set nocompatible

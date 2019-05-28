@@ -126,3 +126,7 @@ nullable
 metadatum
 onboarding
 inbox
+Gemfile
+repo
+webdrivers
+chromedriver

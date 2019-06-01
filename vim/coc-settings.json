@@ -1,16 +1,19 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    "markdown",
-    "json",
-    "typescript.tsx",
-    "typescript",
-    "javascript",
-    "javascriptreact",
-    "typescriptreact",
-    "javascript.jsx",
+    "elixir",
+    "ex",
+    "exs",
     "html",
-    "scss"
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "scss",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact"
   ],
   "solargraph.enable": true,
   "solargraph.diagnostics": true,

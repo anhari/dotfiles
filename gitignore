@@ -32,3 +32,4 @@ downloaded_settings.py
 vendor/bundle/
 ES_CAT_API.es
 ES_CLUSTER_API.es
+.elixir_ls/

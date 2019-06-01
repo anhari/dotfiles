@@ -3,6 +3,7 @@ tap 'thoughtbot/formulae'
 cask "1password"
 cask "alfred"
 cask "bartender"
+cask "exa"
 cask "firefox"
 cask "focus"
 cask "font-sourcecodepro-nerd-font-mono"

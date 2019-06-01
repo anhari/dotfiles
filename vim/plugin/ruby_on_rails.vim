@@ -10,6 +10,6 @@ nnoremap <leader>rd :VtrSendCommandToRunner! bundle exec rails dbconsole<cr>
 nnoremap <leader>rf :VtrSendCommandToRunner! bundle exec rake routes \| fzf<cr>
 nnoremap <leader>rg :VtrSendCommandToRunner! bundle exec rails generate<space>
 nnoremap <leader>rk :VtrSendCommandToRunner! bundle exec rake<space>
-nnoremap <leader>rr :VtrSendCommandToRunner! bundle exec rake routes \| grep<space>
+nnoremap <leader>rr :VtrSendCommandToRunner! bundle exec rake routes \| grep ""<left>
 nnoremap <leader>rs :VtrSendCommandToRunner! bin/rails restart<cr>
 nnoremap <leader>tc :VtrSendCommandToRunner! bin/rails tmp:clear<cr>

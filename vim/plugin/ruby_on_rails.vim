@@ -12,3 +12,4 @@ nnoremap <leader>rg :VtrSendCommandToRunner! bundle exec rails generate<space>
 nnoremap <leader>rk :VtrSendCommandToRunner! bundle exec rake<space>
 nnoremap <leader>rr :VtrSendCommandToRunner! bundle exec rake routes \| grep<space>
 nnoremap <leader>rs :VtrSendCommandToRunner! bin/rails restart<cr>
+nnoremap <leader>tc :VtrSendCommandToRunner! bin/rails tmp:clear<cr>

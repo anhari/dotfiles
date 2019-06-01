@@ -73,6 +73,7 @@ Plug 'rhysd/devdocs.vim'
 Plug 'amadeus/vim-xml'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'rhysd/git-messenger.vim'
+Plug 'mhinz/vim-grepper'
 
 if &compatible
   set nocompatible

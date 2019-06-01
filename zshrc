@@ -141,6 +141,7 @@ export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
 # Prompt
 # precmd () { PS1="%{%F{4}%}%~%{%F{002}%}$(git_prompt_info) %{%f%}% %% "; }
 
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit

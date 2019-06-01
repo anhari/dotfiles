@@ -38,6 +38,7 @@ alias oc="code -r ."
 alias p="ps aux | grep"
 alias path='echo $PATH | tr -s ":" "\n"'
 alias phxmigrate="mix ecto.migrate && mix ecto.rollback && mix ecto.migrate"
+alias phx-t="mix help | grep -i phx"
 alias pippin='pip install -r ~/.requirements.txt'
 alias plog="tail -f ~/Library/Logs/puma-dev.log"
 alias pomo='open focus://focus?mintues=25'

@@ -9,11 +9,6 @@ nnoremap 0 ^
 nnoremap K :GrepperRg "\b<C-R><C-W>\b"<cr>:cw<cr>
 " Bind control-C to copy to clipboard
 vnoremap <C-c> "*y"
-" Reinstate arrow keys.  You can come on my lawn.
-nnoremap <left> <left>
-nnoremap <down> <down>
-nnoremap <up> <up>
-nnoremap <right> <right>
 " Open tab
 nnoremap <C-t> <esc>:tabnew<cr>
 " Navigate to the beginning of a command

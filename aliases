@@ -21,6 +21,7 @@ alias e="$EDITOR"
 alias fetch-rubies='brew update && brew upgrade rbenv ruby-build'
 alias fix-python2-neovim='~/.asdf/installs/python/2.7.14/bin/pip2 install --upgrade --force-reinstall --no-cache-dir neovim'
 alias fix-python3-neovim='~/.asdf/installs/python/3.6.3/bin/pip3.6 install --upgrade --force-reinstall --no-cache-dir neovim'
+alias htop="htop --sort-key=PERCENT_CPU"
 alias ink="cd ~/Writings"
 alias italics-plz='tic -o ~/.terminfo ~/.xterm-256color.terminfo.txt && tic -x ~/.tmux.terminfo'
 alias kill-pry-remote='kill -9 $(lsof -ti tcp:9876)'

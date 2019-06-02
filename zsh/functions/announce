@@ -1,0 +1,4 @@
+# Pause music, announce process is done, resume music
+announce() {
+  zsh -ic "$*"; spotify pause && say "Done!" && spotify play
+}

@@ -5,10 +5,8 @@ nnoremap j gj
 inoremap jk <esc>
 " Remap 0 to go to the first non-blank character
 nnoremap 0 ^
-" bind \ (backward slash) to grep shortcut
-" command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 " bind K to grep the current word under the cursor
-nnoremap K :Ag "\b<C-R><C-W>\b"<cr>:cw<cr>
+nnoremap K :GrepperRg "\b<C-R><C-W>\b"<cr>:cw<cr>
 " Bind control-C to copy to clipboard
 vnoremap <C-c> "*y"
 " Reinstate arrow keys.  You can come on my lawn.

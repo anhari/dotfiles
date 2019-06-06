@@ -111,4 +111,3 @@ call coc#config('languageserver', {
   \   'filetypes': ['elixir', 'eelixir']
   \ }
   \})
-

@@ -73,6 +73,8 @@
 [rebase]
   autosquash = true
   autostash = true
+[stash]
+  showPatch = true
 [user]
   user = anhari
   name = Michael Anhari

@@ -1,3 +1,5 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_CTRL_T_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
@@ -26,5 +28,3 @@ _fuzzy_git_shalector() {
 }
 zle -N fuzzy-git-shalector _fuzzy_git_shalector
 bindkey '^g^g' fuzzy-git-shalector
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

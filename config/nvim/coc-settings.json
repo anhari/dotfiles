@@ -33,5 +33,6 @@
   ],
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+  "diagnostic.infoSign": "•",
+  "diagnostic.signOffset": 9999999
 }

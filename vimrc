@@ -82,7 +82,7 @@ let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
 let g:elixirls = {
-  \ 'path': printf('%s/%s', stdpath('config'), 'bundle/elixir-ls'),
+  \ 'path': printf('%s/%s', $HOME, '.vim/bundle/vim-elixirls/elixir-ls'),
   \ }
 
 let g:elixirls.lsp = printf(

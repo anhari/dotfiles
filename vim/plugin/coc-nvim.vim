@@ -26,16 +26,20 @@ nnoremap <silent> <leader>dr <Plug>(coc-references)
 nnoremap <silent> <leader>dj <Plug>(coc-implementation)
 
 let g:coc_global_extensions = [
-    \ 'coc-prettier',
-    \ 'coc-eslint',
+    \ 'coc-css',
     \ 'coc-emmet',
-    \ 'coc-snippets',
+    \ 'coc-emoji',
+    \ 'coc-eslint',
     \ 'coc-html',
     \ 'coc-json',
+    \ 'coc-prettier',
+    \ 'coc-snippets',
     \ 'coc-solargraph',
+    \ 'coc-svg',
+    \ 'coc-tag',
     \ 'coc-tsserver',
-    \ 'coc-css',
-    \ 'coc-yaml'
+    \ 'coc-word',
+    \ 'coc-yaml',
     \ ]
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -47,7 +51,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-" nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>cf  <Plug>(coc-fix-current)
 
 " Remap for do codeAction of current line
 nmap <leader>ca  <Plug>(coc-codeaction)

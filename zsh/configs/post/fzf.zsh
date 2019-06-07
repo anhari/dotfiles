@@ -2,6 +2,7 @@
 
 export FZF_CTRL_T_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
+export FZF_DEFAULT_OPTS='-0 -1'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 # Git branches

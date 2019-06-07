@@ -2,6 +2,8 @@
 " fzf <3 vim
 " https://github.com/junegunn/fzf.vim
 
+let $FZF_DEFAULT_OPTS = '-0 -1'
+
 " Bind Ctrl-P to launch the fuzzy finder
 nnoremap <C-p> :Files<cr>
 

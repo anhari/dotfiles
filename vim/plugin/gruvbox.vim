@@ -4,10 +4,10 @@
 
 if (g:theme == 'gruvbox')
   let g:gruvbox_contrast_dark = 'medium' " Set contrast level
-  let g:gruvbox_bold = 1 " Enable bold in the gruvbox scheme
-  let g:gruvbox_undercurl = 1 " Enable squigglies
-  let g:gruvbox_italic = 1
-  let g:airline_theme = 'gruvbox'
+  let g:gruvbox_bold = 1                 " Enable bold
+  let g:gruvbox_undercurl = 1            " Enable squigglies
+  let g:gruvbox_italic = 1               " Enable italics
+  let g:airline_theme = 'gruvbox'        " Use airline theme
 
   augroup gruvbox-overrides
     autocmd!

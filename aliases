@@ -35,6 +35,7 @@ alias lsgpg="gpg --list-secret-keys --keyid-format LONG"
 alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
 alias mit='cd ~/Development/mit-6-3'
 alias mkdir="mkdir -p"
+alias mux="tmuxinator"
 alias myrspec="cp ~/.rspec ./"
 alias nf="cd ~/Northfurr"
 alias oc="code -r ."

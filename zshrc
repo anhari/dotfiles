@@ -51,3 +51,12 @@ export PATH="$HOME/.bin:$PATH"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Always be tmux'ing
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+ensure_tmux_is_running

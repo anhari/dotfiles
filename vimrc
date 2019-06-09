@@ -39,9 +39,6 @@ set background=dark               " Use a dark background
 syntax enable                     " enable syntax highlighting
 set termguicolors                 " set termguicolors
 
-" Pick theme
-let g:theme = 'gruvbox'
-
 " Numbers
 set number
 set numberwidth=5

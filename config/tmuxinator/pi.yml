@@ -40,6 +40,6 @@ root: ~/dwarfcode/datawarehouse
 # attach: false
 
 windows:
-  - editor: vim
+  - editor: nvim
   - server: bundle exec rails s -p 3001
   - logs: tail -f log/development.log

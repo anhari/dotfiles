@@ -60,3 +60,5 @@ ensure_tmux_is_running() {
   fi
 }
 ensure_tmux_is_running
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

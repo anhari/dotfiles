@@ -79,4 +79,4 @@ if type nvim > /dev/null 2>&1; then
   alias v='MIX_ENV=edit nvim'
 fi
 
-alias pi="cd ~/dwarfcode/prime-pursuits/datawarehouse"
+alias pi="cd ~/dwarfcode/datawarehouse"

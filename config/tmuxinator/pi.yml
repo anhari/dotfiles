@@ -17,9 +17,9 @@ root: ~/dwarfcode/datawarehouse
 # Run on project start, after the first time
 # on_project_restart: command
 # Run on project exit ( detaching from tmux session )
-# on_project_exit: command
+on_project_exit: pkill -f puma
 # Run on project stop
-# on_project_stop: command
+on_project_stop: pkill -f puma
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -41,5 +41,5 @@ root: ~/dwarfcode/datawarehouse
 
 windows:
   - editor: nvim
-  - server: bundle exec rails s -p 3001
+  - server: b && bundle exec rails s -p 3001
   - logs: tail -f log/development.log

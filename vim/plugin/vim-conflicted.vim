@@ -2,6 +2,9 @@
 " Easy git merge conflict resolution in Vim
 " https://github.com/christoomey/vim-conflicted
 
+" Instructions
+" https://thoughtbot.com/upcase/videos/git-vim-and-git#conflicted
+
 " Display the version name of each split in the vim statusbar
 set stl+=%{ConflictedVersion()}
 

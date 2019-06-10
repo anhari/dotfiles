@@ -13,7 +13,6 @@ endif
 set encoding=utf-8
 
 " Leader
-let mapleader = " "
 let g:mapleader = ','
 
 set backspace=2                   " Backspace deletes like most programs in insert mode

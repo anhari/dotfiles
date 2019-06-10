@@ -17,7 +17,7 @@
   ci = commit -v
   co = checkout
   compare = !hub compare
-  conflicted = !vim +Conflicted
+  conflicted = !nvim +Conflicted
   count = changed-file-count
   d = diff
   df = diff

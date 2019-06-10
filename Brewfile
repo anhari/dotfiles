@@ -1,6 +1,7 @@
 tap 'thoughtbot/formulae'
 
 cask "1password"
+cask "alacritty"
 cask "alfred"
 cask "anki"
 cask "bartender"

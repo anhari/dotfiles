@@ -60,6 +60,9 @@ command! -bang FZFStylesheets call fzf#run(fzf#wrap({ 'source': 'find app/assets
 command! -bang FZFTests call fzf#run(fzf#wrap({ 'source': 'find tests spec test -type f'}, <bang>0))
 command! -bang FZFViews call fzf#run(fzf#wrap({ 'source': 'find app/views app/templates lib/*_web/templates lib/*_web/views -type f'}, <bang>0))
 
+" TODO: Extract to a fzf-scratchpad plugin
+command! -bang FZFScratchPads call fzf#run(fzf#wrap({ 'source': 'find SCRATCH_PAD_* -type f'}, <bang>0))
+
 nnoremap <leader>fp :FZFComponents<cr>
 nnoremap <leader>fc :FZFControllers<cr>
 nnoremap <leader>fd :FZFDatabase<cr>
@@ -69,7 +72,7 @@ nnoremap <leader>fj :FZFJavaScript<cr>
 nnoremap <leader>fm :FZFModels<cr>
 nnoremap <leader>fr :FZFRoutes<cr>
 nnoremap <leader>fR :FZFRouters<cr>
-nnoremap <leader>fs :FZFTests<cr>
+nnoremap <leader>fs :FZFScratchPads<cr>
 nnoremap <leader>ft :FZFTests<cr>
 nnoremap <leader>fv :FZFViews<cr>
 nnoremap <leader>fy :FZFStylesheets<cr>

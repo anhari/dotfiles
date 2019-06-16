@@ -3,6 +3,10 @@
 " https://github.com/vim-airline/vim-airline
 
 " Hide # of changed hunks
+
+" Refresh airline when resourcing vimrc
+" nmap <silent> <leader>sv :so $MYVIMRC<cr>:runtime! plugin/**/*.vim<cr>:AirlineRefresh<cr>:PlugInstall<cr>q
+
 let g:airline#extensions#hunks#enabled = 0
 
 " "Hide git branch name

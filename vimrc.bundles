@@ -17,8 +17,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/tComment'
 Plug 'sheerun/vim-polyglot'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
@@ -77,6 +75,7 @@ Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 Plug 'JakeBecker/elixir-ls', { 'do': { -> g:elixirls.compile() } }
 Plug 'fenetikm/falcon'
 Plug 'ayu-theme/ayu-vim'
+Plug 'itchyny/lightline.vim'
 
 if &compatible
   set nocompatible

@@ -1,6 +1,6 @@
 " Edit and source vimrc
 nmap <silent> <leader>ev :Files ~/dotfiles<cr>
-nmap <silent> <leader>sv :so $MYVIMRC<cr>:runtime! plugin/**/*.vim<cr>:AirlineRefresh<cr>:PlugInstall<cr>q
+nmap <silent> <leader>sv :so $MYVIMRC<cr>:runtime! plugin/**/*.vim<cr>:PlugInstall<cr>q
 
 " Find git conflicts
 nnoremap <leader>rb :GrepperRg ">>>>>>>"<cr>

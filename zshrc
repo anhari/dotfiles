@@ -56,7 +56,7 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 _not_inside_tmux() { [[ -z "$TMUX" ]] }
 ensure_tmux_is_running() {
   if _not_inside_tmux; then
-    tat
+    cd ~/dwarfcode && tat
   fi
 }
 ensure_tmux_is_running

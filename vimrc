@@ -25,6 +25,7 @@ set showcmd                       " display incomplete commands
 set incsearch                     " do incremental searching
 set laststatus=2                  " Always display the status line
 set autowrite                     " Automatically :write before running commands
+set hidden                        " Don't require saving before closing a buffer
 set autoread                      " detect file changes made outside of vim
 set ignorecase                    " case insensitive search
 set smartcase                     " case sensitive search if uppercase is used

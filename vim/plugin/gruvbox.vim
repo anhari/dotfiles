@@ -2,7 +2,7 @@
 " Retro groove color scheme for Vim
 " https://github.com/morhetz/gruvbox
 
-let g:gruvbox_contrast_dark = 'medium' " Set contrast level
+let g:gruvbox_contrast_dark = 'hard'   " Set contrast level
 let g:gruvbox_bold = 1                 " Enable bold
 let g:gruvbox_undercurl = 1            " Enable squigglies
 let g:gruvbox_italic = 1               " Enable italics
@@ -28,6 +28,7 @@ augroup gruvbox-overrides
   " Ruby
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
+  autocmd ColorScheme gruvbox highlight rubyKeyword cterm=italic gui=italic ctermfg=167 guifg=#fb4934
   autocmd ColorScheme gruvbox highlight rubyTestAction ctermfg=229 guifg=#fbf1c7
   autocmd ColorScheme gruvbox highlight rubyAssertion ctermfg=229 guifg=#fbf1c7
   autocmd ColorScheme gruvbox highlight rubyResponse ctermfg=229 guifg=#fbf1c7

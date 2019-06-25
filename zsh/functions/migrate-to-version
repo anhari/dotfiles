@@ -1,0 +1,6 @@
+#! /bin/sh
+migrate-to-version() {
+  version=$(ls db/migrate | fzf)
+
+  bin/rails db:migrate VERSION=$version
+}

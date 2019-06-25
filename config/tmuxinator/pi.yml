@@ -41,5 +41,5 @@ on_project_stop: pkill -f puma
 
 windows:
   - editor: nvim +Files
-  - server: b && bundle exec rails s -p 3001
+  - server: b && yarn install && bin/rails s -p 3001
   - logs: tail -f log/development.log

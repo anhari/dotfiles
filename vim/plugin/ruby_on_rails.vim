@@ -7,6 +7,7 @@ nnoremap <leader>mb :VtrSendCommandToRunner! bundle exec rake db:rollback<cr>
 nnoremap <leader>mi :VtrSendCommandToRunner! migrate<cr>
 nnoremap <leader>rc :VtrSendCommandToRunner! bundle exec rails console<cr>
 nnoremap <leader>rd :VtrSendCommandToRunner! bundle exec rails dbconsole<cr>
+nnoremap <leader>rl :VtrSendCommandToRunner! reload!;<space>
 nnoremap <leader>rf :VtrSendCommandToRunner! bundle exec rake routes \| fzf<cr>
 nnoremap <leader>rg :VtrSendCommandToRunner! bundle exec rails generate<space>
 nnoremap <leader>rk :VtrSendCommandToRunner! bundle exec rake<space>

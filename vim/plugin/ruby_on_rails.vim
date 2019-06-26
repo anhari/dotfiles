@@ -15,4 +15,5 @@ nnoremap <leader>rg :VtrSendCommandToRunner! bin/rails generate<space>
 nnoremap <leader>rk :VtrSendCommandToRunner! bin/rails<space>
 nnoremap <leader>rr :VtrSendCommandToRunner! bin/rails routes \| grep ""<left>
 nnoremap <leader>rs :VtrSendCommandToRunner! bin/rails restart<cr>
+nnoremap <leader>rt :VtrSendCommandToRunner! fuzzy-rails-command<cr>
 nnoremap <leader>tc :VtrSendCommandToRunner! bin/rails tmp:clear<cr>

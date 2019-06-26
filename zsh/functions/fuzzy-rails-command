@@ -1,0 +1,10 @@
+# Fuzzy find a Rails command with bin/rails -T and execute it
+
+fuzzy-rails-command() {
+  cmd=$(
+  bin/rails -T | \
+    fzf-tmux --ansi --reverse --no-sort --exact | \
+    cut -d ' ' -f 2
+  )
+  echo "\nbin/rails ${cmd} \n"; bin/rails $cmd
+}

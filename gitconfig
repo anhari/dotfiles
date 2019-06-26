@@ -33,6 +33,7 @@
   ns = diff --numstat
   pf = push --force-with-lease
   praise = blame
+  pull-request = !hub pull-request
   remote = remote -v
   sa = apply-stash
   searchlog = log -S

@@ -29,6 +29,7 @@ augroup gruvbox-overrides
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
   autocmd ColorScheme gruvbox highlight rubyKeyword cterm=italic gui=italic ctermfg=167 guifg=#fb4934
+  autocmd Colorscheme gruvbox highlight rubyPseudoVariable cterm=italic gui=italic ctermfg=175 guifg=#d3869b
   autocmd ColorScheme gruvbox highlight rubyTestAction ctermfg=229 guifg=#fbf1c7
   autocmd ColorScheme gruvbox highlight rubyAssertion ctermfg=229 guifg=#fbf1c7
   autocmd ColorScheme gruvbox highlight rubyResponse ctermfg=229 guifg=#fbf1c7

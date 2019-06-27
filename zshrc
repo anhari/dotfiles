@@ -39,7 +39,6 @@ _load_settings "$HOME/.zsh/configs"
 
 export NODEJS_CHECK_SIGNATURES=no
 
-eval "$(hub alias -s)"
 CASE_SENSITIVE="false"
 
 # set gruvbox colors

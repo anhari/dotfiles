@@ -2,5 +2,6 @@
 migrate-to-version() {
   version=$(ls -1r db/migrate | fzf --reverse)
 
+  echo "Migrating to: ${version}.\n"
   bin/rails db:migrate VERSION=$version
 }

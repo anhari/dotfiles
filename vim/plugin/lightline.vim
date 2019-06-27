@@ -12,8 +12,18 @@ let g:lightline = {
       \   'cocstatus': 'coc#status',
       \   'filetype': 'MyFiletype',
       \   'fileformat': 'MyFileformat',
+      \   'filename': 'LightlineFilename',
       \ }
       \ }
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 
 function! MyFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''

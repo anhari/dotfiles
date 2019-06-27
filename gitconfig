@@ -80,3 +80,7 @@
   user = anhari
   name = Michael Anhari
   email = mpanhari@gmail.com
+[gitsh]
+  # defaultCommand = status --short --branch
+  noGreeting = true
+  prompt = "%D(%c%b%#%w)"

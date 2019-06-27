@@ -147,3 +147,6 @@ helpfile
 zsh
 vim
 datetime
+keybinding
+gitconfig
+gitsh

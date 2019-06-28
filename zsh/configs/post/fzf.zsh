@@ -36,6 +36,7 @@ _fuzzy_pivotal_tracker_story_id() {
       fzf-tmux --ansi --reverse --no-sort | \
       grep -oE '[0-9]{9}'
   )
+  zle -U "$(echo $story | pbcopy)"
   zle -U "$(echo $story)"
   zle -M "$story"
 }

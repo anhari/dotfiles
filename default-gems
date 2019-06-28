@@ -6,6 +6,7 @@ gem-ctags
 gem-shut-the-fuck-up
 neovim
 pry
+pt
 rcodetools
 rouge
 rubocop

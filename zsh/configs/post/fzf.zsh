@@ -29,3 +29,15 @@ _fuzzy_git_shalector() {
 }
 zle -N fuzzy-git-shalector _fuzzy_git_shalector
 bindkey '^g^g' fuzzy-git-shalector
+
+_fuzzy_pivotal_tracker_story_id() {
+  story=$(
+    pt mywork | \
+      fzf-tmux --ansi --reverse --no-sort | \
+      grep -oE '[0-9]{9}'
+  )
+  zle -U "$(echo $story)"
+  zle -M "$story"
+}
+zle -N fuzzy-pivotal-tracker-story-id _fuzzy_pivotal_tracker_story_id
+bindkey '^g^s' fuzzy-pivotal-tracker-story-id

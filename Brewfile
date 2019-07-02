@@ -25,6 +25,7 @@ cask "toggl"
 cask "zoomus"
 
 brew "archey"
+brew "autojump"
 brew "bat"
 brew "diff-so-fancy"
 brew "exa"

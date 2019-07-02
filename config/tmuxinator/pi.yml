@@ -40,6 +40,10 @@ on_project_stop: pkill -f puma
 # attach: false
 
 windows:
-  - editor: nvim +Files
-  - server: b && yarn install && bin/rails s -p 3001
-  - logs: tail -f log/development.log
+  - editor:
+      layout: main-vertical
+      panes:
+        - nvim
+        - bin/rails console
+        - b && yarn install && bin/rails s -p 3001
+        - gitsh

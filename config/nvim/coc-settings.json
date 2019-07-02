@@ -34,5 +34,7 @@
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
-  "diagnostic.signOffset": 9999999
+  "diagnostic.signOffset": 9999999,
+  "snippets.priority": 100,
+  "snippets.editSnippetsCommand": "tabe"
 }

@@ -39,11 +39,11 @@ snippet , "code block"
 endsnippet
 
 snippet clog "console log"
-console.log(${0});
+console.log("${1}", $1);
 endsnippet
 
 snippet ctab "console table"
-console.table(${0});
+console.table("${1}", $1);
 endsnippet
 
 snippet if "if"
@@ -195,6 +195,6 @@ snippet stimc "stimulus.js controller"
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = [''];
+	static targets = [''];
 }
 endsnippet

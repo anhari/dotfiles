@@ -16,6 +16,7 @@ iabbrev esle else
 iabbrev locaiton location
 iabbrev locaition location
 iabbrev unkown unknown
+iabbrev verfication verification
 
 augroup markdown
   autocmd!

@@ -2,7 +2,7 @@
 " Vim and tmux, sittin' in a tree...
 " https://github.com/christoomey/vim-tmux-runner
 
-let g:VtrPercentage = 40
+let g:VtrPercentage = 33
 
 nnoremap <leader>cc :VtrSendCommandToRunner!<cr>
 nnoremap <leader>v<space> :VtrClearRunner<cr>

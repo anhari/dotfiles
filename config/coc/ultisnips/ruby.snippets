@@ -563,6 +563,14 @@ snippet rnd "Rails controller: render"
 render :${0}
 endsnippet
 
+snippet bfa "Rails controller: before action"
+before_action :${0}
+endsnippet
+
+snippet sbfa "Rails controller: skip before action"
+skip_before_action :${0}
+endsnippet
+
 snippet ba "Rails controller: before action"
 before_action :${0}
 endsnippet
@@ -572,7 +580,7 @@ skip_before_action :${0}
 endsnippet
 
 snippet only "Rails controller/routes: only"
-only: [${0}]
+only: %i[${0}]
 endsnippet
 
 snippet auth "Rails controller: authenticate"

@@ -1,0 +1,9 @@
+# Create pivotal tracker story via pt gem
+# https://github.com/raul/pt
+create-pivotal-story() {
+  if [[ $# -gt 0 ]]; then
+    pt create $1 --owner "dwarfcode" --type "feature" -m
+  else
+    echo "Story title is required."
+  fi
+}

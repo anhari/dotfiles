@@ -17,6 +17,8 @@ iabbrev locaiton location
 iabbrev locaition location
 iabbrev unkown unknown
 iabbrev verfication verification
+iabbrev procurment procurement
+iabbrev cricle circle
 
 augroup markdown
   autocmd!

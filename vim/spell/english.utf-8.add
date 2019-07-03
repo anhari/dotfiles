@@ -156,3 +156,5 @@ webpacker
 actioncable
 activestorage
 turbolinks
+backlink
+inline

@@ -24,6 +24,7 @@ augroup gruvbox-overrides
 
   " JSX
   autocmd ColorScheme gruvbox highlight xmlAttrib cterm=italic gui=italic ctermfg=214 guifg=#fabd2f
+  autocmd ColorScheme gruvbox highlight jsxTagName cterm=none gui=none ctermfg=109 guifg=#83a598
 
   " Ruby
   autocmd ColorScheme gruvbox highlight rubyDefine cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
@@ -39,6 +40,8 @@ augroup gruvbox-overrides
   autocmd ColorScheme gruvbox highlight typescriptStatement cterm=italic gui=italic ctermfg=167 guifg=#fb4934
   autocmd ColorScheme gruvbox highlight typescriptReserved cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
   autocmd ColorScheme gruvbox highlight typescriptLabel cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
+  autocmd ColorScheme gruvbox highlight typescriptType cterm=italic gui=italic ctermfg=214 guifg=#fabd2f
+  autocmd ColorScheme gruvbox highlight jsxAttrib cterm=italic gui=italic ctermfg=214 guifg=#fabd2f
 
   " Global
   autocmd ColorScheme gruvbox highlight Conditional cterm=italic gui=italic ctermfg=167 guifg=#fb4934

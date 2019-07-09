@@ -50,7 +50,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <leader>cf  <Plug>(coc-fix-current)
+nmap <leader>cf <Plug>(coc-fix-current)
+nmap <C-Space> <Plug>(coc-fix-current)
 
 " Remap for do codeAction of current line
 nmap <leader>ca  <Plug>(coc-codeaction)

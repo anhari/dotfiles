@@ -46,3 +46,4 @@ windows:
         - vim
         - npx gatsby develop
         - yarn type-check:watch
+        - gitsh

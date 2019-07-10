@@ -756,3 +756,15 @@ else
 	raise UnhandledResponseError
 end
 endsnippet
+
+snippet ref_to_table "Foreign key with a different class" b
+t.references :${1:post}, foreign_key: { to_table: :${0:articles} }
+endsnippet
+
+snippet tt "to_table" b
+{ to_table: :${0} }
+endsnippet
+
+snippet cn "Specify a class name for a relation" b
+class_name: "${0:Class::Name}"
+endsnippet

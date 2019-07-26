@@ -81,7 +81,7 @@
   },
   "irx": {
     "prefix": "irx",
-    "body": "import React from 'react';",
+    "body": "import React from 'react';\n",
     "description": "React.js import core library"
   },
   "ed": {

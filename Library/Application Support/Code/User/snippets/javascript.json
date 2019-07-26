@@ -81,7 +81,7 @@
   },
   "irx": {
     "prefix": "irx",
-    "body": "import React from 'react';",
+    "body": "import React from 'react';\n",
     "description": "React.js import core library"
   },
   "ed": {
@@ -172,5 +172,10 @@
     "prefix": "stimc",
     "body": "import { Controller } from 'stimulus';\n\nexport default class extends Controller {\n  static targets = [''];\n}",
     "description": "stimulus.js controller"
+  },
+  "<>": {
+    "prefix": "<>",
+    "body": "<>\n\t${0}\n</>",
+    "description": "React fragment"
   }
 }

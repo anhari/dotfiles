@@ -1348,5 +1348,10 @@
     "prefix": "wbr",
     "body": "<wbr />",
     "description": "optional break"
+  },
+  "<>": {
+    "prefix": "<>",
+    "body": "<>\n\t${0}\n</>",
+    "description": "React fragment"
   }
 }

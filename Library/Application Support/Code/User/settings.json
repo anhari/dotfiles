@@ -1,5 +1,6 @@
 {
   "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
@@ -116,7 +117,6 @@
   "ruby.codeCompletion": "rcodetools",
   "search.useIgnoreFiles": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontSize": 10,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.incsearch": true,
@@ -453,6 +453,7 @@
     "downvotes",
     "dropzone",
     "dwarfcode",
+    "esnext",
     "evenodd",
     "extension",
     "favoritable",
@@ -461,6 +462,7 @@
     "fontawesome",
     "fortawesome",
     "frameborder",
+    "frontendmasters",
     "frontmatter",
     "fsevents",
     "fulltext",
@@ -469,6 +471,7 @@
     "glassdoor",
     "hstore",
     "infinite",
+    "interop",
     "jordon",
     "justifycontent",
     "keyframes",
@@ -524,7 +527,7 @@
     "xsmall",
     "yolo"
   ],
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 3,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
@@ -565,7 +568,13 @@
   "git.inputValidationSubjectLength": 50,
   "material-icon-theme.folders.theme": "classic",
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "Night Owl",
   "workbench.startupEditor": "newUntitledFile",
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "terminal.integrated.rendererType": "dom",
+  "zenMode.hideLineNumbers": false
 }

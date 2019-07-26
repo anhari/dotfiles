@@ -81,6 +81,7 @@
   name = Michael Anhari
   email = mpanhari@gmail.com
 [gitsh]
-  # defaultCommand = status --short --branch
+  defaultCommand = status --short --branch
+  gitcommand = hub
   noGreeting = true
-  prompt = "%D(%c%b%#%w)"
+  prompt = "%D %c(%b%#)%w ➜"

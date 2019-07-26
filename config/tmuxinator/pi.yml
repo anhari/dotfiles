@@ -44,7 +44,6 @@ windows:
       layout: main-vertical
       panes:
         - nvim
-        - bin/rails console
-        - b && yarn install && bin/rails s -p 3001
-        - bundle exec sidekiq -t 25
-  - todo: vim ~/Google\ Drive/todos/pi.md
+  - server: b && yarn install && bin/rails s -p 3001
+  - sidekiq: bundle exec sidekiq -t 25
+  - gitsh: gitsh

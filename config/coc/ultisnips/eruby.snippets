@@ -4,6 +4,10 @@
 
 extends html
 
+snippet icon "font awesome icon" w
+<%= icon "fas", "$0" %>
+endsnippet
+
 snippet bb "byebug" w
 <% byebug %>
 endsnippet
@@ -39,7 +43,7 @@ snippet cache "russian doll caching" w
 endsnippet
 
 snippet cfor
-<% content_for :${1} do %>
+<%= content_for :${1} do %>
 	${0}
 <% end %>
 endsnippet
@@ -147,4 +151,21 @@ endsnippet
 
 snippet sfradio
 <%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>
+endsnippet
+
+snippet rc "render component" b
+<%= render "components/$0" do %>
+<% end %>
+endsnippet
+
+snippet dob "do block" w
+<%= $0 do %>
+<% end %>
+endsnippet
+
+snippet card "card" w
+<%= card classes: "mb-4" do %>
+	<%= card_title do %>
+	<% end %>
+<% end %>
 endsnippet

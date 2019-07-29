@@ -527,7 +527,7 @@
     "xsmall",
     "yolo"
   ],
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 1,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,

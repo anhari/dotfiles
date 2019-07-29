@@ -1,3 +1,4 @@
+bierner.markdown-emoji
 bradlc.vscode-tailwindcss
 castwide.solargraph
 christian-kohler.npm-intellisense
@@ -23,6 +24,7 @@ Lourenci.go-to-spec
 mechatroner.rainbow-csv
 mikestead.dotenv
 mjmcloug.vscode-elixir
+mkxml.vscode-filesize
 monokai.theme-monokai-pro-vscode
 ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.debugger-for-chrome
@@ -40,6 +42,7 @@ silvenon.mdx
 sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sysoev.vscode-open-in-github
+third774.hipsum
 timonwong.shellcheck
 tomoki1207.pdf
 vscodevim.vim

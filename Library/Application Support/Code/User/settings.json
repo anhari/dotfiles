@@ -110,7 +110,7 @@
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "prettier.requireConfig": false,
+  "prettier.requireConfig": true,
   "ruby.intellisense": "rubyLocate",
   "ruby.specFocusTerminal": false,
   "ruby.specSaveFile": true,
@@ -468,6 +468,7 @@
     "fulltext",
     "fulltexts",
     "gatsbyjs",
+    "gitsh",
     "glassdoor",
     "hstore",
     "infinite",
@@ -527,7 +528,7 @@
     "xsmall",
     "yolo"
   ],
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
@@ -576,5 +577,8 @@
   },
   "git.autofetch": true,
   "terminal.integrated.rendererType": "dom",
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

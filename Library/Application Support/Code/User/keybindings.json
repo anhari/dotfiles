@@ -69,10 +69,6 @@
     "args": "mocha:file"
   },
   {
-    "key": "ctrl+\\",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
   },
@@ -98,5 +94,24 @@
     "key": "alt+cmd+[",
     "command": "-editor.fold",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Gitsh"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.quickOpenTerm"
+  },
+  {
+    "key": "alt+\\",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
   }
 ]

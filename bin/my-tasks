@@ -1,0 +1,4 @@
+#! /bin/sh
+
+mkdir -p .vscode
+cp ~/.vscode/tasks.json ./.vscode/

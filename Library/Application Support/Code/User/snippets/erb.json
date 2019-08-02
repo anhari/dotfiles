@@ -1,109 +1,133 @@
 {
   "cache": {
     "prefix": "cache",
-    "body": "<% cache ${0} do %>\n<% end %>",
+    "body": ["<% cache ${0} do %>", "<% end %>"],
     "description": "russian doll caching"
   },
   "cfor": {
     "prefix": "cfor",
-    "body": "<% content_for :${1} do %>\n\t${0}\n<% end %>"
+    "body": ["<% content_for :${1} do %>", "\t${0}", "<% end %>"]
   },
   "pp": {
     "prefix": "pp",
-    "body": "<% ${0} %>",
+    "body": ["<% ${0} %>"],
     "description": "execute ruby"
   },
   "pe": {
     "prefix": "pe",
-    "body": "<%= ${0} %>",
+    "body": ["<%= ${0} %>"],
     "description": "insert ruby"
   },
   "=": {
     "prefix": "=",
-    "body": "<%= ${0} %>",
+    "body": ["<%= ${0} %>"],
     "description": "insert ruby"
   },
   "else": {
     "prefix": "else",
-    "body": "<% else %>",
+    "body": ["<% else %>"],
     "description": "else"
   },
   "end": {
     "prefix": "end",
-    "body": "<% end %>",
+    "body": ["<% end %>"],
     "description": "end"
   },
   "each": {
     "prefix": "each",
-    "body": "<% ${0}.each do || %>\n<% end %>",
+    "body": ["<% ${0}.each do || %>", "<% end %>"],
     "description": "each block"
   },
   "ff": {
     "prefix": "ff",
-    "body": "<%= form_for @${1:model} do |f| %>\n\t<%= f.label :${2:attribute} %>:\n\t<%= f.text_field :${0:$2} %>\n\t<br />\n\n\t<%= f.submit %>\n<% end %>",
+    "body": [
+      "<%= form_for @${1:model} do |f| %>",
+      "\t<%= f.label :${2:attribute} %>:",
+      "\t<%= f.text_field :${0:$2} %>",
+      "\t<br />",
+      "",
+      "\t<%= f.submit %>",
+      "<% end %>"
+    ],
     "description": "form_for"
   },
   "rnd": {
     "prefix": "rnd",
-    "body": "<%= render '${1}' %>",
+    "body": ["<%= render '${1}' %>"],
     "description": "render"
   },
   "lt": {
     "prefix": "lt",
-    "body": "<%= link_to ${1}, ${0} %>",
+    "body": ["<%= link_to ${1}, ${0} %>"],
     "description": "link_to"
   },
   "bt": {
     "prefix": "bt",
-    "body": "<%= button_to ${1}, ${0} %>",
+    "body": ["<%= button_to ${1}, ${0} %>"],
     "description": "button_to"
   },
   "flash": {
     "prefix": "flash",
-    "body": "<div class=\"flash\">\n\t<% if notice %>\n\t<p class=\"notice\"><%= notice %></p>\n\t<% elsif alert %>\n\t<p class=\"alert\"><%= alert %></p>\n\t<% end %>\n</div>",
+    "body": [
+      "<div class=\"flash\">",
+      "\t<% if notice %>",
+      "\t<p class=\"notice\"><%= notice %></p>",
+      "\t<% elsif alert %>",
+      "\t<p class=\"alert\"><%= alert %></p>",
+      "\t<% end %>",
+      "</div>"
+    ],
     "description": "flash messages"
   },
   "if": {
     "prefix": "if",
-    "body": "<% if ${0} %>\n<% end %>",
+    "body": ["<% if ${0} %>", "<% end %>"],
     "description": "if"
   },
   "ife": {
     "prefix": "ife",
-    "body": "<% if ${0} %>\n<% else %>\n<% end %>",
+    "body": ["<% if ${0} %>", "<% else %>", "<% end %>"],
     "description": "if else"
   },
   "md": {
     "prefix": "md",
-    "body": "method: :delete",
+    "body": ["method: :delete"],
     "description": "method delete"
   },
   "mdc": {
     "prefix": "mdc",
-    "body": "method: :delete, data: { confirm: \"${1}\"}",
+    "body": ["method: :delete, data: { confirm: \"${1}\"}"],
     "description": "method delete (confirm)"
   },
   "cons": {
     "prefix": "cons",
-    "body": "<%= console %>",
+    "body": ["<%= console %>"],
     "description": "console"
   },
   "roof": {
     "prefix": "roof",
-    "body": "<%= raise \"roof\" %>"
+    "body": ["<%= raise \"roof\" %>"]
   },
   "rxc": {
     "prefix": "rxc",
-    "body": "<%= react_component '${0}' %>",
+    "body": ["<%= react_component '${0}' %>"],
     "description": "react component"
   },
   "sff": {
     "prefix": "sff",
-    "body": "<%= simple_form_for @${1:model} do |f| %>\n\t<%= f.input :${2:field} %>\n\n\t<%= f.button :submit %>\n<% end %>",
+    "body": [
+      "<%= simple_form_for @${1:model} do |f| %>",
+      "\t<%= f.input :${2:field} %>",
+      "",
+      "\t<%= f.button :submit %>",
+      "<% end %>"
+    ],
     "description": "simple_form_for"
   },
   "sfradio": {
     "prefix": "sfradio",
-    "body": "<%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>"
+    "body": [
+      "<%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>"
+    ]
   }
 }

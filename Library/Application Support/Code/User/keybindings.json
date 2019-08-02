@@ -113,5 +113,9 @@
     "key": "cmd+\\",
     "command": "-workbench.action.terminal.split",
     "when": "terminalFocus"
+  },
+  {
+    "key": "alt+space",
+    "command": "workbench.action.togglePanelPosition"
   }
 ]

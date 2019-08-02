@@ -16,10 +16,13 @@ fknop.vscode-npm
 GrapeCity.gc-excelviewer
 IBM.output-colorizer
 JakeBecker.elixir-ls
+johnpapa.winteriscoming
+jolaleye.horizon-theme-vscode
 jpoissonnier.vscode-styled-components
 kaiwood.endwise
 karunamurti.haml
 kisstkondoros.vscode-gutter-preview
+kumar-harsh.graphql-for-vscode
 Lourenci.go-to-spec
 mechatroner.rainbow-csv
 mikestead.dotenv
@@ -32,6 +35,8 @@ msjsdiag.debugger-for-chrome
 noku.rails-run-spec-vscode
 Orta.vscode-jest
 PKief.material-icon-theme
+Prisma.vscode-graphql
+PsykoSoldi3r.itunes-vscode
 rebornix.ruby
 ria.elastic
 RobbOwen.synthwave-vscode
@@ -43,10 +48,13 @@ silvenon.mdx
 sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sysoev.vscode-open-in-github
+teabyii.ayu
 third774.hipsum
 timonwong.shellcheck
 tomoki1207.pdf
+tomphilbin.gruvbox-themes
 vscodevim.vim
 waderyan.gitblame
 whizkydee.material-palenight-theme
 wix.vscode-import-cost
+zhuangtongfa.Material-theme

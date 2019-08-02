@@ -1,0 +1,48 @@
+{
+  // Mocha.js
+  // https://mochajs.org/
+  // Scopes: javascript, typescript
+
+  "aed": {
+    "scope": "javascript,typescript",
+    "prefix": "aed",
+    "body": ["afterEach(() => {", "\t${0}", "});"],
+    "description": "Mocha.js: After each"
+  },
+  "bed": {
+    "scope": "javascript,typescript",
+    "prefix": "bed",
+    "body": ["beforeEach(() => {", "\t${0}", "});"],
+    "description": "Mocha.js: Before each"
+  },
+  "it": {
+    "scope": "javascript,typescript",
+    "prefix": "it",
+    "body": ["it(\"${1}\", () => {", "\t${0}", "});"],
+    "description": "Mocha.js: It block"
+  },
+  "desc": {
+    "scope": "javascript,typescript",
+    "prefix": "desc",
+    "body": ["describe(\"${1}\", () => {", "\t${0}", "});"],
+    "description": "Mocha.js: Describe block"
+  },
+  "cont": {
+    "scope": "javascript,typescript",
+    "prefix": "cont",
+    "body": ["context(\"${1}\", () => {", "\t${0}", "});"],
+    "description": "Mocha.js: Context block"
+  },
+  "et": {
+    "scope": "javascript,typescript",
+    "prefix": "et",
+    "body": ["expect(${0}).to"],
+    "description": "Mocha.js: Expect to"
+  },
+  "etn": {
+    "scope": "javascript,typescript",
+    "prefix": "etn",
+    "body": ["expect(${0}).to.not."],
+    "description": "Mocha.js: Expect to not"
+  }
+}

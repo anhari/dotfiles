@@ -1,0 +1,74 @@
+{
+  // JavaScript and Typescript
+  // Scopes: javascript,
+  //         javascriptreact (.jsx),
+  //         typescript,
+  //         typesriptreact (.tsx)
+
+  "imp": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "imp",
+    "body": ["import ${0};"],
+    "description": "Import"
+  },
+  ".": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": ".",
+    "body": ["{", "\t${0}", "}"],
+    "description": "Code block"
+  },
+  ">": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": ">",
+    "body": ["(${1}) => {", "\t${0}", "}"],
+    "description": "Fat arrow function"
+  },
+  ")": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": ")",
+    "body": ["(${1}) => (", "\t${0}", ")"],
+    "description": "Implicit return function"
+  },
+  "clog": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "clog",
+    "body": ["console.log(\"${0}\", ${0});"],
+    "description": "Console log"
+  },
+  "ctab": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "ctab",
+    "body": ["console.table(${0});"],
+    "description": "Console table"
+  },
+  "if": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "if",
+    "body": ["if (${1}) {", "\t${0}", "}"],
+    "description": "if"
+  },
+  "ife": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "ife",
+    "body": ["if (${1}) {", "\t${2}", "} else {", "\t${0}", "}"],
+    "description": "if else"
+  },
+  "ed": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "ed",
+    "body": ["export default ${0}"],
+    "description": "export default"
+  },
+  "edf": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "edf",
+    "body": ["export default (${1}) => (", "${0}", ")"],
+    "description": "export default function"
+  },
+  "ret": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "ret",
+    "body": ["return ${0};"],
+    "description": "return"
+  }
+}

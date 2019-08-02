@@ -1,0 +1,15 @@
+{
+  // jQuery
+  // https://jquery.org/
+  // Scopes: javascript,
+  //         javascriptreact (.jsx),
+  //         typescript,
+  //         typesriptreact (.tsx)
+
+  "$ajax": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "$ajax",
+    "body": "$.ajax({\n\turl: '${0}',\n\ttype: 'GET/DELETE/PUT/POST',\n\tdata: { },\n\tsuccess: () => {\n\n\t}\n});",
+    "description": "jQuery: Ajax request"
+  }
+}

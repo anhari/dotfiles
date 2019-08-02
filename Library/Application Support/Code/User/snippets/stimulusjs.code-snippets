@@ -1,0 +1,18 @@
+{
+  // Stimulus.js
+  // https://stimulusjs.org/
+  // Scopes: javascript, typescript
+
+  "stimc": {
+    "scope": "javascript,typescript",
+    "prefix": "stimc",
+    "body": [
+      "import { Controller } from 'stimulus';",
+      "",
+      "export default class extends Controller {",
+      "  static targets = [''];",
+      "}"
+    ],
+    "description": "Stimulus.js: Controller"
+  }
+}

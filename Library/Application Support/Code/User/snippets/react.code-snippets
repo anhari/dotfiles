@@ -1,0 +1,113 @@
+{
+  // React.js
+  // https://reactjs.org/
+  // Scopes: javascript,
+  //         javascriptreact (.jsx),
+  //         typescript,
+  //         typesriptreact (.tsx)
+
+  "React.js Constructor": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "ctor",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props);",
+      "",
+      "\tthis.state = {",
+      "\t\t${0}",
+      "\t};",
+      "}"
+    ]
+  },
+  "React.js get initial state": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "gis",
+    "body": ["getInitialState() {", "\treturn {", "\t\t${0}", "\t}", "}"]
+  },
+  "React.js componentDidMount": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "cdm",
+    "body": ["componentDidMount() {", "\t${0}", "}"]
+  },
+  "React.js componentWillMount": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "cwm",
+    "body": ["componentWillMount() {", "\t${0}", "}"]
+  },
+  "cwrp": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "cwrp",
+    "body": ["componentWillReceiveProps() {", "\t${0}", "}"],
+    "description": "React.js componentWillReceiveProps"
+  },
+  "cwu": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "cwu",
+    "body": ["componentWillUnmount() {", "\t${0}", "}"],
+    "description": "React.js componentWillUnmount"
+  },
+  "irx": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "irx",
+    "body": ["import React from 'react';"],
+    "description": "React.js import core library"
+  },
+  "s2p": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "s2p",
+    "body": ["mapStateToProps(state) {", "\treturn {", "\t\t${0}", "\t};", "}"],
+    "description": "react-redux mapStateToProps"
+  },
+  "d2p": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "d2p",
+    "body": [
+      "mapDispatchToProps(dispatch) {",
+      "\treturn bindActionCreators({ ${0} }, dispatch);",
+      "}"
+    ],
+    "description": "react-redux mapDispatchToProps"
+  },
+  "edc": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "edc",
+    "body": [
+      "export default connect(mapStateToProps, mapDispatchToProps)(${0});"
+    ],
+    "description": "react-redux connect"
+  },
+  "danger": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "danger",
+    "body": ["dangerouslySetInnerHTML={{__html: ${0}}}"],
+    "description": "React.js dangerously set inner html"
+  },
+  "<>": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "<>",
+    "body": ["<>", "\t${0}", "</>"],
+    "description": "React fragment"
+  },
+  "red": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "red",
+    "body": [
+      "// Every reducer must return a new object!",
+      "export default function ${1}Reducer(state = ${2:defaultState}, action) {",
+      "\tswitch (action.type) {",
+      "\t case ${3}:",
+      "\t\treturn action.payload;",
+      "\tdefault:",
+      "\t\treturn state;",
+      "\t}",
+      "}"
+    ],
+    "description": "after each"
+  },
+  "rnd": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "rnd",
+    "body": ["render() {", "\treturn (", "\t\t${0}", "\t);", "}"],
+    "description": "render function"
+  }
+}

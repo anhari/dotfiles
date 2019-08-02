@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dotfiles_dir="$HOME"/dotfiles
+if [ "$PWD" = "$dotfiles_dir" ]; then
+  save_code_extensions
+  git add code_extensions
+fi

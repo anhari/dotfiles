@@ -6,6 +6,8 @@ ruby $HOME/dotfiles/install_vscode_extensions.rb
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 
+cp ~/dotfiles/dotfiles-precommit-hook ~/dotfiles/.git/hooks/pre-commit
+
 if [ -e "$HOME"/.vim/autoload/plug.vim ]; then
   nvim -E -s +PlugUpgrade +qa
 else

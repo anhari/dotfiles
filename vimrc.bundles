@@ -56,7 +56,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-scriptease'
-Plug 'machakann/vim-highlightedyank'
 Plug 'vim-scripts/fountain.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -64,7 +63,7 @@ Plug 'tpope/vim-dadbod'
 Plug 'slashmili/alchemist.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/echodoc.vim'
 Plug 'rhysd/devdocs.vim'
 Plug 'amadeus/vim-xml'
@@ -73,9 +72,9 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'mhinz/vim-grepper'
 Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 Plug 'JakeBecker/elixir-ls', { 'do': { -> g:elixirls.compile() } }
-Plug 'fenetikm/falcon'
-Plug 'ayu-theme/ayu-vim'
 Plug 'itchyny/lightline.vim'
+Plug 'alexlafroscia/postcss-syntax.vim'
+Plug 'joshdick/onedark.vim'
 
 if &compatible
   set nocompatible

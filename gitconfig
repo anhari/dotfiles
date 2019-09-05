@@ -52,6 +52,7 @@
   template = ~/.gitmessage
 [core]
   autocrlf = input
+  # editor = "code --wait"
   editor = "nvim"
   excludesfile = ~/.gitignore
   pager = diff-so-fancy | less --tabs=1,5 -R
@@ -59,6 +60,9 @@
   helper = osxkeychain
 [diff]
   colorMoved = zebra
+#   tool = default-difftool
+# [difftool "default-difftool"]
+#     cmd = code --wait --diff --window $LOCAL $REMOTE
 [fetch]
   prune = true
 [filter "lfs"]

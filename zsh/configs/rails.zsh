@@ -1,1 +1,1 @@
-export DISABLE_SPRING=1
+export DISABLE_SPRING=0

@@ -46,4 +46,4 @@ windows:
         - nvim
   - server: b && yarn install && bin/rails s -p 3001
   - sidekiq: bundle exec sidekiq -t 25
-  - gitsh: gitsh
+  - guard: bundle exec guard

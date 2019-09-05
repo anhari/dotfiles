@@ -159,3 +159,7 @@ turbolinks
 backlink
 inline
 HTML5
+middleware
+livereload
+colorscheme
+tailwindcss

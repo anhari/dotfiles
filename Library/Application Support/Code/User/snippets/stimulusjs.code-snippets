@@ -1,17 +1,46 @@
 {
   // Stimulus.js
   // https://stimulusjs.org/
-  // Scopes: javascript, typescript
+  // Scopes: javascript, typescript, html, erb
 
-  "stimc": {
+  "HTML Stimulus Controller": {
+    "scope": "html, erb",
+    "prefix": "stimc",
+    "body": [
+      "<div data-controller=\"${0}\">",
+      "\t",
+      "</div>",
+    ],
+    "description": "Stimulus.js: Controller"
+  },
+  "HTML Stimulus Action": {
+    "scope": "html, erb",
+    "prefix": "act",
+    "body": [
+      "data-action=\"${0:controller#function}\"",
+    ],
+    "description": "Stimulus.js: Controller"
+  },
+  "HTML Stimulus Target": {
+    "scope": "html, erb",
+    "prefix": "tar",
+    "body": [
+      "data-target=\"${0}\"",
+    ],
+    "description": "Stimulus.js: Controller"
+  },
+  "JavaScript Stimulus Controller": {
     "scope": "javascript,typescript",
     "prefix": "stimc",
     "body": [
       "import { Controller } from 'stimulus';",
       "",
       "export default class extends Controller {",
-      "  static targets = [''];",
-      "}"
+      "\tstatic targets = [''];",
+      "\tconnect() {",
+      "\t\t console.log('${0} controller connected!')",
+      "\t}",
+      "}",
     ],
     "description": "Stimulus.js: Controller"
   }

@@ -1353,5 +1353,5 @@
     "prefix": "<>",
     "body": "<>\n\t${0}\n</>",
     "description": "React fragment"
-  }
+  },
 }

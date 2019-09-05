@@ -492,7 +492,7 @@
   },
   "defprm": {
     "prefix": "defprm",
-    "body": ["def ${1:model}_params", "\tparams.require(:$1).permit(:${0})", "end"],
+    "body": ["def ${1}_params", "\tparams.require(:$1).permit(:${0})", "end"],
     "description": "Rails controller: strong params method"
   },
   "vpres": {

@@ -56,6 +56,11 @@
     "body": ["<%= render '${1}' %>"],
     "description": "render"
   },
+  "rny": {
+    "prefix": "rny",
+    "body": ["<%= render '${1}' do %>", "\t${0}", "<% end %>"],
+    "description": "render"
+  },
   "lt": {
     "prefix": "lt",
     "body": ["<%= link_to ${1}, ${0} %>"],
@@ -129,5 +134,10 @@
     "body": [
       "<%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>"
     ]
-  }
+  },
+  "..": {
+    "prefix": "..",
+    "body": "class=\"${0}\"",
+    "description": "class"
+  },
 }

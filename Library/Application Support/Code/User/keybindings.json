@@ -59,7 +59,7 @@
     "command": "outline.focus"
   },
   {
-    "key": "cmd+y",
+    "key": "cmd+h",
     "command": "workbench.action.tasks.runTask",
     "args": "mocha:spec"
   },
@@ -117,5 +117,9 @@
   {
     "key": "alt+space",
     "command": "workbench.action.togglePanelPosition"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "workbench.action.tasks.restartTask"
   }
 ]

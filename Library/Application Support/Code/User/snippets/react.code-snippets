@@ -6,6 +6,13 @@
   //         typescript,
   //         typesriptreact (.tsx)
 
+  "..": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "..",
+    "body": ["className=\"${0}\""],
+    "description": "React: class name"
+  },
+
   "React.js Constructor": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "ctor",

@@ -429,6 +429,10 @@ snippet pscale "Decimal precision and scale"
 precision: ${1:number of digits to support}, scale: ${2: decimal places}
 endsnippet
 
+snippet precise "Decimal precision and scale"
+precision: ${1:number of digits to support}, scale: ${2: decimal places}
+endsnippet
+
 snippet ccd "Rails migration: change column default"
 # Rails 4
 def up
@@ -629,6 +633,22 @@ snippet vnum "Rails model: validate numericality"
 validates :${0:field}, numericality: { ${1} }
 endsnippet
 
+snippet vgt "Rails model: validate numericality - greater than"
+validates :${0:field}, numericality: { greater_than: ${1} }
+endsnippet
+
+snippet vgte "Rails model: validate numericality - greater than or equal to"
+validates :${0:field}, numericality: { greater_than_or_equal_to: ${1} }
+endsnippet
+
+snippet vlt "Rails model: validate numericality - less than"
+validates :${0:field}, numericality: { less_than: ${1} }
+endsnippet
+
+snippet vlte "Rails model: validate numericality - less than or equal to"
+validates :${0:field}, numericality: { less_than_or_equal_to: ${1} }
+endsnippet
+
 snippet vlen "Rails model: validate length"
 validates :${0:field}, length: { ${1} }
 endsnippet
@@ -650,12 +670,32 @@ snippet snav "shoulda-matchers: don't allow value"
 it { should_not allow_value(${1}).for(:${0}) }
 endsnippet
 
+snippet snvpo "shoulda-matchers: not validate presence"
+it { should_not validate_presence_of(:${0}) }
+endsnippet
+
 snippet svpo "shoulda-matchers: validate presence"
 it { should validate_presence_of(:${0}) }
 endsnippet
 
-snippet svno "shoulda-matchers: don't validate presence"
+snippet svno "shoulda-matchers: validate numericality"
 it { should validate_numericality_of(:${0}) }
+endsnippet
+
+snippet svgt "shoulda-matchers: validate numericality - greater than"
+it { should validate_numericality_of(:${0}).is_greater_than(${1}) }
+endsnippet
+
+snippet svgte "shoulda-matchers: validate numericality - greater than or equal to"
+it { should validate_numericality_of(:${0}).is_greater_than_or_equal_to(${1}) }
+endsnippet
+
+snippet svlt "shoulda-matchers: validate numericality - less than"
+it { should validate_numericality_of(:${0}).is_less_than(${1}) }
+endsnippet
+
+snippet svlte "shoulda-matchers: validate numericality - less than or equal to"
+it { should validate_numericality_of(:${0}).is_less_than_or_equal_to(${1}) }
 endsnippet
 
 snippet svlo "shoulda-matchers: validate length"

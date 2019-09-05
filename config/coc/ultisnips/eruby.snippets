@@ -87,6 +87,12 @@ snippet rnd "render" w
 <%= render '${1}' %>
 endsnippet
 
+snippet rny "render" w
+<%= render '${1}' do %>
+	${0}
+<% end %>
+endsnippet
+
 snippet lt "link_to" w
 <%= link_to ${1}, ${0} %>
 endsnippet

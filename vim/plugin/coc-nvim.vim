@@ -26,9 +26,11 @@ nnoremap <silent> <leader>dj <Plug>(coc-implementation)
 
 let g:coc_global_extensions = [
     \ 'coc-css',
+    \ 'coc-elixir',
     \ 'coc-emmet',
     \ 'coc-emoji',
     \ 'coc-eslint',
+    \ 'coc-git',
     \ 'coc-html',
     \ 'coc-json',
     \ 'coc-prettier',
@@ -36,9 +38,11 @@ let g:coc_global_extensions = [
     \ 'coc-solargraph',
     \ 'coc-svg',
     \ 'coc-tag',
+    \ 'coc-tailwindcss',
     \ 'coc-tsserver',
     \ 'coc-word',
     \ 'coc-yaml',
+    \ 'coc-yank',
     \ ]
 
 inoremap <silent><expr> <c-space> coc#refresh()

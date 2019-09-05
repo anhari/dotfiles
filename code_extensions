@@ -1,9 +1,12 @@
+aliariff.vscode-erb-beautify
+bierner.color-info
 bierner.markdown-emoji
 bradlc.vscode-tailwindcss
 castwide.solargraph
 christian-kohler.npm-intellisense
 ckolkman.vscode-postgres
 clinyong.vscode-css-modules
+cpylua.language-postcss
 cssho.vscode-svgviewer
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
@@ -16,10 +19,12 @@ fknop.vscode-npm
 GrapeCity.gc-excelviewer
 IBM.output-colorizer
 JakeBecker.elixir-ls
+johnpapa.vscode-peacock
 johnpapa.winteriscoming
 jolaleye.horizon-theme-vscode
 jpoissonnier.vscode-styled-components
 kaiwood.endwise
+karigari.chat
 karunamurti.haml
 kisstkondoros.vscode-gutter-preview
 kumar-harsh.graphql-for-vscode
@@ -30,7 +35,11 @@ misogi.ruby-rubocop
 mjmcloug.vscode-elixir
 mkxml.vscode-filesize
 monokai.theme-monokai-pro-vscode
-ms-vscode.vscode-typescript-tslint-plugin
+ms-python.python
+ms-vscode.cpptools
+ms-vsliveshare.vsliveshare
+ms-vsliveshare.vsliveshare-audio
+ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
 noku.rails-run-spec-vscode
 Orta.vscode-jest
@@ -49,6 +58,7 @@ sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sysoev.vscode-open-in-github
 teabyii.ayu
+thenikso.github-plus-theme
 third774.hipsum
 timonwong.shellcheck
 tomoki1207.pdf

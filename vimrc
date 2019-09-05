@@ -6,10 +6,6 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-if filereadable(expand("~/.vimrc.bundle.setup"))
-  source ~/.vimrc.bundle.setup
-endif
-
 set encoding=utf-8
 
 " Leader

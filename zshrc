@@ -51,14 +51,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Always be tmux'ing
-_not_inside_tmux() { [[ -z "$TMUX" ]] }
-ensure_tmux_is_running() {
-  if _not_inside_tmux; then
-    cd ~/dwarfcode && tat
-  fi
-}
-ensure_tmux_is_running
+# # Always be tmux'ing
+# _not_inside_tmux() { [[ -z "$TMUX" ]] }
+# ensure_tmux_is_running() {
+#   if _not_inside_tmux; then
+#     cd ~/dwarfcode && tat
+#   fi
+# }
+# ensure_tmux_is_running
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

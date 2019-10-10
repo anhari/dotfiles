@@ -12,7 +12,7 @@
   "editor.renderIndentGuides": false,
   "editor.rulers": [80],
   "editor.tabCompletion": "on",
-  "editor.snippetSuggestions": "top",
+  // "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
@@ -492,6 +492,7 @@
     "petfinder",
     "petrie",
     "pinnable",
+    "plugin",
     "postgre",
     "postgres",
     "postgresql",
@@ -516,12 +517,14 @@
     "subreducers",
     "svg",
     "svgs",
+    "tailwindcss",
     "textalign",
     "todos",
     "turbolinks",
     "type",
     "types",
     "typesriptreact",
+    "uglifyjs",
     "unarchive",
     "unarchived",
     "unmount",
@@ -530,6 +533,7 @@
     "upvoted",
     "upvotes",
     "url",
+    "webpack",
     "wysihtml",
     "xmlhttprequest",
     "xmlns",
@@ -589,7 +593,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "Monokai Pro",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

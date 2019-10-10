@@ -121,5 +121,9 @@
   {
     "key": "shift+cmd+h",
     "command": "workbench.action.tasks.restartTask"
-  }
+  },
+  {
+    "key": "alt+h",
+    "command": "workbench.action.tasks.reRunTask"
+  },
 ]

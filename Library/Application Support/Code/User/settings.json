@@ -99,6 +99,7 @@
       }
     ]
   },
+  "elixirLS.suggestSpecs": false,
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "erb": "html",
@@ -593,7 +594,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Monokai Pro",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

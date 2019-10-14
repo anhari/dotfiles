@@ -4,8 +4,8 @@
     "body": "|> ${0}"
   },
   "%": {
-    "prefix": "%",
-    "body": "%{ ${0} }"
+    "prefix": "m",
+    "body": "%{${0}}"
   },
   "al": {
     "prefix": "al",
@@ -37,8 +37,12 @@
   },
   "hdoc": {
     "prefix": "hdoc",
-    "body": "${0}\n\"\"\"",
-    "description": "\""
+    "body": [
+      "\"\"\"",
+      "${0}",
+      "\"\"\""
+    ],
+    "description": "heredoc",
   },
   "mdoc": {
     "prefix": "mdoc",
@@ -122,7 +126,7 @@
   },
   "case": {
     "prefix": "case",
-    "body": "case $0 do\n\t{:ok, something} ->\nend"
+    "body": ["case $0 do", "\t{:ok, contents} ->", "end"]
   },
   "ecs": {
     "prefix": "ecs",
@@ -143,5 +147,21 @@
   "plug": {
     "prefix": "plug",
     "body": "defmodule $1 do\n\timport Plug.Conn\n\n\talias $0\n\n\tdef init(opts) do\n\tend\n\n\tdef call(conn, _opts) do\n\tend\nend"
+  },
+  "ok tuple": {
+    "prefix": "okt",
+    "body": "{:ok, ${0}}"
+  },
+  "error tuple": {
+    "prefix": "et",
+    "body": "{:error, ${0}}"
+  },
+  "IEx.pry": {
+    "prefix": "pry",
+    "body": "require IEx; IEx.pry"
+  },
+  "struct": {
+    "prefix": "st",
+    "body": "%${1}{${0}}"
   }
 }

@@ -661,5 +661,7 @@
       "name": "Vue Green",
       "value": "#42b883"
     }
-  ]
+  ],
+  "itunes.skipTrackByTrackDislike": true,
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }

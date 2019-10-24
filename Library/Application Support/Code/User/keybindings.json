@@ -1,9 +1,21 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
-  { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
-  { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
-  { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
   {
     "key": "cmd+t",
     "command": "workbench.action.terminal.new",
@@ -125,5 +137,13 @@
   {
     "key": "shift+cmd+l",
     "command": "workbench.action.tasks.reRunTask"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "itunes.dislikeTrack"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "itunes.likeTrack"
   },
 ]

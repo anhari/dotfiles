@@ -35,8 +35,8 @@
     "description": "inputs_for"
   },
   "fl": {
-    "prefix": "fl",
-    "body": "<%= for $1 <- @`!p snip.rv = t[1] + \"s\"` do %>\n<% end %>",
+    "prefix": "for comprehension",
+    "body": ["<%= for $0 <- @$0s do %>", "<% end %>"],
     "description": "for loop"
   },
   "if": {

@@ -105,7 +105,8 @@
     "erb": "html",
     "html.erb": "html",
     "javascript": "javascriptreact",
-    "HTML (Eex)": "html"
+    "HTML (Eex)": "html",
+    "HTML (EEx)": "html"
   },
   "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
@@ -594,7 +595,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "Night Owl Light",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -663,5 +664,5 @@
     }
   ],
   "itunes.skipTrackByTrackDislike": true,
-  "terminal.integrated.shell.osx": "/bin/zsh"
+  "terminal.integrated.shell.osx": "/bin/zsh",
 }

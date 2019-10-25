@@ -1,7 +1,7 @@
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
-# prompt spaceship
-prompt pure
+prompt spaceship
+# prompt pure
 # SPACESHIP_VI_MODE_SHOW=false
 # SPACESHIP_PROMPT_PREFIXES_SHOW=false
 # SPACESHIP_GIT_SYMBOL=""

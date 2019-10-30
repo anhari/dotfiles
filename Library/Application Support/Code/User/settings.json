@@ -595,7 +595,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Night Owl Light",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

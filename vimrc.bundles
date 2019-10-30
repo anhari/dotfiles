@@ -38,7 +38,6 @@ Plug 'beloglazov/vim-online-thesaurus'
 Plug 'kylef/apiblueprint.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'JarrodCTaylor/vim-ember-cli-test-runner'
 Plug 'morhetz/gruvbox'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'junegunn/gv.vim'
@@ -52,8 +51,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'beloglazov/vim-textobj-quotes'
 Plug 'tpope/vim-unimpaired'
 Plug 'anhari/vim-stargazer'
-Plug 'arcticicestudio/nord-vim'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-scriptease'
 Plug 'vim-scripts/fountain.vim'
@@ -61,7 +59,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-dadbod'
 Plug 'slashmili/alchemist.vim'
-Plug 'chriskempson/base16-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/echodoc.vim'
@@ -74,7 +71,6 @@ Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 Plug 'JakeBecker/elixir-ls', { 'do': { -> g:elixirls.compile() } }
 Plug 'itchyny/lightline.vim'
 Plug 'alexlafroscia/postcss-syntax.vim'
-Plug 'joshdick/onedark.vim'
 
 if &compatible
   set nocompatible

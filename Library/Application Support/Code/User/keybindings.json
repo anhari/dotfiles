@@ -62,11 +62,6 @@
     "command": "-workbench.action.openRecent"
   },
   {
-    "key": "ctrl+h",
-    "command": "-extension.dash.specific",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+k cmd+o",
     "command": "outline.focus"
   },
@@ -145,5 +140,13 @@
   {
     "key": "ctrl+shift+,",
     "command": "itunes.likeTrack"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.terminal.runSelectedText"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.terminal.runActiveFile"
   },
 ]

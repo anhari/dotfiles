@@ -1,4 +1,4 @@
-# Pause music, announce process is done, resume music
+# Announce that any process is done
 announce() {
   zsh -ic "$*"; say "Done!"
 }

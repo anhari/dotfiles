@@ -149,4 +149,8 @@
     "key": "ctrl+shift+a",
     "command": "workbench.action.terminal.runActiveFile"
   },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.reloadWindow"
+  }
 ]

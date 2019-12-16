@@ -1,4 +1,5 @@
 {
+  "prettier.requireConfig": false,
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.quickSuggestions": {
@@ -10,7 +11,9 @@
   "editor.fontWeight": "100",
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.tabCompletion": "on",
   // "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
@@ -127,43 +130,96 @@
   "vim.visualstar": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "n"],
-      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
     },
     {
-      "before": ["z", "g"],
-      "commands": ["cSpell.addWordToUserDictionary"]
+      "before": [
+        "z",
+        "g"
+      ],
+      "commands": [
+        "cSpell.addWordToUserDictionary"
+      ]
     },
     // Scroll the viewport faster
     {
-      "before": ["ctrl+e"],
-      "after": ["2", "5", "ctrl+e"]
+      "before": [
+        "ctrl+e"
+      ],
+      "after": [
+        "2",
+        "5",
+        "ctrl+e"
+      ]
     },
     {
-      "before": ["ctrl+y"],
-      "after": ["2", "5", "ctrl+y"]
+      "before": [
+        "ctrl+y"
+      ],
+      "after": [
+        "2",
+        "5",
+        "ctrl+y"
+      ]
     },
     // Make j&k work on wrapped lines as expected
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     },
     {
-      "before": ["leader", "h"],
-      "commands": [":nohl"]
+      "before": [
+        "0"
+      ],
+      "after": [
+        "^"
+      ]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -177,7 +233,10 @@
       ]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": [
+        "<leader>",
+        "l"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -189,7 +248,10 @@
       ]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": [
+        "<leader>",
+        "t"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -201,7 +263,10 @@
       ]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": [
+        "<leader>",
+        "a"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -218,7 +283,11 @@
       ]
     },
     {
-      "before": ["<leader>", "v", "v"],
+      "before": [
+        "<leader>",
+        "v",
+        "v"
+      ],
       "commands": [
         {
           "command": "expandLineSelection"
@@ -229,7 +298,11 @@
       ]
     },
     {
-      "before": ["<leader>", "r", "c"],
+      "before": [
+        "<leader>",
+        "r",
+        "c"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -247,7 +320,11 @@
       ]
     },
     {
-      "before": ["<leader>", "r", "g"],
+      "before": [
+        "<leader>",
+        "r",
+        "g"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -265,7 +342,11 @@
       ]
     },
     {
-      "before": ["<leader>", "m", "i"],
+      "before": [
+        "<leader>",
+        "m",
+        "i"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -282,7 +363,11 @@
       ]
     },
     {
-      "before": ["<leader>", "m", "b"],
+      "before": [
+        "<leader>",
+        "m",
+        "b"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -299,7 +384,11 @@
       ]
     },
     {
-      "before": ["<leader>", "r", "r"],
+      "before": [
+        "<leader>",
+        "r",
+        "r"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -317,7 +406,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "d"],
+      "before": [
+        "<leader>",
+        "g",
+        "d"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -335,7 +428,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "s"],
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -352,7 +449,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "l"],
+      "before": [
+        "<leader>",
+        "g",
+        "l"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -369,7 +470,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "b"],
+      "before": [
+        "<leader>",
+        "g",
+        "b"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -386,7 +491,11 @@
       ]
     },
     {
-      "before": ["<leader>", "b", "i"],
+      "before": [
+        "<leader>",
+        "b",
+        "i"
+      ],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -403,19 +512,38 @@
       ]
     },
     {
-      "before": ["]", "q"],
-      "commands": ["search.action.focusNextSearchResult"]
+      "before": [
+        "]",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusNextSearchResult"
+      ]
     },
     {
-      "before": ["[", "q"],
-      "commands": ["search.action.focusPreviousSearchResult"]
+      "before": [
+        "[",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusPreviousSearchResult"
+      ]
     },
     {
-      "before": ["<leader>", "i"],
-      "commands": ["editor.action.formatDocument"]
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     },
     {
-      "before": ["<leader>", "f", "t"],
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
       "after": [],
       "command": "workbench.action.tasks.runTask",
       "args": "mocha:spec"
@@ -502,6 +630,7 @@
     "pre",
     "precommit",
     "privatetreaty",
+    "purgecss",
     "react",
     "rebeccapurple",
     "redux",
@@ -517,6 +646,7 @@
     "sql",
     "style",
     "stylesheet",
+    "stylesheets",
     "subreducers",
     "svg",
     "svgs",
@@ -542,7 +672,8 @@
     "xmlns",
     "xsmall",
     "yadcf",
-    "yolo"
+    "yolo",
+    "zaffre"
   ],
   "window.zoomLevel": 1,
   "workbench.iconTheme": "material-icon-theme",
@@ -601,9 +732,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[git-commit]": {
-    "editor.rulers": [50, 72]
+    "editor.rulers": [
+      50,
+      72
+    ]
   },
   "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -666,4 +806,9 @@
   ],
   "itunes.skipTrackByTrackDislike": true,
   "terminal.integrated.shell.osx": "/bin/zsh",
+  "task.slowProviderWarning": [
+    "rake"
+  ],
+  // "task.autoDetect": "off",
+  // "task.slowProviderWarning": false
 }

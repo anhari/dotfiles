@@ -127,6 +127,12 @@ snippet ccb
 expect{${0}}.to change{.count}.by
 endsnippet
 
+snippet eha
+expect(${0}).to have_attributes({
+
+})
+endsnippet
+
 snippet aed
 around(:each) do
 	${0:${VISUAL:}}

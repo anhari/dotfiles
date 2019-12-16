@@ -56,8 +56,8 @@
     "body": ["<%= render '${1}' %>"],
     "description": "render"
   },
-  "rdd": {
-    "prefix": "rdd",
+  "rny": {
+    "prefix": "rny",
     "body": ["<%= render '${1}' do %>", "\t${0}", "<% end %>"],
     "description": "render do"
   },

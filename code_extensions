@@ -21,6 +21,7 @@ fknop.vscode-npm
 GrapeCity.gc-excelviewer
 IBM.output-colorizer
 JakeBecker.elixir-ls
+jnbt.vscode-rufo
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
 jolaleye.horizon-theme-vscode
@@ -67,5 +68,7 @@ tomphilbin.gruvbox-themes
 vscodevim.vim
 waderyan.gitblame
 whizkydee.material-palenight-theme
+wingrunr21.vscode-ruby
 wix.vscode-import-cost
-zhuangtongfa.Material-theme
+wmaurer.change-case
+zhuangtongfa.material-theme

@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "echo test"
+    },
+    {
+      "label": "Run Rails Server",
+      "dependsOn": ["Start Rails Server", "Start Sidekiq"]
+    },
+    {
+      "label": "Start Sidekiq",
+      "type": "shell",
+      "command": "bundle exec sidekiq -t 25",
+      "group": "build",
+      "presentation": {
+        "clear": true,
+        "echo": true,
+        "focus": false,
+        "group": "server",
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Open Rails console",
+      "type": "shell",
+      "command": "bin/rails console",
+      "presentation": {
+        "reveal": "always",
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Rails Server",
+      "type": "shell",
+      "command": "bundle && yarn install && bin/rails s -p 3001",
+      "group": "build",
+      "presentation": {
+        "clear": true,
+        "echo": true,
+        "focus": false,
+        "group": "server",
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Gitsh",
+      "type": "shell",
+      "command": "gitsh",
+      "group": "none",
+      "presentation": {
+        "clear": true,
+        "echo": true,
+        "focus": true,
+        "group": "none",
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rebase master",
+      "type": "shell",
+      "command": "git up",
+      "group": "none",
+      "presentation": {
+        "clear": true,
+        "echo": true,
+        "focus": false,
+        "group": "none",
+        "reveal": "silent"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

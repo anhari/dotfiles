@@ -108,7 +108,7 @@
     "args": "Gitsh"
   },
   {
-    "key": "alt+p",
+    "key": "ctrl+p",
     "command": "workbench.action.quickOpenTerm"
   },
   {
@@ -152,5 +152,5 @@
   {
     "key": "cmd+r",
     "command": "workbench.action.reloadWindow"
-  }
+  },
 ]

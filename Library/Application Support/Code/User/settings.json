@@ -1,6 +1,8 @@
 {
   "prettier.requireConfig": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingOvertype": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.quickSuggestions": {
     "other": true,
@@ -666,6 +668,7 @@
     "upvoted",
     "upvotes",
     "url",
+    "webp",
     "webpack",
     "wysihtml",
     "xmlhttprequest",
@@ -727,8 +730,13 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[git-commit]": {
@@ -741,8 +749,8 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
+    "typescript",
+    "typescriptreact"
   ],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -809,6 +817,5 @@
   "task.slowProviderWarning": [
     "rake"
   ],
-  // "task.autoDetect": "off",
-  // "task.slowProviderWarning": false
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
 }

@@ -17,6 +17,7 @@ DotJoshJohnson.xml
 esbenp.prettier-vscode
 fallenwood.vimL
 faustinoaq.crystal-lang
+firefox-devtools.vscode-firefox-debug
 fknop.vscode-npm
 GrapeCity.gc-excelviewer
 IBM.output-colorizer
@@ -46,6 +47,7 @@ msjsdiag.debugger-for-chrome
 noku.rails-run-spec-vscode
 Orta.vscode-jest
 PKief.material-icon-theme
+pnp.polacode
 Prisma.vscode-graphql
 PsykoSoldi3r.itunes-vscode
 rebornix.ruby

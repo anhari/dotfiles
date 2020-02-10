@@ -108,7 +108,7 @@
     "args": "Gitsh"
   },
   {
-    "key": "ctrl+p",
+    "key": "alt+p",
     "command": "workbench.action.quickOpenTerm"
   },
   {
@@ -128,6 +128,10 @@
   {
     "key": "shift+cmd+h",
     "command": "workbench.action.tasks.restartTask"
+  },
+  {
+    "key": "shift+ctrl+h",
+    "command": "workbench.action.tasks.terminate"
   },
   {
     "key": "shift+cmd+l",

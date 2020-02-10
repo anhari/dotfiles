@@ -2,13 +2,200 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Test",
+      "label": "Git: Log",
+      "command": "git l",
       "type": "shell",
-      "command": "echo test"
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     },
     {
-      "label": "Run Rails Server",
-      "dependsOn": ["Start Rails Server", "Start Sidekiq"]
+      "label": "Git: Uncommit",
+      "command": "git uncommit",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Push FORCE WITH LEASE",
+      "command": "git pf",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Shalector",
+      "command": "git shalector",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Pull Request",
+      "command": "git pull-request",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Sweep",
+      "command": "git sweep",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Add All",
+      "command": "git aa",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Amend",
+      "command": "git amend",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Interactive Rebase",
+      "command": "git ir",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Browse",
+      "command": "git browse",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Status",
+      "command": "git status",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Staged",
+      "command": "git staged",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Add Patch",
+      "command": "git add --patch",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Git: Diff",
+      "command": "git diff",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     },
     {
       "label": "Start Sidekiq",
@@ -19,24 +206,48 @@
         "clear": true,
         "echo": true,
         "focus": false,
-        "group": "server",
+        "group": "sidekiq",
         "reveal": "always"
       }
     },
     {
-      "label": "Open Rails console",
+      "label": "Bundle Install",
+      "command": "bundle install",
+      "type": "shell",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rails: Run Unit Tests",
+      "type": "shell",
+      "command": "bundle exec rspec --exclude-pattern 'spec/features/**/*_spec.rb'",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rails: Open Console",
       "type": "shell",
       "command": "bin/rails console",
       "presentation": {
         "reveal": "always",
+        "group": "console",
         "focus": true
       },
       "problemMatcher": []
     },
     {
-      "label": "Start Rails Server",
+      "label": "Rails: Open DB Console",
       "type": "shell",
-      "command": "bundle && yarn install && bin/rails s -p 3001",
+      "command": "bin/rails dbconsole",
+      "presentation": {
+        "reveal": "always",
+        "group": "dbconsole",
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rails: Server",
+      "type": "shell",
+      "command": "bundle && yarn install && bin/rails server",
       "group": "build",
       "presentation": {
         "clear": true,
@@ -44,6 +255,48 @@
         "focus": false,
         "group": "server",
         "reveal": "always"
+      }
+    },
+    {
+      "label": "Rails: Tail Development Logs",
+      "type": "shell",
+      "command": "tail -f log/development.log",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "group": "development logs",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Rails: Tail Test Logs",
+      "type": "shell",
+      "command": "tail -f log/test.log",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "test logs",
+        "clear": false
+      }
+    },
+    {
+      "label": "Rails: Generate",
+      "type": "shell",
+      "command": "bin/rails generate ${input:railsGenerateParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "test logs",
+        "clear": false
       }
     },
     {
@@ -55,24 +308,31 @@
         "clear": true,
         "echo": true,
         "focus": true,
-        "group": "none",
+        "group": "gitsh",
         "reveal": "always"
       },
       "problemMatcher": []
     },
     {
-      "label": "Rebase master",
+      "label": "Git: Up",
       "type": "shell",
       "command": "git up",
       "group": "none",
       "presentation": {
         "clear": true,
         "echo": true,
-        "focus": false,
+        "focus": true,
         "group": "none",
-        "reveal": "silent"
+        "reveal": "always"
       },
       "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "railsGenerateParam",
+      "description": "bin/rails generate",
+      "type": "promptString"
     }
   ]
 }

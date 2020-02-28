@@ -1,4 +1,28 @@
 {
+  "[git-commit]": {
+    "editor.rulers": [50, 72]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
   "breadcrumbs.enabled": true,
   "cSpell.userWords": [
     "Checkins",
@@ -142,35 +166,31 @@
     "yolo",
     "zaffre"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingOvertype": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": true
-  },
   "editor.cursorBlinking": "solid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontWeight": "100",
+  "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": true
+  },
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [80],
   "editor.tabCompletion": "on",
-  // "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.formatOnSave": true,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": [
-          //  Find scopes via command: > Developer: Inspect TM Scopes data
-          //following will be in italic
           "comment",
           "emphasis",
           "entity.name.method.js",
@@ -246,15 +266,16 @@
       }
     ]
   },
+  "editor.wordWrap": "on",
   "elixirLS.suggestSpecs": false,
-  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "erb": "html",
-    "html.erb": "html",
-    "javascript": "javascriptreact",
     "HTML (Eex)": "html",
-    "HTML (EEx)": "html"
+    "HTML (EEx)": "html",
+    "html.erb": "html",
+    "javascript": "javascriptreact"
   },
+  "emmet.triggerExpansionOnTab": true,
   "eslint.alwaysShowStatus": true,
   "eslint.debug": true,
   "eslint.options": {
@@ -288,6 +309,7 @@
   "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "material-icon-theme.folders.theme": "classic",
   "prettier.requireConfig": false,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": false,
@@ -296,14 +318,19 @@
   "ruby.specSaveFile": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
+  "task.problemMatchers.neverPrompt": true,
+  "task.slowProviderWarning": ["rake"],
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.disableExtension": false,
   "vim.hlsearch": true,
   "vim.incsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "before": ["j", "k"]
     }
   ],
   "vim.leader": ",",
@@ -316,27 +343,25 @@
       "before": ["z", "g"],
       "commands": ["cSpell.addWordToUserDictionary"]
     },
-    // Scroll the viewport faster
     {
-      "before": ["ctrl+e"],
-      "after": ["2", "5", "ctrl+e"]
+      "after": ["2", "5", "ctrl+e"],
+      "before": ["ctrl+e"]
     },
     {
-      "before": ["ctrl+y"],
-      "after": ["2", "5", "ctrl+y"]
-    },
-    // Make j&k work on wrapped lines as expected
-    {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "after": ["2", "5", "ctrl+y"],
+      "before": ["ctrl+y"]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "after": ["g", "j"],
+      "before": ["j"]
     },
     {
-      "before": ["0"],
-      "after": ["^"]
+      "after": ["g", "k"],
+      "before": ["k"]
+    },
+    {
+      "after": ["^"],
+      "before": ["0"]
     },
     {
       "before": ["leader", "h"],
@@ -346,10 +371,10 @@
       "before": ["<leader>", "s"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
           "command": "extension.runSpecLine"
@@ -360,10 +385,10 @@
       "before": ["<leader>", "l"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "extension.runLastSpec"
       ]
@@ -372,10 +397,10 @@
       "before": ["<leader>", "t"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "extension.runFileSpecs"
       ]
@@ -384,16 +409,16 @@
       "before": ["<leader>", "a"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle exec rspec\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -412,16 +437,16 @@
       "before": ["<leader>", "r", "c"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle exec rails console\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "workbench.action.terminal.focus"
       ]
@@ -430,16 +455,16 @@
       "before": ["<leader>", "r", "g"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle exec rails generate "
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "workbench.action.terminal.focus"
       ]
@@ -448,16 +473,16 @@
       "before": ["<leader>", "m", "i"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "migrate\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -465,16 +490,16 @@
       "before": ["<leader>", "m", "b"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle exec rake db:rollback\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -482,16 +507,16 @@
       "before": ["<leader>", "r", "r"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle exec rake routes | grep "
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "workbench.action.terminal.focus"
       ]
@@ -500,16 +525,16 @@
       "before": ["<leader>", "g", "d"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "g diff\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         "workbench.action.terminal.focus"
       ]
@@ -518,16 +543,16 @@
       "before": ["<leader>", "g", "s"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "g status\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -535,16 +560,16 @@
       "before": ["<leader>", "g", "l"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "g log\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -552,16 +577,16 @@
       "before": ["<leader>", "g", "b"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "g browse\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -569,16 +594,16 @@
       "before": ["<leader>", "b", "i"],
       "commands": [
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "clear\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         },
         {
-          "command": "workbench.action.terminal.sendSequence",
           "args": {
             "text": "bundle install\r"
-          }
+          },
+          "command": "workbench.action.terminal.sendSequence"
         }
       ]
     },
@@ -595,73 +620,40 @@
       "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": ["<leader>", "f", "t"],
       "after": [],
-      "command": "workbench.action.tasks.runTask",
-      "args": "mocha:spec"
+      "args": "mocha:spec",
+      "before": ["<leader>", "f", "t"],
+      "command": "workbench.action.tasks.runTask"
     }
   ],
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "window.zoomLevel": 2,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.enablePreview": true,
-  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
-    "[Palenight Operator]": {
-      "statusBar.background": "#0A0E14",
-      "statusBar.noFolderBackground": "#0A0E14",
-      "statusBar.debuggingBackground": "#0A0E14",
-      "sideBar.background": "#1f2331",
-      "activityBar.background": "#1f2331",
-      "panel.background": "#1f2331",
-      "terminal.background": "#1f2331",
-      "editorRuler.foreground": "#1f2331"
-    },
     "[Monokai Pro (Filter Octagon)]": {
       "editorCursor.foreground": "#ffffff6e",
       "terminalCursor.foreground": "#ffffff6e"
+    },
+    "[Palenight Operator]": {
+      "activityBar.background": "#1f2331",
+      "editorRuler.foreground": "#1f2331",
+      "panel.background": "#1f2331",
+      "sideBar.background": "#1f2331",
+      "statusBar.background": "#0A0E14",
+      "statusBar.debuggingBackground": "#0A0E14",
+      "statusBar.noFolderBackground": "#0A0E14",
+      "terminal.background": "#1f2331"
     }
   },
-  "workbench.sideBar.location": "left",
-  "workbench.statusBar.visible": true,
-  "workbench.activityBar.visible": true,
-  "material-icon-theme.folders.theme": "classic",
-  "workbench.startupEditor": "newUntitledFile",
-  "task.problemMatchers.neverPrompt": true,
-  "task.slowProviderWarning": ["rake"],
-  "terminal.integrated.macOptionClickForcesSelection": true,
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "workbench.colorTheme": "Palenight Operator",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
   "zenMode.hideLineNumbers": false,
-  "zenMode.restore": true,
-  "[git-commit]": {
-    "editor.rulers": [50, 72]
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[mdx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[ruby]": {
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.formatOnSave": false
-  }
+  "zenMode.restore": true
 }

@@ -1,5 +1,147 @@
 {
-  "prettier.requireConfig": false,
+  "breadcrumbs.enabled": true,
+  "cSpell.userWords": [
+    "Checkins",
+    "Havanese",
+    "Topbar",
+    "actioncable",
+    "activestorage",
+    "alignitems",
+    "allowfullscreen",
+    "amaranta",
+    "anhari",
+    "antialiased",
+    "barebones",
+    "bellbird",
+    "blueprintjs",
+    "bools",
+    "browserslist",
+    "bugsnag",
+    "camelize",
+    "card",
+    "checkboxes",
+    "checkin",
+    "cockatiel",
+    "coderunes",
+    "commentable",
+    "datatable",
+    "datatables",
+    "datetime",
+    "dbconsole",
+    "debounce",
+    "debounced",
+    "denormalize",
+    "denormalized",
+    "devtool",
+    "devtools",
+    "dompurify",
+    "downvotable",
+    "downvote",
+    "downvotes",
+    "dropzone",
+    "dwarfcode",
+    "dwarfcode's",
+    "eid",
+    "eids",
+    "esnext",
+    "evenodd",
+    "extension",
+    "favoritable",
+    "favorited",
+    "feedyard",
+    "fetch",
+    "flatpickr",
+    "fontawesome",
+    "formik",
+    "fortawesome",
+    "frameborder",
+    "frontendmasters",
+    "frontmatter",
+    "fsevents",
+    "fulltext",
+    "fulltexts",
+    "gatsbyjs",
+    "gitsh",
+    "glassdoor",
+    "hstore",
+    "infinite",
+    "interop",
+    "jordon",
+    "justifycontent",
+    "keyframes",
+    "linebreak",
+    "linkify",
+    "location",
+    "metadatum",
+    "miragejs",
+    "mounter",
+    "noopener",
+    "noreferrer",
+    "normalizr",
+    "onboarding",
+    "onboardings",
+    "petfinder",
+    "petrie",
+    "pinnable",
+    "plugin",
+    "postbuild",
+    "postgre",
+    "postgres",
+    "postgresql",
+    "pre",
+    "precommit",
+    "precompilation",
+    "privatetreaty",
+    "purgecss",
+    "rarr",
+    "react",
+    "rebeccapurple",
+    "redux",
+    "reonboarding",
+    "reselect",
+    "route",
+    "rsvp",
+    "rsvped",
+    "scroller",
+    "semibold",
+    "shopify",
+    "snakify",
+    "sql",
+    "style",
+    "stylesheet",
+    "stylesheets",
+    "subreducers",
+    "svg",
+    "svgs",
+    "tailwindcss",
+    "textalign",
+    "todos",
+    "turbolinks",
+    "type",
+    "types",
+    "typesriptreact",
+    "uglifyjs",
+    "unarchive",
+    "unarchived",
+    "uncommit",
+    "unmount",
+    "unnested",
+    "upvote",
+    "upvoted",
+    "upvotes",
+    "url",
+    "webp",
+    "webpack",
+    "webpacker",
+    "woff",
+    "wysihtml",
+    "xmlhttprequest",
+    "xmlns",
+    "xsmall",
+    "yadcf",
+    "yolo",
+    "zaffre"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingOvertype": "always",
@@ -11,11 +153,11 @@
   },
   "editor.cursorBlinking": "solid",
   "editor.fontWeight": "100",
+  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [80],
   "editor.tabCompletion": "on",
   // "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
@@ -113,115 +255,95 @@
     "HTML (Eex)": "html",
     "HTML (EEx)": "html"
   },
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "eslint.options": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    }
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
+  "git.allowForcePush": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.inputValidationSubjectLength": 50,
+  "git.rebaseWhenSync": true,
+  "git.showPushSuccessNotification": true,
+  "gitHistory.hideCommitViewExplorer": true,
+  "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
+  "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig": false,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": false,
   "ruby.intellisense": "rubyLocate",
   "ruby.specFocusTerminal": false,
   "ruby.specSaveFile": true,
-  "ruby.codeCompletion": "rcodetools",
-  "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
+  "search.useIgnoreFiles": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vim.useCtrlKeys": true,
+  "vim.disableExtension": false,
   "vim.hlsearch": true,
   "vim.incsearch": true,
-  "vim.leader": ",",
-  "vim.useSystemClipboard": false,
-  "vim.visualstar": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     }
   ],
+  "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "n"
-      ],
-      "commands": [
-        "workbench.files.action.showActiveFileInExplorer"
-      ]
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
     {
-      "before": [
-        "z",
-        "g"
-      ],
-      "commands": [
-        "cSpell.addWordToUserDictionary"
-      ]
+      "before": ["z", "g"],
+      "commands": ["cSpell.addWordToUserDictionary"]
     },
     // Scroll the viewport faster
     {
-      "before": [
-        "ctrl+e"
-      ],
-      "after": [
-        "2",
-        "5",
-        "ctrl+e"
-      ]
+      "before": ["ctrl+e"],
+      "after": ["2", "5", "ctrl+e"]
     },
     {
-      "before": [
-        "ctrl+y"
-      ],
-      "after": [
-        "2",
-        "5",
-        "ctrl+y"
-      ]
+      "before": ["ctrl+y"],
+      "after": ["2", "5", "ctrl+y"]
     },
     // Make j&k work on wrapped lines as expected
     {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "g",
-        "j"
-      ]
+      "before": ["j"],
+      "after": ["g", "j"]
     },
     {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g",
-        "k"
-      ]
+      "before": ["k"],
+      "after": ["g", "k"]
     },
     {
-      "before": [
-        "0"
-      ],
-      "after": [
-        "^"
-      ]
+      "before": ["0"],
+      "after": ["^"]
     },
     {
-      "before": [
-        "leader",
-        "h"
-      ],
-      "commands": [
-        ":nohl"
-      ]
+      "before": ["leader", "h"],
+      "commands": [":nohl"]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
+      "before": ["<leader>", "s"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -235,10 +357,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "l"
-      ],
+      "before": ["<leader>", "l"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -250,10 +369,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
+      "before": ["<leader>", "t"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -265,10 +381,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "a"
-      ],
+      "before": ["<leader>", "a"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -285,11 +398,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "v",
-        "v"
-      ],
+      "before": ["<leader>", "v", "v"],
       "commands": [
         {
           "command": "expandLineSelection"
@@ -300,11 +409,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "r",
-        "c"
-      ],
+      "before": ["<leader>", "r", "c"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -322,11 +427,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "r",
-        "g"
-      ],
+      "before": ["<leader>", "r", "g"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -344,11 +445,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "m",
-        "i"
-      ],
+      "before": ["<leader>", "m", "i"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -365,11 +462,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "m",
-        "b"
-      ],
+      "before": ["<leader>", "m", "b"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -386,11 +479,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "r",
-        "r"
-      ],
+      "before": ["<leader>", "r", "r"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -408,11 +497,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "d"
-      ],
+      "before": ["<leader>", "g", "d"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -430,11 +515,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "s"
-      ],
+      "before": ["<leader>", "g", "s"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -451,11 +532,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "l"
-      ],
+      "before": ["<leader>", "g", "l"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -472,11 +549,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "b"
-      ],
+      "before": ["<leader>", "g", "b"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -493,11 +566,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "i"
-      ],
+      "before": ["<leader>", "b", "i"],
       "commands": [
         {
           "command": "workbench.action.terminal.sendSequence",
@@ -514,190 +583,31 @@
       ]
     },
     {
-      "before": [
-        "]",
-        "q"
-      ],
-      "commands": [
-        "search.action.focusNextSearchResult"
-      ]
+      "before": ["]", "q"],
+      "commands": ["search.action.focusNextSearchResult"]
     },
     {
-      "before": [
-        "[",
-        "q"
-      ],
-      "commands": [
-        "search.action.focusPreviousSearchResult"
-      ]
+      "before": ["[", "q"],
+      "commands": ["search.action.focusPreviousSearchResult"]
     },
     {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<leader>", "i"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "t"
-      ],
+      "before": ["<leader>", "f", "t"],
       "after": [],
       "command": "workbench.action.tasks.runTask",
       "args": "mocha:spec"
     }
   ],
-  "cSpell.userWords": [
-    "Checkins",
-    "Havanese",
-    "Topbar",
-    "activestorage",
-    "alignitems",
-    "allowfullscreen",
-    "amaranta",
-    "anhari",
-    "antialiased",
-    "barebones",
-    "bellbird",
-    "blueprintjs",
-    "bools",
-    "browserslist",
-    "bugsnag",
-    "camelize",
-    "card",
-    "checkboxes",
-    "checkin",
-    "cockatiel",
-    "coderunes",
-    "commentable",
-    "datatable",
-    "datetime",
-    "dbconsole",
-    "debounce",
-    "debounced",
-    "denormalize",
-    "denormalized",
-    "devtool",
-    "devtools",
-    "dompurify",
-    "downvotable",
-    "downvote",
-    "downvotes",
-    "dropzone",
-    "dwarfcode",
-    "dwarfcode's",
-    "eid",
-    "eids",
-    "esnext",
-    "evenodd",
-    "extension",
-    "favoritable",
-    "favorited",
-    "feedyard",
-    "fetch",
-    "fontawesome",
-    "formik",
-    "fortawesome",
-    "frameborder",
-    "frontendmasters",
-    "frontmatter",
-    "fsevents",
-    "fulltext",
-    "fulltexts",
-    "gatsbyjs",
-    "gitsh",
-    "glassdoor",
-    "hstore",
-    "infinite",
-    "interop",
-    "jordon",
-    "justifycontent",
-    "keyframes",
-    "linebreak",
-    "linkify",
-    "location",
-    "metadatum",
-    "miragejs",
-    "mounter",
-    "noopener",
-    "noreferrer",
-    "normalizr",
-    "onboarding",
-    "onboardings",
-    "petfinder",
-    "petrie",
-    "pinnable",
-    "plugin",
-    "postbuild",
-    "postgre",
-    "postgres",
-    "postgresql",
-    "pre",
-    "precommit",
-    "privatetreaty",
-    "purgecss",
-    "react",
-    "rebeccapurple",
-    "redux",
-    "reonboarding",
-    "reselect",
-    "route",
-    "rsvp",
-    "rsvped",
-    "scroller",
-    "semibold",
-    "shopify",
-    "snakify",
-    "sql",
-    "style",
-    "stylesheet",
-    "stylesheets",
-    "subreducers",
-    "svg",
-    "svgs",
-    "tailwindcss",
-    "textalign",
-    "todos",
-    "turbolinks",
-    "type",
-    "types",
-    "typesriptreact",
-    "uglifyjs",
-    "unarchive",
-    "unarchived",
-    "uncommit",
-    "unmount",
-    "unnested",
-    "upvote",
-    "upvoted",
-    "upvotes",
-    "url",
-    "webp",
-    "webpack",
-    "wysihtml",
-    "xmlhttprequest",
-    "xmlns",
-    "xsmall",
-    "yadcf",
-    "yolo",
-    "zaffre"
-  ],
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": false,
+  "vim.visualstar": true,
   "window.zoomLevel": 2,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "zenMode.restore": true,
-  "[ruby]": {
-    "editor.formatOnSave": false
-  },
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
-  "vim.disableExtension": false,
   "workbench.colorCustomizations": {
     "[Palenight Operator]": {
       "statusBar.background": "#0A0E14",
@@ -714,117 +624,44 @@
       "terminalCursor.foreground": "#ffffff6e"
     }
   },
-  "explorer.confirmDelete": false,
   "workbench.sideBar.location": "left",
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": true,
-  "gitHistory.hideCommitViewExplorer": true,
-  "git.fetchOnPull": true,
-  "git.showPushSuccessNotification": true,
-  "git.allowForcePush": true,
-  "git.enableSmartCommit": true,
-  "git.rebaseWhenSync": true,
-  "git.inputValidationSubjectLength": 50,
   "material-icon-theme.folders.theme": "classic",
-  "editor.lineNumbers": "relative",
   "workbench.startupEditor": "newUntitledFile",
-  "breadcrumbs.enabled": true,
+  "task.problemMatchers.neverPrompt": true,
+  "task.slowProviderWarning": ["rake"],
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.colorTheme": "Palenight Operator",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.restore": true,
+  "[git-commit]": {
+    "editor.rulers": [50, 72]
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.autofetch": true,
-  "terminal.integrated.rendererType": "dom",
-  "zenMode.hideLineNumbers": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[git-commit]": {
-    "editor.rulers": [
-      50,
-      72
-    ]
-  },
-  "eslint.alwaysShowStatus": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "[json]": {
+  "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.associations": {
-    "*.css": "postcss",
+  "[ruby]": {
+    "editor.formatOnSave": true
   },
-  "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#b52e31"
-    },
-    {
-      "name": "Auth0 Orange",
-      "value": "#eb5424"
-    },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
-    },
-    {
-      "name": "C# Purple",
-      "value": "#68217A"
-    },
-    {
-      "name": "Gatsby Purple",
-      "value": "#639"
-    },
-    {
-      "name": "Go Cyan",
-      "value": "#5dc9e2"
-    },
-    {
-      "name": "Java Blue-Gray",
-      "value": "#557c9b"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#00b3e6"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
-    }
-  ],
-  "itunes.skipTrackByTrackDislike": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "task.slowProviderWarning": [
-    "rake"
-  ],
-  "workbench.colorTheme": "Palenight Operator",
-  "terminal.integrated.macOptionClickForcesSelection": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  }
 }

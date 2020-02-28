@@ -23,10 +23,10 @@ fknop.vscode-npm
 formulahendry.code-runner
 gamunu.vscode-yarn
 GrapeCity.gc-excelviewer
+heybourn.headwind
 IBM.output-colorizer
 idleberg.applescript
 JakeBecker.elixir-ls
-jnbt.vscode-rufo
 jock.svg
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
@@ -40,7 +40,7 @@ kumar-harsh.graphql-for-vscode
 Lourenci.go-to-spec
 mechatroner.rainbow-csv
 mikestead.dotenv
-misogi.ruby-rubocop
+mkaufman.HTMLHint
 mkxml.vscode-filesize
 monokai.theme-monokai-pro-vscode
 ms-python.python

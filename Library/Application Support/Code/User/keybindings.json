@@ -157,4 +157,8 @@
     "key": "cmd+r",
     "command": "workbench.action.reloadWindow"
   },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
 ]

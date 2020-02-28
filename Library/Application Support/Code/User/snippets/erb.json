@@ -140,4 +140,8 @@
     "body": "class=\"${0}\"",
     "description": "class"
   },
+  "yolo": {
+    "prefix": "yolo",
+    "body": "<%= render 'contracts/detail', label_name: '', icon: nil, detail: @summary. %>"
+  }
 }

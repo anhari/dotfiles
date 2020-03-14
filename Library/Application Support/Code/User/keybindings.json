@@ -161,4 +161,12 @@
     "key": "ctrl+shift+c",
     "command": "workbench.files.action.collapseExplorerFolders"
   },
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
 ]

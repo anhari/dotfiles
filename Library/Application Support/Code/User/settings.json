@@ -14,10 +14,14 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdownreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
@@ -32,6 +36,7 @@
     "Havanese",
     "Topbar",
     "actioncable",
+    "activedescendant",
     "activestorage",
     "alignitems",
     "allowfullscreen",
@@ -40,6 +45,7 @@
     "antialiased",
     "barebones",
     "bellbird",
+    "bluedotvote",
     "blueprintjs",
     "bools",
     "browserslist",
@@ -50,6 +56,7 @@
     "checkin",
     "cockatiel",
     "coderunes",
+    "combobox",
     "commentable",
     "datatable",
     "datatables",
@@ -157,6 +164,8 @@
     "upvoted",
     "upvotes",
     "url",
+    "webfont",
+    "webfonts",
     "webp",
     "webpack",
     "webpacker",
@@ -188,6 +197,7 @@
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [80],
+  "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
@@ -297,7 +307,8 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.css": "postcss"
+    "*.css": "postcss",
+    "*.axlsx": "ruby"
   },
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
@@ -313,12 +324,14 @@
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "material-icon-theme.folders.theme": "classic",
+  "prettier.printWidth": 80,
   "prettier.requireConfig": false,
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": false,
   "ruby.intellisense": "rubyLocate",
   "ruby.specFocusTerminal": false,
   "ruby.specSaveFile": true,
+  "scss.validate": false,
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
   "task.problemMatchers.neverPrompt": true,

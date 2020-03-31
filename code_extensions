@@ -1,3 +1,4 @@
+adpyke.codesnap
 adpyke.vscode-sql-formatter
 aliariff.vscode-erb-beautify
 auchenberg.vscode-browser-preview
@@ -33,6 +34,7 @@ kaiwood.endwise
 karigari.chat
 karunamurti.haml
 kisstkondoros.vscode-gutter-preview
+kohkimakimoto.vscode-mac-dictionary
 kumar-harsh.graphql-for-vscode
 Lourenci.go-to-spec
 mechatroner.rainbow-csv
@@ -48,6 +50,7 @@ ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
 noku.rails-run-spec-vscode
 Orta.vscode-jest
+PKief.markdown-checkbox
 PKief.material-icon-theme
 pnp.polacode
 Prisma.vscode-graphql

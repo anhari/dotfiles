@@ -43,6 +43,7 @@
     "amaranta",
     "anhari",
     "antialiased",
+    "apos",
     "barebones",
     "bellbird",
     "bluedotvote",
@@ -54,10 +55,12 @@
     "card",
     "checkboxes",
     "checkin",
+    "chmod",
     "cockatiel",
     "coderunes",
     "combobox",
     "commentable",
+    "datasets",
     "datatable",
     "datatables",
     "datetime",
@@ -69,6 +72,7 @@
     "devtool",
     "devtools",
     "dompurify",
+    "dotfiles",
     "downvotable",
     "downvote",
     "downvotes",
@@ -97,6 +101,8 @@
     "gatsbyjs",
     "gitsh",
     "glassdoor",
+    "highchart",
+    "highcharts",
     "hstore",
     "infinite",
     "interop",
@@ -147,8 +153,10 @@
     "subreducers",
     "svg",
     "svgs",
+    "symlink",
     "tailwindcss",
     "textalign",
+    "tmux",
     "todos",
     "turbolinks",
     "type",
@@ -164,6 +172,7 @@
     "upvoted",
     "upvotes",
     "url",
+    "verdana",
     "webfont",
     "webfonts",
     "webp",
@@ -323,6 +332,14 @@
   "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown-checkbox.checkmark": "x",
+  "markdown-checkbox.languages": [
+    "markdown",
+    "mdx",
+    "plaintext"
+  ],
+  "markdown-checkbox.typeOfBulletPoint": "-",
+  "markdown-checkbox.withBulletPoint": true,
   "material-icon-theme.folders.theme": "classic",
   "prettier.printWidth": 80,
   "prettier.requireConfig": false,
@@ -400,42 +417,19 @@
     {
       "before": ["<leader>", "l"],
       "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
         "extension.runLastSpec"
       ]
     },
     {
       "before": ["<leader>", "t"],
       "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
         "extension.runFileSpecs"
       ]
     },
     {
       "before": ["<leader>", "a"],
       "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "bundle exec rspec\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        }
+        "extension.runAllSpecFiles"
       ]
     },
     {
@@ -447,94 +441,6 @@
         {
           "command": "workbench.action.terminal.runSelectedText"
         }
-      ]
-    },
-    {
-      "before": ["<leader>", "r", "c"],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "bundle exec rails console\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        "workbench.action.terminal.focus"
-      ]
-    },
-    {
-      "before": ["<leader>", "r", "g"],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "bundle exec rails generate "
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        "workbench.action.terminal.focus"
-      ]
-    },
-    {
-      "before": ["<leader>", "m", "i"],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "migrate\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "m", "b"],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "bundle exec rake db:rollback\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "r", "r"],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "args": {
-            "text": "bundle exec rake routes | grep "
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        "workbench.action.terminal.focus"
       ]
     },
     {
@@ -645,6 +551,7 @@
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
+  "vscode-erb-beautify.keepBlankLines": 1,
   "window.zoomLevel": 2,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
@@ -660,10 +567,9 @@
       "statusBar.background": "#0A0E14",
       "statusBar.debuggingBackground": "#0A0E14",
       "statusBar.noFolderBackground": "#0A0E14",
-      "terminal.background": "#1f2331"
-    }
+      "terminal.background": "#1f2331",
+    },
   },
-  "workbench.colorTheme": "Palenight Operator",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -671,5 +577,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": true,
   "zenMode.hideLineNumbers": false,
-  "zenMode.restore": true
+  "zenMode.restore": true,
+  "workbench.colorTheme": "Palenight Operator"
 }

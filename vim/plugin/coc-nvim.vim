@@ -56,7 +56,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>cf <Plug>(coc-fix-current)
 nmap <leader>cr <Plug>(coc-restart)
-nmap <C-Space> <Plug>(coc-fix-current)
+nmap <C-Space> <Plug>(coc-quickfix)
 
 " Remap for do codeAction of current line
 nmap <leader>ca  <Plug>(coc-codeaction)

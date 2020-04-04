@@ -2,6 +2,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "elixir",
+    "eruby",
     "ex",
     "exs",
     "html",
@@ -10,6 +11,7 @@
     "javascriptreact",
     "json",
     "markdown",
+    "ruby",
     "scss",
     "typescript",
     "typescript.tsx",

@@ -1,6 +1,6 @@
-elixir 1.8.2
+elixir 1.10.2
 nodejs 12.3.1
-python 2.7.16 3.7.3
+python 2.7.17 3.8.2
 ruby 2.6.5
 erlang 21.3
 crystal 0.27.2

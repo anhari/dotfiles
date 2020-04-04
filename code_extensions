@@ -21,6 +21,8 @@ fallenwood.vimL
 faustinoaq.crystal-lang
 firefox-devtools.vscode-firefox-debug
 fknop.vscode-npm
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
 gamunu.vscode-yarn
 GrapeCity.gc-excelviewer
 heybourn.headwind
@@ -43,6 +45,7 @@ mikestead.dotenv
 mkaufman.HTMLHint
 mkxml.vscode-filesize
 monokai.theme-monokai-pro-vscode
+ms-dotnettools.csharp
 ms-python.python
 ms-vscode.cpptools
 ms-vsliveshare.vsliveshare
@@ -59,6 +62,7 @@ PsykoSoldi3r.itunes-vscode
 rebornix.ruby
 ria.elastic
 richie5um2.vscode-sort-json
+ritwickdey.LiveServer
 sbrink.elm
 sdras.night-owl
 shd101wyy.markdown-preview-enhanced
@@ -77,3 +81,4 @@ whizkydee.material-palenight-theme
 wingrunr21.vscode-ruby
 wix.vscode-import-cost
 wmaurer.change-case
+Zignd.html-css-class-completion

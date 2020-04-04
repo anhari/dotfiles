@@ -1,0 +1,98 @@
+{
+  "Capybara: save and open page": {
+		"scope": "ruby",
+    "prefix": "sop",
+    "body": [
+      "save_and_open_page"
+    ],
+    "description": "Capybara: save and open page"
+  },
+  "Capybaara: save and open screenshot": {
+		"scope": "ruby",
+    "prefix": "sos",
+    "body": [
+      "save_and_open_screenshot(\"#{Time.now}.png\", full: true)"
+    ],
+    "description": "Capybaara: save and open screenshot"
+  },
+  "Capybara: click_button": {
+		"scope": "ruby",
+    "prefix": "cb",
+    "body": [
+      "click_button ${0}"
+    ],
+    "description": "Capybara: click_button"
+  },
+  "Capybara: click on": {
+		"scope": "ruby",
+    "prefix": "co",
+    "body": [
+      "click_on ${0}"
+    ],
+    "description": "Capybara: click on"
+  },
+  "Capybara: visit": {
+		"scope": "ruby",
+    "prefix": "vi",
+    "body": [
+      "visit ${0}"
+    ],
+    "description": "Capybara: visit"
+  },
+  "Capybara: visit link": {
+		"scope": "ruby",
+    "prefix": "vl",
+    "body": [
+      "visit_link ${0}"
+    ],
+    "description": "Capybara: visit link"
+  },
+  "Capybara: fill in": {
+		"scope": "ruby",
+    "prefix": "fi",
+    "body": [
+      "fill_in ${0}, with: \"blah\""
+    ],
+    "description": "Capybara: fill in"
+  },
+  "Capybara: select": {
+		"scope": "ruby",
+    "prefix": "sel",
+    "body": [
+      "select(\"${0:Option}\", from: \"Select Box\")"
+    ],
+    "description": "Capybara: select"
+  },
+  "Capybara: choose radio option": {
+		"scope": "ruby",
+    "prefix": "cho",
+    "body": [
+      "choose \"${0}\""
+    ],
+    "description": "Capybara: choose radio option"
+  },
+  "Capybara: check checkbox": {
+		"scope": "ruby",
+    "prefix": "chk",
+    "body": [
+      "check \"${0}\""
+    ],
+    "description": "Capybara: check checkbox"
+  },
+  "Capybara: uncheck checkbox": {
+		"scope": "ruby",
+    "prefix": "unchk",
+    "body": [
+      "uncheck \"${0}\""
+    ],
+    "description": "Capybara: uncheck checkbox"
+  },
+  "Capybara: attach file": {
+		"scope": "ruby",
+    "prefix": "attfile",
+    "body": [
+      "attach_file(\"${0:FileName}\", \"/path/to/image.jpg\")"
+    ],
+    "description": "Capybara: attach file"
+  },
+}

@@ -1,0 +1,38 @@
+{
+  "FactoryBot: new factory": {
+		"scope": "ruby",
+    "prefix": "fact",
+    "body": [
+      "FactoryBot.define do",
+      "\tfactory :${0} do",
+      "\tend",
+      "end"
+    ],
+    "description": "FactoryBot: new factory"
+  },
+  "FactoryBot: sequence": {
+		"scope": "ruby",
+    "prefix": "seq",
+    "body": [
+      "sequence(:${0}) { |n| \"#{n}\" }"
+    ],
+    "description": "FactoryBot: sequence"
+  },
+  "FactoryBot: trait": {
+		"scope": "ruby",
+    "prefix": "trait",
+    "body": [
+      "trait :${0} do",
+      "end"
+    ],
+    "description": "FactoryBot: trait"
+  },
+  "FactoryBot: factory from traits": {
+		"scope": "ruby",
+    "prefix": "fft",
+    "body": [
+      "factory :${1:factory_name}, traits: %i(${0})"
+    ],
+    "description": "FactoryBot: factory from traits"
+  },
+}

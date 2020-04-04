@@ -1,0 +1,18 @@
+{
+  "Webmock: expect request to have been requested": {
+		"scope": "ruby",
+    "prefix": "hbr",
+    "body": [
+      "expect(${0}).to have_been_requested"
+    ],
+    "description": "RSpec: expect request to have been requested"
+  },
+  "Webmock: expect request to _not_ have been requested": {
+		"scope": "ruby",
+    "prefix": "hnbr",
+    "body": [
+      "expect(${0}).to_not have_been_requested"
+    ],
+    "description": "RSpec: expect request to _not_ have been requested"
+  },
+}

@@ -1,0 +1,35 @@
+{
+  "MiniTest: test block": {
+		"scope": "ruby",
+    "prefix": "test",
+    "body": [
+      "test \"${0}\" do",
+      "end"
+    ],
+    "description": "MiniTest: test block"
+  },
+  "MiniTest: assert": {
+		"scope": "ruby",
+    "prefix": "ass",
+    "body": [
+      "assert ${0}"
+    ],
+    "description": "MiniTest: assert"
+  },
+  "MiniTest: assert text": {
+		"scope": "ruby",
+    "prefix": "asst",
+    "body": [
+      "assert_text ${0}"
+    ],
+    "description": "MiniTest: assert text"
+  },
+  "MiniTest: set driver to selenium chrome": {
+		"scope": "ruby",
+    "prefix": "dsc",
+    "body": [
+      "driven_by :selenium, using: :chrome"
+    ],
+    "description": "MiniTest: set driver to selenium chrome"
+  }
+}

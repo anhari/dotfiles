@@ -1,0 +1,8 @@
+{
+  "ClimateControl: modify environment variable in test": {
+    "scope": "ruby",
+    "prefix": "cc",
+    "body": ["ClimateControl.modify ${0}: 'value' do", "end"],
+    "description": "ClimateControl: modify environment variable in test"
+  }
+}

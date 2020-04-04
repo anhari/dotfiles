@@ -1,28 +1,28 @@
 {
   // Ruby
   // https://www.ruby-lang.org/en/
-  "Attribute accessor": {
+  "Ruby: attribute accessor": {
     "prefix": "aa",
     "body": [
       "attr_accessor :${0}"
     ],
     "description": "Attribute accessor"
   },
-  "Attribute reader": {
+  "Ruby: attribute reader": {
     "prefix": "ar",
     "body": [
       "attr_reader :${0}"
     ],
     "description": "Attribute reader"
   },
-  "Attribute writer": {
+  "Ruby: attribute writer": {
     "prefix": "aw",
     "body": [
       "attr_writer :${0}"
     ],
     "description": "Attribute writer"
   },
-  "Benchmark block": {
+  "Ruby: benchmark block": {
     "prefix": "bm",
     "body": [
       "require 'benchmark'",
@@ -33,14 +33,14 @@
     ],
     "description": "Benchmark block"
   },
-  "Binding Pry: Remote": {
+  "Ruby: binding.pry remote": {
     "prefix": "bpr",
     "body": [
       "binding.pry_remote"
     ],
     "description": "Binding Pry: Remote"
   },
-  "Case statement": {
+  "Ruby: case statement": {
     "prefix": "case",
     "body": [
       "case ${0}",
@@ -50,28 +50,28 @@
     ],
     "description": "Case statement"
   },
-  "Class attribute accessor": {
+  "Ruby: class attribute accessor": {
     "prefix": "caa",
     "body": [
       "cattr_accessor :${0}"
     ],
     "description": "Class attribute accessor"
   },
-  "Class attribute reader": {
+  "Ruby: class attribute reader": {
     "prefix": "car",
     "body": [
       "cattr_reader :${0}"
     ],
     "description": "Class attribute reader"
   },
-  "Class attribute writer": {
+  "Ruby: class attribute writer": {
     "prefix": "caw",
     "body": [
       "cattr_writer :${0}"
     ],
     "description": "Class attribute writer"
   },
-  "New Class": {
+  "Ruby: class": {
     "prefix": "cl",
     "body": [
       "class ${0}",
@@ -79,7 +79,7 @@
     ],
     "description": "New Class"
   },
-  "Heredoc": {
+  "Ruby: heredoc": {
     "prefix": "hdoc",
     "body": [
       "<<~${1}",
@@ -88,14 +88,7 @@
     ],
     "description": "Heredoc"
   },
-  "Rails: Find memcache instance variable": {
-    "prefix": "memcache",
-    "body": [
-      "Rails.cache.instance_variable_get(:@data).get('${${0}}')"
-    ],
-    "description": "Rails: Find memcache instance variable"
-  },
-  "New module": {
+  "Ruby: module": {
     "prefix": "mod",
     "body": [
       "module ${0}",
@@ -103,7 +96,7 @@
     ],
     "description": "New module"
   },
-  "Find memory size of an object": {
+  "Ruby: find memory size of an object": {
     "prefix": "objsize",
     "body": [
       "require \"objspace\"",
@@ -111,135 +104,28 @@
     ],
     "description": "Find memory size of an object"
   },
-  "Require statement": {
+  "Ruby: require": {
     "prefix": "rq",
     "body": [
       "require \"${0}\""
     ],
     "description": "Require statement"
   },
-  "Require relative statement": {
+  "Ruby: require relative": {
     "prefix": "rqr",
     "body": [
       "require_relative \"${0}\""
     ],
     "description": "Require relative statement"
   },
-  "Show me instance methods": {
+  "Ruby: show me instance methods": {
     "prefix": "smm",
     "body": [
       "${0}.instance_methods - Object.instance_methods"
     ],
     "description": "Show me instance methods"
   },
-  "Require rails helper": {
-    "prefix": "rrh",
-    "body": [
-      "require \"rails_helper\"",
-      ""
-    ],
-    "description": "Require rails helper"
-  },
-  "Require login": {
-    "prefix": "rql",
-    "body": [
-      ":require_login"
-    ],
-    "description": "Require login"
-  },
-  "RSpec: describe block": {
-    "prefix": "desc",
-    "body": [
-      "describe \"${0}\" do",
-      "end"
-    ],
-    "description": "RSpec: describe block"
-  },
-  "RSpec: context block": {
-    "prefix": "cont",
-    "body": [
-      "context \"${0}\" do",
-      "end"
-    ],
-    "description": "RSpec: context block"
-  },
-  "RSpec: it block": {
-    "prefix": "it",
-    "body": [
-      "it \"${0}\" do",
-      "end"
-    ],
-    "description": "RSpec: it block"
-  },
-  "RSpec: expect statement": {
-    "prefix": "exp",
-    "body": [
-      "expect(${0}).to"
-    ],
-    "description": "RSpec: expect statement"
-  },
-  "RSpec: change count by": {
-    "prefix": "ccb",
-    "body": [
-      "expect{${0}}.to change{.count}.by"
-    ],
-    "description": "RSpec: change count by"
-  },
-  "RSpec: around each block": {
-    "prefix": "aed",
-    "body": [
-      "around(:each) do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: around each block"
-  },
-  "RSpec: around all block": {
-    "prefix": "aad",
-    "body": [
-      "around(:all) do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: around all block"
-  },
-  "RSpec: after each block": {
-    "prefix": "afed",
-    "body": [
-      "after(:each) do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: after each block"
-  },
-  "RSpec: after all block": {
-    "prefix": "afad",
-    "body": [
-      "after(:all) do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: after all block"
-  },
-  "RSpec: before each block": {
-    "prefix": "bed",
-    "body": [
-      "before(:each) do",
-      "\t${0}",
-      "end"
-    ],
-    "description": "RSpec: before each block"
-  },
-  "RSpec: before all block": {
-    "prefix": "bad",
-    "body": [
-      "before(:all) do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: before all block"
-  },
-  "Lambda": {
+  "Ruby: lambda": {
     "prefix": "lda",
     "body": [
       "->(${0}) do",
@@ -247,884 +133,32 @@
     ],
     "description": "Lambda"
   },
-  "RSpec: expect request to have been requested": {
-    "prefix": "hbr",
-    "body": [
-      "expect(${0}).to have_been_requested"
-    ],
-    "description": "RSpec: expect request to have been requested"
-  },
-  "RSpec: expect request to _not_ have been requested": {
-    "prefix": "hnbr",
-    "body": [
-      "expect(${0}).to_not have_been_requested"
-    ],
-    "description": "RSpec: expect request to _not_ have been requested"
-  },
-  "Byebug": {
+  "Ruby: byebug": {
     "prefix": "bb",
     "body": [
       "byebug"
     ],
     "description": "Byebug"
   },
-  "Binding.pry": {
+  "Ruby: binding.pry": {
     "prefix": "bp",
     "body": [
       "binding.pry"
     ],
     "description": "Binding.pry"
   },
-  "Rails: logger debug": {
-    "prefix": "db",
-    "body": [
-      "Rails.logger.debug \"#########DEBUG###########\"",
-      "Rails.logger.debug \"#########################\"",
-      "Rails.logger.debug ${0}",
-      "Rails.logger.debug \"#########################\"",
-      "Rails.logger.debug \"#########DEBUG###########\""
-    ],
-    "description": "Rails: logger debug"
-  },
-  "Rails: logger puts caller": {
-    "prefix": "pcall",
-    "body": [
-      "Rails.logger.debug \"#########CALLER###########\"",
-      "Rails.logger.debug \"##########################\"",
-      "Rails.logger.debug caller.join(\"\\n\")",
-      "Rails.logger.debug \"##########################\"",
-      "Rails.logger.debug \"#########CALLER###########\""
-    ],
-    "description": "Rails: logger puts caller"
-  },
-  "Rails: logger print stacktrace for all application code": {
-    "prefix": "app-stack-trace",
-    "body": [
-      "Rails.logger.debug \"#########APP STACK TRACE###########\"",
-      "Rails.logger.debug \"###################################\"",
-      "Rails.logger.debug caller.grep(%r{#{Rails.root}\/(?!vendor)}).join(\"\\n\")",
-      "Rails.logger.debug \"###################################\"",
-      "Rails.logger.debug \"#########APP STACK TRACE###########\""
-    ],
-    "description": "Rails: logger print stacktrace for all application code"
-  },
-  "Raise: roof": {
+  "Ruby: raise roof": {
     "prefix": "roof",
     "body": [
       "raise \"roof\""
     ],
     "description": "Raise: roof"
   },
-  "Raise: inspect": {
+  "Ruby: raise inspect": {
     "prefix": "ri",
     "body": [
       "raise \"#{${0}.inspect}\""
     ],
     "description": "Raise: inspect"
   },
-  "Raise: inspect params": {
-    "prefix": "rpi",
-    "body": [
-      "raise \"#{params.inspect}\""
-    ],
-    "description": "Raise: inspect params"
-  },
-  "Capybara: save and open page": {
-    "prefix": "sop",
-    "body": [
-      "save_and_open_page"
-    ],
-    "description": "Capybara: save and open page"
-  },
-  "Capybaara: save and open screenshot": {
-    "prefix": "sos",
-    "body": [
-      "save_and_open_screenshot(\"#{Time.now}.png\", full: true)"
-    ],
-    "description": "Capybaara: save and open screenshot"
-  },
-  "Capybara: click_button": {
-    "prefix": "cb",
-    "body": [
-      "click_button ${0}"
-    ],
-    "description": "Capybara: click_button"
-  },
-  "Capybara: click on": {
-    "prefix": "co",
-    "body": [
-      "click_on ${0}"
-    ],
-    "description": "Capybara: click on"
-  },
-  "Capybara: visit": {
-    "prefix": "vi",
-    "body": [
-      "visit ${0}"
-    ],
-    "description": "Capybara: visit"
-  },
-  "Capybara: visit link": {
-    "prefix": "vl",
-    "body": [
-      "visit_link ${0}"
-    ],
-    "description": "Capybara: visit link"
-  },
-  "Capybara: fill in": {
-    "prefix": "fi",
-    "body": [
-      "fill_in ${0}, with: \"blah\""
-    ],
-    "description": "Capybara: fill in"
-  },
-  "Capybara: select": {
-    "prefix": "sel",
-    "body": [
-      "select(\"${0:Option}\", from: \"Select Box\")"
-    ],
-    "description": "Capybara: select"
-  },
-  "Capybara: choose radio option": {
-    "prefix": "cho",
-    "body": [
-      "choose \"${0}\""
-    ],
-    "description": "Capybara: choose radio option"
-  },
-  "Capybara: check checkbox": {
-    "prefix": "chk",
-    "body": [
-      "check \"${0}\""
-    ],
-    "description": "Capybara: check checkbox"
-  },
-  "Capybara: uncheck checkbox": {
-    "prefix": "unchk",
-    "body": [
-      "uncheck \"${0}\""
-    ],
-    "description": "Capybara: uncheck checkbox"
-  },
-  "Capybara: attach file": {
-    "prefix": "attfile",
-    "body": [
-      "attach_file(\"${0:FileName}\", \"/path/to/image.jpg\")"
-    ],
-    "description": "Capybara: attach file"
-  },
-  "RSpec: scenario block": {
-    "prefix": "scen",
-    "body": [
-      "scenario \"${1}\" do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "RSpec: scenario block"
-  },
-  "RSpec: page has content": {
-    "prefix": "phc",
-    "body": [
-      "expect(page).to have_content(${0})"
-    ],
-    "description": "RSpec: page has content"
-  },
-  "RSpec: page does _not_ have content": {
-    "prefix": "pnhc",
-    "body": [
-      "expect(page).to_not have_content(${0})"
-    ],
-    "description": "RSpec: page does _not_ have content"
-  },
-  "RSpec: expect json body": {
-    "prefix": "xj",
-    "body": [
-      "expect(json_body[${1}]).to ${0}"
-    ],
-    "description": "RSpec: expect json body"
-  },
-  "RSpec: expect response": {
-    "prefix": "xr",
-    "body": [
-      "expect(response${1}).to ${0}"
-    ],
-    "description": "RSpec: expect response"
-  },
-  "RSpec: have content": {
-    "prefix": "hc",
-    "body": [
-      "have_content(${0})"
-    ],
-    "description": "RSpec: have content"
-  },
-  "RSpec: have link": {
-    "prefix": "hl",
-    "body": [
-      "have_link ${1}, href: ${0}"
-    ],
-    "description": "RSpec: have link"
-  },
-  "VCR: use cassette": {
-    "prefix": "vcr",
-    "body": [
-      "VCR.use_cassette \"${1}\" do",
-      "\t${0:${VISUAL:}}",
-      "end"
-    ],
-    "description": "VCR: use cassette"
-  },
-  "FactoryBot: new factory": {
-    "prefix": "fact",
-    "body": [
-      "FactoryBot.define do",
-      "\tfactory :${0} do",
-      "\tend",
-      "end"
-    ],
-    "description": "FactoryBot: new factory"
-  },
-  "FactoryBot: sequence": {
-    "prefix": "seq",
-    "body": [
-      "sequence(:${0}) { |n| \"#{n}\" }"
-    ],
-    "description": "FactoryBot: sequence"
-  },
-  "FactoryBot: trait": {
-    "prefix": "trait",
-    "body": [
-      "trait :${0} do",
-      "end"
-    ],
-    "description": "FactoryBot: trait"
-  },
-  "FactoryBot: factory from traits": {
-    "prefix": "fft",
-    "body": [
-      "factory :${1:factory_name}, traits: %i(${0})"
-    ],
-    "description": "FactoryBot: factory from traits"
-  },
-  "Rails migration: add column": {
-    "prefix": "ac",
-    "body": [
-      "add_column :${1:table_name}, :${2:column_name}, :${3:type}"
-    ],
-    "description": "Rails migration: add column"
-  },
-  "Rails model: belongs to": {
-    "prefix": "bt",
-    "body": [
-      "belongs_to :${0}"
-    ],
-    "description": "Rails model: belongs to"
-  },
-  "Rails migration: change column default": {
-    "prefix": "ccd",
-    "body": [
-      "# Rails 4",
-      "def up",
-      "\tchange_column_default(:$1, :$2, $4)",
-      "end",
-      "",
-      "def down",
-      "\tchange_column_default(:$1, :$2, $3)",
-      "end",
-      "",
-      "# Rails 5",
-      "change_column_default(:${1:table_name}, :${2:column_name}, from: ${3}, to: ${4})"
-    ],
-    "description": "Rails migration: change column default"
-  },
-  "Rails migration: counter cache true": {
-    "prefix": "cct",
-    "body": [
-      "counter_cache: true"
-    ],
-    "description": "Rails migration: counter cache true"
-  },
-  "Rails model: has many": {
-    "prefix": "hm",
-    "body": [
-      "has_many :${0}"
-    ],
-    "description": "Rails model: has many"
-  },
-  "Rails model: has many through": {
-    "prefix": "hmt",
-    "body": [
-      "has_many :${1}, through: :${0}"
-    ],
-    "description": "Rails model: has many through"
-  },
-  "Rails model: has one": {
-    "prefix": "ho",
-    "body": [
-      "has_one :${0}"
-    ],
-    "description": "Rails model: has one"
-  },
-  "Rails model: has one through": {
-    "prefix": "hot",
-    "body": [
-      "has_one :${1}, through: :${0}"
-    ],
-    "description": "Rails model: has one through"
-  },
-  "Rails model: dependent destroy": {
-    "prefix": "d:d",
-    "body": [
-      "dependent: :destroy"
-    ],
-    "description": "Rails model: dependent destroy"
-  },
-  "Rails model: dependent nullify": {
-    "prefix": "d:n",
-    "body": [
-      "dependent: :nullify"
-    ],
-    "description": "Rails model: dependent nullify"
-  },
-  "Rails migration: default true": {
-    "prefix": "d:t",
-    "body": [
-      "default: true"
-    ],
-    "description": "Rails migration: default true"
-  },
-  "Rails migration: default false": {
-    "prefix": "d:f",
-    "body": [
-      "default: false"
-    ],
-    "description": "Rails migration: default false"
-  },
-  "Rails migration: null false": {
-    "prefix": "nf",
-    "body": [
-      "null: false"
-    ],
-    "description": "Rails migration: null false"
-  },
-  "Rails migration: remove column": {
-    "prefix": "rc",
-    "body": [
-      "remove_column :${1:table_name}, :${2:column_name}, :${3:type}"
-    ],
-    "description": "Rails migration: remove column"
-  },
-  "Rails migration: rename column": {
-    "prefix": "rnc",
-    "body": [
-      "rename_column :${1:table_name}, :${2:old_column_name}, :${3:new_column_name}"
-    ],
-    "description": "Rails migration: rename column"
-  },
-  "Rails: ActiveRecord transaction": {
-    "prefix": "xact",
-    "body": [
-      "ActiveRecord::Base.transaction do",
-      "\t${0}",
-      "end"
-    ],
-    "description": "Rails: ActiveRecord transaction"
-  },
-  "Rails: execute raw SQL": {
-    "prefix": "xs",
-    "body": [
-      "execute <<-SQL",
-      "\t${0}",
-      "SQL"
-    ],
-    "description": "Rails: execute raw SQL"
-  },
-  "Rails controller: add index action": {
-    "prefix": "@i",
-    "body": [
-      "def index",
-      "\t${0}",
-      "end"
-    ],
-    "description": "Rails controller: add index action"
-  },
-  "Rails controller: add update action": {
-    "prefix": "@u",
-    "body": [
-      "def update",
-      "\t${0}",
-      "end"
-    ],
-    "description": "Rails controller: add update action"
-  },
-  "Rails controller: add edit action": {
-    "prefix": "@e",
-    "body": [
-      "def edit",
-      "\t${0}",
-      "end"
-    ],
-    "description": "Rails controller: add edit action"
-  },
-  "Rails controller: add destroy action": {
-    "prefix": "@d",
-    "body": [
-      "def destroy",
-      "\t${0}",
-      "end"
-    ],
-    "description": "Rails controller: add destroy action"
-  },
-  "Rails controller: redirect to": {
-    "prefix": "rd",
-    "body": [
-      "redirect_to ${0}"
-    ],
-    "description": "Rails controller: redirect to"
-  },
-  "Rails controller: render": {
-    "prefix": "rnd",
-    "body": [
-      "render :${0}"
-    ],
-    "description": "Rails controller: render"
-  },
-  "Rails controller: before action": {
-    "prefix": "ba",
-    "body": [
-      "before_action :${0}"
-    ],
-    "description": "Rails controller: before action"
-  },
-  "Rails controller: skip before action": {
-    "prefix": "sba",
-    "body": [
-      "skip_before_action :${0}"
-    ],
-    "description": "Rails controller: skip before action"
-  },
-  "Rails routes: resources": {
-    "prefix": "res",
-    "body": [
-      "resources :${0}"
-    ],
-    "description": "Rails routes: resources"
-  },
-  "Rails routes: root path": {
-    "prefix": "rp",
-    "body": [
-      "root_path"
-    ],
-    "description": "Rails routes: root path"
-  },
-  "Rails controller: add strong params method": {
-    "prefix": "defprm",
-    "body": [
-      "def ${1}_params",
-      "\tparams.require(:$1).permit(:${0})",
-      "end"
-    ],
-    "description": "Rails controller: add strong params method"
-  },
-  "Rails model validations: presence": {
-    "prefix": "vpres",
-    "body": [
-      "validates :${0:field}, presence: true"
-    ],
-    "description": "Rails model validations: presence"
-  },
-  "Rails model validations: uniqueness": {
-    "prefix": "vniq",
-    "body": [
-      "validates :${0:field}, uniqueness: true"
-    ],
-    "description": "Rails model validations: uniqueness"
-  },
-  "Rails model validations: uniqueness within scope": {
-    "prefix": "vniq_scope",
-    "body": [
-      "validates_uniqueness_of :#{0}, scope: :model_id"
-    ],
-    "description": "Rails model validations: uniqueness within scope"
-  },
-  "Rails model validations: numericality": {
-    "prefix": "vnum",
-    "body": [
-      "validates :${0:field}, numericality: { ${1} }"
-    ],
-    "description": "Rails model validations: numericality"
-  },
-  "Rails model validations: length (is)": {
-    "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { is: ${0} }"
-    ],
-    "description": "Rails model validations: length (is)"
-  },
-  "Rails model validations: length (in)": {
-    "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { in: ${2}..${3} }"
-    ],
-    "description": "Rails model validations: length (in)"
-  },
-  "Rails model validations: length (maximum)": {
-    "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { maximum: ${0} }"
-    ],
-    "description": "Rails model validations: length (maximum)"
-  },
-  "Rails model validations: length (minimum)": {
-    "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { minimum: ${0} }"
-    ],
-    "description": "Rails model validations: length (minimum)"
-  },
-  "Rails: fetch cache": {
-    "prefix": "rcache",
-    "body": [
-      "\tRails.cache.fetch(${0}, expires_in: cache_lifespan) do",
-      "\tend"
-    ],
-    "description": "Rails: fetch cache"
-  },
-  "RSpec shoulda-matchers: should allow value": {
-    "prefix": "sav",
-    "body": [
-      "it { should allow_value(${1}).for(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should allow value"
-  },
-  "RSpec shoulda-matchers: should not allow value": {
-    "prefix": "snav",
-    "body": [
-      "it { should_not allow_value(${1}).for(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should not allow value"
-  },
-  "RSpec shoulda-matchers: should validate presence": {
-    "prefix": "svpo",
-    "body": [
-      "it { should validate_presence_of(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate presence"
-  },
-  "RSpec shoulda-matchers: should validate numericality": {
-    "prefix": "svno",
-    "body": [
-      "it { should validate_numericality_of(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate numericality"
-  },
-  "RSpec shoulda-matchers: should validate length is at least": {
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_at_least(10) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate length is at least"
-  },
-  "RSpec shoulda-matchers: should validate length is at most": {
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_at_most(10) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate length is at most"
-  },
-  "RSpec shoulda-matchers: should validate length is equal to": {
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_equal_to(10) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate length is equal to"
-  },
-  "RSpec shoulda-matchers: should validate length is in range": {
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_at_least(${1}).is_at_most(${2}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate length is in range"
-  },
-  "RSpec shoulda-matchers: validate": {
-    "prefix": "sbt",
-    "body": [
-      "it { should belong_to(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: validate"
-  },
-  "RSpec shoulda-matchers: should have one": {
-    "prefix": "sho",
-    "body": [
-      "it { should have_one(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have one"
-  },
-  "RSpec shoulda-matchers: should have one through": {
-    "prefix": "shot",
-    "body": [
-      "it { should have_one(:${1}).through(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have one through"
-  },
-  "RSpec shoulda-matchers: should have and belong to many": {
-    "prefix": "shab",
-    "body": [
-      "it { should have_and_belong_to_many(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have and belong to many"
-  },
-  "RSpec shoulda-matchers: should have many": {
-    "prefix": "shm",
-    "body": [
-      "it { should have_many(:${1}).dependent(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have many"
-  },
-  "RSpec shoulda-matchers: should have many through": {
-    "prefix": "shmt",
-    "body": [
-      "it { should have_many(:${1}).through(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have many through"
-  },
-  "RSpec shoulda-matchers: should have db column": {
-    "prefix": "sdb",
-    "body": [
-      "it { should have_db_column(:${1}).of_type(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have db column"
-  },
-  "RSpec shoulda-matchers: should have db index": {
-    "prefix": "shi",
-    "body": [
-      "it { should have_db_index(:${1}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have db index"
-  },
-  "RSpec shoulda-matchers: should have db uniquness index": {
-    "prefix": "shiu",
-    "body": [
-      "it { should have_db_index(:${1}).unique(:true) }"
-    ],
-    "description": "RSpec shoulda-matchers: should have db uniquness index"
-  },
-  "RSpec shoulda-matchers: should validate uniqueness of": {
-    "prefix": "svuo",
-    "body": [
-      "it { should validate_uniqueness_of(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should validate uniqueness of"
-  },
-  "RSpec shoulda-matchers: should delegate method": {
-    "prefix": "sdm",
-    "body": [
-      "it { should delegate_method(:${1}).to(:${0}) }"
-    ],
-    "description": "RSpec shoulda-matchers: should delegate method"
-  },
-  "RSpec shoulda-matchers: should delegate method with prefix": {
-    "prefix": "sdmp",
-    "body": [
-      "it { should delegate_method(:${1}).to(:${0}).with_prefix }"
-    ],
-    "description": "RSpec shoulda-matchers: should delegate method with prefix"
-  },
-  "RSpec shoulda-matchers: should define enum with values": {
-    "prefix": "sde",
-    "body": [
-      "it { should define_enum_for(:${1}).with_values([:${0}]) }"
-    ],
-    "description": "RSpec shoulda-matchers: should define enum with values"
-  },
-  "MiniTest shoulda-matchers: should allow value": {
-    "prefix": "sav",
-    "body": [
-      "should allow_value(${1}).for(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should allow value"
-  },
-  "MiniTest shoulda-matchers: should not allow value": {
-    "prefix": "snav",
-    "body": [
-      "should_not allow_value(${1}).for(:${0})"
-    ],
-    "description": "MiniTest shoulda-matcher: should not allow value"
-  },
-  "MiniTest shoulda-matchers: should validate presence of": {
-    "prefix": "svpo",
-    "body": [
-      "should validate_presence_of(:${0})"
-    ],
-    "description": "MiniTest shoulda-matcher: should validate presence of"
-  },
-  "MiniTest shoulda-machers: should validate numericality": {
-    "prefix": "svno",
-    "body": [
-      "should validate_numericality_of(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate numericality"
-  },
-  "MiniTest shoulda-matchers: should validate length is at least": {
-    "prefix": "svlo",
-    "body": [
-      "should validate_length_of(:${0}).is_at_least(10)"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate length is at least"
-  },
-  "MiniTest shoulda-matchers: should validate length is at most": {
-    "prefix": "svlo",
-    "body": [
-      "should validate_length_of(:${0}).is_at_most(10)"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate length is at most"
-  },
-  "MiniTest shoulda-matchers: should validate length is equal to": {
-    "prefix": "svlo",
-    "body": [
-      "should validate_length_of(:${0}).is_equal_to(10)"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate length is equal to"
-  },
-  "MiniTest shoulda-matchers: should validate length is in range": {
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_at_least(${1}).is_at_most(${2}) }"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate length is in range"
-  },
-  "MiniTest shoulda-matchers: should belong to": {
-    "prefix": "sbt",
-    "body": [
-      "should belong_to(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should belong to"
-  },
-  "MiniTest shoulda-matchers: should have one": {
-    "prefix": "sho",
-    "body": [
-      "should have_one(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have one"
-  },
-  "MiniTest shoulda-matchers: should have one through": {
-    "prefix": "shot",
-    "body": [
-      "should have_one(:${1}).through(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have one through"
-  },
-  "MiniTest shoulda-matchers: should have and belong to many": {
-    "prefix": "shab",
-    "body": [
-      "should have_and_belong_to_many(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have and belong to many"
-  },
-  "MiniTest shoulda-matchers: should have many": {
-    "prefix": "shm",
-    "body": [
-      "should have_many(:${1}).dependent(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have many"
-  },
-  "MiniTest shoulda-matchers: should have many through": {
-    "prefix": "shmt",
-    "body": [
-      "should have_many(:${1}).through(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have many through"
-  },
-  "MiniTest shoulda-matchers: should have db column": {
-    "prefix": "sdb",
-    "body": [
-      "should have_db_column(:${1}).of_type(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have db column"
-  },
-  "MiniTest shoulda-matchers: should have db index": {
-    "prefix": "shi",
-    "body": [
-      "should have_db_index(:${1})"
-    ],
-    "description": "MiniTest shoulda-matchers: should have db index"
-  },
-  "MiniTest shoulda-matchers: should have uniqueness db index": {
-    "prefix": "shiu",
-    "body": [
-      "should have_db_index(:${1}).unique(:true)"
-    ],
-    "description": "MiniTest shoulda-matchers: should have uniqueness db index"
-  },
-  "MiniTest shoulda-matchers: should validate uniqueness": {
-    "prefix": "svuo",
-    "body": [
-      "should validate_uniqueness_of(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate uniqueness"
-  },
-  "MiniTest shoulda-matchers: should delegate method": {
-    "prefix": "sdm",
-    "body": [
-      "should delegate_method(:${1}).to(:${0})"
-    ],
-    "description": "MiniTest shoulda-matchers: should delegate method"
-  },
-  "MiniTest shoulda-matchers: should delegate method with prefix": {
-    "prefix": "sdmp",
-    "body": [
-      "should delegate_method(:${1}).to(:${0}).with_prefix }"
-    ],
-    "description": "MiniTest shoulda-matchers: should delegate method with prefix"
-  },
-  "MiniTest shoulda-matchers: should define enum with values": {
-    "prefix": "sde",
-    "body": [
-      "should define_enum_for(:${1}).with_values([:${0}])"
-    ],
-    "description": "MiniTest shoulda-matchers: should define enum with values"
-  },
-  "ClimateControl: modify environment variable in test": {
-    "prefix": "cc",
-    "body": [
-      "ClimateControl.modify ${0}: 'value' do",
-      "end"
-    ],
-    "description": "ClimateControl: modify environment variable in test"
-  },
-  "MiniTest: test block": {
-    "prefix": "test",
-    "body": [
-      "test \"${0}\" do",
-      "end"
-    ],
-    "description": "MiniTest: test block"
-  },
-  "MiniTest: assert": {
-    "prefix": "ass",
-    "body": [
-      "assert ${0}"
-    ],
-    "description": "MiniTest: assert"
-  },
-  "MiniTest: assert text": {
-    "prefix": "asst",
-    "body": [
-      "assert_text ${0}"
-    ],
-    "description": "MiniTest: assert text"
-  },
-  "RSpec: set driver to selenium chrome": {
-    "prefix": "dsc",
-    "body": [
-      "driver: :selenium_chrome"
-    ],
-    "description": "RSpec: set driver to selenium chrome"
-  },
-  "MiniTest: set driver to selenium chrome": {
-    "prefix": "dsc",
-    "body": [
-      "driven_by :selenium, using: :chrome"
-    ],
-    "description": "MiniTest: set driver to selenium chrome"
-  }
 }

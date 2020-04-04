@@ -1,0 +1,180 @@
+{
+  "RSpec: Require rails helper": {
+		"scope": "ruby",
+    "prefix": "rrh",
+    "body": [
+      "require \"rails_helper\"",
+      ""
+    ],
+    "description": "Require rails helper"
+  },
+  "RSpec: describe block": {
+		"scope": "ruby",
+    "prefix": "desc",
+    "body": [
+      "describe \"${0}\" do",
+      "end"
+    ],
+    "description": "RSpec: describe block"
+  },
+  "RSpec: context block": {
+		"scope": "ruby",
+    "prefix": "cont",
+    "body": [
+      "context \"${0}\" do",
+      "end"
+    ],
+    "description": "RSpec: context block"
+  },
+  "RSpec: it block": {
+		"scope": "ruby",
+    "prefix": "it",
+    "body": [
+      "it \"${0}\" do",
+      "end"
+    ],
+    "description": "RSpec: it block"
+  },
+  "RSpec: expect statement": {
+		"scope": "ruby",
+    "prefix": "exp",
+    "body": [
+      "expect(${0}).to"
+    ],
+    "description": "RSpec: expect statement"
+  },
+  "RSpec: change count by": {
+		"scope": "ruby",
+    "prefix": "ccb",
+    "body": [
+      "expect{${0}}.to change{.count}.by"
+    ],
+    "description": "RSpec: change count by"
+  },
+  "RSpec: around each block": {
+		"scope": "ruby",
+    "prefix": "aed",
+    "body": [
+      "around(:each) do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: around each block"
+  },
+  "RSpec: around all block": {
+		"scope": "ruby",
+    "prefix": "aad",
+    "body": [
+      "around(:all) do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: around all block"
+  },
+  "RSpec: after each block": {
+		"scope": "ruby",
+    "prefix": "afed",
+    "body": [
+      "after(:each) do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: after each block"
+  },
+  "RSpec: after all block": {
+		"scope": "ruby",
+    "prefix": "afad",
+    "body": [
+      "after(:all) do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: after all block"
+  },
+  "RSpec: before each block": {
+		"scope": "ruby",
+    "prefix": "bed",
+    "body": [
+      "before(:each) do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "RSpec: before each block"
+  },
+  "RSpec: before all block": {
+		"scope": "ruby",
+    "prefix": "bad",
+    "body": [
+      "before(:all) do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: before all block"
+  },
+  "RSpec: scenario block": {
+		"scope": "ruby",
+    "prefix": "scen",
+    "body": [
+      "scenario \"${1}\" do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "RSpec: scenario block"
+  },
+  "RSpec: page has content": {
+		"scope": "ruby",
+    "prefix": "phc",
+    "body": [
+      "expect(page).to have_content(${0})"
+    ],
+    "description": "RSpec: page has content"
+  },
+  "RSpec: page does _not_ have content": {
+		"scope": "ruby",
+    "prefix": "pnhc",
+    "body": [
+      "expect(page).to_not have_content(${0})"
+    ],
+    "description": "RSpec: page does _not_ have content"
+  },
+  "RSpec: expect json body": {
+		"scope": "ruby",
+    "prefix": "xj",
+    "body": [
+      "expect(json_body[${1}]).to ${0}"
+    ],
+    "description": "RSpec: expect json body"
+  },
+  "RSpec: expect response": {
+		"scope": "ruby",
+    "prefix": "xr",
+    "body": [
+      "expect(response${1}).to ${0}"
+    ],
+    "description": "RSpec: expect response"
+  },
+  "RSpec: have content": {
+		"scope": "ruby",
+    "prefix": "hc",
+    "body": [
+      "have_content(${0})"
+    ],
+    "description": "RSpec: have content"
+  },
+  "RSpec: have link": {
+		"scope": "ruby",
+    "prefix": "hl",
+    "body": [
+      "have_link ${1}, href: ${0}"
+    ],
+    "description": "RSpec: have link"
+  },
+  "RSpec: set driver to selenium chrome": {
+		"scope": "ruby",
+    "prefix": "dsc",
+    "body": [
+      "driver: :selenium_chrome"
+    ],
+    "description": "RSpec: set driver to selenium chrome"
+  },
+}

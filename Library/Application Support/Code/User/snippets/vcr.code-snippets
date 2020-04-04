@@ -1,0 +1,12 @@
+{
+  "VCR: use cassette": {
+		"scope": "ruby",
+    "prefix": "vcr",
+    "body": [
+      "VCR.use_cassette \"${1}\" do",
+      "\t${0:${VISUAL:}}",
+      "end"
+    ],
+    "description": "VCR: use cassette"
+  },
+}

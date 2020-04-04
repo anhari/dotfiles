@@ -1,4 +1,13 @@
 {
+  "MiniTest: context block": {
+		"scope": "ruby",
+    "prefix": "context",
+    "body": [
+      "context \"${0}\" do",
+      "end"
+    ],
+    "description": "MiniTest: context block"
+  },
   "MiniTest: test block": {
 		"scope": "ruby",
     "prefix": "test",
@@ -8,21 +17,253 @@
     ],
     "description": "MiniTest: test block"
   },
-  "MiniTest: assert": {
+  "MiniTest: assert true": {
 		"scope": "ruby",
-    "prefix": "ass",
+    "prefix": "at",
     "body": [
       "assert ${0}"
     ],
-    "description": "MiniTest: assert"
+    "description": "MiniTest: assert true"
+  },
+  "MiniTest: assert not": {
+		"scope": "ruby",
+    "prefix": "not",
+    "body": [
+      "assert_not ${0}"
+    ],
+    "description": "MiniTest: assert not"
   },
   "MiniTest: assert text": {
 		"scope": "ruby",
-    "prefix": "asst",
+    "prefix": "atx",
     "body": [
       "assert_text ${0}"
     ],
     "description": "MiniTest: assert text"
+  },
+  "MiniTest: assert equal": {
+		"scope": "ruby",
+   "prefix": "aeq",
+    "body": [
+      "assert_equal ${0}"
+    ],
+    "description": "MiniTest: assert equal"
+  },
+  "MiniTest: assert not equal": {
+		"scope": "ruby",
+    "prefix": "neq",
+    "body": [
+      "assert_not_equal ${0}"
+    ],
+    "description": "MiniTest: assert not equal"
+  },
+  "MiniTest: assert same": {
+		"scope": "ruby",
+    "prefix": "asame",
+    "body": [
+      "assert_same ${0}"
+    ],
+    "description": "MiniTest: assert same"
+  },
+  "MiniTest: assert not same": {
+		"scope": "ruby",
+    "prefix": "nsame",
+    "body": [
+      "assert_not_same ${0}"
+    ],
+    "description": "MiniTest: assert not same"
+  },
+  "MiniTest: assert nil": {
+		"scope": "ruby",
+    "prefix": "anil",
+    "body": [
+      "assert_nil ${0}"
+    ],
+    "description": "MiniTest: assert nil"
+  },
+  "MiniTest: assert empty": {
+		"scope": "ruby",
+    "prefix": "aemp",
+    "body": [
+      "assert_empty ${0}"
+    ],
+    "description": "MiniTest: assert empty"
+  },
+  "MiniTest: assert not empty": {
+		"scope": "ruby",
+    "prefix": "nemp",
+    "body": [
+      "assert_not_empty ${0}"
+    ],
+    "description": "MiniTest: assert not empty"
+  },
+  "MiniTest: assert match": {
+		"scope": "ruby",
+    "prefix": "amatch",
+    "body": [
+      "assert_match ${0}"
+    ],
+    "description": "MiniTest: assert match"
+  },
+  "MiniTest: assert not match": {
+		"scope": "ruby",
+    "prefix": "nmatch",
+    "body": [
+      "assert_not_match ${0}"
+    ],
+    "description": "MiniTest: assert not match"
+  },
+  "MiniTest: assert includes": {
+		"scope": "ruby",
+    "prefix": "ainc",
+    "body": [
+      "assert_includes ${0}"
+    ],
+    "description": "MiniTest: assert includes"
+  },
+  "MiniTest: assert not includes": {
+		"scope": "ruby",
+    "prefix": "ninc",
+    "body": [
+      "assert_not_includes ${0}"
+    ],
+    "description": "MiniTest: assert not includes"
+  },
+  "MiniTest: assert in delta": {
+		"scope": "ruby",
+    "prefix": "adelt",
+    "body": [
+      "assert_in_delta ${0}"
+    ],
+    "description": "MiniTest: assert in delta"
+  },
+  "MiniTest: assert not in delta": {
+		"scope": "ruby",
+    "prefix": "ndelt",
+    "body": [
+      "assert_not_in_delta ${0}"
+    ],
+    "description": "MiniTest: assert not in delta"
+  },
+  "MiniTest: assert in epsilon": {
+		"scope": "ruby",
+    "prefix": "aeps",
+    "body": [
+      "assert_in_epsilon ${0}"
+    ],
+    "description": "MiniTest: assert in epsilon"
+  },
+  "MiniTest: assert not in epsilon": {
+		"scope": "ruby",
+    "prefix": "neps",
+    "body": [
+      "assert_not_in_epsilon ${0}"
+    ],
+    "description": "MiniTest: assert not in epsilon"
+  },
+  "MiniTest: assert throws": {
+		"scope": "ruby",
+    "prefix": "athrow",
+    "body": [
+      "assert_throws ${0}"
+    ],
+    "description": "MiniTest: assert throws"
+  },
+  "MiniTest: assert raises": {
+		"scope": "ruby",
+    "prefix": "araise",
+    "body": [
+      "assert_raises ${0}"
+    ],
+    "description": "MiniTest: assert raises"
+  },
+  "MiniTest: assert instance_of": {
+		"scope": "ruby",
+    "prefix": "aio",
+    "body": [
+      "assert_instance_of ${0}"
+    ],
+    "description": "MiniTest: assert instance_of"
+  },
+  "MiniTest: assert not instance_of": {
+		"scope": "ruby",
+    "prefix": "nio",
+    "body": [
+      "assert_not_instance_of ${0}"
+    ],
+    "description": "MiniTest: assert not instance_of"
+  },
+  "MiniTest: assert kind_of": {
+		"scope": "ruby",
+    "prefix": "ako",
+    "body": [
+      "assert_kind_of ${0}"
+    ],
+    "description": "MiniTest: assert kind_of"
+  },
+  "MiniTest: assert not kind_of": {
+		"scope": "ruby",
+    "prefix": "nko",
+    "body": [
+      "assert_not_kind_of ${0}"
+    ],
+    "description": "MiniTest: assert not kind_of"
+  },
+  "MiniTest: assert respond to": {
+		"scope": "ruby",
+    "prefix": "art",
+    "body": [
+      "assert_respond_to ${0}"
+    ],
+    "description": "MiniTest: assert respond to"
+  },
+  "MiniTest: assert not respond to": {
+		"scope": "ruby",
+    "prefix": "nrt",
+    "body": [
+      "assert_not_respond_to ${0}"
+    ],
+    "description": "MiniTest: assert not respond to"
+  },
+  "MiniTest: assert operator": {
+		"scope": "ruby",
+    "prefix": "aop",
+    "body": [
+      "assert_operator ${0}"
+    ],
+    "description": "MiniTest: assert operator"
+  },
+  "MiniTest: assert not operator": {
+		"scope": "ruby",
+    "prefix": "nop",
+    "body": [
+      "assert_not_operator ${0}"
+    ],
+    "description": "MiniTest: assert not operator"
+  },
+  "MiniTest: assert predicate": {
+		"scope": "ruby",
+    "prefix": "apr",
+    "body": [
+      "assert_predicate ${0}"
+    ],
+    "description": "MiniTest: assert predicate"
+  },
+  "MiniTest: assert not predicate": {
+		"scope": "ruby",
+    "prefix": "npr",
+    "body": [
+      "assert_not_predicate ${0}"
+    ],
+    "description": "MiniTest: assert not predicate"
+  },
+  "MiniTest: flunk": {
+		"scope": "ruby",
+    "prefix": "fl",
+    "body": [
+      "flunk ${0}"
+    ],
+    "description": "MiniTest: flunk"
   },
   "MiniTest: set driver to selenium chrome": {
 		"scope": "ruby",

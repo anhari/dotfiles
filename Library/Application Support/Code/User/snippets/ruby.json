@@ -6,21 +6,21 @@
     "body": [
       "attr_accessor :${0}"
     ],
-    "description": "Attribute accessor"
+    "description": "Ruby: attribute accessor"
   },
   "Ruby: attribute reader": {
     "prefix": "ar",
     "body": [
       "attr_reader :${0}"
     ],
-    "description": "Attribute reader"
+    "description": "Ruby: attribute reader"
   },
   "Ruby: attribute writer": {
     "prefix": "aw",
     "body": [
       "attr_writer :${0}"
     ],
-    "description": "Attribute writer"
+    "description": "Ruby: attribute writer"
   },
   "Ruby: benchmark block": {
     "prefix": "bm",
@@ -31,14 +31,14 @@
       "\tend",
       "end"
     ],
-    "description": "Benchmark block"
+    "description": "Ruby: benchmark block"
   },
   "Ruby: binding.pry remote": {
     "prefix": "bpr",
     "body": [
       "binding.pry_remote"
     ],
-    "description": "Binding Pry: Remote"
+    "description": "Ruby: binding.pry remote"
   },
   "Ruby: case statement": {
     "prefix": "case",
@@ -48,28 +48,28 @@
       "else",
       "end"
     ],
-    "description": "Case statement"
+    "description": "Ruby: case statement"
   },
   "Ruby: class attribute accessor": {
     "prefix": "caa",
     "body": [
       "cattr_accessor :${0}"
     ],
-    "description": "Class attribute accessor"
+    "description": "Ruby: class attribute accessor"
   },
   "Ruby: class attribute reader": {
     "prefix": "car",
     "body": [
       "cattr_reader :${0}"
     ],
-    "description": "Class attribute reader"
+    "description": "Ruby: class attribute reader"
   },
   "Ruby: class attribute writer": {
     "prefix": "caw",
     "body": [
       "cattr_writer :${0}"
     ],
-    "description": "Class attribute writer"
+    "description": "Ruby: class attribute writer"
   },
   "Ruby: class": {
     "prefix": "cl",
@@ -77,7 +77,7 @@
       "class ${0}",
       "end"
     ],
-    "description": "New Class"
+    "description": "Ruby: class"
   },
   "Ruby: heredoc": {
     "prefix": "hdoc",
@@ -86,7 +86,7 @@
       "\t${0}",
       "$1"
     ],
-    "description": "Heredoc"
+    "description": "Ruby: heredoc"
   },
   "Ruby: module": {
     "prefix": "mod",
@@ -94,7 +94,7 @@
       "module ${0}",
       "end"
     ],
-    "description": "New module"
+    "description": "Ruby: new module"
   },
   "Ruby: find memory size of an object": {
     "prefix": "objsize",
@@ -102,28 +102,28 @@
       "require \"objspace\"",
       "ObjectSpace.memsize_of(${0})"
     ],
-    "description": "Find memory size of an object"
+    "description": "Ruby: find memory size of an object"
   },
   "Ruby: require": {
     "prefix": "rq",
     "body": [
       "require \"${0}\""
     ],
-    "description": "Require statement"
+    "description": "Ruby: require statement"
   },
   "Ruby: require relative": {
     "prefix": "rqr",
     "body": [
       "require_relative \"${0}\""
     ],
-    "description": "Require relative statement"
+    "description": "Ruby: require relative statement"
   },
   "Ruby: show me instance methods": {
     "prefix": "smm",
     "body": [
       "${0}.instance_methods - Object.instance_methods"
     ],
-    "description": "Show me instance methods"
+    "description": "Ruby: show me instance methods"
   },
   "Ruby: lambda": {
     "prefix": "lda",
@@ -131,34 +131,34 @@
       "->(${0}) do",
       "end"
     ],
-    "description": "Lambda"
+    "description": "Ruby: lambda"
   },
   "Ruby: byebug": {
     "prefix": "bb",
     "body": [
       "byebug"
     ],
-    "description": "Byebug"
+    "description": "Ruby: byebug"
   },
   "Ruby: binding.pry": {
     "prefix": "bp",
     "body": [
       "binding.pry"
     ],
-    "description": "Binding.pry"
+    "description": "Ruby: binding.pry"
   },
   "Ruby: raise roof": {
     "prefix": "roof",
     "body": [
       "raise \"roof\""
     ],
-    "description": "Raise: roof"
+    "description": "Ruby: raise roof"
   },
   "Ruby: raise inspect": {
     "prefix": "ri",
     "body": [
       "raise \"#{${0}.inspect}\""
     ],
-    "description": "Raise: inspect"
+    "description": "Ruby: raise inspect"
   },
 }

@@ -1,0 +1,11 @@
+{
+  // https://github.com/heartcombo/devise
+  "Devise: include integration helpers": {
+		"scope": "ruby",
+    "prefix": "dtih",
+    "body": [
+      "include Devise::Test::IntegrationHelpers"
+    ],
+    "description": "Devise: include integration helpers"
+  },
+}

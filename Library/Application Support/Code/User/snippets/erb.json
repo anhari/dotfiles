@@ -1,47 +1,48 @@
 {
-  "cache": {
+  "Rails view: cache": {
     "prefix": "cache",
     "body": ["<% cache ${0} do %>", "<% end %>"],
-    "description": "russian doll caching"
+    "description": "Rails view: russian doll caching"
   },
-  "cfor": {
+  "Rails view: content_for": {
     "prefix": "cfor",
-    "body": ["<% content_for :${1} do %>", "\t${0}", "<% end %>"]
+    "body": ["<% content_for :${1} do %>", "\t${0}", "<% end %>"],
+    "description": "Rails view: content_for block"
   },
-  "pp": {
+  "Rails view: execute ruby": {
     "prefix": "pp",
     "body": ["<% ${0} %>"],
-    "description": "execute ruby"
+    "description": "Rails view: execute ruby"
   },
-  "pe": {
+  "Rails view: insert ruby": {
     "prefix": "pe",
     "body": ["<%= ${0} %>"],
-    "description": "insert ruby"
+    "description": "Rails view: insert ruby"
   },
-  "=": {
+  "Rails view: insert ruby (shorthand)": {
     "prefix": "=",
     "body": ["<%= ${0} %>"],
-    "description": "insert ruby"
+    "description": "Rails view: insert ruby"
   },
-  "else": {
+  "Rails view: else": {
     "prefix": "else",
     "body": ["<% else %>"],
-    "description": "else"
+    "description": "Rails view: else"
   },
-  "end": {
+  "Rails view: end": {
     "prefix": "end",
     "body": ["<% end %>"],
-    "description": "end"
+    "description": "Rails view: end"
   },
   "each": {
-    "prefix": "each",
+    "prefix": "Rails view: each block",
     "body": ["<% ${0}.each do || %>", "<% end %>"],
-    "description": "each block"
+    "description": "Rails view: each block"
   },
-  "ff": {
-    "prefix": "ff",
+  "Rails view: form_with": {
+    "prefix": "fw",
     "body": [
-      "<%= form_for @${1:model} do |f| %>",
+      "<%= form_with model: @${1:model} do |f| %>",
       "\t<%= f.label :${2:attribute} %>:",
       "\t<%= f.text_field :${0:$2} %>",
       "\t<br />",
@@ -49,76 +50,59 @@
       "\t<%= f.submit %>",
       "<% end %>"
     ],
-    "description": "form_for"
+    "description": "Rails view: form_with"
   },
-  "rnd": {
+  "Rails view: render": {
     "prefix": "rnd",
     "body": ["<%= render '${1}' %>"],
-    "description": "render"
+    "description": "Rails view: render"
   },
-  "rny": {
-    "prefix": "rny",
-    "body": ["<%= render '${1}' do %>", "\t${0}", "<% end %>"],
-    "description": "render do"
-  },
-  "lt": {
+  "Rails view: link_to": {
     "prefix": "lt",
     "body": ["<%= link_to ${1}, ${0} %>"],
-    "description": "link_to"
+    "description": "Rails view: link_to"
   },
-  "bt": {
+  "Rails view: button_to": {
     "prefix": "bt",
     "body": ["<%= button_to ${1}, ${0} %>"],
-    "description": "button_to"
+    "description": "Rails view: button_to"
   },
-  "flash": {
-    "prefix": "flash",
-    "body": [
-      "<div class=\"flash\">",
-      "\t<% if notice %>",
-      "\t<p class=\"notice\"><%= notice %></p>",
-      "\t<% elsif alert %>",
-      "\t<p class=\"alert\"><%= alert %></p>",
-      "\t<% end %>",
-      "</div>"
-    ],
-    "description": "flash messages"
-  },
-  "if": {
+  "Rails view: if": {
     "prefix": "if",
     "body": ["<% if ${0} %>", "<% end %>"],
-    "description": "if"
+    "description": "Rails view: if"
   },
-  "ife": {
+  "Rails view: if else": {
     "prefix": "ife",
     "body": ["<% if ${0} %>", "<% else %>", "<% end %>"],
-    "description": "if else"
+    "description": "Rails view: if else"
   },
-  "md": {
-    "prefix": "md",
+  "Rails view: method delete": {
+    "prefix": "m:d",
     "body": ["method: :delete"],
-    "description": "method delete"
+    "description": "Rails view: method delete"
   },
-  "mdc": {
-    "prefix": "mdc",
+  "Rails vew: method delete with (confirm)": {
+    "prefix": "m:dc",
     "body": ["method: :delete, data: { confirm: \"${1}\"}"],
-    "description": "method delete (confirm)"
+    "description": "Rails view: method delete (confirm)"
   },
-  "cons": {
+  "Rails view: cons": {
     "prefix": "cons",
     "body": ["<%= console %>"],
-    "description": "console"
+    "description": "Rails view: console"
   },
-  "roof": {
+  "Rails view: raise the roof": {
     "prefix": "roof",
-    "body": ["<%= raise \"roof\" %>"]
+    "body": ["<%= raise \"roof\" %>"],
+    "description": "Rails view: raise the roof"
   },
-  "rxc": {
+  "Rails view: react component": {
     "prefix": "rxc",
     "body": ["<%= react_component '${0}' %>"],
-    "description": "react component"
+    "description": "Rails view: react component"
   },
-  "sff": {
+  "Rails view: simple_form_for": {
     "prefix": "sff",
     "body": [
       "<%= simple_form_for @${1:model} do |f| %>",
@@ -127,21 +111,23 @@
       "\t<%= f.button :submit %>",
       "<% end %>"
     ],
-    "description": "simple_form_for"
+    "description": "Rails view: simple_form_for"
   },
-  "sfradio": {
+  "Rails view: simple_form radio buttons": {
     "prefix": "sfradio",
     "body": [
       "<%= f.input :${1:field}, as: :radio_buttons, collection: ${2:collection}, label_method: :${3:label_method}, value_method: :${4:value_method} %>"
-    ]
+    ],
+    "description": "Rails view: simple_form radio buttons"
   },
-  "..": {
+  "Rails view: class attribute": {
     "prefix": "..",
     "body": "class=\"${0}\"",
-    "description": "class"
+    "description": "Rails view: class attribute"
   },
-  "yolo": {
-    "prefix": "yolo",
-    "body": "<%= render 'contracts/detail', label_name: '', icon: nil, detail: @summary. %>"
+  "Rails view: i18n translation": {
+    "prefix": "t",
+    "body": "<%= t('${0}') %>",
+    "description": "i18n translation"
   }
 }

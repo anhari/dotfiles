@@ -3,33 +3,32 @@
   // https://stimulusjs.org/
   // Scopes: javascript, typescript, html, erb
 
-  "HTML Stimulus Controller": {
+  "Stimulus.js: data-controller": {
     "scope": "html, erb",
     "prefix": "stimc",
     "body": [
       "<div data-controller=\"${0}\">",
-      "\t",
       "</div>",
     ],
-    "description": "Stimulus.js: Controller"
+    "description": "Stimulus.js: data-controller"
   },
-  "HTML Stimulus Action": {
+  "Stimulus.js: data-action": {
     "scope": "html, erb",
     "prefix": "act",
     "body": [
       "data-action=\"${0:controller#function}\"",
     ],
-    "description": "Stimulus.js: Controller"
+    "description": "Stimulus.js: data-action"
   },
-  "HTML Stimulus Target": {
+  "Stimulus.js: data-target": {
     "scope": "html, erb",
     "prefix": "tar",
     "body": [
       "data-target=\"${0}\"",
     ],
-    "description": "Stimulus.js: Controller"
+    "description": "Stimulus.js: data-target"
   },
-  "JavaScript Stimulus Controller": {
+  "Stimulus.js: controller": {
     "scope": "javascript,typescript",
     "prefix": "stimc",
     "body": [
@@ -42,6 +41,6 @@
       "\t}",
       "}",
     ],
-    "description": "Stimulus.js: Controller"
+    "description": "Stimulus.js: controller"
   }
 }

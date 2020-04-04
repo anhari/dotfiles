@@ -169,4 +169,8 @@
     "key": "shift+cmd+h",
     "command": "-workbench.action.replaceInFiles"
   },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.insertSnippet"
+  }
 ]

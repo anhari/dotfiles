@@ -11,6 +11,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[Log]": {
+    "editor.wordWrap": "on"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -109,6 +112,8 @@
     "jordon",
     "justifycontent",
     "keyframes",
+    "kpi",
+    "kpis",
     "linebreak",
     "linkify",
     "location",
@@ -130,8 +135,10 @@
     "postgres",
     "postgresql",
     "pre",
+    "prebuild",
     "precommit",
     "precompilation",
+    "prestart",
     "privatetreaty",
     "purgecss",
     "rarr",

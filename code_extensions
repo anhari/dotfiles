@@ -1,6 +1,8 @@
 adpyke.codesnap
 adpyke.vscode-sql-formatter
+ahmadawais.shades-of-purple
 aliariff.vscode-erb-beautify
+arthurwhite.white
 auchenberg.vscode-browser-preview
 bierner.color-info
 bierner.markdown-emoji
@@ -16,6 +18,7 @@ dbaeumer.vscode-eslint
 donjayamanne.githistory
 DotJoshJohnson.xml
 eg2.vscode-npm-script
+Endormi.2077-theme
 esbenp.prettier-vscode
 fallenwood.vimL
 faustinoaq.crystal-lang
@@ -25,11 +28,12 @@ formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 gamunu.vscode-yarn
 GrapeCity.gc-excelviewer
-heybourn.headwind
 IBM.output-colorizer
 idleberg.applescript
 JakeBecker.elixir-ls
+jdinhlife.gruvbox
 jock.svg
+johnpapa.winteriscoming
 jolaleye.horizon-theme-vscode
 jpoissonnier.vscode-styled-components
 kaiwood.endwise
@@ -63,6 +67,7 @@ rebornix.ruby
 ria.elastic
 richie5um2.vscode-sort-json
 ritwickdey.LiveServer
+RobbOwen.synthwave-vscode
 sbrink.elm
 sdras.night-owl
 shd101wyy.markdown-preview-enhanced
@@ -72,6 +77,7 @@ silvenon.mdx
 sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sysoev.vscode-open-in-github
+teabyii.ayu
 third774.hipsum
 timonwong.shellcheck
 tomoki1207.pdf
@@ -81,4 +87,5 @@ whizkydee.material-palenight-theme
 wingrunr21.vscode-ruby
 wix.vscode-import-cost
 wmaurer.change-case
+yummygum.city-lights-theme
 Zignd.html-css-class-completion

@@ -1,6 +1,12 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
+    "command": "vscode-neovim.compositeEscape2",
+    "key": "k",
+    "when": "neovim.mode == insert",
+    "args": "k"
+  },
+  {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
   },

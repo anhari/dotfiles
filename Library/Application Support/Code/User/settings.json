@@ -1,9 +1,12 @@
 {
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
-  },
+  // "[erb]": {
+  //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  // },
   "[git-commit]": {
-    "editor.rulers": [50, 72]
+    "editor.rulers": [
+      50,
+      72
+    ]
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -47,6 +50,7 @@
     "anhari",
     "antialiased",
     "apos",
+    "arial",
     "barebones",
     "bellbird",
     "bluedotvote",
@@ -66,6 +70,7 @@
     "datasets",
     "datatable",
     "datatables",
+    "datawarehouse",
     "datetime",
     "dbconsole",
     "debounce",
@@ -104,6 +109,7 @@
     "gatsbyjs",
     "gitsh",
     "glassdoor",
+    "helvetica",
     "highchart",
     "highcharts",
     "hstore",
@@ -120,12 +126,15 @@
     "metadatum",
     "miragejs",
     "mounter",
+    "neue",
     "noopener",
     "noreferrer",
     "normalizr",
+    "noto",
     "numericality",
     "onboarding",
     "onboardings",
+    "orderable",
     "petfinder",
     "petrie",
     "pinnable",
@@ -145,13 +154,18 @@
     "react",
     "rebeccapurple",
     "redux",
+    "rehoboth",
     "reonboarding",
     "reselect",
+    "roboto",
     "route",
     "rsvp",
     "rsvped",
     "scroller",
+    "segoe",
     "semibold",
+    "serializer",
+    "serializers",
     "shopify",
     "shoulda",
     "snakify",
@@ -200,14 +214,13 @@
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingOvertype": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "100",
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.quickSuggestions": {
     "comments": false,
     "other": true,
@@ -215,7 +228,9 @@
   },
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -329,7 +344,7 @@
     "*.css": "postcss",
     "*.axlsx": "ruby"
   },
-  "files.autoGuessEncoding": true,
+  "files.autoGuessEncoding": false,
   "files.trimTrailingWhitespace": true,
   "git.allowForcePush": true,
   "git.autofetch": true,
@@ -339,7 +354,11 @@
   "git.rebaseWhenSync": true,
   "git.showPushSuccessNotification": true,
   "gitHistory.hideCommitViewExplorer": true,
-  "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
+  "htmlhint.documentSelector": [
+    "html",
+    "htm",
+    "typescriptreact"
+  ],
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown-checkbox.checkmark": "x",
@@ -362,7 +381,6 @@
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
   "task.problemMatchers.neverPrompt": true,
-  "task.slowProviderWarning": ["rake"],
   "terminal.integrated.macOptionClickForcesSelection": true,
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.osx": "/bin/zsh",
@@ -372,46 +390,95 @@
   "vim.incsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "after": ["<Esc>"],
-      "before": ["j", "k"]
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "k"
+      ]
     }
   ],
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "n"],
-      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
     },
     {
-      "before": ["z", "g"],
-      "commands": ["cSpell.addWordToUserDictionary"]
+      "before": [
+        "z",
+        "g"
+      ],
+      "commands": [
+        "cSpell.addWordToUserDictionary"
+      ]
     },
     {
-      "after": ["2", "5", "ctrl+e"],
-      "before": ["ctrl+e"]
+      "after": [
+        "2",
+        "5",
+        "ctrl+e"
+      ],
+      "before": [
+        "ctrl+e"
+      ]
     },
     {
-      "after": ["2", "5", "ctrl+y"],
-      "before": ["ctrl+y"]
+      "after": [
+        "2",
+        "5",
+        "ctrl+y"
+      ],
+      "before": [
+        "ctrl+y"
+      ]
     },
     {
-      "after": ["g", "j"],
-      "before": ["j"]
+      "after": [
+        "g",
+        "j"
+      ],
+      "before": [
+        "j"
+      ]
     },
     {
-      "after": ["g", "k"],
-      "before": ["k"]
+      "after": [
+        "g",
+        "k"
+      ],
+      "before": [
+        "k"
+      ]
     },
     {
-      "after": ["^"],
-      "before": ["0"]
+      "after": [
+        "^"
+      ],
+      "before": [
+        "0"
+      ]
     },
     {
-      "before": ["leader", "h"],
-      "commands": [":nohl"]
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": [
+        "<leader>",
+        "s"
+      ],
       "commands": [
         {
           "args": {
@@ -425,25 +492,38 @@
       ]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": [
+        "<leader>",
+        "l"
+      ],
       "commands": [
         "extension.runLastSpec"
       ]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": [
+        "<leader>",
+        "t"
+      ],
       "commands": [
         "extension.runFileSpecs"
       ]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": [
+        "<leader>",
+        "a"
+      ],
       "commands": [
         "extension.runAllSpecFiles"
       ]
     },
     {
-      "before": ["<leader>", "v", "v"],
+      "before": [
+        "<leader>",
+        "v",
+        "v"
+      ],
       "commands": [
         {
           "command": "expandLineSelection"
@@ -454,7 +534,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "d"],
+      "before": [
+        "<leader>",
+        "g",
+        "d"
+      ],
       "commands": [
         {
           "args": {
@@ -472,7 +556,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "s"],
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
       "commands": [
         {
           "args": {
@@ -489,7 +577,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "l"],
+      "before": [
+        "<leader>",
+        "g",
+        "l"
+      ],
       "commands": [
         {
           "args": {
@@ -506,7 +598,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "b"],
+      "before": [
+        "<leader>",
+        "g",
+        "b"
+      ],
       "commands": [
         {
           "args": {
@@ -523,7 +619,11 @@
       ]
     },
     {
-      "before": ["<leader>", "b", "i"],
+      "before": [
+        "<leader>",
+        "b",
+        "i"
+      ],
       "commands": [
         {
           "args": {
@@ -540,21 +640,40 @@
       ]
     },
     {
-      "before": ["]", "q"],
-      "commands": ["search.action.focusNextSearchResult"]
+      "before": [
+        "]",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusNextSearchResult"
+      ]
     },
     {
-      "before": ["[", "q"],
-      "commands": ["search.action.focusPreviousSearchResult"]
+      "before": [
+        "[",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusPreviousSearchResult"
+      ]
     },
     {
-      "before": ["<leader>", "i"],
-      "commands": ["editor.action.formatDocument"]
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     },
     {
       "after": [],
       "args": "mocha:spec",
-      "before": ["<leader>", "f", "t"],
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
       "command": "workbench.action.tasks.runTask"
     }
   ],
@@ -567,7 +686,7 @@
   "workbench.colorCustomizations": {
     "[Monokai Pro (Filter Octagon)]": {
       "editorCursor.foreground": "#ffffff6e",
-      "terminalCursor.foreground": "#ffffff6e"
+      "terminalCursor.foreground": "#ffffff6e",
     },
     "[Palenight Operator]": {
       "activityBar.background": "#1f2331",
@@ -588,5 +707,7 @@
   "workbench.statusBar.visible": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.restore": true,
-  "workbench.colorTheme": "Palenight Operator"
+  "editor.cursorBlinking": "solid",
+  "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimInitPath": "/Users/anhari/.config/nvim/init.vim"
 }

@@ -32,7 +32,7 @@
   "clog": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "clog",
-    "body": ["console.log(\"${0}\", ${0});"],
+    "body": ["console.log(${0});"],
     "description": "Console log"
   },
   "ctab": {

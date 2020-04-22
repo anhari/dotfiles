@@ -295,7 +295,21 @@
         "reveal": "always",
         "focus": false,
         "showReuseMessage": true,
-        "group": "test logs",
+        "group": "Generate",
+        "clear": false
+      }
+    },
+    {
+      "label": "Rails: Generate Job",
+      "type": "shell",
+      "command": "bin/rails generate job ${input:railsGenerateJobParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "Generate",
         "clear": false
       }
     },
@@ -332,6 +346,11 @@
     {
       "id": "railsGenerateParam",
       "description": "bin/rails generate",
+      "type": "promptString"
+    },
+    {
+      "id": "railsGenerateJobParam",
+      "description": "bin/rails generate job",
       "type": "promptString"
     }
   ]

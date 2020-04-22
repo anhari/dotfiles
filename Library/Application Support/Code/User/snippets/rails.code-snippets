@@ -1,5 +1,13 @@
 {
-	// https://github.com/rails/rails
+  // https://github.com/rails/rails
+  "Rails model: scope": {
+		"scope": "ruby",
+    "prefix": "scope",
+    "body": [
+      "scope :${1:name}, -> { $0 }"
+    ],
+    "description": "Rails: Model scope"
+  },
   "Rails: Find memcache instance variable": {
 		"scope": "ruby,erb",
     "prefix": "memcache",
@@ -98,7 +106,7 @@
 		"scope": "ruby",
     "prefix": "hm",
     "body": [
-      "has_many :${0}"
+      "has_many :${1}, dependent: :${0}"
     ],
     "description": "Rails model: has many"
   },

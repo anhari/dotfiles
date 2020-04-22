@@ -1,1 +1,108 @@
-{}
+{
+  "TypeScript: interface": {
+    "prefix": "int",
+    "body": [
+      "interface $1 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "TypeScript: interface"
+  },
+  "TypeScript: interface extends": {
+    "prefix": "inte",
+    "body": [
+      "interface ${1:Name} extends ${2:OtherInterface} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "TypeScript: interface extends"
+  },
+  "TypeScript: function interface": {
+    "prefix": "fint",
+    "body": [
+      "interface $1 {",
+      "\t(${2: arg1: type}): ${0:returnType}",
+      "}"
+    ],
+    "description": "TypeScript: function interface"
+  },
+  "TypeScript: readonly property": {
+    "prefix": "ro",
+    "body": [
+      "readonly ${1:property}: ${0:type};",
+    ],
+    "description": "TypeScript: readonly property"
+  },
+  "TypeScript: readonly index signature": {
+    "prefix": "roi",
+    "body": [
+      "readonly [index: number]: ${0:returnType};",
+    ],
+    "description": "TypeScript: readonly index signature"
+  },
+  "TypeScript: interface function": {
+    "prefix": "inf",
+    "body": [
+      "${1:functionName}(${2:arg}: ${3:argType}): ${0:returnType}",
+    ],
+    "description": "TypeScript: interface function"
+  },
+  "TypeScript: readonly array": {
+    "prefix": "roa",
+    "body": [
+      "ReadonlyArray<${1:type}>",
+    ],
+    "description": "TypeScript: readonly array"
+  },
+  "TypeScript: interface that accepts extra properties": {
+    "prefix": "iaep",
+    "body": [
+      "interface $1 {",
+      "\t[propName: string]: any;",
+      "}"
+    ],
+    "description": "TypeScript: interface that accepts extra properties"
+  },
+  "TypeScript: indexable interface": {
+    "prefix": "idxi",
+    "body": [
+      "interface $1 {",
+      "\t[index: ${2:number or string}]: ${0:returnType}",
+      "}"
+    ],
+    "description": "TypeScript: indexable interface"
+  },
+  "TypeScript: class": {
+    "prefix": "cl",
+    "body": [
+      "class ${1:Name} {",
+      "\tconstructor(${2:parameters}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "TypeScript: class"
+  },
+  "TypeScript: class implements interface": {
+    "prefix": "cli",
+    "body": [
+      "class ${1:Name} implements ${2:SomeInterface} {",
+      "\tconstructor(${3:parameters}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "TypeScript: class implements interface"
+  },
+  "TypeScript: class extends": {
+    "prefix": "cle",
+    "body": [
+      "class ${1:Name} extends ${2:SomeInterface} {",
+      "\tconstructor(${3:parameters}) {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "TypeScript: class extends"
+  }
+}

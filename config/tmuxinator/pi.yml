@@ -1,7 +1,7 @@
 # /Users/anhari/.config/tmuxinator/pi.yml
 
 name: pi
-root: ~/dwarfcode/datawarehouse
+root: ~/dev/datawarehouse
 
 # Optional tmux socket
 # socket_name: foo

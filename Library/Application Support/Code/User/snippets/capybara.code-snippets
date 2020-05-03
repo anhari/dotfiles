@@ -95,4 +95,12 @@
     ],
     "description": "Capybara: attach file"
   },
+  "Capybara: accept confirm": {
+		"scope": "ruby",
+    "prefix": "pac",
+    "body": [
+      "page.accept_confirm { click_on '$0' }"
+    ],
+    "description": "Capybara: accept confirm"
+  },
 }

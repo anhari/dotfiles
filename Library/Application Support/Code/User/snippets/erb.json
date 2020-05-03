@@ -42,12 +42,13 @@
   "Rails view: form_with": {
     "prefix": "fw",
     "body": [
-      "<%= form_with model: @${1:model} do |f| %>",
-      "\t<%= f.label :${2:attribute} %>:",
-      "\t<%= f.text_field :${0:$2} %>",
-      "\t<br />",
+      "<%= form_with(model: @${1:model}) do |form| %>",
+      "\t<div class=\"field\">",
+      "\t\t<%= form.label(:$0) %>:",
+      "\t\t<%= form.text_field(:$0) %>",
+      "\t</div>",
       "",
-      "\t<%= f.submit %>",
+      "\t<%= form.submit %>",
       "<% end %>"
     ],
     "description": "Rails view: form_with"

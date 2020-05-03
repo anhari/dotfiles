@@ -30,6 +30,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -44,6 +47,7 @@
     "actioncable",
     "activedescendant",
     "activestorage",
+    "afterend",
     "alignitems",
     "allowfullscreen",
     "amaranta",
@@ -125,6 +129,7 @@
     "location",
     "metadatum",
     "miragejs",
+    "modestbranding",
     "mounter",
     "neue",
     "noopener",
@@ -157,6 +162,7 @@
     "rehoboth",
     "reonboarding",
     "reselect",
+    "rewatch",
     "roboto",
     "route",
     "rsvp",
@@ -180,6 +186,7 @@
     "symlink",
     "tailwindcss",
     "textalign",
+    "timestamp",
     "tmux",
     "todos",
     "turbolinks",
@@ -192,6 +199,7 @@
     "uncommit",
     "unmount",
     "unnested",
+    "upsert",
     "upvote",
     "upvoted",
     "upvotes",
@@ -209,6 +217,7 @@
     "xsmall",
     "yadcf",
     "yolo",
+    "youtube",
     "zaffre"
   ],
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -342,7 +351,8 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     "*.css": "postcss",
-    "*.axlsx": "ruby"
+    "*.axlsx": "ruby",
+    "confirm-changes": "shellscript"
   },
   "files.autoGuessEncoding": false,
   "files.trimTrailingWhitespace": true,
@@ -709,5 +719,8 @@
   "zenMode.restore": true,
   "editor.cursorBlinking": "solid",
   "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
-  "vscode-neovim.neovimInitPath": "/Users/anhari/.config/nvim/init.vim"
+  "vscode-neovim.neovimInitPath": "/Users/anhari/.config/nvim/init.vim",
+  "workbench.colorTheme": "Default High Contrast",
+  "githubPullRequests.fileListLayout": "flat",
+  "extensions.ignoreRecommendations": false
 }

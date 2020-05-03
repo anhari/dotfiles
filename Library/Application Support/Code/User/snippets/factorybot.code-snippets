@@ -35,4 +35,12 @@
     ],
     "description": "FactoryBot: factory from traits"
   },
+  "FactoryBot: build stubbed": {
+		"scope": "ruby",
+    "prefix": "bst",
+    "body": [
+      "build_stubbed(:$0)"
+    ],
+    "description": "FactoryBot: build stubbed"
+  },
 }

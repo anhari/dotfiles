@@ -381,4 +381,12 @@
     ],
     "description": "Rails: fetch cache"
   },
+  "Rails Modules: include ActiveModel::Model": {
+		"scope": "ruby",
+    "prefix": "imm",
+    "body": [
+      "include ActiveModel::Model",
+    ],
+    "description": "Rails Modules: include ActiveModel::Model"
+  },
 }

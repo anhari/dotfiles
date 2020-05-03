@@ -101,7 +101,7 @@
 		"scope": "ruby",
     "prefix": "amatch",
     "body": [
-      "assert_match ${0}"
+      "assert_match(/${0}/, 'string')"
     ],
     "description": "MiniTest: assert match"
   },
@@ -257,6 +257,22 @@
     ],
     "description": "MiniTest: assert not predicate"
   },
+  "MiniTest: assert select": {
+		"scope": "ruby",
+    "prefix": "asel",
+    "body": [
+      "assert_select(${1:selector}), '${0:text}'"
+    ],
+    "description": "MiniTest: assert select"
+  },
+  "MiniTest: assert same elements": {
+		"scope": "ruby",
+    "prefix": "ase",
+    "body": [
+      "assert_same_elements(${0})"
+    ],
+    "description": "MiniTest: assert same elements"
+  },
   "MiniTest: flunk": {
 		"scope": "ruby",
     "prefix": "fl",
@@ -272,5 +288,40 @@
       "driven_by :selenium, using: :chrome"
     ],
     "description": "MiniTest: set driver to selenium chrome"
+  },
+  "MiniTest: assert_difference": {
+		"scope": "ruby",
+    "prefix": "adiff",
+    "body": [
+      "assert_difference('$1.count', 1) do",
+      "\t$0",
+      "end"
+    ],
+    "description": "MiniTest: assert_difference"
+  },
+  "MiniTest: assert_no difference": {
+		"scope": "ruby",
+    "prefix": "nodiff",
+    "body": [
+      "assert_no_difference('$1.count') do",
+      "\t$0",
+      "end"
+    ],
+    "description": "MiniTest: assert_difference"
+  },
+  "MiniTest: ActiveSupport::TestCase": {
+    "scope": "ruby",
+    "prefix": "ttc",
+    "body": [
+      "require 'test_helper'",
+      "",
+      "class $1Test < ActiveSupport::TestCase",
+      "  test '$0' do",
+      "    # add tests",
+      "  end",
+      "end",
+      ""
+    ],
+    "description": "MiniTest: ActiveSupport::TestCase"
   }
 }

@@ -1,4 +1,132 @@
 {
+  "MiniTest shoulda-matchers: should allow value": {
+    "scope": "ruby",
+    "prefix": "sav",
+    "body": ["should allow_value(${1}).for(:${0})"],
+    "description": "MiniTest shoulda-matchers: should allow value"
+  },
+  "MiniTest shoulda-matchers: should not allow value": {
+    "scope": "ruby",
+    "prefix": "snav",
+    "body": ["should_not allow_value(${1}).for(:${0})"],
+    "description": "MiniTest shoulda-matcher: should not allow value"
+  },
+  "MiniTest shoulda-matchers: should validate presence of": {
+    "scope": "ruby",
+    "prefix": "svpo",
+    "body": ["should validate_presence_of(:${0})"],
+    "description": "MiniTest shoulda-matcher: should validate presence of"
+  },
+  "MiniTest shoulda-machers: should validate numericality": {
+    "scope": "ruby",
+    "prefix": "svno",
+    "body": ["should validate_numericality_of(:${0})"],
+    "description": "MiniTest shoulda-matchers: should validate numericality"
+  },
+  "MiniTest shoulda-matchers: should validate length is at least": {
+    "scope": "ruby",
+    "prefix": "svlo",
+    "body": ["should validate_length_of(:${0}).is_at_least(10)"],
+    "description": "MiniTest shoulda-matchers: should validate length is at least"
+  },
+  "MiniTest shoulda-matchers: should validate length is at most": {
+    "scope": "ruby",
+    "prefix": "svlo",
+    "body": ["should validate_length_of(:${0}).is_at_most(10)"],
+    "description": "MiniTest shoulda-matchers: should validate length is at most"
+  },
+  "MiniTest shoulda-matchers: should validate length is equal to": {
+    "scope": "ruby",
+    "prefix": "svlo",
+    "body": ["should validate_length_of(:${0}).is_equal_to(10)"],
+    "description": "MiniTest shoulda-matchers: should validate length is equal to"
+  },
+  "MiniTest shoulda-matchers: should validate length is in range": {
+    "scope": "ruby",
+    "prefix": "svlo",
+    "body": [
+      "it { should validate_length_of(:${0}).is_at_least(${1}).is_at_most(${2}) }"
+    ],
+    "description": "MiniTest shoulda-matchers: should validate length is in range"
+  },
+  "MiniTest shoulda-matchers: should belong to": {
+    "scope": "ruby",
+    "prefix": "sbt",
+    "body": ["should belong_to(:${0})"],
+    "description": "MiniTest shoulda-matchers: should belong to"
+  },
+  "MiniTest shoulda-matchers: should have one": {
+    "scope": "ruby",
+    "prefix": "sho",
+    "body": ["should have_one(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have one"
+  },
+  "MiniTest shoulda-matchers: should have one through": {
+    "scope": "ruby",
+    "prefix": "shot",
+    "body": ["should have_one(:${1}).through(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have one through"
+  },
+  "MiniTest shoulda-matchers: should have and belong to many": {
+    "scope": "ruby",
+    "prefix": "shab",
+    "body": ["should have_and_belong_to_many(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have and belong to many"
+  },
+  "MiniTest shoulda-matchers: should have many": {
+    "scope": "ruby",
+    "prefix": "shm",
+    "body": ["should have_many(:${1}).dependent(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have many"
+  },
+  "MiniTest shoulda-matchers: should have many through": {
+    "scope": "ruby",
+    "prefix": "shmt",
+    "body": ["should have_many(:${1}).through(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have many through"
+  },
+  "MiniTest shoulda-matchers: should have db column": {
+    "scope": "ruby",
+    "prefix": "sdb",
+    "body": ["should have_db_column(:${1}).of_type(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have db column"
+  },
+  "MiniTest shoulda-matchers: should have db index": {
+    "scope": "ruby",
+    "prefix": "shi",
+    "body": ["should have_db_index(:${1})"],
+    "description": "MiniTest shoulda-matchers: should have db index"
+  },
+  "MiniTest shoulda-matchers: should have uniqueness db index": {
+    "scope": "ruby",
+    "prefix": "shiu",
+    "body": ["should have_db_index(:${1}).unique(:true)"],
+    "description": "MiniTest shoulda-matchers: should have uniqueness db index"
+  },
+  "MiniTest shoulda-matchers: should validate uniqueness": {
+    "scope": "ruby",
+    "prefix": "svuo",
+    "body": ["should validate_uniqueness_of(:${0})"],
+    "description": "MiniTest shoulda-matchers: should validate uniqueness"
+  },
+  "MiniTest shoulda-matchers: should delegate method": {
+    "scope": "ruby",
+    "prefix": "sdm",
+    "body": ["should delegate_method(:${1}).to(:${0})"],
+    "description": "MiniTest shoulda-matchers: should delegate method"
+  },
+  "MiniTest shoulda-matchers: should delegate method with prefix": {
+    "scope": "ruby",
+    "prefix": "sdmp",
+    "body": ["should delegate_method(:${1}).to(:${0}).with_prefix }"],
+    "description": "MiniTest shoulda-matchers: should delegate method with prefix"
+  },
+  "MiniTest shoulda-matchers: should define enum with values": {
+    "scope": "ruby",
+    "prefix": "sde",
+    "body": ["should define_enum_for(:${1}).with_values([:${0}])"],
+    "description": "MiniTest shoulda-matchers: should define enum with values"
+  },
   "RSpec shoulda-matchers: should allow value": {
     "scope": "ruby",
     "prefix": "sav",
@@ -127,132 +255,4 @@
     "body": ["it { should define_enum_for(:${1}).with_values([:${0}]) }"],
     "description": "RSpec shoulda-matchers: should define enum with values"
   },
-  "MiniTest shoulda-matchers: should allow value": {
-    "scope": "ruby",
-    "prefix": "sav",
-    "body": ["should allow_value(${1}).for(:${0})"],
-    "description": "MiniTest shoulda-matchers: should allow value"
-  },
-  "MiniTest shoulda-matchers: should not allow value": {
-    "scope": "ruby",
-    "prefix": "snav",
-    "body": ["should_not allow_value(${1}).for(:${0})"],
-    "description": "MiniTest shoulda-matcher: should not allow value"
-  },
-  "MiniTest shoulda-matchers: should validate presence of": {
-    "scope": "ruby",
-    "prefix": "svpo",
-    "body": ["should validate_presence_of(:${0})"],
-    "description": "MiniTest shoulda-matcher: should validate presence of"
-  },
-  "MiniTest shoulda-machers: should validate numericality": {
-    "scope": "ruby",
-    "prefix": "svno",
-    "body": ["should validate_numericality_of(:${0})"],
-    "description": "MiniTest shoulda-matchers: should validate numericality"
-  },
-  "MiniTest shoulda-matchers: should validate length is at least": {
-    "scope": "ruby",
-    "prefix": "svlo",
-    "body": ["should validate_length_of(:${0}).is_at_least(10)"],
-    "description": "MiniTest shoulda-matchers: should validate length is at least"
-  },
-  "MiniTest shoulda-matchers: should validate length is at most": {
-    "scope": "ruby",
-    "prefix": "svlo",
-    "body": ["should validate_length_of(:${0}).is_at_most(10)"],
-    "description": "MiniTest shoulda-matchers: should validate length is at most"
-  },
-  "MiniTest shoulda-matchers: should validate length is equal to": {
-    "scope": "ruby",
-    "prefix": "svlo",
-    "body": ["should validate_length_of(:${0}).is_equal_to(10)"],
-    "description": "MiniTest shoulda-matchers: should validate length is equal to"
-  },
-  "MiniTest shoulda-matchers: should validate length is in range": {
-    "scope": "ruby",
-    "prefix": "svlo",
-    "body": [
-      "it { should validate_length_of(:${0}).is_at_least(${1}).is_at_most(${2}) }"
-    ],
-    "description": "MiniTest shoulda-matchers: should validate length is in range"
-  },
-  "MiniTest shoulda-matchers: should belong to": {
-    "scope": "ruby",
-    "prefix": "sbt",
-    "body": ["should belong_to(:${0})"],
-    "description": "MiniTest shoulda-matchers: should belong to"
-  },
-  "MiniTest shoulda-matchers: should have one": {
-    "scope": "ruby",
-    "prefix": "sho",
-    "body": ["should have_one(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have one"
-  },
-  "MiniTest shoulda-matchers: should have one through": {
-    "scope": "ruby",
-    "prefix": "shot",
-    "body": ["should have_one(:${1}).through(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have one through"
-  },
-  "MiniTest shoulda-matchers: should have and belong to many": {
-    "scope": "ruby",
-    "prefix": "shab",
-    "body": ["should have_and_belong_to_many(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have and belong to many"
-  },
-  "MiniTest shoulda-matchers: should have many": {
-    "scope": "ruby",
-    "prefix": "shm",
-    "body": ["should have_many(:${1}).dependent(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have many"
-  },
-  "MiniTest shoulda-matchers: should have many through": {
-    "scope": "ruby",
-    "prefix": "shmt",
-    "body": ["should have_many(:${1}).through(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have many through"
-  },
-  "MiniTest shoulda-matchers: should have db column": {
-    "scope": "ruby",
-    "prefix": "sdb",
-    "body": ["should have_db_column(:${1}).of_type(:${0})"],
-    "description": "MiniTest shoulda-matchers: should have db column"
-  },
-  "MiniTest shoulda-matchers: should have db index": {
-    "scope": "ruby",
-    "prefix": "shi",
-    "body": ["should have_db_index(:${1})"],
-    "description": "MiniTest shoulda-matchers: should have db index"
-  },
-  "MiniTest shoulda-matchers: should have uniqueness db index": {
-    "scope": "ruby",
-    "prefix": "shiu",
-    "body": ["should have_db_index(:${1}).unique(:true)"],
-    "description": "MiniTest shoulda-matchers: should have uniqueness db index"
-  },
-  "MiniTest shoulda-matchers: should validate uniqueness": {
-    "scope": "ruby",
-    "prefix": "svuo",
-    "body": ["should validate_uniqueness_of(:${0})"],
-    "description": "MiniTest shoulda-matchers: should validate uniqueness"
-  },
-  "MiniTest shoulda-matchers: should delegate method": {
-    "scope": "ruby",
-    "prefix": "sdm",
-    "body": ["should delegate_method(:${1}).to(:${0})"],
-    "description": "MiniTest shoulda-matchers: should delegate method"
-  },
-  "MiniTest shoulda-matchers: should delegate method with prefix": {
-    "scope": "ruby",
-    "prefix": "sdmp",
-    "body": ["should delegate_method(:${1}).to(:${0}).with_prefix }"],
-    "description": "MiniTest shoulda-matchers: should delegate method with prefix"
-  },
-  "MiniTest shoulda-matchers: should define enum with values": {
-    "scope": "ruby",
-    "prefix": "sde",
-    "body": ["should define_enum_for(:${1}).with_values([:${0}])"],
-    "description": "MiniTest shoulda-matchers: should define enum with values"
-  }
 }

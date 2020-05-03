@@ -178,5 +178,13 @@
   {
     "key": "cmd+i",
     "command": "editor.action.insertSnippet"
-  }
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.positionPanelBottom"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.positionPanelRight"
+  },
 ]

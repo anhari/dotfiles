@@ -234,6 +234,39 @@
       "problemMatcher": []
     },
     {
+      "label": "Rails: Runner - Check Autoload Paths",
+      "type": "shell",
+      "command": "bin/rails runner 'puts ActiveSupport::Dependencies.autoload_paths'",
+      "presentation": {
+        "reveal": "always",
+        "group": "runner",
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rails: Edit Credentials",
+      "type": "shell",
+      "command": "EDITOR='code --wait' bin/rails credentials:edit",
+      "presentation": {
+        "reveal": "always",
+        "group": "credentials",
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rails: Edit Credentials - Development",
+      "type": "shell",
+      "command": "EDITOR='code --wait' bin/rails credentials:edit --environment development",
+      "presentation": {
+        "reveal": "always",
+        "group": "credentials",
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Rails: Open DB Console",
       "type": "shell",
       "command": "bin/rails dbconsole",

@@ -1,56 +1,66 @@
 {
-  ".": {
+  "Elixir: Pipe operator": {
     "prefix": ".",
-    "body": "\n|> ${0}"
+    "body": "|> ${0}",
+    "description": "Elixir: Pipe Operator",
   },
-  "%": {
+  "Elixir: Map": {
     "prefix": "m",
-    "body": "%{${0}}"
+    "body": "%{${0}}",
+    "description": "Elixir: Map"
   },
-  "al": {
+  "Elixir: Alias": {
     "prefix": "al",
-    "body": "alias $0"
+    "body": "alias $0",
+    "description": "Elixir: Alias"
   },
-  "d": {
+  "Elixir: Define method": {
     "prefix": "d",
-    "body": "def ${0} do\nend"
+    "body": "def ${0} do\nend",
+    "description": "Elixir: Define method"
   },
-  "dm": {
+  "Elixir: Define module": {
     "prefix": "dm",
-    "body": "defmodule ${0} do\nend"
+    "body": "defmodule ${0} do\nend",
+    "description": "Elixir: Define module"
   },
-  "dd": {
+  "Elixir: Define delegate": {
     "prefix": "dd",
-    "body": "defdelegate ${0}, to:"
+    "body": "defdelegate ${0}, to:",
+    "description": "Elixir: Define delegate"
   },
-  "doc": {
+  "Elixir: Doc": {
     "prefix": "doc",
-    "body": "@doc \"\"\"\n${0}\n\"\"\""
+    "body": "@doc \"\"\"\n${0}\n\"\"\"",
+    "description": "Elixir: doc"
   },
-  "ds": {
+  "Elixir: Define struct": {
     "prefix": "ds",
-    "body": "defstruct(\n\t${0}\n)"
+    "body": "defstruct(\n\t${0}\n)",
+    "description": "Elixir: Define struct"
   },
   "fn": {
     "prefix": "fn",
     "body": "fn () -> ${0:operation} end"
   },
-  "hdoc": {
+  "Elixir: heredoc": {
     "prefix": "hdoc",
     "body": [
       "\"\"\"",
       "${0}",
       "\"\"\""
     ],
-    "description": "heredoc",
+    "description": "Elixir: heredoc",
   },
-  "mdoc": {
+  "Elixir: module doc": {
     "prefix": "mdoc",
-    "body": "@moduledoc \"\"\"\n${0}\n\"\"\""
+    "body": "@moduledoc \"\"\"\n${0}\n\"\"\"",
+    "description": "Elixir: module doc",
   },
-  "priv": {
+  "Elixir: private": {
     "prefix": "priv",
-    "body": "# private ####################################################################"
+    "body": "# private ####################################################################",
+    "description": "Elixir: private",
   },
   "rec": {
     "prefix": "rec",

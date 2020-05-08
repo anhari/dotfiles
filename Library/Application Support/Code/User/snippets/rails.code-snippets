@@ -389,4 +389,14 @@
     ],
     "description": "Rails Modules: include ActiveModel::Model"
   },
+  "Rails Controllers: respond to": {
+		"scope": "ruby",
+    "prefix": "rtd",
+    "body": [
+      "respond_to do |format|",
+      "\t $0",
+      "end",
+    ],
+    "description": "Rails Controllers: respond to"
+  },
 }

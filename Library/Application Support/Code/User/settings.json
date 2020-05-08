@@ -1,12 +1,15 @@
 {
-  // "[erb]": {
-  //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
-  // },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
   "[git-commit]": {
-    "editor.rulers": [
-      50,
-      72
-    ]
+    "editor.rulers": [50, 72]
+  },
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[HTML (EEx)]": {
+    "editor.defaultFormatter": "zerokol.vscode-eex-beautify"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -118,6 +121,7 @@
     "highcharts",
     "hstore",
     "infinite",
+    "inputmask",
     "interop",
     "jordon",
     "justifycontent",
@@ -160,6 +164,7 @@
     "rebeccapurple",
     "redux",
     "rehoboth",
+    "reindex",
     "reonboarding",
     "reselect",
     "rewatch",
@@ -237,13 +242,54 @@
   },
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
+    "[Dark+ Tweaked]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function-call.elixir",
+          "settings": {
+            "foreground": "#DCDCAA",
+          }
+        },
+        {
+          "scope": ["punctuation.section.scope.elixir", "punctuation.section.function.elixir"],
+          "settings": {
+            "foreground": "#FFFFFF",
+          }
+        },
+        {
+          "scope": "constant.other.symbol.elixir",
+          "settings": {
+            "foreground": "#569CD6",
+          }
+        },
+        {
+          "scope": [
+            "parameter.variable.function.elixir",
+            "source.elixir"
+          ],
+          "settings": {
+            "foreground": "#9CDCFE",
+          }
+        },
+        {
+          "scope": "keyword.operator.other.elixir",
+          "settings": {
+            "foreground": "#C586C0",
+          }
+        },
+        {
+          "scope": "variable.other.constant.elixir",
+          "settings": {
+            "foreground": "#4EC9B0",
+          }
+        }
+      ]
+    },
     "textMateRules": [
       {
         "scope": [
@@ -364,19 +410,11 @@
   "git.rebaseWhenSync": true,
   "git.showPushSuccessNotification": true,
   "gitHistory.hideCommitViewExplorer": true,
-  "htmlhint.documentSelector": [
-    "html",
-    "htm",
-    "typescriptreact"
-  ],
+  "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown-checkbox.checkmark": "x",
-  "markdown-checkbox.languages": [
-    "markdown",
-    "mdx",
-    "plaintext"
-  ],
+  "markdown-checkbox.languages": ["markdown", "mdx", "plaintext"],
   "markdown-checkbox.typeOfBulletPoint": "-",
   "markdown-checkbox.withBulletPoint": true,
   "material-icon-theme.folders.theme": "classic",
@@ -385,6 +423,7 @@
   "ruby.codeCompletion": "rcodetools",
   "ruby.format": false,
   "ruby.intellisense": "rubyLocate",
+  "ruby.specClearTerminal": true,
   "ruby.specFocusTerminal": false,
   "ruby.specSaveFile": true,
   "scss.validate": false,
@@ -400,140 +439,62 @@
   "vim.incsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "after": [
-        "<Esc>"
-      ],
-      "before": [
-        "j",
-        "k"
-      ]
+      "after": ["<Esc>"],
+      "before": ["j", "k"]
     }
   ],
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "n"
-      ],
-      "commands": [
-        "workbench.files.action.showActiveFileInExplorer"
-      ]
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
     {
-      "before": [
-        "z",
-        "g"
-      ],
-      "commands": [
-        "cSpell.addWordToUserDictionary"
-      ]
+      "before": ["z", "g"],
+      "commands": ["cSpell.addWordToUserDictionary"]
     },
     {
-      "after": [
-        "2",
-        "5",
-        "ctrl+e"
-      ],
-      "before": [
-        "ctrl+e"
-      ]
+      "after": ["2", "5", "ctrl+e"],
+      "before": ["ctrl+e"]
     },
     {
-      "after": [
-        "2",
-        "5",
-        "ctrl+y"
-      ],
-      "before": [
-        "ctrl+y"
-      ]
+      "after": ["2", "5", "ctrl+y"],
+      "before": ["ctrl+y"]
     },
     {
-      "after": [
-        "g",
-        "j"
-      ],
-      "before": [
-        "j"
-      ]
+      "after": ["g", "j"],
+      "before": ["j"]
     },
     {
-      "after": [
-        "g",
-        "k"
-      ],
-      "before": [
-        "k"
-      ]
+      "after": ["g", "k"],
+      "before": ["k"]
     },
     {
-      "after": [
-        "^"
-      ],
-      "before": [
-        "0"
-      ]
+      "after": ["^"],
+      "before": ["0"]
     },
     {
-      "before": [
-        "leader",
-        "h"
-      ],
-      "commands": [
-        ":nohl"
-      ]
+      "before": ["leader", "h"],
+      "commands": [":nohl"]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        {
-          "args": {
-            "text": "clear\r"
-          },
-          "command": "workbench.action.terminal.sendSequence"
-        },
-        {
-          "command": "extension.runSpecLine"
-        }
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["extension.runSpecLine"]
     },
     {
-      "before": [
-        "<leader>",
-        "l"
-      ],
-      "commands": [
-        "extension.runLastSpec"
-      ]
+      "before": ["<leader>", "l"],
+      "commands": ["extension.runLastSpec"]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "extension.runFileSpecs"
-      ]
+      "before": ["<leader>", "t"],
+      "commands": ["extension.runFileSpecs"]
     },
     {
-      "before": [
-        "<leader>",
-        "a"
-      ],
-      "commands": [
-        "extension.runAllSpecFiles"
-      ]
+      "before": ["<leader>", "a"],
+      "commands": ["extension.runAllSpecFiles"]
     },
     {
-      "before": [
-        "<leader>",
-        "v",
-        "v"
-      ],
+      "before": ["<leader>", "v", "v"],
       "commands": [
         {
           "command": "expandLineSelection"
@@ -544,11 +505,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "d"
-      ],
+      "before": ["<leader>", "g", "d"],
       "commands": [
         {
           "args": {
@@ -566,11 +523,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "s"
-      ],
+      "before": ["<leader>", "g", "s"],
       "commands": [
         {
           "args": {
@@ -587,11 +540,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "l"
-      ],
+      "before": ["<leader>", "g", "l"],
       "commands": [
         {
           "args": {
@@ -608,11 +557,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "b"
-      ],
+      "before": ["<leader>", "g", "b"],
       "commands": [
         {
           "args": {
@@ -629,11 +574,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "i"
-      ],
+      "before": ["<leader>", "b", "i"],
       "commands": [
         {
           "args": {
@@ -650,40 +591,21 @@
       ]
     },
     {
-      "before": [
-        "]",
-        "q"
-      ],
-      "commands": [
-        "search.action.focusNextSearchResult"
-      ]
+      "before": ["]", "q"],
+      "commands": ["search.action.focusNextSearchResult"]
     },
     {
-      "before": [
-        "[",
-        "q"
-      ],
-      "commands": [
-        "search.action.focusPreviousSearchResult"
-      ]
+      "before": ["[", "q"],
+      "commands": ["search.action.focusPreviousSearchResult"]
     },
     {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<leader>", "i"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
       "after": [],
       "args": "mocha:spec",
-      "before": [
-        "<leader>",
-        "f",
-        "t"
-      ],
+      "before": ["<leader>", "f", "t"],
       "command": "workbench.action.tasks.runTask"
     }
   ],
@@ -691,12 +613,12 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "[Monokai Pro (Filter Octagon)]": {
       "editorCursor.foreground": "#ffffff6e",
-      "terminalCursor.foreground": "#ffffff6e",
+      "terminalCursor.foreground": "#ffffff6e"
     },
     "[Palenight Operator]": {
       "activityBar.background": "#1f2331",
@@ -706,8 +628,14 @@
       "statusBar.background": "#0A0E14",
       "statusBar.debuggingBackground": "#0A0E14",
       "statusBar.noFolderBackground": "#0A0E14",
-      "terminal.background": "#1f2331",
+      "terminal.background": "#1f2331"
     },
+    "[Dark+ Tweaked]": {
+      "editor.background": "#151515",
+      "breadcrumb.background": "#151515",
+      "quickInput.background": "#101010",
+      "tab.activeBackground": "#151515",
+    }
   },
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
@@ -720,7 +648,57 @@
   "editor.cursorBlinking": "solid",
   "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
   "vscode-neovim.neovimInitPath": "/Users/anhari/.config/nvim/init.vim",
-  "workbench.colorTheme": "Default High Contrast",
   "githubPullRequests.fileListLayout": "flat",
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "workbench.colorTheme": "Dark+ Tweaked",
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "elixir": "elixir",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded"
+  }
 }

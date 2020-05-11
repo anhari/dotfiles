@@ -8,9 +8,6 @@
   "[elixir]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
-  "[HTML (EEx)]": {
-    "editor.defaultFormatter": "zerokol.vscode-eex-beautify"
-  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -170,6 +167,7 @@
     "rewatch",
     "roboto",
     "route",
+    "rspec",
     "rsvp",
     "rsvped",
     "scroller",
@@ -234,7 +232,7 @@
   "editor.fontWeight": "100",
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": false,
     "other": true,
@@ -479,19 +477,19 @@
     },
     {
       "before": ["<leader>", "s"],
-      "commands": ["extension.runSpecLine"]
+      "commands": ["vscode-test.runLineTests"]
     },
     {
       "before": ["<leader>", "l"],
-      "commands": ["extension.runLastSpec"]
+      "commands": ["vscode-test.runLastTests"]
     },
     {
       "before": ["<leader>", "t"],
-      "commands": ["extension.runFileSpecs"]
+      "commands": ["vscode-test.runFileTests"]
     },
     {
       "before": ["<leader>", "a"],
-      "commands": ["extension.runAllSpecFiles"]
+      "commands": ["vscode-test.runAllTests"]
     },
     {
       "before": ["<leader>", "v", "v"],
@@ -613,7 +611,7 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "[Monokai Pro (Filter Octagon)]": {

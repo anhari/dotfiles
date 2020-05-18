@@ -268,7 +268,7 @@
           }
         },
         {
-          "scope": ["constant.other.database-name.sql"],
+          "scope": [],
           "settings": {
             "foreground": "#4EC9B0"
           }
@@ -301,7 +301,8 @@
           "scope": [
             "parameter.variable.function.elixir",
             "source.elixir",
-            "source.sql"
+            "source.sql",
+            "constant.other.database-name.sql"
           ],
           "settings": {
             "foreground": "#9CDCFE"

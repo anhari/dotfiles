@@ -1,7 +1,6 @@
 adpyke.codesnap
 adpyke.vscode-sql-formatter
 ahmadawais.shades-of-purple
-aliariff.vscode-erb-beautify
 anhari.vscode-test
 arcticicestudio.nord-visual-studio-code
 asvetliakov.vscode-neovim
@@ -12,7 +11,6 @@ bradlc.vscode-tailwindcss
 bung87.vscode-gemfile
 castwide.solargraph
 christian-kohler.npm-intellisense
-ckolkman.vscode-postgres
 clinyong.vscode-css-modules
 cpylua.language-postcss
 cssho.vscode-svgviewer
@@ -54,7 +52,6 @@ karunamurti.haml
 kisstkondoros.vscode-gutter-preview
 kumar-harsh.graphql-for-vscode
 lior-chamla.google-fonts
-Lourenci.go-to-spec
 mechatroner.rainbow-csv
 mikestead.dotenv
 mkaufman.HTMLHint
@@ -66,7 +63,6 @@ ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
-noku.rails-run-spec-vscode
 Orta.vscode-jest
 perragnaredin.light-plus-tweaked
 PKief.markdown-checkbox

@@ -181,4 +181,8 @@
     "key": "ctrl+shift+right",
     "command": "workbench.action.positionPanelRight"
   },
+  {
+    "key": "ctrl+shift+o",
+    "command": "vscode-test.openTestFile"
+  }
 ]

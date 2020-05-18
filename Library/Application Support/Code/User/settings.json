@@ -71,6 +71,7 @@
     "coderunes",
     "combobox",
     "commentable",
+    "creekstone",
     "datasets",
     "datatable",
     "datatables",
@@ -129,6 +130,7 @@
     "linkify",
     "location",
     "metadatum",
+    "minitest",
     "miragejs",
     "modestbranding",
     "mounter",
@@ -146,6 +148,7 @@
     "pinnable",
     "plugin",
     "postbuild",
+    "postcss",
     "postgre",
     "postgres",
     "postgresql",
@@ -248,42 +251,72 @@
     "[Dark+ Tweaked]": {
       "textMateRules": [
         {
-          "scope": "entity.name.function-call.elixir",
+          "scope": "comment",
           "settings": {
-            "foreground": "#DCDCAA",
+            "foreground": "#6d6d6d"
           }
         },
         {
-          "scope": ["punctuation.section.scope.elixir", "punctuation.section.function.elixir"],
+          "scope": [
+            "keyword.other.sql",
+            "keyword.other.DML.sql",
+            "keyword.other.DDL.create.II.sql",
+            "keyword.other.alias.sql"
+          ],
           "settings": {
-            "foreground": "#FFFFFF",
+            "foreground": "#C586C0"
           }
         },
         {
-          "scope": "constant.other.symbol.elixir",
+          "scope": ["constant.other.database-name.sql"],
           "settings": {
-            "foreground": "#569CD6",
+            "foreground": "#4EC9B0"
+          }
+        },
+        {
+          "scope": ["entity.name.function-call.elixir"],
+          "settings": {
+            "foreground": "#DCDCAA"
+          }
+        },
+        {
+          "scope": [
+            "punctuation.section.scope.elixir",
+            "punctuation.section.function.elixir"
+          ],
+          "settings": {
+            "foreground": "#FFFFFF"
+          }
+        },
+        {
+          "scope": [
+            "constant.other.symbol.elixir",
+            "constant.other.table-name.sql"
+          ],
+          "settings": {
+            "foreground": "#569CD6"
           }
         },
         {
           "scope": [
             "parameter.variable.function.elixir",
-            "source.elixir"
+            "source.elixir",
+            "source.sql"
           ],
           "settings": {
-            "foreground": "#9CDCFE",
+            "foreground": "#9CDCFE"
           }
         },
         {
           "scope": "keyword.operator.other.elixir",
           "settings": {
-            "foreground": "#C586C0",
+            "foreground": "#C586C0"
           }
         },
         {
           "scope": "variable.other.constant.elixir",
           "settings": {
-            "foreground": "#4EC9B0",
+            "foreground": "#4EC9B0"
           }
         }
       ]
@@ -492,6 +525,10 @@
       "commands": ["vscode-test.runAllTests"]
     },
     {
+      "before": ["<leader>", "u"],
+      "commands": ["vscode-test.runAllUnitTests"]
+    },
+    {
       "before": ["<leader>", "v", "v"],
       "commands": [
         {
@@ -632,7 +669,7 @@
       "editor.background": "#151515",
       "breadcrumb.background": "#151515",
       "quickInput.background": "#101010",
-      "tab.activeBackground": "#151515",
+      "tab.activeBackground": "#151515"
     }
   },
   "workbench.editor.enablePreview": true,

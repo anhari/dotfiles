@@ -379,7 +379,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Mix: Phoenix Server",
+      "label": "Mix: phx server",
       "type": "shell",
       "command": "mix phx.server"
     },
@@ -404,12 +404,7 @@
       "command": "iex -S mix"
     },
     {
-      "label": "Mix: Dependencies get",
-      "type": "shell",
-      "command": "mix deps.get"
-    },
-    {
-      "label": "Mix: Phoenix Server",
+      "label": "Mix: deps get",
       "type": "shell",
       "command": "mix deps.get"
     }

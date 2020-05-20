@@ -1,0 +1,162 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// https://github.com/facebook/jest
+	"Jest: after each": {
+    "scope": "javascript,typescript,javascriptreat,typescriptreact",
+    "prefix": "aed",
+    "body": ["afterEach(() => {", "\t${0}", "});"],
+    "description": "Jest: after each"
+  },
+  "Jest: before each": {
+    "scope": "javascript,typescript,javascriptreat,typescriptreact",
+    "prefix": "bed",
+    "body": ["beforeEach(() => {", "\t${0}", "});"],
+    "description": "Jest: before each"
+  },
+  "Jest: describe": {
+    "scope": "javascript,typescript,javascriptreat,typescriptreact",
+    "prefix": "desc",
+    "body": ["describe(\"${1}\", () => {", "\t${0}", "});"],
+    "description": "Jest: describe"
+  },
+  "Jest: expect to": {
+    "scope": "javascript,typescript,javascriptreat,typescriptreact",
+    "prefix": "et",
+    "body": ["expect(${0}).to"],
+    "description": "Jest: expect to"
+  },
+  "Jest: expect to not": {
+    "scope": "javascript,typescript,javascriptreat,typescriptreact",
+    "prefix": "etn",
+    "body": ["expect(${0}).to.not."],
+    "description": "Jest: expect to not"
+  },
+	"Jest: test": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "test",
+		"body": [
+			"test('$1', () => {",
+			"\t$0",
+			"});"
+		],
+		"description": "Jest: test"
+	},
+	"Jest: expect to equal": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ete",
+		"body": [
+			"expect($1).toEqual($0)",
+		],
+		"description": "Jest: expect to equal"
+	},
+	"Jest: expect not to equal": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ente",
+		"body": [
+			"expect($1).toEqual($0)",
+		],
+		"description": "Jest: expect not to equal"
+	},
+	"Jest: expect to be": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "etb",
+		"body": [
+			"expect($1).toBe($0)",
+		],
+		"description": "Jest: expect to be"
+	},
+	"Jest: expect to have been called": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "hbc",
+		"body": [
+			"expect($0).toHaveBeenCalled()",
+		],
+		"description": "Jest: expect to have been called"
+	},
+	"Jest: expect to not have been called": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "nhbc",
+		"body": [
+			"expect($0).not.toHaveBeenCalled()",
+		],
+		"description": "Jest: expect to have been called"
+	},
+	"Jest: to have been called times": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "hbct",
+		"body": [
+			"expect($1).haveBeenCalledTimes($0)",
+		],
+		"description": "Jest: expect to have been called"
+	},
+	"Jest: to be null": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "etbn",
+		"body": [
+			"expect($0).toBeNull()",
+		],
+		"description": "Jest: expect to be null"
+	},
+	"Jest: to be falsy": {
+		"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "etf",
+		"body": [
+			"expect($0).toBeFalsy()",
+		],
+		"description": "Jest: expect to be falsy"
+	},
+	"Jest: to be truthy": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ett",
+		"body": [
+			"expect($0).toBeTruthy()",
+		],
+		"description": "Jest: expect to be truthy"
+	},
+	"Jest: to be NaN": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ett",
+		"body": [
+			"expect($0).toBeNaN()",
+		],
+		"description": "Jest: expect to be NaN"
+	},
+	"Jest: to be contain": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "etc",
+		"body": [
+			"expect($1).toContain($0)",
+		],
+		"description": "Jest: expect to contain"
+	},
+	"Jest: to be match": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "etm",
+		"body": [
+			"expect($1).toMatch($0)",
+		],
+		"description": "Jest: expect to match"
+	},
+	"Jest: to be throw": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ett",
+		"body": [
+			"expect($1).toThrow($0)",
+		],
+		"description": "Jest: expect to throw"
+	},
+	"Jest: to have length": {
+	"scope": "javascript,typescript,javascriptreat,typescriptreact",
+		"prefix": "ethl",
+		"body": [
+			"expect($1).toHaveLength($0)",
+		],
+		"description": "Jest: expect to have length"
+	},
+}

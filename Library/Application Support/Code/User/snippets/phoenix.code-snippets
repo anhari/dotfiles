@@ -1,0 +1,86 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Phoenix Migrations: null false": {
+    "scope": "elixir",
+    "prefix": "nf",
+    "body": ["null: false"],
+    "description": "Phoenix Migrations: null false"
+  },
+  "Phoenix Controller: put flash": {
+    "scope": "elixir",
+    "prefix": "pf",
+    "body": ["put_flash(:${1:info}, \"$0\")"],
+    "description": "Phoenix Controller: put flash"
+  },
+  "Phoenix Controller Testing: assert html response": {
+    "scope": "elixir",
+    "prefix": "ahtml",
+    "body": ["assert html_response(conn, ${1:200}) =~ \"$0\""],
+    "description": "Phoenix Controller Testing: assert html response"
+  },
+  "Phoenix Controller Testing: assert flash message": {
+    "scope": "elixir",
+    "prefix": "aflash",
+    "body": ["assert get_flash(conn, :${1:info}) =~ \"$0\""],
+    "description": "Phoenix Controller Testing: assert flash message"
+  },
+  "Phoenix Controller Testing: assert redirected to": {
+    "scope": "elixir",
+    "prefix": "ard",
+    "body": ["assert redirected_to(conn) == Routes.$1_path(conn, :${0:index})"],
+    "description": "Phoenix Controller Testing: assert redirected to"
+  },
+  "Phoenix Routes: route": {
+    "scope": "elixir",
+    "prefix": "rt",
+    "body": ["Routes.$1_path(conn, :${0:new})"],
+    "description": "Phoenix Routes: route"
+  },
+  "Phoenix Views: route": {
+    "scope": "html-eex",
+    "prefix": "rt",
+    "body": ["Routes.$1_path(@conn, :${0:new})"],
+    "description": "Phoenix Routes: route"
+  },
+  "Phoenix Controller: render": {
+    "scope": "elixir",
+    "prefix": "rnd",
+    "body": ["render(conn, \"$1.html\", ${0:instance_variables}"],
+    "description": "Phoenix Controller: render"
+  },
+  "Phoenix Views: render": {
+    "scope": "html-eex",
+    "prefix": "rnd",
+    "body": ["<%= render \"$0.html\" %>"],
+    "description": "Phoenix Views: render"
+  },
+  "Phoenix Views: form for": {
+    "scope": "html-eex",
+    "prefix": "ff",
+    "body": [
+      "<%= form_for @changeset, @action, fn form -> %>",
+      "  <%= if @changeset.action do %>",
+      "    <div class=\"alert alert-danger\">",
+      "      <p>Oops, something went wrong! Please check the errors below.</p>",
+      "    </div>",
+      "  <% end %>",
+      "",
+      "  <%= label form, :$0 %>",
+      "  <%= text_input form, :$0 %>",
+      "  <%= error_tag form, :$0 %>",
+      "",
+      "  <div>",
+      "    <%= submit \"Save\" %>",
+      "  </div>",
+      "<% end %>",
+      ""
+    ],
+    "description": "Phoenix Views: form for"
+  }
+}

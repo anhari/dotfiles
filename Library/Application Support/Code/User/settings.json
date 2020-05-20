@@ -8,6 +8,9 @@
   "[elixir]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
+  "[html-eex]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -229,7 +232,6 @@
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingOvertype": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "100",
@@ -404,9 +406,8 @@
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
     "erb": "html",
-    "HTML (Eex)": "html",
-    "HTML (EEx)": "html",
     "html.erb": "html",
+    "html-eex": "html",
     "javascript": "javascriptreact"
   },
   "emmet.triggerExpansionOnTab": true,
@@ -430,6 +431,8 @@
   "files.associations": {
     "*.css": "postcss",
     "*.axlsx": "ruby",
+    "*.eex": "html-eex",
+    "*.leex": "html-eex",
     "confirm-changes": "shellscript"
   },
   "files.autoGuessEncoding": false,

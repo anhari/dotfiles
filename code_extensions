@@ -37,6 +37,7 @@ gamunu.vscode-yarn
 GitHub.github-vscode-theme
 GitHub.vscode-pull-request-github
 GrapeCity.gc-excelviewer
+heybourn.headwind
 iampeterbanjo.elixirlinter
 IBM.output-colorizer
 idleberg.applescript
@@ -85,6 +86,7 @@ sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sveggiani.vscode-field-lights
 sysoev.vscode-open-in-github
+teabyii.ayu
 timonwong.shellcheck
 tomoki1207.pdf
 Tyriar.theme-sapphire
@@ -96,3 +98,4 @@ wingrunr21.vscode-ruby
 wix.vscode-import-cost
 wmaurer.change-case
 zerokol.vscode-eex-beautify
+zhuangtongfa.material-theme

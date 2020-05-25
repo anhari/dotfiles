@@ -51,7 +51,7 @@
   "Phoenix Controller: render": {
     "scope": "elixir",
     "prefix": "rnd",
-    "body": ["render(conn, \"$1.html\", ${0:instance_variables}"],
+    "body": ["render(conn, \"$1.html\", ${0:instance_variables})"],
     "description": "Phoenix Controller: render"
   },
   "Phoenix Views: render": {
@@ -60,6 +60,15 @@
     "body": ["<%= render \"$0.html\" %>"],
     "description": "Phoenix Views: render"
   },
+  "Phoenix Views: render form": {
+    "scope": "html-eex",
+    "prefix": "rnf",
+    "body": [
+      "<%= render \"form.html\", Map.put(assigns, :action, Routes.$1_path(@conn, :${0:create})) %>"
+    ],
+    "description": "Phoenix Views: render form"
+  },
+
   "Phoenix Views: form for": {
     "scope": "html-eex",
     "prefix": "ff",

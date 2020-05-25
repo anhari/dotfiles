@@ -1,7 +1,7 @@
 {
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
-  },
+  // "[erb]": {
+  //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  // },
   "[git-commit]": {
     "editor.rulers": [50, 72]
   },
@@ -652,7 +652,8 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
     "[Monokai Pro (Filter Octagon)]": {
@@ -670,10 +671,19 @@
       "terminal.background": "#1f2331"
     },
     "[Dark+ Tweaked]": {
-      "editor.background": "#151515",
-      "breadcrumb.background": "#151515",
-      "quickInput.background": "#101010",
-      "tab.activeBackground": "#151515"
+      "activityBar.background": "#000",
+      "breadcrumb.background": "#000",
+      "editor.background": "#000",
+      "panel.background": "#111",
+      "sideBarSectionHeader.background": "#111",
+      "quickInput.background": "#000",
+      "sideBar.background": "#000",
+      "sideBar.foreground": "#bbb",
+      "gitDecoration.ignoredResourceForeground": "#444",
+      "statusBar.background": "#000",
+      "tab.activeBackground": "#000",
+      "tab.inactiveBackground": "#111",
+      "terminal.background": "#000"
     }
   },
   "workbench.editor.enablePreview": true,
@@ -739,5 +749,12 @@
     "v": "v run",
     "sass": "sass --style expanded",
     "scss": "scss --style expanded"
-  }
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "*.xls"
+    }
+  ],
+  "tailwindCSS.emmetCompletions": true
 }

@@ -109,6 +109,14 @@
     "body": ["should validate_uniqueness_of(:${0})"],
     "description": "MiniTest shoulda-matchers: should validate uniqueness"
   },
+  "MiniTest shoulda-matchers: should validate uniqueness with scope": {
+    "scope": "ruby",
+    "prefix": "svuos",
+    "body": [
+      "should validate_uniqueness_of(:${1:column}).scoped_to(:${0:column})"
+    ],
+    "description": "MiniTest shoulda-matchers: should validate uniqueness with scope"
+  },
   "MiniTest shoulda-matchers: should delegate method": {
     "scope": "ruby",
     "prefix": "sdm",
@@ -237,6 +245,14 @@
     "body": ["it { should validate_uniqueness_of(:${0}) }"],
     "description": "RSpec shoulda-matchers: should validate uniqueness of"
   },
+  "RSpec shoulda-matchers: should validate uniqueness of with scope": {
+    "scope": "ruby",
+    "prefix": "svuos",
+    "body": [
+      "it { should validate_uniqueness_of(:${1:column}).scoped_to(:${0:column}) }"
+    ],
+    "description": "RSpec shoulda-matchers: should validate uniqueness of with scope"
+  },
   "RSpec shoulda-matchers: should delegate method": {
     "scope": "ruby",
     "prefix": "sdm",
@@ -254,5 +270,5 @@
     "prefix": "sde",
     "body": ["it { should define_enum_for(:${1}).with_values([:${0}]) }"],
     "description": "RSpec shoulda-matchers: should define enum with values"
-  },
+  }
 }

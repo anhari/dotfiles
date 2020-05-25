@@ -1,23 +1,19 @@
 {
   // https://github.com/rails/rails
   "Rails model: scope": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "scope",
-    "body": [
-      "scope :${1:name}, -> { $0 }"
-    ],
+    "body": ["scope :${1:name}, -> { $0 }"],
     "description": "Rails: Model scope"
   },
   "Rails: Find memcache instance variable": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "memcache",
-    "body": [
-      "Rails.cache.instance_variable_get(:@data).get('${${0}}')"
-    ],
+    "body": ["Rails.cache.instance_variable_get(:@data).get('${${0}}')"],
     "description": "Rails: Find memcache instance variable"
   },
   "Rails: logger debug": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "db",
     "body": [
       "Rails.logger.debug \"#########DEBUG###########\"",
@@ -29,7 +25,7 @@
     "description": "Rails: logger debug"
   },
   "Rails: logger puts caller": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "pcall",
     "body": [
       "Rails.logger.debug \"#########CALLER###########\"",
@@ -41,43 +37,57 @@
     "description": "Rails: logger puts caller"
   },
   "Rails: logger print stacktrace for all application code": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "app-stack-trace",
     "body": [
       "Rails.logger.debug \"#########APP STACK TRACE###########\"",
       "Rails.logger.debug \"###################################\"",
-      "Rails.logger.debug caller.grep(%r{#{Rails.root}\/(?!vendor)}).join(\"\\n\")",
+      "Rails.logger.debug caller.grep(%r{#{Rails.root}/(?!vendor)}).join(\"\\n\")",
       "Rails.logger.debug \"###################################\"",
       "Rails.logger.debug \"#########APP STACK TRACE###########\""
     ],
     "description": "Rails: logger print stacktrace for all application code"
   },
   "Rails: raise inspect params": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "rpi",
-    "body": [
-      "raise \"#{params.inspect}\""
-    ],
+    "body": ["raise \"#{params.inspect}\""],
     "description": "Raise: inspect params"
   },
   "Rails migration: add column": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "ac",
-    "body": [
-      "add_column :${1:table_name}, :${2:column_name}, :${3:type}"
-    ],
+    "body": ["add_column :${1:table_name}, :${2:column_name}, :${0:type}"],
     "description": "Rails migration: add column"
   },
-  "Rails model: belongs to": {
-		"scope": "ruby",
-    "prefix": "bt",
+  "Rails migration: add index": {
+    "scope": "ruby",
+    "prefix": "ai",
+    "body": ["add_index :${1:table_name}, :${0:column_name}"],
+    "description": "Rails migration: add index"
+  },
+  "Rails migration: add unique index": {
+    "scope": "ruby",
+    "prefix": "aui",
+    "body": ["add_index :${1:table_name}, :${0:column_name}, unique: true"],
+    "description": "Rails migration: add unique index"
+  },
+  "Rails migration: add unique index (multiple)": {
+    "scope": "ruby",
+    "prefix": "auim",
     "body": [
-      "belongs_to :${0}"
+      "add_index :${1:table_name}, %i[${0:column1 column2}], unique: true"
     ],
+    "description": "Rails migration: add unique index (multiple)"
+  },
+  "Rails model: belongs to": {
+    "scope": "ruby",
+    "prefix": "bt",
+    "body": ["belongs_to :${0}"],
     "description": "Rails model: belongs to"
   },
   "Rails migration: change column default": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "ccd",
     "body": [
       "# Rails 4",
@@ -95,95 +105,73 @@
     "description": "Rails migration: change column default"
   },
   "Rails migration: counter cache true": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "cct",
-    "body": [
-      "counter_cache: true"
-    ],
+    "body": ["counter_cache: true"],
     "description": "Rails migration: counter cache true"
   },
   "Rails model: has many": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "hm",
-    "body": [
-      "has_many :${1}, dependent: :${0}"
-    ],
+    "body": ["has_many :${1}, dependent: :${0}"],
     "description": "Rails model: has many"
   },
   "Rails model: has many through": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "hmt",
-    "body": [
-      "has_many :${1}, through: :${0}"
-    ],
+    "body": ["has_many :${1}, through: :${0}"],
     "description": "Rails model: has many through"
   },
   "Rails model: has one": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "ho",
-    "body": [
-      "has_one :${0}"
-    ],
+    "body": ["has_one :${0}"],
     "description": "Rails model: has one"
   },
   "Rails model: has one through": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "hot",
-    "body": [
-      "has_one :${1}, through: :${0}"
-    ],
+    "body": ["has_one :${1}, through: :${0}"],
     "description": "Rails model: has one through"
   },
   "Rails model: dependent destroy": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "d:d",
-    "body": [
-      "dependent: :destroy"
-    ],
+    "body": ["dependent: :destroy"],
     "description": "Rails model: dependent destroy"
   },
   "Rails model: dependent nullify": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "d:n",
-    "body": [
-      "dependent: :nullify"
-    ],
+    "body": ["dependent: :nullify"],
     "description": "Rails model: dependent nullify"
   },
   "Rails migration: default true": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "d:t",
-    "body": [
-      "default: true"
-    ],
+    "body": ["default: true"],
     "description": "Rails migration: default true"
   },
   "Rails migration: default false": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "d:f",
-    "body": [
-      "default: false"
-    ],
+    "body": ["default: false"],
     "description": "Rails migration: default false"
   },
   "Rails migration: null false": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "nf",
-    "body": [
-      "null: false"
-    ],
+    "body": ["null: false"],
     "description": "Rails migration: null false"
   },
   "Rails migration: remove column": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rc",
-    "body": [
-      "remove_column :${1:table_name}, :${2:column_name}, :${3:type}"
-    ],
+    "body": ["remove_column :${1:table_name}, :${2:column_name}, :${3:type}"],
     "description": "Rails migration: remove column"
   },
   "Rails migration: rename column": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rnc",
     "body": [
       "rename_column :${1:table_name}, :${2:old_column_name}, :${3:new_column_name}"
@@ -191,189 +179,133 @@
     "description": "Rails migration: rename column"
   },
   "Rails: ActiveRecord transaction": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "xact",
-    "body": [
-      "ActiveRecord::Base.transaction do",
-      "\t${0}",
-      "end"
-    ],
+    "body": ["ActiveRecord::Base.transaction do", "\t${0}", "end"],
     "description": "Rails: ActiveRecord transaction"
   },
   "Rails: execute raw SQL": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "xs",
-    "body": [
-      "execute <<-SQL",
-      "\t${0}",
-      "SQL"
-    ],
+    "body": ["execute <<-SQL", "\t${0}", "SQL"],
     "description": "Rails: execute raw SQL"
   },
   "Rails controller: add index action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "@i",
-    "body": [
-      "def index",
-      "\t${0}",
-      "end"
-    ],
+    "body": ["def index", "\t${0}", "end"],
     "description": "Rails controller: add index action"
   },
   "Rails controller: add update action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "@u",
-    "body": [
-      "def update",
-      "\t${0}",
-      "end"
-    ],
+    "body": ["def update", "\t${0}", "end"],
     "description": "Rails controller: add update action"
   },
   "Rails controller: add edit action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "@e",
-    "body": [
-      "def edit",
-      "\t${0}",
-      "end"
-    ],
+    "body": ["def edit", "\t${0}", "end"],
     "description": "Rails controller: add edit action"
   },
   "Rails controller: add destroy action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "@d",
-    "body": [
-      "def destroy",
-      "\t${0}",
-      "end"
-    ],
+    "body": ["def destroy", "\t${0}", "end"],
     "description": "Rails controller: add destroy action"
   },
   "Rails controller: redirect to": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rd",
-    "body": [
-      "redirect_to ${0}"
-    ],
+    "body": ["redirect_to ${0}"],
     "description": "Rails controller: redirect to"
   },
   "Rails controller: render": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rnd",
-    "body": [
-      "render :${0}"
-    ],
+    "body": ["render :${0}"],
     "description": "Rails controller: render"
   },
   "Rails controller: before action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "ba",
-    "body": [
-      "before_action :${0}"
-    ],
+    "body": ["before_action :${0}"],
     "description": "Rails controller: before action"
   },
   "Rails controller: skip before action": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "sba",
-    "body": [
-      "skip_before_action :${0}"
-    ],
+    "body": ["skip_before_action :${0}"],
     "description": "Rails controller: skip before action"
   },
   "Rails routes: resources": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "res",
-    "body": [
-      "resources :${0}"
-    ],
+    "body": ["resources :${0}"],
     "description": "Rails routes: resources"
   },
   "Rails routes: root path": {
-		"scope": "ruby,erb",
+    "scope": "ruby,erb",
     "prefix": "rp",
-    "body": [
-      "root_path"
-    ],
+    "body": ["root_path"],
     "description": "Rails routes: root path"
   },
   "Rails controller: add strong params method": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "defprm",
-    "body": [
-      "def ${1}_params",
-      "\tparams.require(:$1).permit(:${0})",
-      "end"
-    ],
+    "body": ["def ${1}_params", "\tparams.require(:$1).permit(:${0})", "end"],
     "description": "Rails controller: add strong params method"
   },
   "Rails model validations: presence": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vpres",
-    "body": [
-      "validates :${0:field}, presence: true"
-    ],
+    "body": ["validates :${0:field}, presence: true"],
     "description": "Rails model validations: presence"
   },
   "Rails model validations: uniqueness": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vniq",
-    "body": [
-      "validates :${0:field}, uniqueness: true"
-    ],
+    "body": ["validates :${0:field}, uniqueness: true"],
     "description": "Rails model validations: uniqueness"
   },
   "Rails model validations: uniqueness within scope": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vniq_scope",
-    "body": [
-      "validates_uniqueness_of :#{0}, scope: :model_id"
-    ],
+    "body": ["validates_uniqueness_of :#{0}, scope: :model_id"],
     "description": "Rails model validations: uniqueness within scope"
   },
   "Rails model validations: numericality": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vnum",
-    "body": [
-      "validates :${0:field}, numericality: { ${1} }"
-    ],
+    "body": ["validates :${0:field}, numericality: { ${1} }"],
     "description": "Rails model validations: numericality"
   },
   "Rails model validations: length (is)": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { is: ${0} }"
-    ],
+    "body": ["validates :${1:field}, length: { is: ${0} }"],
     "description": "Rails model validations: length (is)"
   },
   "Rails model validations: length (in)": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { in: ${2}..${3} }"
-    ],
+    "body": ["validates :${1:field}, length: { in: ${2}..${3} }"],
     "description": "Rails model validations: length (in)"
   },
   "Rails model validations: length (maximum)": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { maximum: ${0} }"
-    ],
+    "body": ["validates :${1:field}, length: { maximum: ${0} }"],
     "description": "Rails model validations: length (maximum)"
   },
   "Rails model validations: length (minimum)": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "vlen",
-    "body": [
-      "validates :${1:field}, length: { minimum: ${0} }"
-    ],
+    "body": ["validates :${1:field}, length: { minimum: ${0} }"],
     "description": "Rails model validations: length (minimum)"
   },
   "Rails: fetch cache": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rcache",
     "body": [
       "\tRails.cache.fetch(${0}, expires_in: cache_lifespan) do",
@@ -382,21 +314,15 @@
     "description": "Rails: fetch cache"
   },
   "Rails Modules: include ActiveModel::Model": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "imm",
-    "body": [
-      "include ActiveModel::Model",
-    ],
+    "body": ["include ActiveModel::Model"],
     "description": "Rails Modules: include ActiveModel::Model"
   },
   "Rails Controllers: respond to": {
-		"scope": "ruby",
+    "scope": "ruby",
     "prefix": "rtd",
-    "body": [
-      "respond_to do |format|",
-      "\t $0",
-      "end",
-    ],
+    "body": ["respond_to do |format|", "\t $0", "end"],
     "description": "Rails Controllers: respond to"
-  },
+  }
 }

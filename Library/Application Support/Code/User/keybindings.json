@@ -134,7 +134,7 @@
     "command": "workbench.action.tasks.terminate"
   },
   {
-    "key": "shift+cmd+l",
+    "key": "cmd+l",
     "command": "workbench.action.tasks.reRunTask"
   },
   {
@@ -212,5 +212,14 @@
   {
     "key": "cmd+k up",
     "command": "-workbench.action.moveActiveEditorGroupUp"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "shift+5",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus && vi.active && !inDebugRepl && vim.mode != 'Insert'"
   }
 ]

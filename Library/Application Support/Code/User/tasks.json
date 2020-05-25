@@ -401,7 +401,12 @@
     {
       "label": "Mix: IEx",
       "type": "shell",
-      "command": "iex -S mix"
+      "command": "iex -S mix",
+      "presentation": {
+        "reveal": "always",
+        "group": "IEx",
+        "focus": true
+      }
     },
     {
       "label": "Mix: deps get",

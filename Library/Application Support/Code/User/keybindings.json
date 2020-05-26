@@ -219,7 +219,15 @@
   },
   {
     "key": "shift+5",
-    "command": "editor.emmet.action.wrapWithAbbreviation",
-    "when": "editorTextFocus && vi.active && !inDebugRepl && vim.mode != 'Insert'"
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+cmd+y",
+    "command": "yarn-script.runScript"
+  },
+  {
+    "key": "cmd+r shift+r",
+    "command": "-yarn-script.runScript"
   }
 ]

@@ -17,9 +17,9 @@ cssho.vscode-svgviewer
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 deibit.devdocs
-DimitarNonov.jellybeans-theme
 donjayamanne.githistory
 DotJoshJohnson.xml
+dracula-theme.theme-dracula
 DryWolf.dark-plus-plus-theme
 eamodio.gitlens
 earshinov.permute-lines
@@ -86,7 +86,6 @@ sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sveggiani.vscode-field-lights
 sysoev.vscode-open-in-github
-teabyii.ayu
 timonwong.shellcheck
 tomoki1207.pdf
 Tyriar.theme-sapphire

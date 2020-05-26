@@ -48,6 +48,7 @@
   unpushed-commits = log @{u}..
   unrebase = reset --hard ORIG_HEAD
   unstage = reset
+  upstream = rev-parse --abbrev-ref --symbolic-full-name @{upstream}
   vamos = rebase --continue
 [commit]
   template = ~/.gitmessage

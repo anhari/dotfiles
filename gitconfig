@@ -23,8 +23,9 @@
   df = diff
   ecm = commit --allow-empty
   fcm = fixup-commit
+  flog = log --oneline --
   gogo = rebase --continue
-  greplog = log -E -i --grep
+  glog = log -E -i --grep
   ir = interactive-rebase
   issues = !hub browse -- issues
   l = log --pretty=colored
@@ -36,7 +37,7 @@
   pull-request = !hub pull-request
   remote = remote -v
   sa = apply-stash
-  searchlog = log -S
+  slog = log -S
   sh = shalector
   sla = log --oneline --decorate --graph --all
   ss = diff --shortstat

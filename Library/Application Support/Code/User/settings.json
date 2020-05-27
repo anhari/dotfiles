@@ -660,7 +660,7 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {

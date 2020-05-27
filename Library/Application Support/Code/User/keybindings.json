@@ -183,7 +183,7 @@
   },
   {
     "key": "ctrl+shift+o",
-    "command": "vscode-test.openTestFile"
+    "command": "vscode-test.openAlternateFile"
   },
   {
     "key": "cmd+k l",

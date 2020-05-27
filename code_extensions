@@ -24,6 +24,7 @@ DryWolf.dark-plus-plus-theme
 eamodio.gitlens
 earshinov.permute-lines
 eg2.vscode-npm-script
+elmTooling.elm-ls-vscode
 esbenp.prettier-vscode
 fabiospampinato.vscode-monokai-night
 fallenwood.vimL
@@ -76,7 +77,6 @@ ria.elastic
 richie5um2.vscode-sort-json
 ritwickdey.LiveServer
 samrapdev.outrun
-sbrink.elm
 sdras.night-owl
 shd101wyy.markdown-preview-enhanced
 shinnn.stylelint

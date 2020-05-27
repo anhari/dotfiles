@@ -8,6 +8,9 @@
   "[elixir]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
+  "[elm]": {
+    "editor.defaultFormatter": "elmTooling.elm-ls-vscode"
+  },
   "[html-eex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
@@ -263,14 +266,15 @@
             "keyword.other.sql",
             "keyword.other.DML.sql",
             "keyword.other.DDL.create.II.sql",
-            "keyword.other.alias.sql"
+            "keyword.other.alias.sql",
+            "keyword.operator.arrow.elm"
           ],
           "settings": {
             "foreground": "#C586C0"
           }
         },
         {
-          "scope": [],
+          "scope": ["support.module.elm", "storage.type.elm"],
           "settings": {
             "foreground": "#4EC9B0"
           }
@@ -285,6 +289,7 @@
           "scope": [
             "punctuation.section.scope.elixir",
             "punctuation.section.function.elixir"
+            // "keyword.other.period.elm"
           ],
           "settings": {
             "foreground": "#FFFFFF"
@@ -293,7 +298,8 @@
         {
           "scope": [
             "constant.other.symbol.elixir",
-            "constant.other.table-name.sql"
+            "constant.other.table-name.sql",
+            "entity.name.record.field.elm"
           ],
           "settings": {
             "foreground": "#569CD6"
@@ -304,7 +310,9 @@
             "parameter.variable.function.elixir",
             "source.elixir",
             "source.sql",
-            "constant.other.database-name.sql"
+            "constant.other.database-name.sql",
+            "constant.type-constructor.elm",
+            "meta.value.elm"
           ],
           "settings": {
             "foreground": "#9CDCFE"
@@ -652,7 +660,7 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {

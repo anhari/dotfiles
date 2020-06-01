@@ -3,7 +3,6 @@ adpyke.vscode-sql-formatter
 ahmadawais.shades-of-purple
 anhari.vscode-test
 arcticicestudio.nord-visual-studio-code
-asvetliakov.vscode-neovim
 auchenberg.vscode-browser-preview
 bierner.color-info
 bierner.markdown-emoji
@@ -21,12 +20,12 @@ donjayamanne.githistory
 DotJoshJohnson.xml
 dracula-theme.theme-dracula
 DryWolf.dark-plus-plus-theme
-eamodio.gitlens
 earshinov.permute-lines
 eg2.vscode-npm-script
 elmTooling.elm-ls-vscode
 esbenp.prettier-vscode
 fabiospampinato.vscode-monokai-night
+fabiospampinato.vscode-todo-plus
 fallenwood.vimL
 faustinoaq.crystal-lang
 firefox-devtools.vscode-firefox-debug
@@ -45,6 +44,7 @@ idleberg.applescript
 JakeBecker.elixir-ls
 jdinhlife.gruvbox
 jock.svg
+johnpapa.vscode-peacock
 jolaleye.horizon-theme-vscode
 jpoissonnier.vscode-styled-components
 juanmnl.vscode-theme-1984
@@ -79,7 +79,6 @@ ritwickdey.LiveServer
 samrapdev.outrun
 sdras.night-owl
 shd101wyy.markdown-preview-enhanced
-shinnn.stylelint
 sianglim.slim
 silvenon.mdx
 sleistner.vscode-fileutils

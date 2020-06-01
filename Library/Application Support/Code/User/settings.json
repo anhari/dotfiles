@@ -517,6 +517,14 @@
       "before": ["0"]
     },
     {
+      "before": ["<leader>", "d", "d"],
+      "commands": ["todo.toggleDone"]
+    },
+    {
+      "before": ["<leader>", "d", "c"],
+      "commands": ["todo.toggleCancelled"]
+    },
+    {
       "before": ["leader", "h"],
       "commands": [":nohl"]
     },
@@ -660,7 +668,7 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {
@@ -764,5 +772,7 @@
     }
   ],
   "tailwindCSS.emmetCompletions": true,
-  "workbench.colorTheme": "Dark+ Tweaked"
+  "workbench.colorTheme": "Dark+ Tweaked",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.enableFiletypes": ["todo"]
 }

@@ -70,10 +70,6 @@
     "prefix": "pt",
     "body": "pipe_through :${0}"
   },
-  "res": {
-    "prefix": "res",
-    "body": "resources \"/$1\", `!p snip.rv = t[1].capitalize()[:-1] + \"Controller\"`, only: [:${2}]"
-  },
   "@i": {
     "prefix": "@i",
     "body": "def index(conn, _params) do\n\trender(conn, :index)${0}\nend"

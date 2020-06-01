@@ -229,5 +229,9 @@
   {
     "key": "cmd+r shift+r",
     "command": "-yarn-script.runScript"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "todo.open"
   }
 ]

@@ -42,11 +42,17 @@
     "body": ["Routes.$1_path(conn, :${0:new})"],
     "description": "Phoenix Routes: route"
   },
+  "Phoenix Routes: resources": {
+    "scope": "elixir",
+    "prefix": "res",
+    "body": ["resources \"/${1:resources}\", ${0:Resource}Controller"],
+    "description": "Phoenix Routes: resources"
+  },
   "Phoenix Views: route": {
     "scope": "html-eex",
     "prefix": "rt",
     "body": ["Routes.$1_path(@conn, :${0:new})"],
-    "description": "Phoenix Routes: route"
+    "description": "Phoenix Views: route"
   },
   "Phoenix Controller: render": {
     "scope": "elixir",

@@ -70,19 +70,19 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: DankMono Nerd Font
+    family: Dank Mono
     # The `style` can be specified to pick a specific face.
     #style: Regular
 
   # Bold font face
   bold:
-    family: DankMono Nerd Font
+    family: Dank Mono
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    # style: Bold
 
   # Italic font face
   italic:
-    family: DankMono Nerd Font
+    family: Dank Mono
     # The `style` can be specified to pick a specific face.
     #style: Italic
 

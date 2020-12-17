@@ -13,9 +13,9 @@
   browse = !hub browse
   cached = diff --cached
   can = commit --amend --no-edit
-  cherry = cherry-pick
   ci = commit -v
   co = checkout
+  cp = cherry-pick
   compare = !hub compare
   conflicted = !nvim +Conflicted
   count = changed-file-count

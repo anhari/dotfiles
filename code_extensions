@@ -3,6 +3,7 @@ adpyke.vscode-sql-formatter
 ahmadawais.shades-of-purple
 anhari.vscode-test
 arcticicestudio.nord-visual-studio-code
+ardenivanov.svelte-intellisense
 arthurwhite.white
 asvetliakov.vscode-neovim
 auchenberg.vscode-browser-preview
@@ -94,6 +95,7 @@ silvenon.mdx
 sleistner.vscode-fileutils
 streetsidesoftware.code-spell-checker
 sveggiani.vscode-field-lights
+svelte.svelte-vscode
 sysoev.vscode-open-in-github
 teabyii.ayu
 thenikso.github-plus-theme

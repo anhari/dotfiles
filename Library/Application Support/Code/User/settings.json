@@ -2,6 +2,7 @@
   // "[erb]": {
   //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
   // },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
     "editor.rulers": [50, 72]
   },
@@ -13,6 +14,9 @@
   },
   "[html-eex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -38,6 +42,12 @@
   },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -668,7 +678,7 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {

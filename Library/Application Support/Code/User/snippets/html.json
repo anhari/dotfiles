@@ -1354,4 +1354,9 @@
     "body": "<>\n\t${0}\n</>",
     "description": "React fragment"
   },
+  "slot": {
+    "prefix": "slot",
+    "body": "<slot>\n\t${0}\n</slot>",
+    "description": "Svelte slot"
+  }
 }

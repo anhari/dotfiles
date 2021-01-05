@@ -1,7 +1,7 @@
 # /Users/anhari/.config/tmuxinator/pi.yml
 
 name: pi
-root: ~/dev/datawarehouse
+root: ~/primepursuits/datawarehouse
 
 # Optional tmux socket
 # socket_name: foo
@@ -44,6 +44,6 @@ windows:
       layout: main-vertical
       panes:
         - nvim
-  - server: b && yarn install && bin/rails s -p 3001
+  - server: b && yarn install && bin/rails s -p 3000
   - sidekiq: bundle exec sidekiq -t 25
   - guard: bundle exec guard

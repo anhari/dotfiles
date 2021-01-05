@@ -61,6 +61,12 @@
     "body": ["should have_one(:${0})"],
     "description": "MiniTest shoulda-matchers: should have one"
   },
+  "MiniTest shoulda-matchers: should have one attached": {
+    "scope": "ruby",
+    "prefix": "shoa",
+    "body": ["should have_one_attached(:${0})"],
+    "description": "MiniTest shoulda-matchers: should have one attached"
+  },
   "MiniTest shoulda-matchers: should have one through": {
     "scope": "ruby",
     "prefix": "shot",
@@ -196,6 +202,12 @@
     "prefix": "sho",
     "body": ["it { should have_one(:${0}) }"],
     "description": "RSpec shoulda-matchers: should have one"
+  },
+  "RSpec shoulda-matchers: should have one attached": {
+    "scope": "ruby",
+    "prefix": "shoa",
+    "body": ["it { should have_one_attached(:${1}) }"],
+    "description": "RSpec shoulda-matchers: should have one attached"
   },
   "RSpec shoulda-matchers: should have one through": {
     "scope": "ruby",

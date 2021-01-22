@@ -62,7 +62,7 @@
   "edf": {
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
     "prefix": "edf",
-    "body": ["export default (${1}) => (", "${0}", ")"],
+    "body": ["export default function $1(${2}) {", "\t${0}", "}"],
     "description": "export default function"
   },
   "ret": {

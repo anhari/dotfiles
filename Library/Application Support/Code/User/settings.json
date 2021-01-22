@@ -10,7 +10,7 @@
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
   "[elm]": {
-    "editor.defaultFormatter": "elmTooling.elm-ls-vscode"
+    "editor.defaultFormatter": "sbrink.elm"
   },
   "[html-eex]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
@@ -70,6 +70,7 @@
     "anhari",
     "antialiased",
     "apos",
+    "aputure",
     "arial",
     "barebones",
     "bellbird",
@@ -87,7 +88,10 @@
     "coderunes",
     "combobox",
     "commentable",
+    "contentful",
+    "convertkit",
     "creekstone",
+    "ctfassets",
     "datasets",
     "datatable",
     "datatables",
@@ -118,6 +122,7 @@
     "feedyard",
     "fetch",
     "flatpickr",
+    "focusrite",
     "fontawesome",
     "formik",
     "fortawesome",
@@ -130,6 +135,7 @@
     "gatsbyjs",
     "gitsh",
     "glassdoor",
+    "godox",
     "helvetica",
     "highchart",
     "highcharts",
@@ -139,40 +145,51 @@
     "interop",
     "jordon",
     "justifycontent",
+    "kettlebell",
+    "kettlebells",
     "keyframes",
     "kpi",
     "kpis",
+    "kyno",
     "linebreak",
     "linkify",
     "location",
+    "lululemon",
     "metadatum",
+    "michaelanhari",
     "minitest",
     "miragejs",
     "modestbranding",
     "mounter",
+    "msapplication",
     "neue",
     "noopener",
     "noreferrer",
     "normalizr",
+    "northfurr",
     "noto",
     "numericality",
     "onboarding",
     "onboardings",
     "orderable",
+    "peloton",
     "petfinder",
     "petrie",
     "pinnable",
     "plugin",
+    "polkadots",
     "postbuild",
     "postcss",
     "postgre",
     "postgres",
     "postgresql",
+    "postlab",
     "pre",
     "prebuild",
     "precommit",
     "precompilation",
     "prestart",
+    "prismjs",
     "privatetreaty",
     "purgecss",
     "rarr",
@@ -189,6 +206,7 @@
     "rspec",
     "rsvp",
     "rsvped",
+    "screenflow",
     "scroller",
     "segoe",
     "semibold",
@@ -196,6 +214,7 @@
     "serializers",
     "shopify",
     "shoulda",
+    "shure",
     "snakify",
     "solway",
     "sql",
@@ -209,6 +228,7 @@
     "tailwindcss",
     "textalign",
     "timestamp",
+    "tinytime",
     "tmux",
     "todos",
     "turbolinks",
@@ -227,6 +247,8 @@
     "upvotes",
     "url",
     "verdana",
+    "videography",
+    "vinyasa",
     "webfont",
     "webfonts",
     "webp",
@@ -307,9 +329,11 @@
         },
         {
           "scope": [
+            "support.class.component.js",
             "constant.other.symbol.elixir",
             "constant.other.table-name.sql",
             "entity.name.record.field.elm"
+            // "punctuation.definition.tag"
           ],
           "settings": {
             "foreground": "#569CD6"
@@ -335,7 +359,10 @@
           }
         },
         {
-          "scope": "variable.other.constant.elixir",
+          "scope": [
+            "variable.other.constant.elixir",
+            "entity.other.attribute-name"
+          ],
           "settings": {
             "foreground": "#4EC9B0"
           }

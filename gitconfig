@@ -1,4 +1,5 @@
 [init]
+  defaultBranch = main
   templatedir = ~/.git_template
 [push]
   default = current
@@ -30,7 +31,6 @@
   issues = !hub browse -- issues
   l = log --pretty=colored
   loslos = rebase --continue
-  mup = !git checkout master && git up && git checkout -
   ns = diff --numstat
   pf = push --force-with-lease
   praise = blame

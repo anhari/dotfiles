@@ -18,6 +18,12 @@ nvim -u "$HOME"/.vimrc.bundles +PlugUpdate +PlugClean! +qa
 
 reset -Q
 
+if [ -f "$HOME/.git_template/HEAD" ] && \
+  [ "$(cat "$HOME/.git_template/HEAD")" = "ref: refs/heads/main" ]; then
+  echo "Removing ~/.git_template/HEAD in favor of defaultBranch" >&2
+  rm -f ~/.git_template/HEAD
+fi
+
 # detect old OS X broken /etc/zshenv and suggest rename
 if grep -qw path_helper /etc/zshenv 2>/dev/null; then
   dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)

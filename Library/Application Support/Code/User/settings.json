@@ -77,6 +77,7 @@
     "bluedotvote",
     "blueprintjs",
     "bools",
+    "boxplot",
     "browserslist",
     "bugsnag",
     "camelize",
@@ -91,7 +92,9 @@
     "contentful",
     "convertkit",
     "creekstone",
+    "csrf",
     "ctfassets",
+    "darr",
     "datasets",
     "datatable",
     "datatables",
@@ -102,6 +105,7 @@
     "debounced",
     "denormalize",
     "denormalized",
+    "devs",
     "devtool",
     "devtools",
     "dompurify",
@@ -139,9 +143,11 @@
     "helvetica",
     "highchart",
     "highcharts",
+    "hotkeyed",
     "hstore",
     "infinite",
     "inputmask",
+    "instapaper",
     "interop",
     "jordon",
     "justifycontent",
@@ -169,9 +175,12 @@
     "northfurr",
     "noto",
     "numericality",
+    "omni",
     "onboarding",
     "onboardings",
+    "oppliger",
     "orderable",
+    "pageview",
     "peloton",
     "petfinder",
     "petrie",
@@ -201,6 +210,7 @@
     "reonboarding",
     "reselect",
     "rewatch",
+    "ribeye",
     "roboto",
     "route",
     "rspec",
@@ -231,6 +241,7 @@
     "tinytime",
     "tmux",
     "todos",
+    "track",
     "turbolinks",
     "type",
     "types",
@@ -284,169 +295,6 @@
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
-    "[Dark+ Tweaked]": {
-      "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "foreground": "#6d6d6d"
-          }
-        },
-        {
-          "scope": [
-            "keyword.other.sql",
-            "keyword.other.DML.sql",
-            "keyword.other.DDL.create.II.sql",
-            "keyword.other.alias.sql",
-            "keyword.operator.arrow.elm"
-          ],
-          "settings": {
-            "foreground": "#C586C0"
-          }
-        },
-        {
-          "scope": ["support.module.elm", "storage.type.elm"],
-          "settings": {
-            "foreground": "#4EC9B0"
-          }
-        },
-        {
-          "scope": ["entity.name.function-call.elixir"],
-          "settings": {
-            "foreground": "#DCDCAA"
-          }
-        },
-        {
-          "scope": [
-            "punctuation.section.scope.elixir",
-            "punctuation.section.function.elixir"
-            // "keyword.other.period.elm"
-          ],
-          "settings": {
-            "foreground": "#FFFFFF"
-          }
-        },
-        {
-          "scope": [
-            "support.class.component.js",
-            "constant.other.symbol.elixir",
-            "constant.other.table-name.sql",
-            "entity.name.record.field.elm"
-            // "punctuation.definition.tag"
-          ],
-          "settings": {
-            "foreground": "#569CD6"
-          }
-        },
-        {
-          "scope": [
-            "parameter.variable.function.elixir",
-            "source.elixir",
-            "source.sql",
-            "constant.other.database-name.sql",
-            "constant.type-constructor.elm",
-            "meta.value.elm"
-          ],
-          "settings": {
-            "foreground": "#9CDCFE"
-          }
-        },
-        {
-          "scope": "keyword.operator.other.elixir",
-          "settings": {
-            "foreground": "#C586C0"
-          }
-        },
-        {
-          "scope": [
-            "variable.other.constant.elixir",
-            "entity.other.attribute-name"
-          ],
-          "settings": {
-            "foreground": "#4EC9B0"
-          }
-        }
-      ]
-    },
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "emphasis",
-          "entity.name.method.js",
-          "entity.name.class.js",
-          "entity.name.tag.doctype",
-          "entity.other.attribute-name",
-          "entity.other.attribute-name.tag.jade",
-          "entity.other.attribute-name.tag.pug",
-          "keyword.control",
-          "keyword.operator.comparison",
-          "keyword.control.flow.js",
-          "keyword.control.flow.ts",
-          "keyword.control.flow.tsx",
-          "keyword.control.ruby",
-          "keyword.control.module.ruby",
-          "keyword.control.class.ruby",
-          "keyword.control.def.ruby",
-          "keyword.control.loop.js",
-          "keyword.control.loop.ts",
-          "keyword.control.import.js",
-          "keyword.control.import.ts",
-          "keyword.control.import.tsx",
-          "keyword.control.from.js",
-          "keyword.control.from.ts",
-          "keyword.control.from.tsx",
-          "keyword.operator.expression.delete",
-          "keyword.operator.new",
-          "keyword.operator.expression",
-          "keyword.operator.cast",
-          "keyword.operator.relational",
-          "keyword.operator.sizeof",
-          "keyword.operator.logical.python",
-          "italic",
-          "markup.italic",
-          "markup.quote",
-          "markup.changed",
-          "markup.italic.markdown",
-          "markup.quote.markdown",
-          "markup.deleted.diff",
-          "markup.inserted.diff",
-          "meta.delimiter.period",
-          "meta.diff.header.git",
-          "meta.diff.header.from-file",
-          "meta.diff.header.to-file",
-          "meta.tag.sgml.doctype",
-          "meta.class meta.method.declaration meta.var.expr storage.type.js",
-          "meta.decorator punctuation.decorator",
-          "meta.selector",
-          "punctuation.accessor",
-          "punctuation.definition.comment",
-          "punctuation.definition.template-expression.begin",
-          "punctuation.definition.template-expression.end",
-          "quote",
-          "support.class.component.js",
-          "support.type.property-name.json",
-          "source.js constant.other.object.key.js string.unquoted.label.js",
-          "storage",
-          "storage.type",
-          "storage.modifier",
-          "storage.type.property.js",
-          "storage.type.property.ts",
-          "storage.type.property.tsx",
-          "tag.decorator.js entity.name.tag.js",
-          "tag.decorator.js",
-          "text.html.basic entity.other.attribute-name.html",
-          "text.html.basic entity.other.attribute-name",
-          "variable.language",
-          "variable.parameter.js"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
   "editor.wordWrap": "on",
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
@@ -683,6 +531,18 @@
       ]
     },
     {
+      "before": ["[", "r"],
+      "commands": ["editor.action.marker.previous"]
+    },
+    {
+      "before": ["]", "r"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "q"],
+      "commands": ["search.action.focusPreviousSearchResult"]
+    },
+    {
       "before": ["]", "q"],
       "commands": ["search.action.focusNextSearchResult"]
     },
@@ -705,10 +565,20 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "window.zoomLevel": 0,
   "editor.fontSize": 18,
   "workbench.activityBar.visible": true,
+  "editor.tokenColorCustomizations": {
+    "[Darkest+ Italic]": {
+      "textMateRules": [
+        {
+          "scope": ["support.class.component.tsx"],
+          "settings": { "foreground": "#569CD6" }
+        }
+      ]
+    }
+  },
   "workbench.colorCustomizations": {
+    "[Darkest+]": {},
     "[Monokai Pro (Filter Octagon)]": {
       "editorCursor.foreground": "#ffffff6e",
       "terminalCursor.foreground": "#ffffff6e"
@@ -722,21 +592,6 @@
       "statusBar.debuggingBackground": "#0A0E14",
       "statusBar.noFolderBackground": "#0A0E14",
       "terminal.background": "#1f2331"
-    },
-    "[Dark+ Tweaked]": {
-      "activityBar.background": "#000",
-      "breadcrumb.background": "#000",
-      "editor.background": "#000",
-      "panel.background": "#111",
-      "sideBarSectionHeader.background": "#111",
-      "quickInput.background": "#000",
-      "sideBar.background": "#000",
-      "sideBar.foreground": "#bbb",
-      "gitDecoration.ignoredResourceForeground": "#444",
-      "statusBar.background": "#000",
-      "tab.activeBackground": "#000",
-      "tab.inactiveBackground": "#111",
-      "terminal.background": "#000"
     }
   },
   "workbench.editor.enablePreview": true,
@@ -809,7 +664,9 @@
     }
   ],
   "tailwindCSS.emmetCompletions": true,
-  "workbench.colorTheme": "Dark+ Tweaked",
+  "workbench.colorTheme": "Darkest+ Italic",
   "liveServer.settings.donotShowInfoMsg": true,
-  "cSpell.enableFiletypes": ["todo"]
+  "cSpell.enableFiletypes": [
+    "todo"
+  ]
 }

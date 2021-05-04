@@ -26,5 +26,10 @@
     "prefix": "=",
     "body": ["<%= ${0} %>"],
     "description": "Embedded Elixir: insert elixir (shorthand)"
+  },
+  "Embedded Elixir: end": {
+    "prefix": "end",
+    "body": ["<% end %>"],
+    "description": "Embedded Elixir: end"
   }
 }

@@ -30,7 +30,7 @@
     "description": "Elixir: Define delegate"
   },
   "Elixir: Doc": {
-    "prefix": "doc",
+    "prefix": "edoc",
     "body": "@doc \"\"\"\n${0}\n\"\"\"",
     "description": "Elixir: doc"
   },

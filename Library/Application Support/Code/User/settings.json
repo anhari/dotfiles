@@ -113,6 +113,7 @@
     "downvotable",
     "downvote",
     "downvotes",
+    "dropdown",
     "dropzone",
     "dwarfcode",
     "dwarfcode's",
@@ -661,6 +662,10 @@
     {
       "viewType": "default",
       "filenamePattern": "*.xls"
+    },
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
     }
   ],
   "tailwindCSS.emmetCompletions": true,
@@ -668,5 +673,6 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "cSpell.enableFiletypes": [
     "todo"
-  ]
+  ],
+  "window.zoomLevel": 1
 }

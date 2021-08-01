@@ -16,6 +16,34 @@
       }
     },
     {
+      "label": "Kill Zoom",
+      "command": "pkill -f zoom",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Kill Tuple",
+      "command": "pkill -f Tuple",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
       "label": "Git: Log",
       "command": "git l",
       "type": "shell",
@@ -44,7 +72,7 @@
       }
     },
     {
-      "label": "Git: Push FORCE WITH LEASE",
+      "label": "Git: pf (push --force-with-lease)",
       "command": "git pf",
       "type": "shell",
       "problemMatcher": [],
@@ -212,7 +240,7 @@
       }
     },
     {
-      "label": "Start Sidekiq",
+      "label": "Sidekiq: Start",
       "type": "shell",
       "command": "bundle exec sidekiq -t 25",
       "group": "build",
@@ -225,7 +253,7 @@
       }
     },
     {
-      "label": "Bundle Install",
+      "label": "Ruby: Bundle Install",
       "command": "bundle install",
       "type": "shell",
       "problemMatcher": []
@@ -241,7 +269,7 @@
       }
     },
     {
-      "label": "Rails: Open Console",
+      "label": "Rails: Console",
       "type": "shell",
       "command": "bin/rails console",
       "presentation": {
@@ -285,7 +313,7 @@
       "problemMatcher": []
     },
     {
-      "label": "Rails: Open DB Console",
+      "label": "Rails: DB Console",
       "type": "shell",
       "command": "bin/rails dbconsole",
       "presentation": {
@@ -298,7 +326,7 @@
     {
       "label": "Rails: Server",
       "type": "shell",
-      "command": "bundle && yarn install && bin/rails server",
+      "command": "pkill -f puma || bundle && yarn install && bin/rails server",
       "group": "build",
       "presentation": {
         "clear": true,
@@ -351,6 +379,48 @@
       }
     },
     {
+      "label": "Rails: destroy",
+      "type": "shell",
+      "command": "bin/rails destroy ${input:railsDestroyParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "Generate",
+        "clear": false
+      }
+    },
+    {
+      "label": "Rails: Generate Scenic View",
+      "type": "shell",
+      "command": "bin/rails generate scenic:view ${input:railsGenerateJobParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "Generate",
+        "clear": false
+      }
+    },
+    {
+      "label": "Rails: Generate Scenic Model",
+      "type": "shell",
+      "command": "bin/rails generate scenic:model ${input:railsGenerateJobParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": true,
+        "group": "Generate",
+        "clear": false
+      }
+    },
+    {
       "label": "Rails: Generate Job",
       "type": "shell",
       "command": "bin/rails generate job ${input:railsGenerateJobParam}",
@@ -363,6 +433,16 @@
         "group": "Generate",
         "clear": false
       }
+    },
+    {
+      "label": "Rails: db migrate",
+      "type": "shell",
+      "command": "bin/rails db:migrate"
+    },
+    {
+      "label": "Rails: db rollback",
+      "type": "shell",
+      "command": "bin/rails db:migrate"
     },
     {
       "label": "Gitsh",
@@ -429,6 +509,21 @@
     }
   ],
   "inputs": [
+    {
+      "id": "railsDestroyParam",
+      "description": "bin/rails destroy",
+      "type": "promptString"
+    },
+    {
+      "id": "railsGenerateScenicModelParam",
+      "description": "bin/rails generate scenic:model",
+      "type": "promptString"
+    },
+    {
+      "id": "railsGenerateScenicViewParam",
+      "description": "bin/rails generate scenic:view",
+      "type": "promptString"
+    },
     {
       "id": "railsGenerateParam",
       "description": "bin/rails generate",

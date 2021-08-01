@@ -212,3 +212,16 @@ defmodule $1 do
 	end
 end
 endsnippet
+
+
+################################################################################
+# Debugging
+################################################################################
+
+snippet ins
+IO.inspect($0, label: "$0")
+endsnippet
+
+snippet pry
+require IEX; IEx.pry
+endsnippet

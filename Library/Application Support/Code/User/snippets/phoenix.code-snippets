@@ -1,16 +1,57 @@
 {
-  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
-  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
-  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
-  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
-  // Placeholders with the same ids are connected.
-  // Example:
   "Ecto: changeset": {
     "scope": "elixir",
     "prefix": "cs",
     "body": ["changeset"],
     "description": "Ecto: Changeset"
+  },
+  "Phoenix: New Channel": {
+    "scope": "elixir",
+    "prefix": "pch",
+    "body": [
+      "defmodule ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web.$0Channel do",
+      "\tuse ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web, :channel",
+      "end"
+    ],
+    "description": "Phoenix: New Channel"
+  },
+  "Phoenix: New Controller": {
+    "scope": "elixir",
+    "prefix": "pc",
+    "body": [
+      "defmodule ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web.$0Controller do",
+      "\tuse ${WORKSPACE_NAME/(.*)/${2:/capitalize}/}Web, :controller",
+      "end"
+    ],
+    "description": "Phoenix: New Controller"
+  },
+  "Phoenix: New View": {
+    "scope": "elixir",
+    "prefix": "pv",
+    "body": [
+      "defmodule ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web.$View do",
+      "\tuse ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web, :view",
+      "end"
+    ],
+    "description": "Phoenix: New Channel"
+  },
+  "Phoenix Use: channel": {
+    "scope": "elixir",
+    "prefix": "uh",
+    "body": ["use ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web, :channel"],
+    "description": "Phoenix Use: channel"
+  },
+  "Phoenix Use: controller": {
+    "scope": "elixir",
+    "prefix": "uc",
+    "body": ["use ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web, :controller"],
+    "description": "Phoenix Use: controller"
+  },
+  "Phoenix Use: view": {
+    "scope": "elixir",
+    "prefix": "uv",
+    "body": ["use ${WORKSPACE_NAME/(.*)/${1:/capitalize}/}Web, :view"],
+    "description": "Phoenix Use: view"
   },
   "Phoenix Migrations: null false": {
     "scope": "elixir",
@@ -43,7 +84,7 @@
     "description": "Phoenix Controller Testing: assert redirected to"
   },
   "Phoenix Routes: route": {
-    "scope": "elixir",
+    "scope": ["elixir", "html-eex"],
     "prefix": "rt",
     "body": ["Routes.$1_path(conn, :${0:new})"],
     "description": "Phoenix Routes: route"
@@ -54,34 +95,28 @@
     "body": ["resources \"/${1:resources}\", ${0:Resource}Controller"],
     "description": "Phoenix Routes: resources"
   },
-  "Phoenix Views: route": {
-    "scope": "html-eex",
-    "prefix": "rt",
-    "body": ["Routes.$1_path(@conn, :${0:new})"],
-    "description": "Phoenix Views: route"
-  },
   "Phoenix Controller: render": {
     "scope": "elixir",
     "prefix": "rnd",
     "body": ["render(conn, \"$1.html\", ${0:instance_variables})"],
     "description": "Phoenix Controller: render"
   },
-  "Phoenix Views: render": {
+  "Phoenix Template: render": {
     "scope": "html-eex",
     "prefix": "rnd",
     "body": ["<%= render \"$0.html\" %>"],
-    "description": "Phoenix Views: render"
+    "description": "Phoenix Template: render"
   },
-  "Phoenix Views: render form": {
+  "Phoenix Template: render form": {
     "scope": "html-eex",
     "prefix": "rnf",
     "body": [
       "<%= render \"form.html\", Map.put(assigns, :action, Routes.$1_path(@conn, :${0:create})) %>"
     ],
-    "description": "Phoenix Views: render form"
+    "description": "Phoenix Template: render form"
   },
 
-  "Phoenix Views: form for": {
+  "Phoenix Template: form for": {
     "scope": "html-eex",
     "prefix": "ff",
     "body": [
@@ -102,6 +137,84 @@
       "<% end %>",
       ""
     ],
-    "description": "Phoenix Views: form for"
+    "description": "Phoenix Template: form for"
+  },
+  "Embedded Elixir: class": {
+    "scope": "html-eex",
+    "prefix": "..",
+    "body": "class=\"${0}\"",
+    "description": "Embedded Elixir: class"
+  },
+  "Embedded Elixir: execute elixir": {
+    "scope": "html-eex",
+    "prefix": "pp",
+    "body": "<% ${0} %>",
+    "description": "Embedded Elixir: execute elixir"
+  },
+  "Embedded Elixir: insert elixir": {
+    "scope": "html-eex",
+    "prefix": "pe",
+    "body": "<%= ${0} %>",
+    "description": "Embedded Elixir: insert elixir"
+  },
+  "Embedded Elixir: insert elixir block": {
+    "scope": "html-eex",
+    "prefix": "ped",
+    "body": "<%= ${0} do %>\n<% end %>",
+    "description": "Embedded Elixir: insert elixir block"
+  },
+  "Embedded Elixir: end statement": {
+    "scope": "html-eex",
+    "prefix": "end",
+    "body": "<% end %>",
+    "description": "Embedded Elixir: end statement"
+  },
+  "Phoenix Template: inputs for": {
+    "scope": "html-eex",
+    "prefix": "inf",
+    "body": "<%= inputs_for f, :${0}, fn cf -> %>\n<% end %>",
+    "description": "Phoenix Template: inputs for"
+  },
+  "Embedded Elixir: for comprehension": {
+    "scope": "html-eex",
+    "prefix": "for comprehension",
+    "body": ["<%= for $0 <- @$0s do %>", "<% end %>"],
+    "description": "Embedded Elixir: for comprehension"
+  },
+  "Embedded Elixir: if statement": {
+    "scope": "html-eex",
+    "prefix": "if",
+    "body": "<%= if ${0} do %>\n\n<% end %>",
+    "description": "Embedded Elixir: if statement"
+  },
+  "Phoenix Template: link helper": {
+    "scope": "html-eex",
+    "prefix": "lt",
+    "body": "<%= link ${1:text}, to: Routes.${2}_path(@conn, :${3:action}) %>",
+    "description": "Phoenix Template: link helper"
+  },
+  "Phoenix Template: text input": {
+    "scope": "html-eex",
+    "prefix": "ti",
+    "body": "<%= text_input ${1}, :${2:field} %>\n<%= error_tag $1, :$2 %>",
+    "description": "Phoenix Template: text input"
+  },
+  "Phoenix Template: password input": {
+    "scope": "html-eex",
+    "prefix": "pw",
+    "body": "<%= password_input ${1}, :${2:field} %>\n<%= error_tag $1, :$2 %>",
+    "description": "Phoenix Template: password input"
+  },
+  "Phoenix Template: error tag": {
+    "scope": "html-eex",
+    "prefix": "et",
+    "body": "<%= error_tag ${0}, :field %>",
+    "description": "Phoenix Template: error tag"
+  },
+  "Embedded Elixir: placeholder": {
+    "scope": "html-eex",
+    "prefix": "ph",
+    "body": "placeholder: \"$0\"",
+    "description": "Embedded Elixir: placeholder"
   }
 }

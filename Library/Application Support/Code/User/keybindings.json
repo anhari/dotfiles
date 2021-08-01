@@ -122,10 +122,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "alt+space",
-    "command": "workbench.action.togglePanelPosition"
-  },
-  {
     "key": "shift+cmd+h",
     "command": "workbench.action.tasks.restartTask"
   },
@@ -233,5 +229,17 @@
   {
     "key": "shift+cmd+t",
     "command": "todo.open"
+  },
+  {
+    "key": "alt+l",
+    "command": "vscode-test.runLastTests"
+  },
+  {
+    "key": "alt+t",
+    "command": "vscode-test.runFileTests"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.view.scm"
   }
 ]

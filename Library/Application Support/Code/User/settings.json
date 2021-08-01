@@ -2,6 +2,8 @@
   // "[erb]": {
   //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
   // },
+  "vscode-test.maximizeTerminal": false,
+  "problems.showCurrentInStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
     "editor.rulers": [50, 72]
@@ -37,8 +39,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[ruby]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
@@ -201,6 +203,7 @@
     "prestart",
     "prismjs",
     "privatetreaty",
+    "prosey",
     "purgecss",
     "rarr",
     "react",
@@ -296,7 +299,7 @@
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
     "erb": "html",
@@ -361,7 +364,7 @@
   "task.problemMatchers.neverPrompt": true,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.defaultProfile.osx": "/bin/zsh",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.disableExtension": false,
   "vim.hlsearch": true,
@@ -567,7 +570,7 @@
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
   "editor.fontSize": 18,
-  "workbench.activityBar.visible": true,
+  "terminal.integrated.fontSize": 18,
   "editor.tokenColorCustomizations": {
     "[Darkest+ Italic]": {
       "textMateRules": [
@@ -600,7 +603,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.restore": true,
   "editor.cursorBlinking": "solid",
@@ -658,21 +660,39 @@
     "sass": "sass --style expanded",
     "scss": "scss --style expanded"
   },
-  "workbench.editorAssociations": [
-    {
-      "viewType": "default",
-      "filenamePattern": "*.xls"
-    },
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.xls": "default",
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "tailwindCSS.emmetCompletions": true,
-  "workbench.colorTheme": "Darkest+ Italic",
   "liveServer.settings.donotShowInfoMsg": true,
-  "cSpell.enableFiletypes": [
-    "todo"
-  ],
+  "cSpell.enableFiletypes": ["todo"],
+  "ruby.lint": {
+    "standard": {
+      "useBundler": true
+    }
+  },
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.rb$",
+        "cmd": "standardrb --fix ${file}"
+      }
+    ]
+  },
+  "ruby.interpreter.commandPath": "",
+  "material-icon-theme.saturation": 1,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.codeLens": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Dark",
+  "solargraph.symbols": false,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
   "window.zoomLevel": 1
 }

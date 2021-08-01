@@ -38,7 +38,6 @@ Plug 'beloglazov/vim-online-thesaurus'
 Plug 'kylef/apiblueprint.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'morhetz/gruvbox'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'junegunn/gv.vim'
 Plug 'tommcdo/vim-exchange'
@@ -71,8 +70,8 @@ Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 Plug 'JakeBecker/elixir-ls', { 'do': { -> g:elixirls.compile() } }
 Plug 'itchyny/lightline.vim'
 Plug 'alexlafroscia/postcss-syntax.vim'
-Plug 'tomasiser/vim-code-dark'
-
+Plug 'skywind3000/asyncrun.vim'
+Plug 'pgdouyon/yin-yang'
 
 if &compatible
   set nocompatible

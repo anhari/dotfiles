@@ -21,7 +21,7 @@
   },
   "Elixir: Define module": {
     "prefix": "dm",
-    "body": "defmodule ${0} do\nend",
+    "body": "defmodule ${1:${TM_FILEPATH/^(?:.*\\/(?:lib|test|spec)(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?(\\/[^\\/]+)?\\/.*\\..*|.*)$/${1:/pascalcase}${1:+.}${2:/pascalcase}${2:+.}${3:/pascalcase}${3:+.}${4:/pascalcase}${4:+.}${5:/pascalcase}${5:+.}${6:/pascalcase}${6:+.}${7:/pascalcase}${7:+.}${8:/pascalcase}${8:+.}${9:/pascalcase}${9:+.}${10:/pascalcase}${10:+.}${11:/pascalcase}${11:+.}${12:/pascalcase}${12:+.}${13:/pascalcase}${13:+.}${14:/pascalcase}${14:+.}${15:/pascalcase}${15:+.}/}}${2:${TM_FILENAME_BASE/(.+)/${1:/pascalcase}/}} do\nend",
     "description": "Elixir: Define module"
   },
   "Elixir: Define delegate": {
@@ -72,11 +72,11 @@
   },
   "@i": {
     "prefix": "@i",
-    "body": "def index(conn, _params) do\n\trender(conn, :index)${0}\nend"
+    "body": "def index(conn, _params) do\n\trender(conn, \"index.html\")${0}\nend"
   },
   "@s": {
     "prefix": "@s",
-    "body": "def show(conn, %{ \"id\" => id}) do\n\t${1:resource} =\n\trender(conn, :show, $1: $1)\nend"
+    "body": "def show(conn, %{ \"id\" => id}) do\n\t${1:resource} =\n\trender(conn, \"show.html\", $1: $1)\nend"
   },
   "@u": {
     "prefix": "@u",
@@ -88,7 +88,7 @@
   },
   "@n": {
     "prefix": "@n",
-    "body": "def new(conn, _params) do\n\tchangeset = ${0}\n\trender(conn, :new, changeset: changeset)\nend"
+    "body": "def new(conn, _params) do\n\tchangeset = ${0}\n\trender(conn, \"new.html\", changeset: changeset)\nend"
   },
   "@c": {
     "prefix": "@c",
@@ -155,19 +155,31 @@
     "body": "defmodule $1 do\n\timport Plug.Conn\n\n\talias $0\n\n\tdef init(opts) do\n\tend\n\n\tdef call(conn, _opts) do\n\tend\nend"
   },
   "ok tuple": {
-    "prefix": "okt",
+    "prefix": "ok",
     "body": "{:ok, ${0}}"
   },
   "error tuple": {
-    "prefix": "et",
+    "prefix": "er",
     "body": "{:error, ${0}}"
+  },
+  "ok tuple assignment": {
+    "prefix": "oke",
+    "body": "{:ok, ${1}} = $0"
+  },
+  "error tuple assignment": {
+    "prefix": "ere",
+    "body": "{:error, ${1}} = $0"
   },
   "IEx.pry": {
     "prefix": "pry",
     "body": "require IEx; IEx.pry"
   },
   "struct": {
-    "prefix": "st",
-    "body": "%${1}{${0}}"
+    "prefix": "5",
+    "body": "%${1:Struct}{${2}}$0"
+  },
+  "IO Inspect": {
+    "prefix": "ins",
+    "body": "IO.inspect($0, label: \"$0\")"
   }
 }

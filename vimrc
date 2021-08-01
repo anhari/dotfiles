@@ -33,7 +33,7 @@ set backspace=indent,eol,start    " Backspace deletes like usual
 set previewheight=40             " Increase preview window height
 set background=dark               " Use a dark background
 syntax enable                     " enable syntax highlighting
-set termguicolors                 " set termguicolors
+" set termguicolors                 " set termguicolors
 
 " Numbers
 set number

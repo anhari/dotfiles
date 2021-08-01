@@ -52,4 +52,3 @@ augroup gruvbox-overrides
   autocmd ColorScheme gruvbox highlight PreProc cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
 augroup END
 
-colorscheme gruvbox

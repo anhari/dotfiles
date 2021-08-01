@@ -67,3 +67,4 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   prompt spaceship
 
 export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig

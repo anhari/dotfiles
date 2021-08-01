@@ -4,11 +4,12 @@
 
 let g:VtrPercentage = 33
 
-nnoremap <leader>cc :VtrSendCommandToRunner!<cr>
+nnoremap <leader>xx :VtrSendCommandToRunner!<cr>
 nnoremap <leader>v<space> :VtrClearRunner<cr>
 nnoremap <leader>va :VtrAttachToPane<cr>
-nnoremap <leader>vc :VtrSendCommandToRunner!<space>
+nnoremap <leader>vx :VtrSendCommandToRunner!<space>
 nnoremap <leader>vd :VtrSendCtrlD<cr>
+nnoremap <leader>vc :VtrSendCtrlC<cr>
 nnoremap <leader>vf :VtrSendFile<cr>
 nnoremap <leader>vh :VtrFlushCommand<cr>
 nnoremap <leader>vk :VtrKillRunner<cr>

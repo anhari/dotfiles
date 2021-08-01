@@ -37,6 +37,7 @@
   pf = push --force-with-lease
   praise = blame
   pull-request = !hub pull-request
+  recent-branches = branch --sort=-committerdate
   remote = remote -v
   sa = apply-stash
   slog = log -S

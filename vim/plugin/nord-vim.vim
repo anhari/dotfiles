@@ -7,8 +7,8 @@ augroup nord-overrides
   autocmd!
   " Ruby
   autocmd ColorScheme nord highlight rubySymbol ctermfg=14
-  autocmd ColorScheme nord highlight rubyConditional ctermfg=1
-  autocmd ColorScheme nord highlight rubyControl ctermfg=1
+  autocmd ColorScheme nord highlight rubyConditional ctermfg=1 guifg=#bf616a gui=italic
+  autocmd ColorScheme nord highlight rubyControl ctermfg=1 guifg=#bf616a gui=italic
   autocmd ColorScheme nord highlight rubyInstanceVariable ctermfg=3
   autocmd ColorScheme nord highlight rubyStringDelimiter ctermfg=2
 

@@ -42,6 +42,7 @@ gamunu.vscode-yarn
 GitHub.github-vscode-theme
 GrapeCity.gc-excelviewer
 GraphQL.vscode-graphql
+hbenl.vscode-test-explorer
 hoovercj.vscode-dimmer
 iampeterbanjo.elixirlinter
 IBM.output-colorizer
@@ -73,6 +74,7 @@ ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode-remote.remote-wsl
 ms-vscode.cpptools
+ms-vscode.test-adapter-converter
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack

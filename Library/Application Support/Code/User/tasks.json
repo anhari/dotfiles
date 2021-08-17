@@ -259,6 +259,32 @@
       "problemMatcher": []
     },
     {
+      "label": "Rails: about",
+      "command": "bin/rails about",
+      "type": "shell"
+    },
+    {
+      "label": "Rails: assets clean",
+      "command": "bin/rails assets:clean",
+      "type": "shell"
+    },
+    {
+      "label": "Rails: assets clobber",
+      "command": "bin/rails assets:clobber",
+      "type": "shell"
+    },
+    {
+      "label": "Rails: assets precompile",
+      "command": "bin/rails assets:precompile",
+      "type": "shell"
+    },
+    {
+      "label": "Rails: Bundle Audit",
+      "command": "bin/rails bundle:audit",
+      "type": "shell",
+      "problemMatcher": []
+    },
+    {
       "label": "Rails: Run Unit Tests",
       "type": "shell",
       "command": "bundle exec rspec --exclude-pattern 'spec/features/**/*_spec.rb'",
@@ -379,6 +405,38 @@
       }
     },
     {
+      "label": "Rails: generate migration",
+      "type": "shell",
+      "command": "bin/rails generate migration ${input:railsGenerateMigrationParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": false,
+        "group": "Rails: generators",
+        "clear": false,
+        "panel": "shared",
+        "close": false
+      }
+    },
+    {
+      "label": "Rails: destroy migration",
+      "type": "shell",
+      "command": "bin/rails destroy migration ${input:railsDestroyMigrationParam}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "showReuseMessage": false,
+        "group": "Rails: generators",
+        "clear": false,
+        "panel": "shared",
+        "close": false
+      }
+    },
+    {
       "label": "Rails: destroy",
       "type": "shell",
       "command": "bin/rails destroy ${input:railsDestroyParam}",
@@ -435,6 +493,16 @@
       }
     },
     {
+      "label": "Rails: db create",
+      "type": "shell",
+      "command": "bin/rails db:create"
+    },
+    {
+      "label": "Rails: db drop",
+      "type": "shell",
+      "command": "bin/rails db:drop"
+    },
+    {
       "label": "Rails: db migrate",
       "type": "shell",
       "command": "bin/rails db:migrate"
@@ -443,6 +511,36 @@
       "label": "Rails: db rollback",
       "type": "shell",
       "command": "bin/rails db:migrate"
+    },
+    {
+      "label": "Rails: db migrate status",
+      "type": "shell",
+      "command": "bin/rails db:migrate"
+    },
+    {
+      "label": "Rails: db seed",
+      "type": "shell",
+      "command": "bin/rails db:seed"
+    },
+    {
+      "label": "Rails: db setup",
+      "type": "shell",
+      "command": "bin/rails db:setup"
+    },
+    {
+      "label": "Rails: clear logs",
+      "type": "shell",
+      "command": "bin/rails log:clear"
+    },
+    {
+      "label": "Rails: restart",
+      "type": "shell",
+      "command": "bin/rails restart"
+    },
+    {
+      "label": "Rails: zeitwerk:check",
+      "type": "shell",
+      "command": "bin/rails zeitwerk:check"
     },
     {
       "label": "Gitsh",
@@ -473,24 +571,20 @@
       "problemMatcher": []
     },
     {
-      "label": "Mix: phx server",
-      "type": "shell",
-      "command": "mix phx.server"
-    },
-    {
-      "label": "Mix: Ecto Migrate",
+      "label": "Ecto: Migrate",
       "type": "shell",
       "command": "mix ecto.migrate"
     },
     {
-      "label": "Mix: Ecto Rollback",
+      "label": "Ecto: Rollback",
       "type": "shell",
       "command": "mix ecto.rollback"
     },
     {
       "label": "Mix: Test",
       "type": "shell",
-      "command": "mix test"
+      "command": "mix test",
+      "problemMatcher": []
     },
     {
       "label": "Mix: IEx",
@@ -506,12 +600,42 @@
       "label": "Mix: deps get",
       "type": "shell",
       "command": "mix deps.get"
+    },
+    {
+      "label": "Phoenix: routes",
+      "type": "shell",
+      "command": "mix phx.routes"
+    },
+    {
+      "label": "Phoenix: server",
+      "type": "shell",
+      "command": "mix phx.server"
+    },
+    {
+      "label": "Yarn: install",
+      "type": "shell",
+      "command": "yarn install"
     }
   ],
   "inputs": [
     {
       "id": "railsDestroyParam",
       "description": "bin/rails destroy",
+      "type": "promptString"
+    },
+    {
+      "id": "railsGenerateParam",
+      "description": "bin/rails generate",
+      "type": "promptString"
+    },
+    {
+      "id": "railsDestroyMigrationParam",
+      "description": "bin/rails destroy migration",
+      "type": "promptString"
+    },
+    {
+      "id": "railsGenerateMigrationParam",
+      "description": "bin/rails generate migration",
       "type": "promptString"
     },
     {
@@ -522,11 +646,6 @@
     {
       "id": "railsGenerateScenicViewParam",
       "description": "bin/rails generate scenic:view",
-      "type": "promptString"
-    },
-    {
-      "id": "railsGenerateParam",
-      "description": "bin/rails generate",
       "type": "promptString"
     },
     {

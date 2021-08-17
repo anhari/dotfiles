@@ -55,7 +55,6 @@ alias restart-postgres-11='rm /usr/local/var/postgres@11/postmaster.pid'
 alias sed="sed -E"
 alias start='vim ~/Documents/start-checklist.md'
 alias sz='source ~/.zshrc'
-alias t='bundle exec rspec'
 alias tail-dev='tail -f log/development.log'
 alias tail-heroku='heroku logs --tail'
 alias tail-test='tail -f log/test.log'

@@ -3,7 +3,7 @@
 " https://github.com/itchyny/lightline.vim
 
 let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]

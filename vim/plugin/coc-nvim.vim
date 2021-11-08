@@ -6,7 +6,7 @@
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-set signcolumn=yes:2
+" set signcolumn=yes:2
 
 nnoremap <silent> L :call <SID>show_documentation()<CR>
 function! s:show_documentation()

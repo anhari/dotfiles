@@ -18,9 +18,9 @@
     "typescriptreact"
   ],
   "solargraph.enable": true,
-  "solargraph.diagnostics": true,
-  "solargraph.autoformat": true,
-  "solargraph.formatting": true,
+  "solargraph.diagnostics": false,
+  "solargraph.autoformat": false,
+  "solargraph.formatting": false,
   "solargraph.hover": true,
   "emmet.includeLanguages": {
     "eruby": "html"

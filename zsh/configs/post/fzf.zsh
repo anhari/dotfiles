@@ -8,7 +8,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 # Git branches
 _fuzzy_git_branches() {
   zle -U "$(
-  git branch --color=always | \
+  git branch --color=always --sort=committerdate | \
     grep -v '^* ' | \
     grep -v '^\s\+master' | \
     fzf-tmux --reverse --ansi --tac --select-1 | \

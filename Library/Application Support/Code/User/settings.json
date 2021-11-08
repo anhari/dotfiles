@@ -2,7 +2,9 @@
   // "[erb]": {
   //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
   // },
-  "vscode-test.maximizeTerminal": false,
+  "zenMode.centerLayout": false,
+  "editor.wordWrapColumn": 80,
+  "vscode-test.maximizeTerminal": true,
   "problems.showCurrentInStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
@@ -65,6 +67,7 @@
     "Topbar",
     "actioncable",
     "activedescendant",
+    "activerecord",
     "activestorage",
     "afterend",
     "alignitems",
@@ -127,6 +130,7 @@
     "dropzone",
     "dwarfcode",
     "dwarfcode's",
+    "dwarfnode",
     "eid",
     "eids",
     "esbuild",
@@ -323,7 +327,7 @@
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.wordWrap": "off",
+  // "editor.wordWrap": "wordWrapColumn",
   "elixirLS.suggestSpecs": false,
   "emmet.includeLanguages": {
     "erb": "html",
@@ -598,7 +602,7 @@
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
   "editor.fontSize": 18,
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 14,
   "editor.tokenColorCustomizations": {
     "[Darkest+ Italic]": {
       "textMateRules": [
@@ -628,7 +632,7 @@
   },
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "bearded-icons",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideLineNumbers": false,
@@ -716,10 +720,10 @@
   "diffEditor.renderSideBySide": false,
   "diffEditor.codeLens": true,
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "Remedy - Bright (Tilted)",
+  "workbench.preferredDarkColorTheme": "Darkest+ Italic",
   "solargraph.symbols": false,
-  "workbench.statusBar.visible": false,
-  "window.zoomLevel": 2
+  "workbench.colorTheme": "Darkest+",
+  "editor.inlineSuggest.enabled": true,
+  "window.zoomLevel": 3
 }

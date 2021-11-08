@@ -57,7 +57,7 @@
   template = ~/.gitmessage
 [core]
   autocrlf = input
-  editor = "code --wait"
+  editor = nvim
   # editor = "nvim"
   excludesfile = ~/.gitignore
   pager = diff-so-fancy | less --tabs=1,5 -R
@@ -67,14 +67,9 @@
   colorMoved = zebra
   tool = default-difftool
 [difftool "default-difftool"]
-  cmd = code --wait --diff --window $LOCAL $REMOTE
+  cmd = nvim
 [fetch]
   prune = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-  required = true
-	process = git-lfs filter-process
 [github]
   user = anhari
 [merge]
@@ -95,3 +90,8 @@
   gitcommand = hub
   noGreeting = true
   prompt = "%D %c(%b%#)%w ➜"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

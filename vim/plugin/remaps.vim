@@ -7,6 +7,8 @@ inoremap jk <esc>
 nnoremap 0 ^
 " bind K to grep the current word under the cursor
 nnoremap K :GrepperRg "\b<C-R><C-W>\b"<cr>:cw<cr>
+" bind K to grep the current word under the cursor
+nnoremap T :GrepperRg "\b<C-R><C-W>\b" spec/ test/<cr>:cw<cr>
 " Bind control-C to copy to clipboard
 vnoremap <C-c> "*y"
 " Open tab

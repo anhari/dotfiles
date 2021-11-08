@@ -77,3 +77,7 @@ let g:html_indent_tags = 'li\|p'
 " Enforce italics
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+
+colorscheme gruvbox
+
+nnoremap zp zfap

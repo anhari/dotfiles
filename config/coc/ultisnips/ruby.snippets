@@ -716,6 +716,10 @@ snippet sho "shoulda-matchers: validate has one"
 it { should have_one(:${0}) }
 endsnippet
 
+snippet shot "shoulda-matchers: validate has one through"
+it { should have_one(:${1}).through(:${0}) }
+endsnippet
+
 snippet shab "shoulda-matchers: validate has and belongs to many"
 it { should have_and_belong_to_many(:${0}) }
 endsnippet

@@ -49,6 +49,7 @@ fknop.vscode-npm
 formulahendry.auto-close-tag
 formulahendry.code-runner
 gamunu.vscode-yarn
+GitHub.copilot
 GitHub.github-vscode-theme
 GitHub.remotehub
 GitHub.vscode-pull-request-github
@@ -88,6 +89,8 @@ mrorz.language-gettext
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-wsl
 ms-vscode.cpptools
 ms-vscode.test-adapter-converter

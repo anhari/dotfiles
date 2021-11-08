@@ -12,4 +12,5 @@ let g:rails_projections = {
 \ 'config/routes.rb': {'command': 'routes'},
 \ 'config/locales/en.yml': {'command': 'locales'},
 \ 'spec/features/*_spec.rb': {'command': 'feature'},
+\ "spec/models/*_spec.rb": {"type": "unittest"}
 \ }

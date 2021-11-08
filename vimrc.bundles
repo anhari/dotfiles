@@ -49,8 +49,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-entire'
 Plug 'beloglazov/vim-textobj-quotes'
 Plug 'tpope/vim-unimpaired'
-Plug 'anhari/vim-stargazer'
-" Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-scriptease'
 Plug 'vim-scripts/fountain.vim'
@@ -72,6 +70,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'alexlafroscia/postcss-syntax.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'pgdouyon/yin-yang'
+Plug 'morhetz/gruvbox'
+Plug 'github/copilot.vim'
 
 if &compatible
   set nocompatible

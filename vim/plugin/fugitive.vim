@@ -8,3 +8,4 @@ nnoremap <leader>gl :Gclog<cr>
 nnoremap <leader>gb :Git blame<cr>
 nnoremap <leader>gs :Git<cr>
 nnoremap <leader>gp :Git push<cr>
+nnoremap <leader>u :Git up<cr>

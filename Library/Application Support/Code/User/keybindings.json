@@ -182,6 +182,10 @@
     "command": "vscode-test.openAlternateFile"
   },
   {
+    "key": "cmd+ctrl+shift+o",
+    "command": "vscode-test.openAlternateFileInVerticalSplit"
+  },
+  {
     "key": "cmd+k l",
     "command": "workbench.action.moveEditorToRightGroup"
   },

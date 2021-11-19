@@ -2,6 +2,13 @@
   // "[erb]": {
   //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
   // },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/vendor": true
+  },
+  "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
   "editor.wordWrapColumn": 80,
   "vscode-test.maximizeTerminal": true,
@@ -61,10 +68,6 @@
   },
   "breadcrumbs.enabled": true,
   "cSpell.userWords": [
-    "Checkins",
-    "Havanese",
-    "Lululemon's",
-    "Topbar",
     "actioncable",
     "activedescendant",
     "activerecord",
@@ -93,6 +96,7 @@
     "check",
     "checkboxes",
     "checkin",
+    "Checkins",
     "chemex",
     "chmod",
     "cockatiel",
@@ -126,6 +130,7 @@
     "downvotable",
     "downvote",
     "downvotes",
+    "Dribbble",
     "dropdown",
     "dropzone",
     "dwarfcode",
@@ -159,6 +164,7 @@
     "gitsh",
     "glassdoor",
     "godox",
+    "Havanese",
     "helvetica",
     "highchart",
     "highcharts",
@@ -183,6 +189,7 @@
     "linkify",
     "location",
     "lululemon",
+    "Lululemon's",
     "metadatum",
     "michaelanhari",
     "minitest",
@@ -267,6 +274,7 @@
     "tinytime",
     "tmux",
     "todos",
+    "Topbar",
     "track",
     "ts",
     "turbolinks",
@@ -587,6 +595,26 @@
       "commands": ["search.action.focusPreviousSearchResult"]
     },
     {
+      "before": ["K"],
+      "commands": [
+        {
+          "command": "extension.searchUnderCursor"
+        },
+        {
+          "command": "workbench.action.focusLastEditorGroup"
+        },
+        {
+          "command": "workbench.action.focusLastEditorGroup"
+        },
+        {
+          "command": "workbench.action.focusLastEditorGroup"
+        },
+        {
+          "command": "workbench.action.focusLastEditorGroup"
+        }
+      ]
+    },
+    {
       "before": ["<leader>", "i"],
       "commands": ["editor.action.formatDocument"]
     },
@@ -723,7 +751,7 @@
   "workbench.preferredLightColorTheme": "Remedy - Bright (Tilted)",
   "workbench.preferredDarkColorTheme": "Darkest+ Italic",
   "solargraph.symbols": false,
-  "workbench.colorTheme": "Darkest+",
+  "workbench.colorTheme": "Darkest+ Italic",
   "editor.inlineSuggest.enabled": true,
-  "window.zoomLevel": 3
+  "window.zoomLevel": 1
 }

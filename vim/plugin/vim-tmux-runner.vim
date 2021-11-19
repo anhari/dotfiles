@@ -4,7 +4,7 @@
 
 let g:VtrPercentage = 33
 
-nnoremap <leader>xx :VtrSendCommandToRunner!<cr>
+nnoremap <leader>xx :wa<cr>:VtrSendCommandToRunner!<cr>
 nnoremap <leader>v<space> :VtrClearRunner<cr>
 nnoremap <leader>va :VtrAttachToPane<cr>
 nnoremap <leader>vx :VtrSendCommandToRunner!<space>

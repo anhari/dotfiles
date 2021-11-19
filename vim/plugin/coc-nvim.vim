@@ -9,6 +9,7 @@ set shortmess+=c
 " set signcolumn=yes:2
 
 nnoremap <silent> L :call <SID>show_documentation()<CR>
+nnoremap <silent> H :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')

@@ -25,6 +25,7 @@ cpylua.language-postcss
 cssho.vscode-svgviewer
 dasfranck.jellybeans
 DavidAnson.vscode-markdownlint
+DavidSanders.search-under-cursor
 dbaeumer.vscode-eslint
 deibit.devdocs
 DimitarNonov.jellybeans-theme

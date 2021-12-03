@@ -30,7 +30,7 @@ set hlsearch                      " highlight search results
 set cursorline                    " highlight the cursor line
 set mouse=a                       " enable the mouse in all modes
 set backspace=indent,eol,start    " Backspace deletes like usual
-set previewheight=40             " Increase preview window height
+set previewheight=40              " Increase preview window height
 set background=dark               " Use a dark background
 syntax enable                     " enable syntax highlighting
 " set termguicolors                 " set termguicolors

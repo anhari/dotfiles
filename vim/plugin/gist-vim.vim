@@ -6,6 +6,7 @@
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
 let g:gist_post_private = 1
+let g:gist_token = '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'
 
 " Post current file to gist
 nnoremap <silent> <leader>gi :Gist<cr>

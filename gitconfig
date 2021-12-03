@@ -39,6 +39,7 @@
   pull-request = !hub pull-request
   recent-branches = branch --sort=-committerdate
   remote = remote -v
+  ri = rebase --interactive origin/HEAD
   sa = apply-stash
   slog = log -S
   sh = shalector
@@ -71,7 +72,7 @@
 [fetch]
   prune = true
 [github]
-  user = anhari
+	user = anhari
 [merge]
   ff = only
 [pretty]
@@ -90,8 +91,3 @@
   gitcommand = hub
   noGreeting = true
   prompt = "%D %c(%b%#)%w ➜"
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true

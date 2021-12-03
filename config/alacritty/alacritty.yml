@@ -71,23 +71,17 @@ font:
   # Normal (roman) font face
   normal:
     family: DankMono Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Regular
 
   # Bold font face
   bold:
     family: DankMono Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Bold
 
   # Italic font face
   italic:
     family: DankMono Nerd Font
-    # The `style` can be specified to pick a specific face.
-    style: Italic
 
   # Point size
-  size: 20.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -119,8 +113,8 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '0x1d2021'
-    background: '0x282828'
+    hard contrast: background = '0x1d2021'
+    # background: '0x282828'
     # soft contrast: background = '0x32302f'
     foreground: '0xebdbb2'
 
@@ -313,7 +307,7 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: false
 
-  url:
+  hints:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.

@@ -3,14 +3,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use 'alacritty' if it is
   # available, otherwise 'xterm-256color' is used.
-  #TERM: xterm-256color
+  TERM: alacritty
 
 window:
   startup_mode: Fullscreen
@@ -81,7 +81,7 @@ font:
     family: DankMono Nerd Font
 
   # Point size
-  size: 16.0
+  size: 18.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -110,141 +110,35 @@ draw_bold_text_with_bright_colors: true
 
 # Colors
 # Gruvbox
-colors:
-  # Default colors
-  primary:
-    hard contrast: background = '0x1d2021'
-    # background: '0x282828'
-    # soft contrast: background = '0x32302f'
-    foreground: '0xebdbb2'
-
-  # Normal colors
-  normal:
-    black:   '0x282828'
-    red:     '0xcc241d'
-    green:   '0x98971a'
-    yellow:  '0xd79921'
-    blue:    '0x458588'
-    magenta: '0xb16286'
-    cyan:    '0x689d6a'
-    white:   '0xa89984'
-
-  # Bright colors
-  bright:
-    black:   '0x928374'
-    red:     '0xfb4934'
-    green:   '0xb8bb26'
-    yellow:  '0xfabd2f'
-    blue:    '0x83a598'
-    magenta: '0xd3869b'
-    cyan:    '0x8ec07c'
-    white:   '0xebdbb2'
-
-# # Project:    Nord Alacritty
-# # Repository: https://github.com/arcticicestudio/nord-alacritty
-# colors:
-#   primary:
-#     background: '#2e3440'
-#     foreground: '#d8dee9'
-#     dim_foreground: '#a5abb6'
-#   cursor:
-#     text: '#2e3440'
-#     cursor: '#d8dee9'
-#   vi_mode_cursor:
-#     text: '#2e3440'
-#     cursor: '#d8dee9'
-#   selection:
-#     text: CellForeground
-#     background: '#4c566a'
-#   search:
-#     matches:
-#       foreground: CellBackground
-#       background: '#88c0d0'
-#     bar:
-#       background: '#434c5e'
-#       foreground: '#d8dee9'
-#   normal:
-#     black: '#3b4252'
-#     red: '#bf616a'
-#     green: '#a3be8c'
-#     yellow: '#ebcb8b'
-#     blue: '#81a1c1'
-#     magenta: '#b48ead'
-#     cyan: '#88c0d0'
-#     white: '#e5e9f0'
-#   bright:
-#     black: '#4c566a'
-#     red: '#bf616a'
-#     green: '#a3be8c'
-#     yellow: '#ebcb8b'
-#     blue: '#81a1c1'
-#     magenta: '#b48ead'
-#     cyan: '#8fbcbb'
-#     white: '#eceff4'
-#   dim:
-#     black: '#373e4d'
-#     red: '#94545d'
-#     green: '#809575'
-#     yellow: '#b29e75'
-#     blue: '#68809a'
-#     magenta: '#8c738c'
-#     cyan: '#6d96a5'
-#     white: '#aeb3bb'
-
-# Falcon
 # colors:
 #   # Default colors
 #   primary:
-#     background: '0x0b0b1a'
-#     foreground: '0xd4d4d9'
-#
-#   # Colors the cursor will use if `custom_cursor_colors` is true
-#   cursor:
-#     text: '0x282828'
-#     cursor: '0xffefbf'
+#     hard contrast: background = '0x1d2021'
+#     # background: '0x282828'
+#     # soft contrast: background = '0x32302f'
+#     foreground: '0xebdbb2'
 #
 #   # Normal colors
 #   normal:
-#     black:   '0x0b0b1a'
-#     red:     '0xff794c'
-#     green:   '0x85a663'
-#     yellow:  '0xffd966'
-#     blue:    '0x8fa3bf'
-#     magenta: '0xffac59'
-#     cyan:    '0x85ccc0'
-#     white:   '0xfdfdff'
+#     black:   '0x282828'
+#     red:     '0xcc241d'
+#     green:   '0x98971a'
+#     yellow:  '0xd79921'
+#     blue:    '0x458588'
+#     magenta: '0xb16286'
+#     cyan:    '0x689d6a'
+#     white:   '0xa89984'
 #
 #   # Bright colors
 #   bright:
-#     black:   '0x858594'
-#     red:     '0xff4000'
-#     green:   '0x598033'
-#     yellow:  '0xffbf00'
-#     blue:    '0x306cbf'
-#     magenta: '0xff8000'
-#     cyan:    '0x30bfa7'
-#     white:   '0xd4d4d9'
-
-  # # Dim colors
-  # #
-  # # If the dim colors are not set, they will be calculated automatically based
-  # # on the `normal` colors.
-  # dim:
-  #   black:   '0x333333'
-  #   red:     '0xf2777a'
-  #   green:   '0x99cc99'
-  #   yellow:  '0xffcc66'
-  #   blue:    '0x6699cc'
-  #   magenta: '0xcc99cc'
-  #   cyan:    '0x66cccc'
-  #   white:   '0xdddddd'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #indexed_colors:
-  #  - { index: 16, color: '0x000000' }
+#     black:   '0x928374'
+#     red:     '0xfb4934'
+#     green:   '0xb8bb26'
+#     yellow:  '0xfabd2f'
+#     blue:    '0x83a598'
+#     magenta: '0xd3869b'
+#     cyan:    '0x8ec07c'
+#     white:   '0xebdbb2'
 
 # Visual Bell
 #
@@ -538,3 +432,5 @@ key_bindings:
   - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
   - { key: NumpadEnter,             chars: "\n"                          }
+import:
+  - ~/.vim/bundle/tokyonight.nvim/extras/alacritty_tokyonight_night.yml

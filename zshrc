@@ -41,8 +41,8 @@ export NODEJS_CHECK_SIGNATURES=no
 
 CASE_SENSITIVE="false"
 
-# set gruvbox colors
-source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+# # set gruvbox colors
+# source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
 export PATH="$HOME/.bin:$PATH"
 

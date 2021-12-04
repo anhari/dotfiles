@@ -33,7 +33,7 @@ set backspace=indent,eol,start    " Backspace deletes like usual
 set previewheight=40              " Increase preview window height
 set background=dark               " Use a dark background
 syntax enable                     " enable syntax highlighting
-" set termguicolors                 " set termguicolors
+set termguicolors                 " set termguicolors
 
 " Numbers
 set number
@@ -78,6 +78,20 @@ let g:html_indent_tags = 'li\|p'
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
-colorscheme gruvbox
+let g:tokyonight_style = 'night'
+colorscheme tokyonight
 
 nnoremap zp zfap
+
+
+lua require("trouble").setup { }
+
+lua << EOF
+  require("bufferline").setup{}
+EOF
+nnoremap <silent>gt :BufferLineCycleNext<CR>
+nnoremap <silent>gT :BufferLineCyclePrev<CR>
+
+lua << EOF
+  require("todo-comments").setup {}
+EOF

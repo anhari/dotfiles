@@ -72,6 +72,18 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'pgdouyon/yin-yang'
 Plug 'morhetz/gruvbox'
 Plug 'github/copilot.vim'
+Plug 'kosayoda/nvim-lightbulb'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'folke/trouble.nvim'
+Plug 'akinsho/bufferline.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'folke/todo-comments.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'folke/lsp-colors.nvim'
+Plug 'nvim-telescope/telescope-symbols.nvim'
 
 if &compatible
   set nocompatible

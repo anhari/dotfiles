@@ -66,10 +66,10 @@
         { name: "success", hex: "#4f9a5f", lMin: 15, lMax: 90 },
         { name: "warning", hex: "#f6d55c", lMin: 15, lMax: 90 },
         { name: "error", hex: "#a83029", lMin: 15, lMax: 90 },
-        { name: "grey", hex: "#222933", lMin: 15, lMax: 90 }
+        { name: "grey", hex: "#222933", lMin: 15, lMax: 90 },
       ];
-      const colorScheme = DEFAULT_COLOR_SCHEME.map(colorType => ({
-        ...colorType
+      const colorScheme = DEFAULT_COLOR_SCHEME.map((colorType) => ({
+        ...colorType,
       }));
       const style = document.querySelector("#theme");
       const colorControls = document.querySelector(".color-controls");
@@ -96,24 +96,25 @@
       }
 
       function createStyles() {
-        [style, cssArea].forEach(element => {
+        [style, cssArea].forEach((element) => {
           element.innerHTML = colorScheme
             .map(({ name, hex, lMin, lMax }) => ({
               name,
               ...hexToHsl(hex),
               lMin,
-              lMax
+              lMax,
             }))
             .map(({ name, h, s, l, lMin, lMax }) =>
               [
-                ...[0, 1, 2, 3].map(i => lMin + (i * (l - lMin)) / 4),
+                ...[0, 1, 2, 3].map((i) => lMin + (i * (l - lMin)) / 4),
                 l,
-                ...[1, 2, 3, 4].map(i => l + (i * (lMax - l)) / 4)
+                ...[1, 2, 3, 4].map((i) => l + (i * (lMax - l)) / 4),
               ]
                 .map(
                   (l, i) =>
-                    `.${name.toLowerCase()}${900 -
-                      i * 100}{background: hsl(${h},${s}%,${l}%);}`
+                    `.${name.toLowerCase()}${
+                      900 - i * 100
+                    }{background: hsl(${h},${s}%,${l}%);}`
                 )
                 .join("\n")
             )
@@ -158,7 +159,7 @@
       function hexToHsl(hex) {
         const [, r, g, b] = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
           .exec(hex)
-          .map(x => parseInt(x, 16) / 255);
+          .map((x) => parseInt(x, 16) / 255);
         const max = Math.max(r, g, b);
         const min = Math.min(r, g, b);
         const l = (max + min) / 2;
@@ -167,7 +168,7 @@
           return {
             h: 0,
             s: 0,
-            l: Math.round(100 * l)
+            l: Math.round(100 * l),
           };
         } else {
           let h =
@@ -185,7 +186,7 @@
           return {
             h: Math.round(360 * h),
             s: Math.round(100 * s),
-            l: Math.round(100 * l)
+            l: Math.round(100 * l),
           };
         }
       }

@@ -753,5 +753,8 @@
   "solargraph.symbols": false,
   "workbench.colorTheme": "Darkest+ Italic",
   "editor.inlineSuggest.enabled": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  }
 }

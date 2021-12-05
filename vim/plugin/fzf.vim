@@ -5,7 +5,7 @@
 let $FZF_DEFAULT_OPTS = '-0 -1'
 
 " Bind Ctrl-P to launch the fuzzy finder
-nnoremap <C-p> :Files<cr>
+" nnoremap <C-p> :Files<cr>
 
 " Bind tag finder to leader key
 nnoremap <leader>y :BTags<cr>

@@ -95,3 +95,5 @@ nnoremap <silent>gT :BufferLineCyclePrev<CR>
 lua << EOF
   require("todo-comments").setup {}
 EOF
+
+nnoremap <C-p> :Telescope find_files<cr>

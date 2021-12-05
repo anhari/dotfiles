@@ -6,6 +6,7 @@ gem-ctags
 gem-shut-the-fuck-up
 neovim
 pry
+pry-doc
 pt
 rcodetools
 rouge
@@ -13,4 +14,5 @@ rubocop
 ruby-debug-ide
 seeing_is_believing
 solargraph
+solargraph-standardrb
 tmuxinator

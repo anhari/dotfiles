@@ -1,3 +1,3 @@
-export VISUAL=code
+export VISUAL=nvim
 export EDITOR=$VISUAL
-export MYVIMRC=$HOME/.vimrc
+export MYVIMRC=$HOME/.config/nvim/init.vim

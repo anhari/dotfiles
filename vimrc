@@ -11,6 +11,7 @@ set encoding=utf-8
 " Leader
 let g:mapleader = ','
 
+syntax enable                     " enable syntax highlighting
 set backspace=2                   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -32,7 +33,6 @@ set mouse=a                       " enable the mouse in all modes
 set backspace=indent,eol,start    " Backspace deletes like usual
 set previewheight=40              " Increase preview window height
 set background=dark               " Use a dark background
-syntax enable                     " enable syntax highlighting
 set termguicolors                 " set termguicolors
 
 " Numbers
@@ -74,26 +74,22 @@ let g:is_posix = 1
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-" Enforce italics
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-
 let g:tokyonight_style = 'night'
 colorscheme tokyonight
 
 nnoremap zp zfap
 
 
-lua require("trouble").setup { }
-
 lua << EOF
-  require("bufferline").setup{}
+  require("trouble").setup{}
 EOF
-nnoremap <silent>gt :BufferLineCycleNext<CR>
-nnoremap <silent>gT :BufferLineCyclePrev<CR>
 
 lua << EOF
   require("todo-comments").setup {}
 EOF
 
-nnoremap <C-p> :Telescope find_files<cr>
+" lua << EOF
+"   require("lspconfig").solargraph.setup{
+"     cmd = { "standardrb" }
+"   }
+" EOF

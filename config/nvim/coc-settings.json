@@ -18,10 +18,11 @@
     "typescriptreact"
   ],
   "solargraph.enable": true,
-  "solargraph.diagnostics": false,
-  "solargraph.autoformat": false,
-  "solargraph.formatting": false,
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
   "solargraph.hover": true,
+  "solargraph.useBundler": false,
   "emmet.includeLanguages": {
     "eruby": "html"
   },
@@ -36,7 +37,9 @@
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
+  "diagnostic.locationlistUpdate": true,
+  "diagnostic.refreshOnInsertMode": true,
   "diagnostic.signOffset": 9999999,
   "snippets.editSnippetsCommand": "tabe",
-  "git.enableGutters": false
+  "git.enableGutters": false,
 }

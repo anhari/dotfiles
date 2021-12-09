@@ -4,9 +4,9 @@
 " lua.
 
 
-lua << EOF
-  require("bufferline").setup{}
-EOF
-
-nnoremap <silent>gt :BufferLineCycleNext<CR>
-nnoremap <silent>gT :BufferLineCyclePrev<CR>
+" lua << EOF
+"   require("bufferline").setup{}
+" EOF
+"
+" nnoremap <silent>gt :BufferLineCycleNext<CR>
+" nnoremap <silent>gT :BufferLineCyclePrev<CR>

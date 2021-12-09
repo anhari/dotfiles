@@ -34,6 +34,7 @@ set backspace=indent,eol,start    " Backspace deletes like usual
 set previewheight=40              " Increase preview window height
 set background=dark               " Use a dark background
 set termguicolors                 " set termguicolors
+set inccommand=split
 
 " Numbers
 set number
@@ -74,8 +75,7 @@ let g:is_posix = 1
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-let g:tokyonight_style = 'night'
-colorscheme tokyonight
+" let g:tokyonight_style = 'night'
 
 nnoremap zp zfap
 

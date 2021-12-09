@@ -79,13 +79,14 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'folke/trouble.nvim'
-Plug 'akinsho/bufferline.nvim'
+" Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/lsp-colors.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'simrat39/symbols-outline.nvim'
+Plug 'Mofiqul/vscode.nvim'
 
 if &compatible
   set nocompatible

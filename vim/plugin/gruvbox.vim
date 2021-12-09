@@ -2,11 +2,6 @@
 " Retro groove color scheme for Vim
 " https://github.com/morhetz/gruvbox
 
-let g:gruvbox_contrast_dark = 'hard'   " Set contrast level
-let g:gruvbox_bold = 1                 " Enable bold
-let g:gruvbox_undercurl = 1            " Enable squigglies
-let g:gruvbox_italic = 1               " Enable italics
-
 augroup gruvbox-overrides
   autocmd!
   " HTML
@@ -51,3 +46,14 @@ augroup gruvbox-overrides
   autocmd ColorScheme gruvbox highlight PreProc cterm=italic gui=italic ctermfg=108 guifg=#8ec07c
 augroup END
 
+function! GruvboxTheme()
+  let g:gruvbox_contrast_dark = 'hard'   " Set contrast level
+  let g:gruvbox_bold = 1                 " Enable bold
+  let g:gruvbox_undercurl = 1            " Enable squigglies
+  let g:gruvbox_italic = 1               " Enable italics
+  let g:lightline_theme='gruvbox'
+  let $BAT_THEME='gruvbox'
+  colorscheme gruvbox
+endfunction
+
+call GruvboxTheme()

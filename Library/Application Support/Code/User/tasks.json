@@ -289,10 +289,7 @@
       "type": "shell",
       "command": "bundle exec rspec --exclude-pattern 'spec/features/**/*_spec.rb'",
       "problemMatcher": [],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      }
+      "group": "test"
     },
     {
       "label": "Rails: Console",
@@ -581,10 +578,20 @@
       "command": "mix ecto.rollback"
     },
     {
+      "label": "Mix: Phoenix Server",
+      "type": "shell",
+      "command": "mix phx.server",
+      "problemMatcher": []
+    },
+    {
       "label": "Mix: Test",
       "type": "shell",
       "command": "mix test",
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
     },
     {
       "label": "Mix: IEx",

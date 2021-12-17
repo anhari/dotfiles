@@ -88,8 +88,17 @@ lua << EOF
   require("todo-comments").setup {}
 EOF
 
-" lua << EOF
-"   require("lspconfig").solargraph.setup{
-"     cmd = { "standardrb" }
-"   }
-" EOF
+lua << EOF
+  require("lspconfig").solargraph.setup{
+    cmd = { "solargraph", "stdio" },
+    filetypes = { "ruby" },
+    init_options = {
+      formatting = true
+    },
+    settings = {
+      solargraph = {
+        diagnostics = true
+      }
+    },
+  }
+EOF

@@ -1,7 +1,7 @@
-# /Users/anhari/.config/tmuxinator/pi.yml
+# /Users/anhari/.config/tmuxinator/moving_average.yml
 
-name: pi
-root: ~/Code/datawarehouse
+name: ma
+root: ~/Code/moving_average
 
 # Optional tmux socket
 # socket_name: foo
@@ -17,9 +17,9 @@ root: ~/Code/datawarehouse
 # Run on project start, after the first time
 # on_project_restart: command
 # Run on project exit ( detaching from tmux session )
-on_project_exit: pkill -f puma postgres
+on_project_exit: pkill -f postgres
 # Run on project stop
-on_project_stop: pkill -f puma postgres
+on_project_stop: pkill -f postgres
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -41,8 +41,5 @@ on_project_stop: pkill -f puma postgres
 
 windows:
   - editor: nvim
-  - server: b && yarn install && bin/rails s -p 3000
-  - sidekiq: redis-server --daemonize yes; bundle exec sidekiq -t 25
-  - guard: bundle exec guard
-  - webpack: ./bin/webpack-dev-server
-  - postgres: postgres -D ~/.asdf/installs/postgres/13.5/data
+  - server: mix deps.get && mix phx.server
+  - postgres: postgres -D ~/.asdf/installs/postgres/14.1/data

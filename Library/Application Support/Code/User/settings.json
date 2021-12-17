@@ -1,4 +1,6 @@
 {
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
   // "[erb]": {
   //   "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
   // },
@@ -11,7 +13,7 @@
   "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
   "editor.wordWrapColumn": 80,
-  "vscode-test.maximizeTerminal": true,
+  "vscode-test.maximizeTerminal": false,
   "problems.showCurrentInStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
@@ -422,6 +424,14 @@
       "commands": ["code-runner.run"]
     },
     {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["z", "g"],
       "commands": ["cSpell.addWordToUserDictionary"]
     },
@@ -629,14 +639,93 @@
   "vim.useSystemClipboard": false,
   "vim.visualstar": true,
   "vscode-erb-beautify.keepBlankLines": 1,
-  "editor.fontSize": 18,
-  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
   "editor.tokenColorCustomizations": {
     "[Darkest+ Italic]": {
       "textMateRules": [
         {
           "scope": ["support.class.component.tsx"],
           "settings": { "foreground": "#569CD6" }
+        }
+      ]
+    },
+    "[Monokai Pro (Filter Octagon)]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "emphasis",
+            "entity.name.method.js",
+            "entity.name.class.js",
+            "entity.name.tag.doctype",
+            "entity.other.attribute-name",
+            "entity.other.attribute-name.tag.jade",
+            "entity.other.attribute-name.tag.pug",
+            "keyword.control",
+            "keyword.operator.comparison",
+            "keyword.control.flow.js",
+            "keyword.control.flow.ts",
+            "keyword.control.flow.tsx",
+            "keyword.control.ruby",
+            "keyword.control.module.ruby",
+            "keyword.control.class.ruby",
+            "keyword.control.def.ruby",
+            "keyword.control.loop.js",
+            "keyword.control.loop.ts",
+            "keyword.control.import.js",
+            "keyword.control.import.ts",
+            "keyword.control.import.tsx",
+            "keyword.control.from.js",
+            "keyword.control.from.ts",
+            "keyword.control.from.tsx",
+            "keyword.operator.expression.delete",
+            "keyword.operator.new",
+            "keyword.operator.expression",
+            "keyword.operator.cast",
+            "keyword.operator.relational",
+            "keyword.operator.sizeof",
+            "keyword.operator.logical.python",
+            "italic",
+            "markup.italic",
+            "markup.quote",
+            "markup.changed",
+            "markup.italic.markdown",
+            "markup.quote.markdown",
+            "markup.deleted.diff",
+            "markup.inserted.diff",
+            "meta.delimiter.period",
+            "meta.diff.header.git",
+            "meta.diff.header.from-file",
+            "meta.diff.header.to-file",
+            "meta.tag.sgml.doctype",
+            "meta.class meta.method.declaration meta.var.expr storage.type.js",
+            "meta.decorator punctuation.decorator",
+            "meta.selector",
+            "punctuation.accessor",
+            "punctuation.definition.comment",
+            "punctuation.definition.template-expression.begin",
+            "punctuation.definition.template-expression.end",
+            "quote",
+            "support.class.component.js",
+            "support.type.property-name.json",
+            "source.js constant.other.object.key.js string.unquoted.label.js",
+            "storage",
+            "storage.type",
+            "storage.modifier",
+            "storage.type.property.js",
+            "storage.type.property.ts",
+            "storage.type.property.tsx",
+            "tag.decorator.js entity.name.tag.js",
+            "tag.decorator.js",
+            "text.html.basic entity.other.attribute-name.html",
+            "text.html.basic entity.other.attribute-name",
+            "variable.language",
+            "variable.parameter.js"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
         }
       ]
     }
@@ -751,9 +840,8 @@
   "workbench.preferredLightColorTheme": "Remedy - Bright (Tilted)",
   "workbench.preferredDarkColorTheme": "Darkest+ Italic",
   "solargraph.symbols": false,
-  "workbench.colorTheme": "Darkest+ Italic",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "editor.inlineSuggest.enabled": true,
-  "window.zoomLevel": 1,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   }

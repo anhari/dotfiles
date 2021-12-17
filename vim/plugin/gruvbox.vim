@@ -1,6 +1,7 @@
 " gruvbox
 " Retro groove color scheme for Vim
 " https://github.com/morhetz/gruvbox
+"
 
 augroup gruvbox-overrides
   autocmd!
@@ -52,7 +53,7 @@ function! GruvboxTheme()
   let g:gruvbox_undercurl = 1            " Enable squigglies
   let g:gruvbox_italic = 1               " Enable italics
   let g:lightline_theme='gruvbox'
-  let $BAT_THEME='gruvbox'
+  let $BAT_THEME='gruvbox-dark'
   colorscheme gruvbox
 endfunction
 

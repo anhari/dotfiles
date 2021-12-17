@@ -4,6 +4,7 @@ debase
 gem-browse
 gem-ctags
 gem-shut-the-fuck-up
+mailcatcher
 neovim
 pry
 pry-doc

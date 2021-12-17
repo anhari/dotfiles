@@ -18,4 +18,7 @@ nnoremap <Leader><Leader> <C-^>
 nnoremap <Leader>r :RunInInteractiveShell<Space>
 
 " View my work in pivotal
-nnoremap <leader>mw :VtrSendCommandToRunner! pt mywork<cr>
+" nnoremap <leader>mw :VtrSendCommandToRunner! pt mywork<cr>
+
+nmap gm ]m
+nmap gM [m

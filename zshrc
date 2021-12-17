@@ -1,3 +1,7 @@
+export PATH=/opt/homebrew/bin:$PATH
+export HOMEBREW_PREFIX=/opt/homebrew
+fpath=( "$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath );
+
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
@@ -41,15 +45,20 @@ export NODEJS_CHECK_SIGNATURES=no
 
 CASE_SENSITIVE="false"
 
-# # set gruvbox colors
-# source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
 
 export PATH="$HOME/.bin:$PATH"
 
 # zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # # Always be tmux'ing
 # _not_inside_tmux() { [[ -z "$TMUX" ]] }
@@ -61,10 +70,13 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ensure_tmux_is_running
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
-export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
-export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/postgresql@13/lib/pkgconfig"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/libpq/lib/pkgconfig"
+fpath=($fpath "$HOMEBREW_PREFIX/.zfunctions")

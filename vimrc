@@ -80,25 +80,25 @@ let g:html_indent_tags = 'li\|p'
 nnoremap zp zfap
 
 
-lua << EOF
-  require("trouble").setup{}
-EOF
+" lua << EOF
+"   require("trouble").setup{}
+" EOF
+"
+" lua << EOF
+"   require("todo-comments").setup {}
+" EOF
 
-lua << EOF
-  require("todo-comments").setup {}
-EOF
-
-lua << EOF
-  require("lspconfig").solargraph.setup{
-    cmd = { "solargraph", "stdio" },
-    filetypes = { "ruby" },
-    init_options = {
-      formatting = true
-    },
-    settings = {
-      solargraph = {
-        diagnostics = true
-      }
-    },
-  }
-EOF
+" lua << EOF
+"   require("lspconfig").solargraph.setup{
+"     cmd = { "solargraph", "stdio" },
+"     filetypes = { "ruby" },
+"     init_options = {
+"       formatting = true
+"     },
+"     settings = {
+"       solargraph = {
+"         diagnostics = true
+"       }
+"     },
+"   }
+" EOF

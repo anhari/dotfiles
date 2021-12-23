@@ -144,16 +144,6 @@ snippet rd
 redirect(to: Routes.$1_path(conn, :${0:action}))
 endsnippet
 
-snippet test
-test "${0}" do
-end
-endsnippet
-
-snippet desc
-describe "${0}" do
-end
-endsnippet
-
 snippet uidx
 create unique_index(:${1:table}, [:${0:field}])
 endsnippet
@@ -229,4 +219,37 @@ endsnippet
 
 snippet pry
 require IEX; IEx.pry
+endsnippet
+
+################################################################################
+# ExUnit snippets
+
+################################################################################
+snippet test
+test "${0}" do
+end
+endsnippet
+
+snippet desc
+describe "${0}" do
+end
+endsnippet
+
+snippet as
+assert $0
+endsnippet
+
+snippet ahas
+assert_has($0)
+endsnippet
+
+snippet qcss "Query css" w
+Query.css("$1", text: "$0")
+endsnippet
+
+snippet feat
+test "$1", %{session: session} do
+	session
+	|> $0
+end
 endsnippet

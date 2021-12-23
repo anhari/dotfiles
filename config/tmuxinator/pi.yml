@@ -43,6 +43,5 @@ windows:
   - editor: nvim
   - server: b && yarn install && bin/rails s -p 3000
   - sidekiq: redis-server --daemonize yes; bundle exec sidekiq -t 25
-  - guard: bundle exec guard
   - webpack: ./bin/webpack-dev-server
   - postgres: postgres -D ~/.asdf/installs/postgres/13.5/data

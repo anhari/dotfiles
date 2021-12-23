@@ -416,6 +416,10 @@
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
       "before": ["<leader>", "n"],
       "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
@@ -593,16 +597,14 @@
       "commands": ["editor.action.marker.next"]
     },
     {
-      "before": ["[", "q"],
-      "commands": ["search.action.focusPreviousSearchResult"]
-    },
-    {
       "before": ["]", "q"],
-      "commands": ["search.action.focusNextSearchResult"]
+      "commands": ["search.action.focusNextSearchResult"],
+      "after": ["<Esc>"]
     },
     {
       "before": ["[", "q"],
-      "commands": ["search.action.focusPreviousSearchResult"]
+      "commands": ["search.action.focusPreviousSearchResult"],
+      "after": ["<Esc>"]
     },
     {
       "before": ["K"],
@@ -840,9 +842,10 @@
   "workbench.preferredLightColorTheme": "Remedy - Bright (Tilted)",
   "workbench.preferredDarkColorTheme": "Darkest+ Italic",
   "solargraph.symbols": false,
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "editor.inlineSuggest.enabled": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+  "window.zoomLevel": 1
 }

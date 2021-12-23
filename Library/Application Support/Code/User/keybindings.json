@@ -245,5 +245,15 @@
   {
     "key": "ctrl+shift+s",
     "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   }
 ]

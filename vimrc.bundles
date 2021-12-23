@@ -63,6 +63,7 @@ Plug 'amadeus/vim-xml'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'rhysd/git-messenger.vim'
 Plug 'mhinz/vim-grepper'
+Plug 'elixir-editors/vim-elixir'
 Plug 'GrzegorzKozub/vim-elixirls', { 'do': ':ElixirLsCompileSync' }
 Plug 'JakeBecker/elixir-ls', { 'do': { -> g:elixirls.compile() } }
 Plug 'itchyny/lightline.vim'
@@ -71,10 +72,10 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'morhetz/gruvbox'
 Plug 'github/copilot.vim'
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'kosayoda/nvim-lightbulb'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'kosayoda/nvim-lightbulb'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
@@ -87,6 +88,7 @@ Plug 'folke/lsp-colors.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 Plug 'Mofiqul/vscode.nvim'
+Plug 'elixir-editors/vim-elixir'
 
 if &compatible
   set nocompatible

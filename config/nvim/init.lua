@@ -1,3 +1,5 @@
-require "neovim.settings"
-require "neovim.keymaps"
-require "plugins"
+require("config.abbreviations")
+require("config.settings")
+require("config.keymaps")
+require("config.plugins")
+require("plugins.gruvbox")

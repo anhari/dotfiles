@@ -55,6 +55,6 @@ vim.g.gruvbox_undercurl = 1            -- Enable squigglies
 vim.g.gruvbox_italic = 1               -- Enable italics
 -- os.setenv("BAT_THEME", "gruvbox-dark")
 
-vim.cmd [[
-  colorscheme gruvbox
-]]
+-- vim.cmd [[
+--   colorscheme gruvbox
+-- ]]

@@ -4,6 +4,7 @@
 
 vim.cmd [[
   syntax enable
+  colorscheme tokyonight
 ]]
 
 local options = {

@@ -61,6 +61,9 @@ vim.api.nvim_set_keymap("n", "<leader>di", ":!open dict://<cword><cr><cr>", opts
 -- Pretty print JSON blobs
 vim.api.nvim_set_keymap("n", "<leader>jj", ":%!python -m json.tool<cr>", opts)
 
+-- View git commit message
+vim.api.nvim_set_keymap("n", "<C-g>", ":GitMessenger<cr>", opts)
+
 -- INSERT_MODE = "i"
 --------------------------------------------------------------------------------
 -- Exit insert mode with jk and stay on the home row

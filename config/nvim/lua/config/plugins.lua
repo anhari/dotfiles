@@ -49,7 +49,7 @@ return require('packer').startup(function(use)
   }
   use 'github/copilot.vim'
   use {
-    'glepnir/lspsaga.nvim',
+    'tami5/lspsaga.nvim',
     requires = "noevima/nvim-lspconfig",
   }
   use 'janko-m/vim-test'

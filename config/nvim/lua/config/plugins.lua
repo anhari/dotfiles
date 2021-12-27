@@ -48,6 +48,10 @@ return require('packer').startup(function(use)
     end
   }
   use 'github/copilot.vim'
+  use {
+    'glepnir/lspsaga.nvim',
+    requires = "noevima/nvim-lspconfig",
+  }
   use 'janko-m/vim-test'
   use { 'junegunn/gv.vim', require = 'tpope/vim-fugitive' }
   use 'kana/vim-textobj-entire'
@@ -61,6 +65,7 @@ return require('packer').startup(function(use)
     },
     config = function() require'nvim-tree'.setup {} end
   }
+  use "machakann/vim-highlightedyank"
   use 'mattn/emmet-vim'
   use { 'mattn/vim-gist', requires = 'mattn/webapi-vim' }
   use 'mhinz/vim-grepper'

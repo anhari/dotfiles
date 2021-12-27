@@ -2,11 +2,6 @@
 -- first created on Aug 06 2015
 -- ported to lua on Dec 23 2021
 
-vim.cmd [[
-  syntax enable
-  colorscheme tokyonight
-]]
-
 local options = {
   autoread = true,
   autowrite = true,

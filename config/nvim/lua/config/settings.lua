@@ -10,6 +10,7 @@ local options = {
   backup = false,
   colorcolumn = "+1",
   complete = "kspell",
+  completeopt = "menu,menuone,noselect",
   cursorline = true,
   diffopt = "vertical",
   encoding = "utf-8",

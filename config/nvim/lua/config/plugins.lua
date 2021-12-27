@@ -49,8 +49,15 @@ return require('packer').startup(function(use)
   }
   use 'github/copilot.vim'
   use {
-    'tami5/lspsaga.nvim',
-    requires = "noevima/nvim-lspconfig",
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'neovim/nvim-lspconfig',
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-cmdline',
+      'quangnguyen30192/cmp-nvim-ultisnips'
+    }
   }
   use 'janko-m/vim-test'
   use { 'junegunn/gv.vim', require = 'tpope/vim-fugitive' }
@@ -70,6 +77,7 @@ return require('packer').startup(function(use)
   use { 'mattn/vim-gist', requires = 'mattn/webapi-vim' }
   use 'mhinz/vim-grepper'
   use 'morhetz/gruvbox'
+  use 'onsails/lspkind-nvim'
   use { 'neovim/nvim-lspconfig', requires = 'williamboman/nvim-lsp-installer'}
   use {
     'nvim-lualine/lualine.nvim',
@@ -86,6 +94,11 @@ return require('packer').startup(function(use)
   use 'pbrisbin/vim-mkdir'
   use 'raimondi/delimitMate'
   use 'rhysd/git-messenger.vim'
+  use 'SirVer/ultisnips'
+  use {
+    'tami5/lspsaga.nvim',
+    requires = "noevima/nvim-lspconfig",
+  }
   use 'tommcdo/vim-exchange'
   use 'tpope/vim-abolish'
   use 'tpope/vim-bundler'

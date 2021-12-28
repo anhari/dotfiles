@@ -13,7 +13,7 @@ vim.cmd [[
 
 return require('packer').startup(function(use)
   use 'adelarsq/vim-matchit'
-  use 'airblade/vim-gitgutter'
+  -- use 'airblade/vim-gitgutter'
   use 'andrewradev/splitjoin.vim'
   use 'beloglazov/vim-textobj-quotes'
   use 'christoomey/vim-conflicted'
@@ -71,6 +71,10 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
     config = function() require'nvim-tree'.setup {} end
+  }
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
   }
   use "machakann/vim-highlightedyank"
   use 'mattn/emmet-vim'

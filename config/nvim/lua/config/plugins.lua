@@ -106,7 +106,13 @@ return require('packer').startup(function(use)
   use 'tommcdo/vim-exchange'
   use 'tpope/vim-abolish'
   use 'tpope/vim-bundler'
-  use 'tpope/vim-dadbod'
+  use {
+    'tpope/vim-dadbod',
+    requires = {
+      'kristijanhusak/vim-dadbod-ui',
+      'kristijanhusak/vim-dadbod-completion'
+    }
+  }
   use 'tpope/vim-dispatch'
   use 'tpope/vim-endwise'
   use 'tpope/vim-eunuch'

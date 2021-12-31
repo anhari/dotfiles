@@ -53,8 +53,3 @@ vim.g.gruvbox_contrast_dark = 'hard'   -- Set contrast level
 vim.g.gruvbox_bold = 1                 -- Enable bold
 vim.g.gruvbox_undercurl = 1            -- Enable squigglies
 vim.g.gruvbox_italic = 1               -- Enable italics
--- os.setenv("BAT_THEME", "gruvbox-dark")
-
--- vim.cmd [[
---   colorscheme gruvbox
--- ]]

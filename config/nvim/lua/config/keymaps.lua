@@ -11,9 +11,6 @@ vim.api.nvim_set_keymap("n", "0", "^", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "k", "gk", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "j", "gj", { noremap = true, silent = true })
 
--- Ctrl-P to find files
-vim.api.nvim_set_keymap("n", "<C-p>", ":Telescope find_files<cr>", { noremap = true, silent = true })
-
 -- K to grep for the current word under the cursor
 vim.api.nvim_set_keymap("n", "K", ':GrepperRg "<C-R><C-W>"<cr>:cw<cr>', { noremap = true, silent = true })
 
@@ -22,6 +19,9 @@ vim.api.nvim_set_keymap("n", "T", ':GrepperRg "<C-R><C-W>" spec/ test/<cr>:cw<cr
 
 -- Ctrl-T to open new tabs
 vim.api.nvim_set_keymap("n", "<C-t>", "<esc>:tabnew<cr>", { noremap = true, silent = true })
+
+-- Delete marks
+vim.api.nvim_set_keymap("n", "<leader>dm", ":delmarks A-Za-z0-9<cr>", { noremap = true, silent = true })
 
 -- Toggle paste around inserting text from the clipboard
 vim.api.nvim_set_keymap("n", "<leader>p", ':set paste<cr>o<esc>"*]p:set nopaste<cr>', { noremap = true, silent = true })

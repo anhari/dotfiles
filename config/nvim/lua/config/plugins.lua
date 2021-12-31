@@ -13,7 +13,6 @@ vim.cmd [[
 
 return require('packer').startup(function(use)
   use 'adelarsq/vim-matchit'
-  -- use 'airblade/vim-gitgutter'
   use 'andrewradev/splitjoin.vim'
   use 'beloglazov/vim-textobj-quotes'
   use 'christoomey/vim-conflicted'
@@ -24,14 +23,12 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-tmux-runner'
   use 'derekprior/vim-trimmer'
   use 'djoshea/vim-autoread'
+  use 'elixir-editors/vim-elixir'
   use {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
     config = function()
       require("todo-comments").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
       }
     end
   }
@@ -41,9 +38,6 @@ return require('packer').startup(function(use)
     requires = "kyazdani42/nvim-web-devicons",
     config = function()
       require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
       }
     end
   }
@@ -68,13 +62,19 @@ return require('packer').startup(function(use)
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      'kyazdani42/nvim-web-devicons',
     },
-    config = function() require'nvim-tree'.setup {} end
+    config = function() require('nvim-tree').setup {} end
   }
   use {
     'lewis6991/gitsigns.nvim',
     requires = { 'nvim-lua/plenary.nvim' },
+  }
+  use {
+    'lewis6991/spellsitter.nvim',
+    config = function()
+      require('spellsitter').setup()
+    end
   }
   use "machakann/vim-highlightedyank"
   use 'mattn/emmet-vim'

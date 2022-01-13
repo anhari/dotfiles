@@ -24,6 +24,7 @@ alias fetch-rubies='brew update && brew upgrade rbenv ruby-build'
 alias fix-python2-neovim='~/.asdf/installs/python/2.7.17/bin/pip2 install --upgrade --force-reinstall --no-cache-dir neovim'
 alias fix-python3-neovim='~/.asdf/installs/python/3.8.2/bin/pip3.8 install --upgrade --force-reinstall --no-cache-dir neovim'
 alias htop="htop --sort-key=PERCENT_CPU"
+alias hue="hueadm"
 alias ink="cd ~/Writings"
 alias kill-pry-remote='kill -9 $(lsof -ti tcp:9876)'
 alias ll="exa -al"
@@ -52,6 +53,7 @@ alias restart-postgres='rm /usr/local/var/postgres/postmaster.pid'
 alias restart-postgres-13='rm /usr/local/var/postgres@13/postmaster.pid'
 alias sed="sed -E"
 alias start='vim ~/Documents/start-checklist.md'
+alias studio='hue group 5'
 alias sz='source ~/.zshrc'
 alias tail-dev='tail -f log/development.log'
 alias tail-heroku='heroku logs --tail'

@@ -842,7 +842,7 @@
   "workbench.preferredLightColorTheme": "Remedy - Bright (Tilted)",
   "workbench.preferredDarkColorTheme": "Darkest+ Italic",
   "solargraph.symbols": false,
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "Remedy - Bright (Tilted)",
   "editor.inlineSuggest.enabled": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"

@@ -16,12 +16,16 @@ alias $0
 endsnippet
 
 snippet d
+@doc """
+"""
 def ${0} do
 end
 endsnippet
 
 snippet dm
-defmodule ${0} do
+defmodule ${0}`!p snip.rv = snip.basename.replace("_", " ").title().replace(" ", "")` do
+	@moduledoc """
+	"""
 end
 endsnippet
 
@@ -31,7 +35,13 @@ endsnippet
 
 snippet doc
 @doc """
-${0}
+${1:description}
+
+## Examples
+
+		iex> `!p snip.rv = snip.basename.replace("_", " ").title().replace(" ", "")`.${0}
+		:ok
+
 """
 endsnippet
 
@@ -213,12 +223,16 @@ endsnippet
 # Debugging
 ################################################################################
 
-snippet ins
+snippet iol
 IO.inspect($0, label: "$0")
 endsnippet
 
 snippet pry
-require IEX; IEx.pry
+require IEx; IEx.pry
+endsnippet
+
+snippet iob
+IO.inspect binding()
 endsnippet
 
 ################################################################################

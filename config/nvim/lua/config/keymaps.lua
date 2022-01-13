@@ -26,7 +26,11 @@ vim.api.nvim_set_keymap("n", "<leader>dm", ":delmarks A-Za-z0-9<cr>", { noremap 
 -- Toggle paste around inserting text from the clipboard
 vim.api.nvim_set_keymap("n", "<leader>p", ':set paste<cr>o<esc>"*]p:set nopaste<cr>', { noremap = true, silent = true })
 
+-- Format with LSP
+vim.api.nvim_set_keymap("n", "<leader>ff", ":lua vim.lsp.buf.formatting()<CR>", { noremap = true, silent = true })
+
 -- Quicker window movement
+vim.api.nvim_set_keymap("n", "<C-q>", ":bd term<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
@@ -118,3 +122,8 @@ vim.api.nvim_set_keymap("v", "<C-c>", "*y", { noremap = true, silent = true })
 
 -- TERM_MODE = "t",
 --------------------------------------------------------------------------------
+-- Quicker window movement
+vim.api.nvim_set_keymap("t", "<C-j>", "<C-\\><C-n><C-w>j", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<C-k>", "<C-\\><C-n><C-w>k", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<C-h>", "<C-\\><C-n><C-w>h", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<C-l>", "<C-\\><C-n><C-w>l", { noremap = true, silent = true })

@@ -12,7 +12,10 @@ Astro.Astro
 atomiks.moonlight
 auchenberg.vscode-browser-preview
 BeardedBear.beardedicons
+BeardedBear.beardedtheme
+BeeverFeever.kanagawa-vscode
 bierner.color-info
+bierner.emojisense
 bierner.markdown-emoji
 bradlc.vscode-tailwindcss
 bung87.vscode-gemfile
@@ -22,12 +25,14 @@ ckolkman.vscode-postgres
 clinyong.vscode-css-modules
 cpylua.language-postcss
 cssho.vscode-svgviewer
+csstools.postcss
 dasfranck.jellybeans
 DavidAnson.vscode-markdownlint
 DavidSanders.search-under-cursor
 dbaeumer.vscode-eslint
 deibit.devdocs
 DimitarNonov.jellybeans-theme
+dnlytras.nord-wave
 donjayamanne.githistory
 DotJoshJohnson.xml
 doublefint.pgsql
@@ -61,6 +66,7 @@ JakeBecker.elixir-ls
 jasontheiler.kelp-forest-theme-vscode
 jdinhlife.gruvbox
 jeff-hykin.polacode-2019
+jimmydc.everset
 jock.svg
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
@@ -73,6 +79,7 @@ kumar-harsh.graphql-for-vscode
 lior-chamla.google-fonts
 Lourenci.go-to-spec
 lukeomalley.dark-rock-theme
+marlosirapuan.nord-deep
 mechatroner.rainbow-csv
 MichalJach.gotham
 mikestead.dotenv
@@ -102,6 +109,7 @@ PKief.markdown-checkbox
 PKief.material-icon-theme
 pnp.polacode
 PsykoSoldi3r.itunes-vscode
+quicktype.quicktype
 RaulWierzbiski.willow-theme
 rebornix.ruby
 ria.elastic
@@ -111,6 +119,8 @@ RobbOwen.synthwave-vscode
 robertrossmann.remedy
 robfalken.falcon
 rocketseat.theme-omni
+sallar.json-to-js-object
+sallar.vscode-duotone-dark
 samrapdev.outrun
 sbrink.elm
 sdras.night-owl

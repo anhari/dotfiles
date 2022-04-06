@@ -7,8 +7,7 @@ vim.api.nvim_set_keymap("n", "H", ":lua vim.lsp.buf.references()<cr>", { noremap
 vim.api.nvim_set_keymap("n", "]r", ":Lspsaga diagnostic_jump_next<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "[r", ":Lspsaga diagnostic_jump_previous<cr>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("n", "<A-.>", ":Lspsaga code_action<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<D-.>", ":Lspsaga code_action<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<space>", ":lua vim.lsp.buf.code_action()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>ca", ":Lspsaga code_action<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<leader>ca", ":<C-U>Lspsaga range_code_action<CR>", { noremap = true, silent = true })
 

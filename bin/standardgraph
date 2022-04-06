@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+require 'bundler/setup'
+
+require 'solargraph'
+require 'standard'
+
+class Solargraph::LanguageServer::Message::TextDocument::Formatting
+  def process
+    file_uri = params['textDocument']['uri']
+    config = config_for(file_uri)
+    original = host.read_text(file_uri)
+    args = cli_args(file_uri, config)
+
+    # require_rubocop(config['version'])
+    # options, paths = RuboCop::Options.new.parse(args)
+    std = Standard::BuildsConfig.new.call(args)
+    options = std.rubocop_options
+    options[:stdin] = original
+    corrections = redirect_stdout do
+      # RuboCop::Runner.new(options, RuboCop::ConfigStore.new).run(paths)
+      RuboCop::Runner.new(options, std.rubocop_config_store).run(std.paths)
+    end
+    result = options[:stdin]
+
+    log_corrections(corrections)
+
+    format original, result
+  rescue RuboCop::ValidationError, RuboCop::ConfigNotFoundError => e
+    set_error(Solargraph::LanguageServer::ErrorCodes::INTERNAL_ERROR, "[#{e.class}] #{e.message}")
+  end
+
+  def formatter_class(_config)
+    Standard::Formatter
+  end
+end
+
+Solargraph::Shell.start(ARGV)

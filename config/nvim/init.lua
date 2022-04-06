@@ -10,12 +10,14 @@ require("plugins._gruvbox")
 require("plugins._lspsaga")
 require("plugins._lualine")
 require("plugins._nvim-cmp")
+require("plugins._nvim-lightbulb")
 require("plugins._nvim-lsp-installer")
 require("plugins._nvim-tree")
 require("plugins._nvim-treesitter")
 require("plugins._telescope")
 require("plugins._tokyonight")
 require("plugins._trouble")
+require("plugins._ultisnips")
 require("plugins._vim-highlightedyank")
 require("plugins._vim-test")
 require("plugins._vim-tmux-runner")
@@ -26,5 +28,6 @@ vim.g.db_ui_use_nerd_fonts = 1
 vim.g.db_ui_auto_execute_table_helpers = 1
 
 vim.cmd [[
+  autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)
   colorscheme tokyonight
 ]]

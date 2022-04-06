@@ -15,11 +15,6 @@ return require("packer").startup(function(use)
   use "adelarsq/vim-matchit"
   use "andrewradev/splitjoin.vim"
   use "beloglazov/vim-textobj-quotes"
-  use {
-    "catppuccin/nvim",
-    as = "catppuccin"
-  }
-  use "chentau/marks.nvim"
   use "christoomey/vim-conflicted"
   use "christoomey/vim-run-interactive"
   use "christoomey/vim-sort-motion"
@@ -67,6 +62,7 @@ return require("packer").startup(function(use)
     },
     config = function() require("nvim-tree").setup {} end
   }
+  use "kosayoda/nvim-lightbulb"
   use {
     "lewis6991/gitsigns.nvim",
     requires = { "nvim-lua/plenary.nvim" },
@@ -90,17 +86,24 @@ return require("packer").startup(function(use)
   }
   use {
     "nvim-telescope/telescope.nvim",
-    requires = "nvim-lua/plenary.nvim"
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope-packer.nvim"
+    }
   }
   use {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate"
+    commit = '668de0951a36ef17016074f1120b6aacbe6c4515',
+    run = ":TSUpdate",
+    requires = {
+      'nvim-treesitter/nvim-treesitter-textobjects'
+    }
   }
   use "pbrisbin/vim-mkdir"
-  -- use "petertriho/nvim-scrollbar"
   use "raimondi/delimitMate"
   use "rebelot/kanagawa.nvim"
   use "rhysd/git-messenger.vim"
+  use "senbrow/vim-noerror-compiler"
   use {
     "SirVer/ultisnips",
     requires = {{"honza/vim-snippets", rtp = "."}},
@@ -114,7 +117,7 @@ return require("packer").startup(function(use)
   }
   use {
     "tami5/lspsaga.nvim",
-    requires = "noevima/nvim-lspconfig",
+    requires = "neovim/nvim-lspconfig",
   }
   use "tommcdo/vim-exchange"
   use "tpope/vim-abolish"

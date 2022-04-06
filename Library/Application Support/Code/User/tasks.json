@@ -588,10 +588,7 @@
       "type": "shell",
       "command": "mix test",
       "problemMatcher": [],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      }
+      "group": "test"
     },
     {
       "label": "Mix: IEx",

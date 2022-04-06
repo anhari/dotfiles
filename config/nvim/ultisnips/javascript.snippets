@@ -2,7 +2,7 @@
 # JavaScript snippets
 ################################################################################
 
-extends html
+extends jsx
 
 snippet . "code block" w
 {
@@ -164,25 +164,25 @@ endsnippet
 ################################################################################
 
 snippet aed "after each"
-afterEach(function() {
+afterEach(() => {
 	${0}
 });
 endsnippet
 
 snippet bed "before each"
-beforeEach(function() {
+beforeEach(() => {
 	${0}
 });
 endsnippet
 
 snippet it "it block"
-it("${1}", function() {
+it("${1}", () => {
 	${0}
 });
 endsnippet
 
 snippet desc "describe block"
-describe("${1}", function() {
+describe("${1}", () => {
 	${0}
 });
 endsnippet

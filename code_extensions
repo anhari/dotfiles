@@ -95,6 +95,7 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-wsl
 ms-vscode.cpptools
+ms-vscode.remote-repositories
 ms-vscode.test-adapter-converter
 ms-vscode.Theme-TomorrowKit
 ms-vsliveshare.vsliveshare

@@ -1,7 +1,7 @@
-elixir 1.13.2
+elixir 1.13.4-otp-24
 nodejs 17.4.0
 python 3.10.1
-ruby 3.0.3
+ruby 3.1.2
 erlang 24.2
 crystal 0.27.2
 elm 0.19.0

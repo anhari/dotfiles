@@ -350,7 +350,6 @@
     "other": true,
     "strings": true
   },
-  "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [80],
   "editor.semanticHighlighting.enabled": false,
@@ -875,5 +874,6 @@
   "[gemfile]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
-  "window.zoomLevel": 2
+  "window.zoomLevel": 2,
+  "editor.guides.indentation": false
 }

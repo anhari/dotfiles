@@ -84,9 +84,14 @@
 [user]
   user = anhari
   name = Michael Anhari
-  email = mpanhari@gmail.com
+	email = michaelanhari@icloud.com
 [gitsh]
   defaultCommand = status --short --branch
   gitcommand = hub
   noGreeting = true
   prompt = "%D %c(%b%#)%w ➜"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

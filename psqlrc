@@ -23,8 +23,8 @@
 -- Show how long each query takes to execute
 \timing
 
--- Use best available output format
-\x auto
+-- -- Use best available output format
+-- \x auto
 \set VERBOSITY verbose
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups

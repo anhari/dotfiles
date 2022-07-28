@@ -23,7 +23,6 @@ return require("packer").startup(function(use)
   use "christoomey/vim-tmux-runner"
   use "derekprior/vim-trimmer"
   use "djoshea/vim-autoread"
-  use "gleam-lang/gleam.vim"
   use {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
@@ -37,20 +36,36 @@ return require("packer").startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   }
-  -- use "github/copilot.vim"
+
+  -- Autocomplete
   use {
     "hrsh7th/nvim-cmp",
     requires = {
-      "neovim/nvim-lspconfig",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-cmdline",
-      "quangnguyen30192/cmp-nvim-ultisnips"
+      "SirVer/ultisnips",
+      "honza/vim-snippets",
+      "quangnguyen30192/cmp-nvim-ultisnips",
+      "mattn/emmet-vim"
     }
   }
+
   use "janko-m/vim-test"
-  use { "junegunn/gv.vim", require = "tpope/vim-fugitive" }
+
+  -- Git
+  use {
+    "junegunn/gv.vim",
+    require = "tpope/vim-fugitive"
+  }
+  use {
+    "lewis6991/gitsigns.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+  }
+  use "rhysd/git-messenger.vim"
+
+  -- Custom vim objects
   use "kana/vim-textobj-entire"
   use "kana/vim-textobj-indent"
   use "kana/vim-textobj-line"
@@ -62,11 +77,6 @@ return require("packer").startup(function(use)
     },
     config = function() require("nvim-tree").setup {} end
   }
-  use "kosayoda/nvim-lightbulb"
-  use {
-    "lewis6991/gitsigns.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
-  }
   use {
     "lewis6991/spellsitter.nvim",
     config = function()
@@ -74,12 +84,27 @@ return require("packer").startup(function(use)
     end
   }
   use "machakann/vim-highlightedyank"
-  use "mattn/emmet-vim"
   use { "mattn/vim-gist", requires = "mattn/webapi-vim" }
   use "mhinz/vim-grepper"
-  use "morhetz/gruvbox"
+
+  -- Language servers
   use "onsails/lspkind-nvim"
-  use { "neovim/nvim-lspconfig", requires = "williamboman/nvim-lsp-installer" }
+  use {
+    "williamboman/mason.nvim",
+    requires = {
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+      "junnplus/nvim-lsp-setup"
+    }
+  }
+  use "kosayoda/nvim-lightbulb"
+  use {
+    "tami5/lspsaga.nvim",
+    requires = "neovim/nvim-lspconfig",
+  }
+
+  -- IDE features
   use {
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
@@ -93,7 +118,6 @@ return require("packer").startup(function(use)
   }
   use {
     "nvim-treesitter/nvim-treesitter",
-    -- commit = '668de0951a36ef17016074f1120b6aacbe6c4515',
     run = ":TSUpdate",
     requires = {
       'nvim-treesitter/nvim-treesitter-textobjects'
@@ -101,25 +125,7 @@ return require("packer").startup(function(use)
   }
   use "pbrisbin/vim-mkdir"
   use "raimondi/delimitMate"
-  use "rebelot/kanagawa.nvim"
-  use "rhysd/git-messenger.vim"
-  use "sainnhe/everforest"
   use "senbrow/vim-noerror-compiler"
-  use {
-    "SirVer/ultisnips",
-    requires = { { "honza/vim-snippets", rtp = "." } },
-    config = function()
-      vim.g.UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
-      vim.g.UltiSnipsJumpForwardTrigger = "<Plug>(ultisnips_jump_forward)"
-      vim.g.UltiSnipsJumpBackwardTrigger = "<Plug>(ultisnips_jump_backward)"
-      vim.g.UltiSnipsListSnippets = "<c-x><c-s>"
-      vim.g.UltiSnipsRemoveSelectModeMappings = 0
-    end
-  }
-  use {
-    "tami5/lspsaga.nvim",
-    requires = "neovim/nvim-lspconfig",
-  }
   use "tommcdo/vim-exchange"
   use "tpope/vim-abolish"
   use "tpope/vim-bundler"

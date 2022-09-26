@@ -2,7 +2,6 @@ tap 'thoughtbot/formulae'
 tap 'heroku/brew'
 tap 'achannarasappa/tap'
 
-cask "alacritty"
 cask "alfred"
 cask "alt-tab"
 cask "bartender"
@@ -11,6 +10,7 @@ cask "figma"
 cask "google-chrome"
 cask "graphiql"
 cask "hush"
+cask "kitty"
 cask "notion"
 cask "tableplus"
 cask "toggl-track"

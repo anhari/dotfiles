@@ -763,7 +763,7 @@
   },
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.iconTheme": "bearded-icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.hideLineNumbers": false,

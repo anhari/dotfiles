@@ -64,17 +64,16 @@ source $HOMEBREW_PREFIX/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-au
 # _not_inside_tmux() { [[ -z "$TMUX" ]] }
 # ensure_tmux_is_running() {
 #   if _not_inside_tmux; then
-#     cd ~/dwarfcode && tat
+#     cd ~/code/datawarehouse && tat
 #   fi
 # }
 # ensure_tmux_is_running
+#
+SPACESHIP_PROMPT_ASYNC=false
+source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
-
-# Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
 
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/postgresql@13/lib/pkgconfig"

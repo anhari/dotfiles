@@ -24,7 +24,6 @@ christian-kohler.npm-intellisense
 ckolkman.vscode-postgres
 clinyong.vscode-css-modules
 cpylua.language-postcss
-cssho.vscode-svgviewer
 csstools.postcss
 dasfranck.jellybeans
 DavidAnson.vscode-markdownlint
@@ -47,7 +46,6 @@ fabiospampinato.vscode-monokai-night
 fallenwood.vimL
 firefox-devtools.vscode-firefox-debug
 fisheva.eva-theme
-fknop.vscode-npm
 formulahendry.auto-close-tag
 formulahendry.code-runner
 gamunu.vscode-yarn
@@ -57,6 +55,7 @@ GitHub.remotehub
 GitHub.vscode-pull-request-github
 GrapeCity.gc-excelviewer
 GraphQL.vscode-graphql
+GraphQL.vscode-graphql-syntax
 hbenl.vscode-test-explorer
 hoovercj.vscode-dimmer
 iampeterbanjo.elixirlinter

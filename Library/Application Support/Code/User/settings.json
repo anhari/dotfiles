@@ -339,7 +339,7 @@
   "editor.autoClosingBrackets": "beforeWhitespace",
   "editor.autoClosingOvertype": "always",
   "editor.autoClosingQuotes": "beforeWhitespace",
-  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'DankMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "100",
   "editor.formatOnSave": true,
@@ -863,7 +863,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.colorTheme": "Darkest+ Italic",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,

@@ -69,7 +69,6 @@ source $HOMEBREW_PREFIX/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-au
 # }
 # ensure_tmux_is_running
 #
-SPACESHIP_PROMPT_ASYNC=false
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

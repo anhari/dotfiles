@@ -19,13 +19,13 @@ local tools = {
 }
 
 require("mason").setup()
-local lspconfig = require("lspconfig")
+require("lspconfig")
 require'mason-tool-installer'.setup {
   ensure_installed = tools,
   auto_update = false,
   run_on_start = true
 }
-require('nvim-lsp-setup').setup({
+require('lsp-setup').setup({
   default_mappings = false,
   mappings = {
     gD = 'lua vim.lsp.buf.declaration()',
@@ -36,7 +36,7 @@ require('nvim-lsp-setup').setup({
     ['<leader>i'] = 'lua vim.lsp.buf.formatting()',
   },
   on_attach = function(client, bufnr)
-    require('nvim-lsp-setup.utils').format_on_save(client)
+    require('lsp-setup.utils').format_on_save(client)
   end,
   capabilities = vim.lsp.protocol.make_client_capabilities(),
   servers = {

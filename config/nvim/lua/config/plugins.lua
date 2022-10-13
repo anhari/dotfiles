@@ -72,11 +72,10 @@ return require("packer").startup(function(use)
   use "kana/vim-textobj-line"
   use "kana/vim-textobj-user"
   use {
-    "kyazdani42/nvim-tree.lua",
+    'kyazdani42/nvim-tree.lua',
     requires = {
-      "kyazdani42/nvim-web-devicons",
+      'kyazdani42/nvim-web-devicons',
     },
-    config = function() require("nvim-tree").setup {} end
   }
   use {
     "lewis6991/spellsitter.nvim",
@@ -121,7 +120,8 @@ return require("packer").startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     requires = {
-      'nvim-treesitter/nvim-treesitter-textobjects'
+      'nvim-treesitter/nvim-treesitter-textobjects',
+      'nvim-treesitter/nvim-treesitter-context',
     }
   }
   use "pbrisbin/vim-mkdir"

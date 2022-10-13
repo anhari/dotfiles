@@ -177,6 +177,7 @@
     "highchart",
     "highcharts",
     "hotkeyed",
+    "hotwired",
     "hstore",
     "infinite",
     "inputmask",
@@ -389,7 +390,10 @@
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.inputValidationSubjectLength": 50,
+  "git.inputValidationLength": 72,
+  "git.wrapLineLength": 72,
   "git.rebaseWhenSync": true,
+  "git.useEditorAsCommitInput": true,
   "git.showPushSuccessNotification": true,
   "gitHistory.hideCommitViewExplorer": true,
   "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
@@ -863,7 +867,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Darkest+ Italic",
+  "workbench.colorTheme": "Default Light+",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -874,6 +878,6 @@
   "[gemfile]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
-  "window.zoomLevel": 2,
-  "editor.guides.indentation": false
+  "editor.guides.indentation": false,
+  "window.zoomLevel": 1
 }

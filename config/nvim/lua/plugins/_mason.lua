@@ -20,7 +20,7 @@ local tools = {
 
 require("mason").setup()
 require("lspconfig")
-require'mason-tool-installer'.setup {
+require 'mason-tool-installer'.setup {
   ensure_installed = tools,
   auto_update = false,
   run_on_start = true
@@ -50,9 +50,10 @@ require('lsp-setup').setup({
     solargraph = {
       settings = {
         solargraph = {
-          diagnostics = false
+          diagnostics = false,
         }
-      }
+      },
+      init_options = { formatting = false },
     },
     sumneko_lua = {},
     svelte = {},
@@ -61,4 +62,3 @@ require('lsp-setup').setup({
     vimls = {},
   },
 })
-

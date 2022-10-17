@@ -867,7 +867,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Tokyo Night",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -879,5 +879,5 @@
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "editor.guides.indentation": false,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 3
 }

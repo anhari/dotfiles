@@ -14,7 +14,7 @@
   "zenMode.centerLayout": false,
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "wordWrapColumn",
-  "vscode-test.maximizeTerminal": false,
+  "vscode-test.maximizeTerminal": true,
   "problems.showCurrentInStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
@@ -867,7 +867,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Darkest+ Italic",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -879,5 +879,5 @@
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "editor.guides.indentation": false,
-  "window.zoomLevel": 3
+  "window.zoomLevel": 1
 }

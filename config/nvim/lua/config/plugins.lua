@@ -13,6 +13,7 @@ vim.cmd [[
 ]]
 
 return require("packer").startup(function(use)
+  use { "metalelf0/jellybeans-nvim", requires = "rktjmp/lush.nvim" }
   use "adelarsq/vim-matchit"
   use "andrewradev/splitjoin.vim"
   use "beloglazov/vim-textobj-quotes"

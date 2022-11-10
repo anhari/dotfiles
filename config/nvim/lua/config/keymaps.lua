@@ -65,7 +65,8 @@ vim.api.nvim_set_keymap("n", "<leader>jj", ":%!python -m json.tool<cr>", { norem
 vim.api.nvim_set_keymap("n", "M", ":GitMessenger<cr>", { noremap = true, silent = true })
 
 -- Bundle install
-vim.api.nvim_set_keymap("n", "<leader>bi", ":VtrSendCommandToRunner! bundle install<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>bi", ":VtrSendCommandToRunner! bundle install<cr>",
+  { noremap = true, silent = true })
 
 -- fugitive.vim
 -- a Git wrapper so awesome, it should be illegal
@@ -85,7 +86,7 @@ vim.api.nvim_set_keymap("n", "<leader>u", ":Git up<cr>", { noremap = true, silen
 vim.g.gist_detect_filetype = 1
 vim.g.gist_open_browser_after_post = 1
 vim.g.gist_post_private = 1
-vim.g.gist_token = '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'
+vim.g.gist_token = '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'
 -- Post current file to gist
 vim.api.nvim_set_keymap("n", "<leader>gi", ":Gist<cr>", { noremap = true, silent = true })
 -- Post current file to public gist

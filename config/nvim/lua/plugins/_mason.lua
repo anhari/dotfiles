@@ -30,7 +30,7 @@ require('lsp-setup').setup({
   mappings = {
     gD = 'lua vim.lsp.buf.declaration()',
     gd = 'lua vim.lsp.buf.definition()',
-    gt = 'lua vim.lsp.buf.type_definition()',
+    -- gt = 'lua vim.lsp.buf.type_definition()',
     gi = 'lua vim.lsp.buf.implementation()',
     gr = 'lua vim.lsp.buf.references()',
     ['<leader>i'] = 'lua vim.lsp.buf.formatting()',

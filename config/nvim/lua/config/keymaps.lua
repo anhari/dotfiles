@@ -99,7 +99,7 @@ vim.api.nvim_set_keymap("n", "<leader>gap", ":Gist -m -P<cr>", { noremap = true,
 -- vim-grepper
 -- Helps you win at grep.
 -- https://github.com/mhinz/vim-grepper
-vim.api.nvim_set_keymap("n", '\\', ":GrepperRg<space>''<left>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", '\\', ":GrepperRg<space>''<left>", { noremap = true, silent = false })
 
 -- INSERT_MODE = "i"
 --------------------------------------------------------------------------------

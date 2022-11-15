@@ -13,7 +13,6 @@ vim.cmd [[
 ]]
 
 return require("packer").startup(function(use)
-  use { "metalelf0/jellybeans-nvim", requires = "rktjmp/lush.nvim" }
   use "adelarsq/vim-matchit"
   use "andrewradev/splitjoin.vim"
   use "beloglazov/vim-textobj-quotes"
@@ -86,6 +85,7 @@ return require("packer").startup(function(use)
   }
   use "machakann/vim-highlightedyank"
   use { "mattn/vim-gist", requires = "mattn/webapi-vim" }
+  use { "metalelf0/jellybeans-nvim", requires = "rktjmp/lush.nvim" }
   use "mhinz/vim-grepper"
 
   -- Language servers

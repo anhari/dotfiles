@@ -23,6 +23,9 @@ vim.api.nvim_set_keymap("n", "<C-t>", "<esc>:tabnew<cr>", { noremap = true, sile
 -- Delete marks
 vim.api.nvim_set_keymap("n", "<leader>dm", ":delmarks A-Za-z0-9<cr>", { noremap = true, silent = true })
 
+-- Show the full path of the current file
+vim.api.nvim_set_keymap("n", "<leader>w", "1<C-G>", { noremap = true, silent = true })
+
 -- Toggle paste around inserting text from the clipboard
 vim.api.nvim_set_keymap("n", "<leader>p", ':set paste<cr>o<esc>"*]p:set nopaste<cr>', { noremap = true, silent = true })
 

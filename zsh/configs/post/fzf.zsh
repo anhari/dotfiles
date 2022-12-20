@@ -18,6 +18,20 @@ _fuzzy_git_branches() {
 zle -N fuzzy-git-branches _fuzzy_git_branches
 bindkey '^g^b' fuzzy-git-branches
 
+# Rails migrations
+_fuzzy_rails_migrations() {
+  version=$(
+    bin/rails db:migrate:status | \
+      fzf-tmux --ansi --reverse --no-sort | \
+      grep -oE '[0-9]{14}'
+  )
+  zle -U "$(echo $version | pbcopy)"
+  zle -U "$(echo $version)"
+  zle -M "$version"
+}
+zle -N fuzzy-rails-migrations _fuzzy_rails_migrations
+bindkey '^g^m' fuzzy-rails-migrations
+
 # Git files
 _fuzzy_git_shalector() {
   commit=$(

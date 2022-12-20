@@ -41,7 +41,5 @@ on_project_stop: pkill -f puma postgres
 
 windows:
   - editor: nvim
-  - server: bundle install && yarn install && bin/rails s -p 3000
-  - sidekiq: redis-server --daemonize yes; bundle exec sidekiq -t 25
-  - webpack: ./bin/webpack-dev-server
+  - server: bin/dev
   - postgres: postgres -D ~/.asdf/installs/postgres/13.5/data

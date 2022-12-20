@@ -9,34 +9,24 @@ alias ag="rg"
 alias b="bundle"
 alias back='cd -'
 alias be='bundle exec'
-alias blog-ideas='ls -1 ~/dwarfcode/anhari.github.io/_drafts'
-alias blog-preview='bundle exec jekyll serve --drafts --livereload'
-alias blog='cd ~/dwarfcode/anhari.github.io && tat'
-alias bourbon-neat='bourbon install && neat install && bitters install'
 alias c='clear'
 alias cat='bat'
 alias cya='pkill -f zoom'
 alias d='cd ~/dotfiles && tat'
-alias dev='cd ~/Development'
-alias dwarf='cd ~/dwarfcode'
 alias e="$EDITOR"
 alias fetch-rubies='brew update && brew upgrade rbenv ruby-build'
 alias fix-python2-neovim='~/.asdf/installs/python/2.7.17/bin/pip2 install --upgrade --force-reinstall --no-cache-dir neovim'
 alias fix-python3-neovim='~/.asdf/installs/python/3.8.2/bin/pip3.8 install --upgrade --force-reinstall --no-cache-dir neovim'
 alias htop="htop --sort-key=PERCENT_CPU"
 alias hue="hueadm"
-alias ink="cd ~/Writings"
-alias kill-pry-remote='kill -9 $(lsof -ti tcp:9876)'
 alias ll="exa -al"
 alias ln="ln -v"
 alias ls="exa"
 alias lsgpg="gpg --list-secret-keys --keyid-format LONG"
-alias migrate="bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate db:test:prepare"
-alias mit='cd ~/Development/mit-6-3'
+alias migrate="bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare"
 alias mkdir="mkdir -p"
 alias mux="tmuxinator"
 alias myrspec="cp ~/.rspec ./"
-alias nf="cd ~/Northfurr"
 alias oc="code -r ."
 alias p="ps aux | grep"
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -44,7 +34,6 @@ alias phxmigrate="mix ecto.migrate && mix ecto.rollback && mix ecto.migrate"
 alias phx-t="mix help | grep -i phx"
 alias pippin='pip install -r ~/.requirements.txt'
 alias plog="tail -f ~/Library/Logs/puma-dev.log"
-alias pomo='open focus://focus?mintues=25'
 alias postgres-logs='vim /usr/local/var/postgres/server.log'
 alias postgres-start-with-logs='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias readme='vim ~/readme/README.md'
@@ -52,7 +41,6 @@ alias reset-elasticsearch='curl -X DELETE "http://localhost:9200/_all"'
 alias restart-postgres='rm /usr/local/var/postgres/postmaster.pid'
 alias restart-postgres-13='rm /usr/local/var/postgres@13/postmaster.pid'
 alias sed="sed -E"
-alias start='vim ~/Documents/start-checklist.md'
 alias studio='hue group 5'
 alias sz='source ~/.zshrc'
 alias tail-dev='tail -f log/development.log'
@@ -79,5 +67,3 @@ if type nvim > /dev/null 2>&1; then
   alias vi='MIX_ENV=edit nvim'
   alias v='MIX_ENV=edit nvim'
 fi
-
-alias pi="cd ~/dwarfcode/datawarehouse"

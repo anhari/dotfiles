@@ -20,14 +20,11 @@ bindkey '^g^b' fuzzy-git-branches
 
 # Rails migrations
 _fuzzy_rails_migrations() {
-  version=$(
-    bin/rails db:migrate:status | \
-      fzf-tmux --ansi --reverse --no-sort | \
-      grep -oE '[0-9]{14}'
-  )
+  migration=$(bin/rails db:migrate:status | fzf-tmux --reverse)
+  version=$(echo $migration | grep -oE '[0-9]{14}')
   zle -U "$(echo $version | pbcopy)"
   zle -U "$(echo $version)"
-  zle -M "$version"
+  zle -M "$migration"
 }
 zle -N fuzzy-rails-migrations _fuzzy_rails_migrations
 bindkey '^g^m' fuzzy-rails-migrations

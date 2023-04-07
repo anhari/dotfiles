@@ -5,9 +5,9 @@ require('gitsigns').setup({
   word_diff  = true, -- Toggle with `:Gitsigns toggle_word_diff`
 })
 
-vim.api.nvim_set_keymap("n", "]g", ":Gitsigns next_hunk<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "[g", ":Gitsigns prev_hunk<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "]h", ":Gitsigns preview_hunk<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>bl", ":Gitsigns blame_line<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>gg", ":Gitsigns<space>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", { noremap = true, silent = true })
+SetKeyMap("n", "]g", ":Gitsigns next_hunk<CR>")
+SetKeyMap("n", "[g", ":Gitsigns prev_hunk<CR>")
+SetKeyMap("n", "]h", ":Gitsigns preview_hunk<CR>")
+SetKeyMap("n", "<leader>bl", ":Gitsigns blame_line<CR>")
+SetLoudKeyMap("n", "<leader>gg", ":Gitsigns<space>")
+SetKeyMap("n", "<leader>gr", ":Gitsigns reset_hunk<CR>")

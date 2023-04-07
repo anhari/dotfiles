@@ -127,6 +127,7 @@ return require("packer").startup(function(use)
   }
   use "pbrisbin/vim-mkdir"
   use "raimondi/delimitMate"
+  use "rebelot/kanagawa.nvim"
   use "senbrow/vim-noerror-compiler"
   use "tommcdo/vim-exchange"
   use "tpope/vim-abolish"

@@ -46,6 +46,7 @@ require('lsp-setup').setup({
     eslint = {},
     html = {},
     jsonls = {},
+    lua_ls = {},
     rust_analyzer = {},
     solargraph = {
       settings = {
@@ -55,7 +56,6 @@ require('lsp-setup').setup({
       },
       init_options = { formatting = false },
     },
-    sumneko_lua = {},
     svelte = {},
     tailwindcss = {},
     tsserver = {},

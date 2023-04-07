@@ -88,6 +88,7 @@ mkaufman.HTMLHint
 mkxml.vscode-filesize
 monokai.theme-monokai-pro-vscode
 mrorz.language-gettext
+ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -96,6 +97,7 @@ ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
 ms-vscode-remote.remote-wsl
+ms-vscode.azure-repos
 ms-vscode.cpptools
 ms-vscode.remote-repositories
 ms-vscode.test-adapter-converter

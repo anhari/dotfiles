@@ -1,5 +1,7 @@
 require("nvim-tree").setup()
-vim.api.nvim_set_keymap("n", "<C-n>", "<cmd>NvimTreeToggle<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-d>", "<cmd>DBUIToggle<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>n", "<cmd>NvimTreeFindFile<cr>", { noremap = true, silent = true })
+
+SetKeyMap("n", "<C-n>", "<cmd>NvimTreeToggle<cr>")
+SetKeyMap("n", "<C-d>", "<cmd>DBUIToggle<cr>")
+SetKeyMap("n", "<leader>n", "<cmd>NvimTreeFindFile<cr>")
+
 vim.g.db_ui_use_nerd_fonts = 1

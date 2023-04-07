@@ -5,7 +5,7 @@ vim.g.UltiSnipsListSnippets = "<c-x><c-s>"
 vim.g.UltiSnipsRemoveSelectModeMappings = 0
 vim.g.UltiSnipsEditSplit = 'tabdo'
 
-vim.api.nvim_set_keymap("n", "<leader>es", ":UltiSnipsEdit<cr>", { noremap = true, silent = true })
+SetKeyMap("n", "<leader>es", ":UltiSnipsEdit<cr>")
 
 vim.cmd [[
   au FileType eruby UltiSnipsAddFiletypes eruby

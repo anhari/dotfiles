@@ -19,6 +19,8 @@ vim.cmd [[
   iabbrev verfication verification
   iabbrev procurment procurement
   iabbrev cricle circle
+  iabbrev recieving receiving
+  iabbrev trasnfer transfer
 
   augroup markdown
     autocmd!

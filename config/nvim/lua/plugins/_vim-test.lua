@@ -3,7 +3,7 @@
 -- https://github.com/janko-m/vim-test
 
 vim.cmd [[
-  let g:test#strategy = 'basic'
+  let g:test#strategy = 'vtr'
 ]]
 
 -- Set test runner to rspec until issue #147 is resolved
@@ -13,8 +13,8 @@ vim.cmd [[
 ]]
 
 -- Leaders
-vim.api.nvim_set_keymap("n", "<leader>t", ":TestFile<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>s", ":TestNearest<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>l", ":TestLast<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>a", ":TestSuite<cr>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>gt", ":TestVisit<cr>", { noremap = true, silent = true })
+SetKeyMap("n", "<leader>t", ":TestFile<cr>")
+SetKeyMap("n", "<leader>s", ":TestNearest<cr>")
+SetKeyMap("n", "<leader>l", ":TestLast<cr>")
+SetKeyMap("n", "<leader>a", ":TestSuite<cr>")
+SetKeyMap("n", "<leader>gt", ":TestVisit<cr>")

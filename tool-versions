@@ -1,4 +1,4 @@
-elixir 1.14.0-otp-25
+elixir 1.14.4-otp-25
 nodejs 18.9.0
 python 3.9.14 2.7.18
 ruby 3.1.2
@@ -6,10 +6,10 @@ erlang 25.1
 crystal 0.27.2
 elm 0.19.0
 rust 1.68.2
-golang 1.17.5
+golang 1.20.3
 perl 5.35.6
-redis 6.2.6
-postgres 14.1
+redis 7.0.11
+postgres 14.7
 yarn 1.22.17
 haskell 9.2.1
 gleam 0.18.2

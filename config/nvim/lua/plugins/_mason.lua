@@ -11,7 +11,7 @@ local tools = {
   "prettier",
   "python-lsp-server",
   "rust-analyzer",
-  "solargraph",
+  "standardrb",
   "svelte-language-server",
   "tailwindcss-language-server",
   "typescript-language-server",
@@ -48,14 +48,6 @@ require('lsp-setup').setup({
     jsonls = {},
     lua_ls = {},
     rust_analyzer = {},
-    solargraph = {
-      settings = {
-        solargraph = {
-          diagnostics = false,
-        }
-      },
-      init_options = { formatting = false },
-    },
     svelte = {},
     tailwindcss = {},
     tsserver = {},

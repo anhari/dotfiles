@@ -5,3 +5,4 @@
 # *.[oa]
 # *~
 latest.dump*
+Procfile.dev

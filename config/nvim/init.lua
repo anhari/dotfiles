@@ -29,3 +29,5 @@ require("util.rails")
 vim.cmd [[
   colorscheme tokyonight-night
 ]]
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

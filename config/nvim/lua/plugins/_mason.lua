@@ -19,12 +19,10 @@ local tools = {
 }
 
 require("mason").setup()
-require("lspconfig")
-require 'mason-tool-installer'.setup {
-  ensure_installed = tools,
-  auto_update = false,
-  run_on_start = true
+require("mason-lspconfig").setup {
+    ensure_installed = tools,
 }
+require("lspconfig")
 require('lsp-setup').setup({
   default_mappings = false,
   mappings = {

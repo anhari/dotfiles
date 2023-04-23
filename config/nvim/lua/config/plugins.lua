@@ -94,7 +94,6 @@ return require("packer").startup(function(use)
     requires = {
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
-      "WhoIsSethDaniel/mason-tool-installer.nvim",
       "junnplus/nvim-lsp-setup"
     }
   }

@@ -13,6 +13,7 @@ vim.cmd [[
   iabbrev comptency competency
   iabbrev destory destroy
   iabbrev esle else
+  iabbrev eslif elsif
   iabbrev locaiton location
   iabbrev locaition location
   iabbrev unkown unknown

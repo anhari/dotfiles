@@ -33,6 +33,7 @@
   issues = !gh browse -- issues
   l = log --pretty=colored
   loslos = rebase --continue
+  new = !git init && git add . && git commit -m 'Initialize repository'
   ns = diff --numstat
   pf = push --force-with-lease
   praise = blame

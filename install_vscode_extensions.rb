@@ -3,7 +3,7 @@ unless `which code`.empty?
   installed_extensions = `code --list-extensions`.lines.sort
   uninstalled_extensions = code_extensions - installed_extensions
 
-  print 'Checking for uninstalled VSCode extensions...'
+  print "Checking for uninstalled VSCode extensions..."
 
   if uninstalled_extensions.empty?
     print "all good!\r\n"
@@ -15,6 +15,6 @@ unless `which code`.empty?
       `code --install-extension #{extension}`
     end
 
-    puts 'Done!'
+    puts "Done!"
   end
 end

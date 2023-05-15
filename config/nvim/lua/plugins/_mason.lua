@@ -20,7 +20,7 @@ local tools = {
 
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = tools,
+  ensure_installed = tools,
 }
 require("lspconfig")
 require('lsp-setup').setup({

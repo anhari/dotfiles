@@ -30,4 +30,12 @@ vim.cmd [[
   colorscheme tokyonight-night
 ]]
 
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+vim.cmd [[
+  autocmd BufWritePre * lua vim.lsp.buf.format()
+
+  let g:db_ui_table_helpers = {
+  \   'postgresql': {
+  \     'Count': 'select count(*) from "{table}"'
+  \   }
+  \ }
+]]

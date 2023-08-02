@@ -867,7 +867,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Darkest+ Italic",
+  "workbench.colorTheme": "Tokyo Night",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,

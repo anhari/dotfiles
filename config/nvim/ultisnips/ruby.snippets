@@ -720,6 +720,10 @@ snippet sbt "shoulda-matchers: validate belongs to"
 it { should belong_to(:${0}) }
 endsnippet
 
+snippet sbto "shoulda-matchers: validate belongs to (optional)"
+it { should belong_to(:${0}).optional }
+endsnippet
+
 snippet sho "shoulda-matchers: validate has one"
 it { should have_one(:${0}) }
 endsnippet

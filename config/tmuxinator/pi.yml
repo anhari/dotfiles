@@ -42,4 +42,5 @@ on_project_stop: pkill -f puma postgres
 windows:
   - editor: nvim
   - server: bin/dev
-  - postgres: postgres -D ~/.asdf/installs/postgres/13.5/data
+  - postgres: postgres -D ~/.asdf/installs/postgres/14.7/data
+  - redis: redis-server

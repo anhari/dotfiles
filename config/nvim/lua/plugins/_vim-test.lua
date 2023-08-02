@@ -3,14 +3,7 @@
 -- https://github.com/janko-m/vim-test
 
 vim.cmd [[
-  let g:test#strategy = 'vtr'
-
-  augroup test
-    autocmd!
-    autocmd BufWrite * if test#exists() |
-      \   TestFile |
-      \ endif
-  augroup END
+  let g:test#strategy = 'basic'
 ]]
 
 -- Set test runner to rspec until issue #147 is resolved

@@ -154,6 +154,7 @@ return require("packer").startup(function(use)
   use "vim-scripts/ReplaceWithRegister"
   use "vim-scripts/tComment"
   use "wbthomason/packer.nvim"
+  use "junegunn/goyo.vim"
 
   if packer_bootstrap then
     require("packer").sync()

@@ -72,13 +72,14 @@ SetKeyMap("n", "<leader>bi", ":VtrSendCommandToRunner! bundle install<cr>")
 -- fugitive.vim
 -- a Git wrapper so awesome, it should be illegal
 -- https://github.com/tpope/vim-fugitive
-SetKeyMap("n", "<leader>go", ":Gbrowse<cr>")
-SetKeyMap("n", "<leader>gd", ":Gdiff<cr>")
-SetKeyMap("n", "<leader>gl", ":Gclog<cr>")
+SetKeyMap("n", "<leader>go", ":GBrowse<cr>")
+SetKeyMap("n", "<leader>gd", ":Git diff<cr>")
+SetKeyMap("n", "<leader>gl", ":Git log<cr>")
 SetKeyMap("n", "<leader>gb", ":Git blame<cr>")
 SetKeyMap("n", "<leader>gs", ":Git<cr>")
 SetKeyMap("n", "<leader>gp", ":Git push<cr>")
-SetKeyMap("n", "<leader>u", ":Git up<cr>")
+SetKeyMap("n", "<leader>gu", ":Git up<cr>")
+SetKeyMap("n", "<leader>gr", ":Git rebase --interactive origin/master<cr>")
 
 -- gist-vim
 -- vimscript for gists

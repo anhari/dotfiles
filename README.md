@@ -1,7 +1,7 @@
 # dotfiles
 
-My personal dotfiles. [thoughtbot's](https://github.com/thoughtbot/dotfiles)
-used as a starting point.
+My personal dotfiles. *Heavily* inspired by/built from
+[thoughtbot's](https://github.com/thoughtbot/dotfiles).
 
 ## Install
 
@@ -14,6 +14,23 @@ Install dotfiles:
 
     git clone git://github.com/anhari/dotfiles.git
     env RCRC=$HOME/dotfiles/rcrc rcup
+
+Install homebrew things:
+
+    cd ~/dotfiles
+    brew bundle
+
+Install neovim dependencies:
+
+    pip2 install pynvim
+    pip3 install pynvim
+    gem install neovim
+    npm install -g neovim
+
+Install tmux plugins:
+
+- Load a tmux session
+- Install plugins using [tpm] (`CTRL+f` then `I`)
 
 From there on out you can use `rcup` to create
 [symlinks](https://en.wikipedia.org/wiki/Symbolic_link) for any new files.
@@ -37,5 +54,6 @@ Configurations for the following:
 - [rcm](http://thoughtbot.github.io/rcm/rcm.7.html)
 - [rspec](https://rspec.info/)
 - [tmux](https://github.com/tmux/tmux)
+- [tpm](https://github.com/tmux-plugins/tpm)
 - [vscode](https://code.visualstudio.com/)
 - [zsh](https://www.zsh.org/)

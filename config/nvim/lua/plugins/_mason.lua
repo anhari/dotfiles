@@ -46,6 +46,7 @@ require('lsp-setup').setup({
     jsonls = {},
     lua_ls = {},
     rust_analyzer = {},
+    standardrb = {},
     svelte = {},
     tailwindcss = {},
     tsserver = {},

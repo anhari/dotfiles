@@ -461,6 +461,10 @@ end
 change_column_default(:${1:table_name}, :${2:column_name}, from: ${3}, to: ${4})
 endsnippet
 
+snippet ccn "Rails migration: change column null"
+change_column_null :${1:table}, :${2:column}, false
+endsnippet
+
 snippet cct "Rails model: counter cache"
 counter_cache: true
 endsnippet

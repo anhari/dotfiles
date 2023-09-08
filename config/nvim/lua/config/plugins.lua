@@ -5,17 +5,18 @@ if fn.empty(fn.glob(install_path)) > 0 then
     install_path })
 end
 
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
+-- vim.cmd [[
+--   augroup packer_user_config
+--     autocmd!
+--     autocmd BufWritePost plugins.lua source <afile> | PackerSync
+--   augroup end
+-- ]]
 
 return require("packer").startup(function(use)
   use "adelarsq/vim-matchit"
   use "andrewradev/splitjoin.vim"
   use "beloglazov/vim-textobj-quotes"
+  use "chriskempson/base16-vim"
   use "christoomey/vim-conflicted"
   use "christoomey/vim-run-interactive"
   use "christoomey/vim-sort-motion"
@@ -24,6 +25,42 @@ return require("packer").startup(function(use)
   use "christoomey/vim-tmux-runner"
   use "derekprior/vim-trimmer"
   use "djoshea/vim-autoread"
+  use {
+    "folke/zen-mode.nvim",
+    requires = "folke/twilight.nvim",
+    config = function()
+      require("zen-mode").setup {
+        window = {
+          backdrop = 1,
+          width = 100,              -- width of the Zen window
+          height = 1,               -- height of the Zen window
+          options = {
+            signcolumn = "no",      -- disable signcolumn
+            number = false,         -- disable number column
+            relativenumber = false, -- disable relative numbers
+            cursorline = false,     -- disable cursorline
+            cursorcolumn = false,   -- disable cursor column
+            foldcolumn = "0",       -- disable fold column
+            list = false,           -- disable whitespace characters
+          },
+        },
+        plugins = {
+          options = {
+            enabled = true,
+            ruler = false,                -- disables the ruler text in the cmd line area
+            showcmd = false,              -- disables the command in the last line of the screen
+          },
+          twilight = { enabled = true },  -- enable to start Twilight when zen mode opens
+          gitsigns = { enabled = false }, -- disables git signs
+          tmux = { enabled = false },     -- disables the tmux statusline
+          kitty = {
+            enabled = true,
+            font = "+12", -- font size increment
+          },
+        },
+      }
+    end
+  }
   use {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",

@@ -1,7 +1,7 @@
 # /Users/anhari/.config/tmuxinator/pi.yml
 
 name: pi
-root: ~/Code/datawarehouse
+root: ~/patch_monkey/datawarehouse
 
 # Optional tmux socket
 # socket_name: foo
@@ -40,7 +40,7 @@ on_project_stop: pkill -f puma postgres
 # attach: false
 
 windows:
-  - editor: nvim
+  - neovim: nvim
   - server: bin/dev
-  - postgres: postgres -D ~/.asdf/installs/postgres/14.7/data
+  - postgres: postgres -D ~/.asdf/installs/postgres/15.4/data
   - redis: redis-server

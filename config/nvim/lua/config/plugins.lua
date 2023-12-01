@@ -121,7 +121,6 @@ return require("packer").startup(function(use)
   }
   use "machakann/vim-highlightedyank"
   use { "mattn/vim-gist", requires = "mattn/webapi-vim" }
-  use { "metalelf0/jellybeans-nvim", requires = "rktjmp/lush.nvim" }
   use "mhinz/vim-grepper"
 
   -- Language servers
@@ -158,12 +157,11 @@ return require("packer").startup(function(use)
     run = ":TSUpdate",
     requires = {
       'nvim-treesitter/nvim-treesitter-textobjects',
-      'nvim-treesitter/nvim-treesitter-context',
+      -- 'nvim-treesitter/nvim-treesitter-context',
     }
   }
   use "pbrisbin/vim-mkdir"
   use "raimondi/delimitMate"
-  use "rebelot/kanagawa.nvim"
   use "senbrow/vim-noerror-compiler"
   use "tommcdo/vim-exchange"
   use "tpope/vim-abolish"

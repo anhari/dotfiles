@@ -3,7 +3,7 @@
 -- https://github.com/janko-m/vim-test
 
 vim.cmd [[
-  let g:test#strategy = 'basic'
+  let g:test#strategy = 'vtr'
 ]]
 
 -- Set test runner to rspec until issue #147 is resolved

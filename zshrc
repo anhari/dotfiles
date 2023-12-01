@@ -78,3 +78,6 @@ export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/postgresql@13/lib/pkgconfig"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/libpq/lib/pkgconfig"
 fpath=($fpath "$HOMEBREW_PREFIX/.zfunctions")
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/michaelanhari/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;

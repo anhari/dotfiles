@@ -9,10 +9,10 @@
 
 -- Pretty lines and borders around result tables
 -- http://okbob.blogspot.com/2014/10/styles-for-unicode-borders-are-merged.html
--- \pset border 2
--- \pset linestyle unicode
--- \pset unicode_header_linestyle double
--- \pset unicode_column_linestyle double
+\pset border 2
+\pset linestyle unicode
+\pset unicode_header_linestyle double
+\pset unicode_column_linestyle double
 
 -- Wrap lines
 \pset format wrapped
@@ -26,10 +26,10 @@
 \set PROMPT2 '[more] %R > '
 
 -- Show how long each query takes to execute
--- \timing
+\timing
 
 -- -- Use best available output format
--- \x auto
+\x auto
 \set VERBOSITY verbose
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups

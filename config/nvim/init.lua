@@ -27,7 +27,7 @@ require("util.phoenix")
 require("util.rails")
 
 vim.cmd [[
-  colorscheme jellybeans-nvim
+  colorscheme tokyonight-night
 ]]
 
 vim.cmd [[

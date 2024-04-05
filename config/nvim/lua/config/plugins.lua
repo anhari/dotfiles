@@ -13,10 +13,13 @@ end
 -- ]]
 
 return require("packer").startup(function(use)
+  use {
+    "metalelf0/jellybeans-nvim",
+    requires = "rktjmp/lush.nvim"
+  }
   use "adelarsq/vim-matchit"
   use "andrewradev/splitjoin.vim"
   use "beloglazov/vim-textobj-quotes"
-  use "chriskempson/base16-vim"
   use "christoomey/vim-conflicted"
   use "christoomey/vim-run-interactive"
   use "christoomey/vim-sort-motion"

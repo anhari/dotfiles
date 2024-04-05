@@ -2,7 +2,7 @@ ruby 3.2.2
 nodejs 20.5.1
 python 3.11.4 2.7.18
 redis 7.2.0
-postgres 15.4
+postgres 16.2
 elixir 1.15.7
 rust 1.74.0
 erlang 26.1.2

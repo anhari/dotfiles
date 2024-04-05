@@ -752,6 +752,10 @@ snippet shmdd "shoulda-matchers: validate has many dependent destroy"
 it { should have_many(:${0}).dependent(:destroy) }
 endsnippet
 
+snippet shrt "shoulda-matchers: validate has rich text"
+it { should have_rich_text(:${0}) }
+endsnippet
+
 snippet sdb "shoulda-matchers: validate database column"
 it { should have_db_column(:${1}).of_type(:${0}) }
 endsnippet

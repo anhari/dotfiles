@@ -210,12 +210,16 @@ snippet brp "remote pry"
 binding.remote_pry
 endsnippet
 
-snippet db "Rails logger debug"
+snippet rldb "Rails logger debug"
 Rails.logger.debug "#########DEBUG###########"
 Rails.logger.debug "#########################"
 Rails.logger.debug ${0}
 Rails.logger.debug "#########################"
 Rails.logger.debug "#########DEBUG###########"
+endsnippet
+
+snippet db "debugger"
+debugger
 endsnippet
 
 snippet pcall "Rails puts caller"

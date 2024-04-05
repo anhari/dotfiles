@@ -1,4 +1,4 @@
-require("telescope").load_extension "packer"
+require("telescope")
 
 -- Ctrl-P to find files
 SetKeyMap("n", "<C-b>", ":Telescope buffers previewer=false<cr>")

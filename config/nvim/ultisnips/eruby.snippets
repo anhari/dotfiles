@@ -91,6 +91,21 @@ snippet rnd "render" w
 <%= render '${1}' %>
 endsnippet
 
+snippet rnp "render component" w
+<%= render "components/${1}" do |partial| %>
+	${0}
+<% end %>
+endsnippet
+
+snippet pi "render partial inline" w
+	<% partial.${0} %>
+endsnippet
+
+snippet pb "render partial block" w
+	<% partial.${0} do %>
+	<% end %>
+endsnippet
+
 snippet rny "render" w
 <%= render '${1}' do %>
 	${0}

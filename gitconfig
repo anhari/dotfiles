@@ -55,6 +55,7 @@
   unstage = reset
   upstream = rev-parse --abbrev-ref --symbolic-full-name @{upstream}
   vamos = rebase --continue
+  wip = !git add . &&  git commit -m 'WIP'
 [commit]
   template = ~/.gitmessage
 [core]

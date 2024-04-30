@@ -18,7 +18,10 @@
   "problems.showCurrentInStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[git-commit]": {
-    "editor.rulers": [50, 72]
+    "editor.rulers": [
+      50,
+      72
+    ]
   },
   "[elixir]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
@@ -352,7 +355,9 @@
     "strings": true
   },
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -396,11 +401,19 @@
   "git.useEditorAsCommitInput": true,
   "git.showPushSuccessNotification": true,
   "gitHistory.hideCommitViewExplorer": true,
-  "htmlhint.documentSelector": ["html", "htm", "typescriptreact"],
+  "htmlhint.documentSelector": [
+    "html",
+    "htm",
+    "typescriptreact"
+  ],
   "itunes.skipTrackByTrackDislike": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown-checkbox.checkmark": "x",
-  "markdown-checkbox.languages": ["markdown", "mdx", "plaintext"],
+  "markdown-checkbox.languages": [
+    "markdown",
+    "mdx",
+    "plaintext"
+  ],
   "markdown-checkbox.typeOfBulletPoint": "-",
   "markdown-checkbox.withBulletPoint": true,
   "material-icon-theme.folders.theme": "classic",
@@ -425,90 +438,196 @@
   "vim.incsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "after": ["<Esc>"],
-      "before": ["j", "k"]
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "k"
+      ]
     }
   ],
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "<leader>"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
+      "before": [
+        "<leader>",
+        "<leader>"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
     },
     {
-      "before": ["<leader>", "n"],
-      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
     },
     {
-      "before": ["<leader>", "r"],
-      "commands": ["code-runner.run"]
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "code-runner.run"
+      ]
     },
     {
-      "before": ["g", "f"],
-      "commands": ["editor.action.goToDeclaration"]
+      "before": [
+        "g",
+        "f"
+      ],
+      "commands": [
+        "editor.action.goToDeclaration"
+      ]
     },
     {
-      "before": ["L"],
-      "commands": ["editor.action.showHover"]
+      "before": [
+        "L"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
     },
     {
-      "before": ["z", "g"],
-      "commands": ["cSpell.addWordToUserDictionary"]
+      "before": [
+        "z",
+        "g"
+      ],
+      "commands": [
+        "cSpell.addWordToUserDictionary"
+      ]
     },
     {
-      "after": ["2", "5", "ctrl+e"],
-      "before": ["ctrl+e"]
+      "after": [
+        "2",
+        "5",
+        "ctrl+e"
+      ],
+      "before": [
+        "ctrl+e"
+      ]
     },
     {
-      "after": ["2", "5", "ctrl+y"],
-      "before": ["ctrl+y"]
+      "after": [
+        "2",
+        "5",
+        "ctrl+y"
+      ],
+      "before": [
+        "ctrl+y"
+      ]
     },
     {
-      "after": ["g", "j"],
-      "before": ["j"]
+      "after": [
+        "g",
+        "j"
+      ],
+      "before": [
+        "j"
+      ]
     },
     {
-      "after": ["g", "k"],
-      "before": ["k"]
+      "after": [
+        "g",
+        "k"
+      ],
+      "before": [
+        "k"
+      ]
     },
     {
-      "after": ["^"],
-      "before": ["0"]
+      "after": [
+        "^"
+      ],
+      "before": [
+        "0"
+      ]
     },
     {
-      "before": ["<leader>", "d", "d"],
-      "commands": ["todo.toggleDone"]
+      "before": [
+        "<leader>",
+        "d",
+        "d"
+      ],
+      "commands": [
+        "todo.toggleDone"
+      ]
     },
     {
-      "before": ["<leader>", "d", "c"],
-      "commands": ["todo.toggleCancelled"]
+      "before": [
+        "<leader>",
+        "d",
+        "c"
+      ],
+      "commands": [
+        "todo.toggleCancelled"
+      ]
     },
     {
-      "before": ["leader", "h"],
-      "commands": [":nohl"]
+      "before": [
+        "leader",
+        "h"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": ["<leader>", "s"],
-      "commands": ["vscode-test.runLineTests"]
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "vscode-test.runLineTests"
+      ]
     },
     {
-      "before": ["<leader>", "l"],
-      "commands": ["vscode-test.runLastTests"]
+      "before": [
+        "<leader>",
+        "l"
+      ],
+      "commands": [
+        "vscode-test.runLastTests"
+      ]
     },
     {
-      "before": ["<leader>", "t"],
-      "commands": ["vscode-test.runFileTests"]
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "vscode-test.runFileTests"
+      ]
     },
     {
-      "before": ["<leader>", "a"],
-      "commands": ["vscode-test.runAllTests"]
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "vscode-test.runAllTests"
+      ]
     },
     {
-      "before": ["<leader>", "u"],
-      "commands": ["vscode-test.runAllUnitTests"]
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "vscode-test.runAllUnitTests"
+      ]
     },
     {
-      "before": ["<leader>", "v", "v"],
+      "before": [
+        "<leader>",
+        "v",
+        "v"
+      ],
       "commands": [
         {
           "command": "expandLineSelection"
@@ -519,7 +638,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "d"],
+      "before": [
+        "<leader>",
+        "g",
+        "d"
+      ],
       "commands": [
         {
           "args": {
@@ -537,7 +660,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "s"],
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
       "commands": [
         {
           "args": {
@@ -554,7 +681,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "l"],
+      "before": [
+        "<leader>",
+        "g",
+        "l"
+      ],
       "commands": [
         {
           "args": {
@@ -571,7 +702,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "b"],
+      "before": [
+        "<leader>",
+        "g",
+        "b"
+      ],
       "commands": [
         {
           "args": {
@@ -588,7 +723,11 @@
       ]
     },
     {
-      "before": ["<leader>", "b", "i"],
+      "before": [
+        "<leader>",
+        "b",
+        "i"
+      ],
       "commands": [
         {
           "args": {
@@ -605,25 +744,51 @@
       ]
     },
     {
-      "before": ["[", "r"],
-      "commands": ["editor.action.marker.previous"]
+      "before": [
+        "[",
+        "r"
+      ],
+      "commands": [
+        "editor.action.marker.previous"
+      ]
     },
     {
-      "before": ["]", "r"],
-      "commands": ["editor.action.marker.next"]
+      "before": [
+        "]",
+        "r"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
     },
     {
-      "before": ["]", "q"],
-      "commands": ["search.action.focusNextSearchResult"],
-      "after": ["<Esc>"]
+      "before": [
+        "]",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusNextSearchResult"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
     {
-      "before": ["[", "q"],
-      "commands": ["search.action.focusPreviousSearchResult"],
-      "after": ["<Esc>"]
+      "before": [
+        "[",
+        "q"
+      ],
+      "commands": [
+        "search.action.focusPreviousSearchResult"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
     {
-      "before": ["K"],
+      "before": [
+        "K"
+      ],
       "commands": [
         {
           "command": "extension.searchUnderCursor"
@@ -643,13 +808,22 @@
       ]
     },
     {
-      "before": ["<leader>", "i"],
-      "commands": ["editor.action.formatDocument"]
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     },
     {
       "after": [],
       "args": "mocha:spec",
-      "before": ["<leader>", "f", "t"],
+      "before": [
+        "<leader>",
+        "f",
+        "t"
+      ],
       "command": "workbench.action.tasks.runTask"
     }
   ],
@@ -663,8 +837,12 @@
     "[Darkest+ Italic]": {
       "textMateRules": [
         {
-          "scope": ["support.class.component.tsx"],
-          "settings": { "foreground": "#569CD6" }
+          "scope": [
+            "support.class.component.tsx"
+          ],
+          "settings": {
+            "foreground": "#569CD6"
+          }
         }
       ]
     },
@@ -833,7 +1011,9 @@
   },
   "tailwindCSS.emmetCompletions": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "cSpell.enableFiletypes": ["todo"],
+  "cSpell.enableFiletypes": [
+    "todo"
+  ],
   "ruby.lint": {
     "standard": {
       "useBundler": true

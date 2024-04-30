@@ -145,6 +145,34 @@ return require("lazy").setup({
     "tami5/lspsaga.nvim",
     dependencies = "neovim/nvim-lspconfig",
   },
+  {
+    "mhartington/formatter.nvim",
+    config = function()
+      require("formatter").setup {
+        logging = true,
+        log_level = vim.log.levels.WARN,
+        filetype = {
+          eruby = {
+            require("formatter.filetypes.eruby").htmlbeautifier,
+          },
+          ruby = {
+            require("formatter.filetypes.ruby").standardrb,
+          },
+          ["*"] = {
+            require("formatter.filetypes.any").remove_trailing_whitespace
+          }
+        }
+      }
+    end
+  },
+  {
+    'mfussenegger/nvim-lint',
+    config = function()
+      require('lint').linters_by_ft = {
+        ruby = { 'standardrb', }
+      }
+    end
+  },
 
   -- IDE features
   {

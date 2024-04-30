@@ -155,9 +155,21 @@ return require("lazy").setup({
           eruby = {
             require("formatter.filetypes.eruby").htmlbeautifier,
           },
+          javascript = {
+            require("formatter.filetypes.javascript").prettier,
+          },
+          json = {
+            require("formatter.filetypes.json").prettier,
+          },
           ruby = {
             require("formatter.filetypes.ruby").standardrb,
           },
+          rust = {
+            require("formatter.filetypes.rust").rustfmt,
+          },
+          -- sql = {
+          --   require("formatter.filetypes.sql").sqlfluff,
+          -- },
           ["*"] = {
             require("formatter.filetypes.any").remove_trailing_whitespace
           }
@@ -169,7 +181,10 @@ return require("lazy").setup({
     'mfussenegger/nvim-lint',
     config = function()
       require('lint').linters_by_ft = {
-        ruby = { 'standardrb', }
+        erb = { 'erb_lint ' },
+        javascript = { 'eslint' },
+        ruby = { 'standardrb', },
+        sql = { 'sqlfluff' }
       }
     end
   },

@@ -9,6 +9,7 @@ require("mason-lspconfig").setup {
     "jsonls",
     "lua_ls",
     "pylsp",
+    "ruby_lsp",
     "rust_analyzer",
     "sqlls",
     "standardrb",
@@ -27,6 +28,7 @@ require("lspconfig").html.setup {}
 require("lspconfig").jsonls.setup {}
 require("lspconfig").lua_ls.setup {}
 require("lspconfig").pylsp.setup {}
+require("lspconfig").ruby_lsp.setup {}
 require("lspconfig").rust_analyzer.setup {}
 require("lspconfig").sqlls.setup {}
 require("lspconfig").standardrb.setup {}

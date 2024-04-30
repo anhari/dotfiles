@@ -3,13 +3,13 @@
 # (cd ~/dotfiles; git clone https://github.com/anhari/dotfiles)
 #
 # # install Homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 #
 # # Brew bundle
-# (cd ~/dotfiles; brew bundle)
+(cd ~/dotfiles; brew bundle)
 #
 # # Create symlinks using RCM
-# (cd ~/dotfiles; rcup)
+(cd ~/dotfiles; rcup)
 #
 # Install programming environments
 declare -a languages=(

@@ -21,14 +21,3 @@ SetLoudKeyMap("n", "<leader>rr", ":VtrSendCommandToRunner! bin/rails routes | gr
 SetKeyMap("n", "<leader>rs", ":VtrSendCommandToRunner! bin/rails restart<cr>")
 SetKeyMap("n", "<leader>rt", ":VtrSendCommandToRunner! fuzzy-rails-command<cr>")
 SetKeyMap("n", "<leader>tc", ":VtrSendCommandToRunner! bin/rails tmp:clear<cr>")
-
-vim.cmd [[
-  let g:rails_projections = {
-  \ 'config/application.rb': {'command': 'application'},
-  \ 'Gemfile': {'command': 'gems'},
-  \ 'config/routes.rb': {'command': 'routes'},
-  \ 'config/locales/en.yml': {'command': 'locales'},
-  \ 'spec/features/*_spec.rb': {'command': 'feature'},
-  \ "spec/models/*_spec.rb": {"type": "unittest"}
-  \ }
-]]

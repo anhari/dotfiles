@@ -46,7 +46,6 @@ return require("lazy").setup({
 			SetKeyMap("n", "<leader>vv", ":VtrSendLinesToRunner<cr>")
 		end,
 	},
-	"derekprior/vim-trimmer",
 	"djoshea/vim-autoread",
 	{
 		"folke/zen-mode.nvim",
@@ -142,9 +141,9 @@ return require("lazy").setup({
         au FileType eruby UltiSnipsAddFiletypes eruby
       ]])
 
-			vim.cmd([[
-        autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} })
-      ]])
+			-- vim.cmd([[
+			--   autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} })
+			-- ]])
 
 			local t = function(str)
 				return vim.api.nvim_replace_termcodes(str, true, true, true)
@@ -326,12 +325,6 @@ return require("lazy").setup({
 		end,
 	},
 	{
-		"lewis6991/spellsitter.nvim",
-		config = function()
-			require("spellsitter").setup()
-		end,
-	},
-	{
 		"machakann/vim-highlightedyank",
 		config = function()
 			-- vim-highlightedyank
@@ -426,11 +419,20 @@ return require("lazy").setup({
 				logging = true,
 				log_level = vim.log.levels.WARN,
 				filetype = {
+					css = {
+						require("formatter.filetypes.css").prettier,
+					},
 					eruby = {
 						require("formatter.filetypes.eruby").htmlbeautifier,
 					},
+					html = {
+						require("formatter.filetypes.html").prettier,
+					},
 					javascript = {
 						require("formatter.filetypes.javascript").prettier,
+					},
+					javascriptreact = {
+						require("formatter.filetypes.javascriptreact").prettier,
 					},
 					json = {
 						require("formatter.filetypes.json").prettier,
@@ -438,15 +440,30 @@ return require("lazy").setup({
 					lua = {
 						require("formatter.filetypes.lua").stylua,
 					},
+					markdown = {
+						require("formatter.filetypes.markdown").prettier,
+					},
 					ruby = {
 						require("formatter.filetypes.ruby").standardrb,
 					},
 					rust = {
 						require("formatter.filetypes.rust").rustfmt,
 					},
-					-- sql = {
-					--   require("formatter.filetypes.sql").sqlfluff,
-					-- },
+					scss = {
+						require("formatter.filetypes.css").prettier,
+					},
+					sql = {
+						require("formatter.filetypes.sql").sqlfluff,
+					},
+					typescript = {
+						require("formatter.filetypes.typescript").prettier,
+					},
+					typescriptreact = {
+						require("formatter.filetypes.typescriptreact").prettier,
+					},
+					yaml = {
+						require("formatter.filetypes.yaml").prettier,
+					},
 					["*"] = {
 						require("formatter.filetypes.any").remove_trailing_whitespace,
 					},
@@ -470,6 +487,18 @@ return require("lazy").setup({
 				ruby = { "standardrb" },
 				sql = { "sqlfluff" },
 			}
+
+			vim.api.nvim_create_autocmd({ "BufEnter", "BufReadPost" }, {
+				callback = function()
+					-- try_lint without arguments runs the linters defined in `linters_by_ft`
+					-- for the current filetype
+					require("lint").try_lint()
+
+					-- You can call `try_lint` with a linter name or a list of names to always
+					-- run specific linters, independent of the `linters_by_ft` configuration
+					-- require("lint").try_lint("cspell")
+				end,
+			})
 		end,
 	},
 

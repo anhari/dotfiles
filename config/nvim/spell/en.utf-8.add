@@ -136,9 +136,7 @@ flexbox
 scss
 PR's
 cli
-feedyard
 EID
-alacritty
 alacritty
 todos
 todo's
@@ -163,7 +161,6 @@ middleware
 livereload
 colorscheme
 tailwindcss
-#hilosphy
 feedyards
 NPM
 gsub
@@ -176,3 +173,5 @@ EIDs
 peacoat
 namespaced
 dwarfnode
+receivings
+feedyard

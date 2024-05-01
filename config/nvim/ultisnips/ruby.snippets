@@ -2,27 +2,34 @@
 # Ruby snippets
 ################################################################################
 
+extends capybara
+extends climatecontrol
+extends factorybot
+extends minitest
+extends rspec
+extends vcr
+
 snippet @
 @${1} = $1
 endsnippet
 
-snippet .
+snippet . "block"
 { ${0} }
 endsnippet
 
-snippet aa
+snippet aa "attr accessor"
 attr_accessor :${0}
 endsnippet
 
-snippet ar
+snippet ar "attr reader"
 attr_reader :${0}
 endsnippet
 
-snippet aw
+snippet aw "attr writer"
 attr_writer :${0}
 endsnippet
 
-snippet bm
+snippet bm "benchmark"
 require 'benchmark'
 Benchmark.bm do |bm|
 	bm.report('${0}') do
@@ -30,64 +37,57 @@ Benchmark.bm do |bm|
 end
 endsnippet
 
-snippet bs
-build_stubbed(:${0})
-endsnippet
-
-snippet case
+snippet case "case statement"
 case ${0}
 when
 else
 end
 endsnippet
 
-snippet caa
+snippet caa "class attr accesor"
 cattr_accessor :${0}
 endsnippet
 
-snippet car
+snippet car "class attr reader"
 cattr_reader :${0}
 endsnippet
 
-snippet caw
+snippet caw "class attr writer"
 cattr_writer :${0}
 endsnippet
 
-snippet cl
+snippet cl "class"
 class ${0}
 end
 endsnippet
 
-snippet hdoc
+snippet hdoc "heredoc"
 <<~${1}
 	${0}
 $1
 endsnippet
 
-snippet init
+snippet init "initialize"
 def initialize(${0})
 end
 endsnippet
 
-snippet memcache
-Rails.cache.instance_variable_get(:@data).get('${${0}}')
-endsnippet
 
-snippet mod
+snippet mod "module"
 module ${0}
 end
 endsnippet
 
-snippet objsize
+snippet objsize "object size in memory"
 require "objspace"
 ObjectSpace.memsize_of(${0})
 endsnippet
 
-snippet rq
+snippet rq "require"
 require "${0}"
 endsnippet
 
-snippet rqr
+snippet rqr "require relative"
 require_relative "${0}"
 endsnippet
 
@@ -95,104 +95,11 @@ snippet smm "Show me methods"
 ${0}.instance_methods - Object.instance_methods
 endsnippet
 
-################################################################################
-# Rspec :: https://github.com/rspec/rspec-rails
-################################################################################
 
-snippet rrh
-require "rails_helper"
-
-endsnippet
-
-snippet rql
-:require_login
-endsnippet
-
-snippet desc
-describe "${0}" do
-end
-endsnippet
-
-snippet cont
-context "${0}" do
-end
-endsnippet
-
-snippet it
-it "${0}" do
-end
-endsnippet
-
-snippet exp
-expect(${0}).to
-endsnippet
-
-snippet ccb
-expect{${0}}.to change{.count}.by
-endsnippet
-
-snippet eha
-expect(${0}).to have_attributes({
-
-})
-endsnippet
-
-snippet aed
-around(:each) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet aad
-around(:all) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet afed
-after(:each) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet afad
-after(:all) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet bed
-before(:each) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet bad
-before(:all) do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet lda
+snippet lda "lambda"
 ->(${0}) do
 end
 endsnippet
-
-################################################################################
-# Webmock
-################################################################################
-
-snippet hbr
-expect(${0}).to have_been_requested
-endsnippet
-
-snippet hnbr
-expect(${0}).to_not have_been_requested
-endsnippet
-
-################################################################################
-# Rails
-################################################################################
 
 ################################################################################
 # Debugging
@@ -210,32 +117,8 @@ snippet brp "remote pry"
 binding.remote_pry
 endsnippet
 
-snippet rldb "Rails logger debug"
-Rails.logger.debug "#########DEBUG###########"
-Rails.logger.debug "#########################"
-Rails.logger.debug ${0}
-Rails.logger.debug "#########################"
-Rails.logger.debug "#########DEBUG###########"
-endsnippet
-
 snippet db "debugger"
 debugger
-endsnippet
-
-snippet pcall "Rails puts caller"
-Rails.logger.debug "#########CALLER###########"
-Rails.logger.debug "##########################"
-Rails.logger.debug caller.join("\n")
-Rails.logger.debug "##########################"
-Rails.logger.debug "#########CALLER###########"
-endsnippet
-
-snippet ptrace "puts stack trace - ignores vendor code"
-puts "#########APP STACK TRACE###########"
-puts "###################################"
-puts caller.grep(%r{#{Rails.root}\/(?!vendor)}).join("\n")
-puts "###################################"
-puts "#########APP STACK TRACE###########"
 endsnippet
 
 snippet roof "Raise the roof!"
@@ -244,601 +127,4 @@ endsnippet
 
 snippet ri "Raise inspect"
 raise "#{${0}.inspect}"
-endsnippet
-
-snippet rpi "Raise params inspect"
-raise "#{params.inspect}"
-endsnippet
-
-################################################################################
-# Capybara :: https://github.com/thoughtbot/capybara-webkit
-################################################################################
-
-snippet dsc "Set javascript driver to selenium chrome"
-driver: :selenium_chrome
-endsnippet
-
-snippet sop "Save and open page"
-save_and_open_page
-endsnippet
-
-snippet sos "Save and open screenshot"
-save_and_open_screenshot("#{Time.now}.png", full: true)
-endsnippet
-
-snippet cb "Capybara: click button"
-click_button ${0}
-endsnippet
-
-snippet co "Capybara: click on"
-click_on ${0}
-endsnippet
-
-snippet vi "Capybara: visit"
-visit ${0}
-endsnippet
-
-snippet vl "Capybara: visit link"
-visit_link ${0}
-endsnippet
-
-snippet fi "Capybara: fill in"
-fill_in ${0}, with: "blah"
-endsnippet
-
-snippet sel "Capybara: select"
-select("${0:Option}", from: "Select Box")
-endsnippet
-
-snippet cho "Capybara: choose radio"
-choose "${0}"
-endsnippet
-
-snippet chk "Capybara: check checkbox"
-check "${0}"
-endsnippet
-
-snippet unchk "Capybara: uncheck checkbox"
-uncheck "${0}"
-endsnippet
-
-snippet attfile "Capybara: attach file"
-attach_file("${0:FileName}", "/path/to/image.jpg")
-endsnippet
-
-snippet feat
-require "rails_helper"
-
-feature "`!p snip.rv = snip.basename.replace("_", " ").replace(" spec",
-"").capitalize()`" do
-	scenario "successfully" do
-		${0}
-	end
-end
-endsnippet
-
-snippet scen "Capybara: scenario"
-scenario "${1}" do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-snippet phc "Capybara: page has content"
-expect(page).to have_content(${0})
-endsnippet
-
-snippet pnhc "Capybara: page does not have content"
-expect(page).to_not have_content(${0})
-endsnippet
-
-snippet xj "Expect json body"
-expect(json_body[${1}]).to ${0}
-endsnippet
-
-snippet xr "Expect response"
-expect(response${1}).to ${0}
-endsnippet
-
-snippet hc "Capybara: have content"
-have_content(${0})
-endsnippet
-
-snippet hl "Capybara: have link"
-have_link ${1}, href: ${0}
-endsnippet
-
-################################################################################
-# VCR :: https://github.com/vcr/vcr
-################################################################################
-
-snippet vcr "VCR: use cassette"
-VCR.use_cassette "${1}" do
-	${0:${VISUAL:}}
-end
-endsnippet
-
-################################################################################
-# FactoryBot :: https://github.com/thoughtbot/factory_bot_rails
-################################################################################
-
-snippet fcv
-$1 = create(:${1}${2})
-endsnippet
-
-snippet fact "FactoryBot: new factory"
-FactoryBot.define do
-	factory :${0} do
-	end
-end
-endsnippet
-
-snippet seq "FactoryBot: sequence"
-sequence(:${0}) { |n| "#{n}" }
-endsnippet
-
-snippet trait "FactoryBot: trait"
-trait :${0} do
-end
-endsnippet
-
-snippet fft "FactoryBot: factory from traits"
-factory :${1:factory_name}, traits: %i(${0})
-endsnippet
-
-snippet fbab "FactoryBot: after build"
-after(:build) do |`!p snip.rv = snip.basename[:-1]`|
-	${0}
-end
-endsnippet
-
-snippet fbbc "FactoryBot: before create"
-before(:create) do |`!p snip.rv = snip.basename[:-1]`|
-	${0}
-end
-endsnippet
-
-snippet fbac "FactoryBot: after create"
-after(:create) do |`!p snip.rv = snip.basename[:-1]`|
-	${0}
-end
-endsnippet
-
-snippet fbas "FactoryBot: after stub"
-after(:stub) do |`!p snip.rv = snip.basename[:-1]`|
-	${0}
-end
-endsnippet
-
-################################################################################
-# RAILS
-################################################################################
-
-####################
-# Models
-####################
-
-snippet ac "Rails migration: add column"
-add_column :${1:table_name}, :${2:column_name}, :${3:type}
-endsnippet
-
-snippet bt "Rails model: belongs to"
-belongs_to :${0}
-endsnippet
-
-snippet ccc "Rails migration: add counter cache"
-# TODO: add counter_cache to $2's belongs_to relationship
-
-def up
-	add_column :${1:table}, :${2:relation(plural)}_count, :integer, default: 0
-
-	execute <<-SQL
-		UPDATE $1 SET $2_count = (
-			SELECT COUNT(*) FROM $2 WHERE `!p snip.rv = t[1][:-1]`_id = $1.id
-		)
-	SQL
-end
-
-def down
-	remove_column :$1, :$2_count
-end
-endsnippet
-
-snippet pscale "Decimal precision and scale"
-precision: ${1:number of digits to support}, scale: ${2: decimal places}
-endsnippet
-
-snippet precise "Decimal precision and scale"
-precision: ${1:number of digits to support}, scale: ${2: decimal places}
-endsnippet
-
-snippet ccd "Rails migration: change column default"
-# Rails 4
-def up
-	change_column_default(:$1, :$2, $4)
-end
-
-def down
-	change_column_default(:$1, :$2, $3)
-end
-
-# Rails 5
-change_column_default(:${1:table_name}, :${2:column_name}, from: ${3}, to: ${4})
-endsnippet
-
-snippet ccn "Rails migration: change column null"
-change_column_null :${1:table}, :${2:column}, false
-endsnippet
-
-snippet cct "Rails model: counter cache"
-counter_cache: true
-endsnippet
-
-snippet hm "Rails model: has many"
-has_many :${0}
-endsnippet
-
-snippet hmt "Rails model: has many through"
-has_many :${1}, through: :${0}
-endsnippet
-
-snippet ho "Rails model: has one"
-has_one :${0}
-endsnippet
-
-snippet hot "Rails model: has one through"
-has_one :${1}, through: :${0}
-endsnippet
-
-snippet d:d "Rails model: dependent destroy"
-dependent: :destroy
-endsnippet
-
-snippet d:n "Rails model: dependent nullify"
-dependent: :nullify
-endsnippet
-
-snippet d:t "Rails migration: default true"
-default: true
-endsnippet
-
-snippet d:f "Rails migration: default false"
-default: false
-endsnippet
-
-snippet nf "Rails migration: null false"
-null: false
-endsnippet
-
-snippet rc "Rails migration: remove column"
-remove_column :${1:table_name}, :${2:column_name}, :${3:type}
-endsnippet
-
-snippet rnc "Rails migration: rename column"
-rename_column :${1:table_name}, :${2:old_column_name}, :${3:new_column_name}
-endsnippet
-
-snippet xact "Rails: ActiveRecord transaction"
-ActiveRecord::Base.transaction do
-	${0}
-end
-endsnippet
-
-snippet xs "Rails: execute SQL statement"
-execute <<-SQL
-	${0}
-SQL
-endsnippet
-
-snippet @i "Rails controller: index action"
-def index
-	${0}
-end
-endsnippet
-
-snippet @s "Rails controller: show action"
-def show
-	@$1 = `!p snip.rv = t[1].capitalize()`.find(params[:id])
-end
-endsnippet
-
-snippet @u "Rails controller: update action"
-def update
-	${0}
-end
-endsnippet
-
-snippet @e "Rails controller: edit action"
-def edit
-	${0}
-end
-endsnippet
-
-snippet @n "Rails controller: New action"
-def new
-	@$1 = `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.new
-end
-endsnippet
-
-snippet @c "Rails controller: create action"
-def create
-	@$1 = `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.new($1_params)
-end
-
-private
-
-def $1_params
-	params.require(:$1).permit(:${0})
-end
-endsnippet
-
-snippet @d "Rails controller: destroy action"
-def destroy
-	${0}
-end
-endsnippet
-
-################################
-# Controllers
-################################
-
-snippet rd "Rails controller: redirect"
-redirect_to ${0}
-endsnippet
-
-snippet rnd "Rails controller: render"
-render :${0}
-endsnippet
-
-snippet bfa "Rails controller: before action"
-before_action :${0}
-endsnippet
-
-snippet sbfa "Rails controller: skip before action"
-skip_before_action :${0}
-endsnippet
-
-snippet ba "Rails controller: before action"
-before_action :${0}
-endsnippet
-
-snippet sba "Rails controller: skip before action"
-skip_before_action :${0}
-endsnippet
-
-snippet only "Rails controller/routes: only"
-only: %i[${0}]
-endsnippet
-
-snippet auth "Rails controller: authenticate"
-:authenticate_${1:model}!
-endsnippet
-
-snippet res "Rails routes: resources"
-resources :${0}
-endsnippet
-
-snippet rp "Rails route helpers: root"
-root_path
-endsnippet
-
-snippet set
-def ${1:model}
-	@_$1 ||= `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.find(params[:id])
-end
-endsnippet
-
-snippet setn
-def ${1:model}
-	@_$1 ||= `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.find(params[:$1_id])
-end
-endsnippet
-
-snippet defprm "Rails controller: strong params method"
-def ${1:model}_params
-	params.require(:$1).permit(:${0})
-end
-endsnippet
-
-snippet vpres "Rails model: validate presence"
-validates :${0:field}, presence: true
-endsnippet
-
-snippet vniq "Rails model: validate uniqueness"
-validates :${0:field}, uniqueness: true
-endsnippet
-
-snippet vniq_scope "Rails model: validate uniqueness within scope"
-validates_uniqueness_of :#{0}, scope: :model_id
-endsnippet
-
-snippet vnum "Rails model: validate numericality"
-validates :${0:field}, numericality: { ${1} }
-endsnippet
-
-snippet vgt "Rails model: validate numericality - greater than"
-validates :${0:field}, numericality: { greater_than: ${1} }
-endsnippet
-
-snippet vgte "Rails model: validate numericality - greater than or equal to"
-validates :${0:field}, numericality: { greater_than_or_equal_to: ${1} }
-endsnippet
-
-snippet vlt "Rails model: validate numericality - less than"
-validates :${0:field}, numericality: { less_than: ${1} }
-endsnippet
-
-snippet vlte "Rails model: validate numericality - less than or equal to"
-validates :${0:field}, numericality: { less_than_or_equal_to: ${1} }
-endsnippet
-
-snippet vlen "Rails model: validate length"
-validates :${0:field}, length: { ${1} }
-endsnippet
-
-snippet rcache "Rails: fetch cache"
-	Rails.cache.fetch(${0}, expires_in: cache_lifespan) do
-	end
-endsnippet
-
-################################################################################
-# Shoulda matchers
-################################################################################
-
-snippet sav "shoulda-matchers: allow value"
-it { should allow_value(${1}).for(:${0}) }
-endsnippet
-
-snippet snav "shoulda-matchers: don't allow value"
-it { should_not allow_value(${1}).for(:${0}) }
-endsnippet
-
-snippet snvpo "shoulda-matchers: not validate presence"
-it { should_not validate_presence_of(:${0}) }
-endsnippet
-
-snippet svpo "shoulda-matchers: validate presence"
-it { should validate_presence_of(:${0}) }
-endsnippet
-
-snippet svno "shoulda-matchers: validate numericality"
-it { should validate_numericality_of(:${0}) }
-endsnippet
-
-snippet svgt "shoulda-matchers: validate numericality - greater than"
-it { should validate_numericality_of(:${0}).is_greater_than(${1}) }
-endsnippet
-
-snippet svgte "shoulda-matchers: validate numericality - greater than or equal to"
-it { should validate_numericality_of(:${0}).is_greater_than_or_equal_to(${1}) }
-endsnippet
-
-snippet svlt "shoulda-matchers: validate numericality - less than"
-it { should validate_numericality_of(:${0}).is_less_than(${1}) }
-endsnippet
-
-snippet svlte "shoulda-matchers: validate numericality - less than or equal to"
-it { should validate_numericality_of(:${0}).is_less_than_or_equal_to(${1}) }
-endsnippet
-
-snippet svlo "shoulda-matchers: validate length"
-it { should validate_length_of(:${0}) }
-endsnippet
-
-snippet sbt "shoulda-matchers: validate belongs to"
-it { should belong_to(:${0}) }
-endsnippet
-
-snippet sbto "shoulda-matchers: validate belongs to (optional)"
-it { should belong_to(:${0}).optional }
-endsnippet
-
-snippet sho "shoulda-matchers: validate has one"
-it { should have_one(:${0}) }
-endsnippet
-
-snippet shot "shoulda-matchers: validate has one through"
-it { should have_one(:${1}).through(:${0}) }
-endsnippet
-
-snippet shab "shoulda-matchers: validate has and belongs to many"
-it { should have_and_belong_to_many(:${0}) }
-endsnippet
-
-snippet shm "shoulda-matchers: validate has many"
-it { should have_many(:${0}) }
-endsnippet
-
-snippet shmt "shoulda-matchers: validate has many through"
-it { should have_many(:${1}).through(:${0}) }
-endsnippet
-
-snippet shmdd "shoulda-matchers: validate has many dependent destroy"
-it { should have_many(:${0}).dependent(:destroy) }
-endsnippet
-
-snippet shrt "shoulda-matchers: validate has rich text"
-it { should have_rich_text(:${0}) }
-endsnippet
-
-snippet sdb "shoulda-matchers: validate database column"
-it { should have_db_column(:${1}).of_type(:${0}) }
-endsnippet
-
-snippet shi "shoulda-matchers: validate has db index"
-it { should have_db_index(:${1}) }
-endsnippet
-
-snippet shiu "shoulda-matchers: validate has uniqueness index"
-it { should have_db_index(:${1}).unique(:true) }
-endsnippet
-
-snippet svuo "shoulda-matchers: validate uniqueness"
-it { should_validate_uniqueness_of(:${0}) }
-endsnippet
-
-snippet sdm "shoulda-matchers: validate method delegation"
-it { should delegate_method(:${1}).to(:${0}) }
-endsnippet
-
-snippet sdmp "shoulda-matchers: validate method delegation with prefix"
-it { should delegate_method(:${1}).to(:${0}).with_prefix }
-endsnippet
-
-snippet sde "shoulda-matchers: validate enum with values"
-it { should define_enum_for(:${1}).with_values([:${0}]) }
-endsnippet
-################################################################################
-# climate_control (https://github.com/thoughtbot/climate_control)
-################################################################################
-
-snippet cc "Climate control: modify ENV in test"
-ClimateControl.modify ${0}: 'value' do
-end
-endsnippet
-
-################################################################################
-# MiniTest
-################################################################################
-
-snippet test "MiniTest: test case"
-test "${0}" do
-end
-endsnippet
-
-snippet ass "MiniTest: assert"
-assert ${0}
-endsnippet
-
-snippet asst "MiniTest assert text"
-assert_text ${0}
-endsnippet
-
-################################################################################
-# API wrappers
-################################################################################
-
-snippet rcode
-case response.code
-when 422
-	# Build an InvalidObject
-	# i.e. InvalidQuery.new
-	${0}
-when 200..299
-	# Instantiate objects
-else
-	# Raise an UnhandledResponseError
-	raise UnhandledResponseError
-end
-endsnippet
-
-snippet ref_to_table "Foreign key with a different class" b
-t.references :${1:post}, foreign_key: { to_table: :${0:articles} }
-endsnippet
-
-snippet tt "to_table" b
-{ to_table: :${0} }
-endsnippet
-
-snippet cn "Specify a class name for a relation" b
-class_name: "${0:Class::Name}"
 endsnippet

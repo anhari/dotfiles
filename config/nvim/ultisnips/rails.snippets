@@ -1,0 +1,317 @@
+################################################################################
+### Rails snippets
+################################################################################
+
+extends ruby
+extends shoulda
+
+snippet memcache
+Rails.cache.instance_variable_get(:@data).get('${${0}}')
+endsnippet
+
+################################################################################
+# Models
+################################################################################
+
+snippet ac "Rails migration: add column"
+add_column :${1:table_name}, :${2:column_name}, :${3:type}
+endsnippet
+
+snippet bt "Rails model: belongs to"
+belongs_to :${0}
+endsnippet
+
+snippet ccc "Rails migration: add counter cache"
+# TODO: add counter_cache to $2's belongs_to relationship
+
+def up
+	add_column :${1:table}, :${2:relation(plural)}_count, :integer, default: 0
+
+	execute <<-SQL
+		UPDATE $1 SET $2_count = (
+			SELECT COUNT(*) FROM $2 WHERE `!p snip.rv = t[1][:-1]`_id = $1.id
+		)
+	SQL
+end
+
+def down
+	remove_column :$1, :$2_count
+end
+endsnippet
+
+snippet pscale "Decimal precision and scale"
+precision: ${1:number of digits to support}, scale: ${2: decimal places}
+endsnippet
+
+snippet precise "Decimal precision and scale"
+precision: ${1:number of digits to support}, scale: ${2: decimal places}
+endsnippet
+
+snippet ccd "Rails migration: change column default"
+# Rails 4
+def up
+	change_column_default(:$1, :$2, $4)
+end
+
+def down
+	change_column_default(:$1, :$2, $3)
+end
+
+# Rails 5
+change_column_default(:${1:table_name}, :${2:column_name}, from: ${3}, to: ${4})
+endsnippet
+
+snippet ccn "Rails migration: change column null"
+change_column_null :${1:table}, :${2:column}, false
+endsnippet
+
+snippet cct "Rails model: counter cache"
+counter_cache: true
+endsnippet
+
+snippet hm "Rails model: has many"
+has_many :${0}
+endsnippet
+
+snippet hmt "Rails model: has many through"
+has_many :${1}, through: :${0}
+endsnippet
+
+snippet ho "Rails model: has one"
+has_one :${0}
+endsnippet
+
+snippet hot "Rails model: has one through"
+has_one :${1}, through: :${0}
+endsnippet
+
+snippet d:d "Rails model: dependent destroy"
+dependent: :destroy
+endsnippet
+
+snippet d:n "Rails model: dependent nullify"
+dependent: :nullify
+endsnippet
+
+snippet d:t "Rails migration: default true"
+default: true
+endsnippet
+
+snippet d:f "Rails migration: default false"
+default: false
+endsnippet
+
+snippet nf "Rails migration: null false"
+null: false
+endsnippet
+
+snippet rc "Rails migration: remove column"
+remove_column :${1:table_name}, :${2:column_name}, :${3:type}
+endsnippet
+
+snippet rnc "Rails migration: rename column"
+rename_column :${1:table_name}, :${2:old_column_name}, :${3:new_column_name}
+endsnippet
+
+snippet xact "Rails: ActiveRecord transaction"
+ActiveRecord::Base.transaction do
+	${0}
+end
+endsnippet
+
+snippet xs "Rails: execute SQL statement"
+execute <<-SQL
+	${0}
+SQL
+endsnippet
+
+snippet @i "Rails controller: index action"
+def index
+	${0}
+end
+endsnippet
+
+snippet @s "Rails controller: show action"
+def show
+	@$1 = `!p snip.rv = t[1].capitalize()`.find(params[:id])
+end
+endsnippet
+
+snippet @u "Rails controller: update action"
+def update
+	${0}
+end
+endsnippet
+
+snippet @e "Rails controller: edit action"
+def edit
+	${0}
+end
+endsnippet
+
+snippet @n "Rails controller: New action"
+def new
+	@$1 = `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.new
+end
+endsnippet
+
+snippet @c "Rails controller: create action"
+def create
+	@$1 = `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.new($1_params)
+end
+
+private
+
+def $1_params
+	params.require(:$1).permit(:${0})
+end
+endsnippet
+
+snippet @d "Rails controller: destroy action"
+def destroy
+	${0}
+end
+endsnippet
+
+################################
+# Controllers
+################################
+
+snippet rd "Rails controller: redirect"
+redirect_to ${0}
+endsnippet
+
+snippet rnd "Rails controller: render"
+render :${0}
+endsnippet
+
+snippet bfa "Rails controller: before action"
+before_action :${0}
+endsnippet
+
+snippet sbfa "Rails controller: skip before action"
+skip_before_action :${0}
+endsnippet
+
+snippet ba "Rails controller: before action"
+before_action :${0}
+endsnippet
+
+snippet sba "Rails controller: skip before action"
+skip_before_action :${0}
+endsnippet
+
+snippet only "Rails controller/routes: only"
+only: %i[${0}]
+endsnippet
+
+snippet auth "Rails controller: authenticate"
+:authenticate_${1:model}!
+endsnippet
+
+snippet res "Rails routes: resources"
+resources :${0}
+endsnippet
+
+snippet rp "Rails route helpers: root"
+root_path
+endsnippet
+
+snippet set
+def ${1:model}
+	@_$1 ||= `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.find(params[:id])
+end
+endsnippet
+
+snippet setn
+def ${1:model}
+	@_$1 ||= `!p snip.rv = ''.join([x.capitalize() for x in t[1].split('_')])`.find(params[:$1_id])
+end
+endsnippet
+
+snippet defprm "Rails controller: strong params method"
+def ${1:model}_params
+	params.require(:$1).permit(:${0})
+end
+endsnippet
+
+snippet vpres "Rails model: validate presence"
+validates :${0:field}, presence: true
+endsnippet
+
+snippet vniq "Rails model: validate uniqueness"
+validates :${0:field}, uniqueness: true
+endsnippet
+
+snippet vniq_scope "Rails model: validate uniqueness within scope"
+validates_uniqueness_of :#{0}, scope: :model_id
+endsnippet
+
+snippet vnum "Rails model: validate numericality"
+validates :${0:field}, numericality: { ${1} }
+endsnippet
+
+snippet vgt "Rails model: validate numericality - greater than"
+validates :${0:field}, numericality: { greater_than: ${1} }
+endsnippet
+
+snippet vgte "Rails model: validate numericality - greater than or equal to"
+validates :${0:field}, numericality: { greater_than_or_equal_to: ${1} }
+endsnippet
+
+snippet vlt "Rails model: validate numericality - less than"
+validates :${0:field}, numericality: { less_than: ${1} }
+endsnippet
+
+snippet vlte "Rails model: validate numericality - less than or equal to"
+validates :${0:field}, numericality: { less_than_or_equal_to: ${1} }
+endsnippet
+
+snippet vlen "Rails model: validate length"
+validates :${0:field}, length: { ${1} }
+endsnippet
+
+snippet rcache "Rails: fetch cache"
+Rails.cache.fetch(${0}, expires_in: cache_lifespan) do
+end
+endsnippet
+
+snippet ref_to_table "Foreign key with a different class" b
+t.references :${1:post}, foreign_key: { to_table: :${0:articles} }
+endsnippet
+
+snippet tt "to_table" b
+{ to_table: :${0} }
+endsnippet
+
+snippet cn "Specify a class name for a relation" b
+class_name: "${0:Class::Name}"
+endsnippet
+
+snippet rldb "Rails logger debug"
+Rails.logger.debug "#########DEBUG###########"
+Rails.logger.debug "#########################"
+Rails.logger.debug ${0}
+Rails.logger.debug "#########################"
+Rails.logger.debug "#########DEBUG###########"
+endsnippet
+
+snippet pcall "Rails puts caller"
+Rails.logger.debug "#########CALLER###########"
+Rails.logger.debug "##########################"
+Rails.logger.debug caller.join("\n")
+Rails.logger.debug "##########################"
+Rails.logger.debug "#########CALLER###########"
+endsnippet
+
+snippet ptrace "puts stack trace - ignores vendor code"
+puts "#########APP STACK TRACE###########"
+puts "###################################"
+puts caller.grep(%r{#{Rails.root}\/(?!vendor)}).join("\n")
+puts "###################################"
+puts "#########APP STACK TRACE###########"
+endsnippet
+
+snippet rpi "Raise params inspect"
+raise "#{params.inspect}"
+endsnippet

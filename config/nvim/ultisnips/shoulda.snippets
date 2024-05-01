@@ -1,0 +1,107 @@
+################################################################################
+# Shoulda matchers
+################################################################################
+
+snippet sav "shoulda-matchers: allow value"
+it { should allow_value(${1}).for(:${0}) }
+endsnippet
+
+snippet snav "shoulda-matchers: don't allow value"
+it { should_not allow_value(${1}).for(:${0}) }
+endsnippet
+
+snippet snvpo "shoulda-matchers: not validate presence"
+it { should_not validate_presence_of(:${0}) }
+endsnippet
+
+snippet svpo "shoulda-matchers: validate presence"
+it { should validate_presence_of(:${0}) }
+endsnippet
+
+snippet svno "shoulda-matchers: validate numericality"
+it { should validate_numericality_of(:${0}) }
+endsnippet
+
+snippet svgt "shoulda-matchers: validate numericality - greater than"
+it { should validate_numericality_of(:${0}).is_greater_than(${1}) }
+endsnippet
+
+snippet svgte "shoulda-matchers: validate numericality - greater than or equal to"
+it { should validate_numericality_of(:${0}).is_greater_than_or_equal_to(${1}) }
+endsnippet
+
+snippet svlt "shoulda-matchers: validate numericality - less than"
+it { should validate_numericality_of(:${0}).is_less_than(${1}) }
+endsnippet
+
+snippet svlte "shoulda-matchers: validate numericality - less than or equal to"
+it { should validate_numericality_of(:${0}).is_less_than_or_equal_to(${1}) }
+endsnippet
+
+snippet svlo "shoulda-matchers: validate length"
+it { should validate_length_of(:${0}) }
+endsnippet
+
+snippet sbt "shoulda-matchers: validate belongs to"
+it { should belong_to(:${0}) }
+endsnippet
+
+snippet sbto "shoulda-matchers: validate belongs to (optional)"
+it { should belong_to(:${0}).optional }
+endsnippet
+
+snippet sho "shoulda-matchers: validate has one"
+it { should have_one(:${0}) }
+endsnippet
+
+snippet shot "shoulda-matchers: validate has one through"
+it { should have_one(:${1}).through(:${0}) }
+endsnippet
+
+snippet shab "shoulda-matchers: validate has and belongs to many"
+it { should have_and_belong_to_many(:${0}) }
+endsnippet
+
+snippet shm "shoulda-matchers: validate has many"
+it { should have_many(:${0}) }
+endsnippet
+
+snippet shmt "shoulda-matchers: validate has many through"
+it { should have_many(:${1}).through(:${0}) }
+endsnippet
+
+snippet shmdd "shoulda-matchers: validate has many dependent destroy"
+it { should have_many(:${0}).dependent(:destroy) }
+endsnippet
+
+snippet shrt "shoulda-matchers: validate has rich text"
+it { should have_rich_text(:${0}) }
+endsnippet
+
+snippet sdb "shoulda-matchers: validate database column"
+it { should have_db_column(:${1}).of_type(:${0}) }
+endsnippet
+
+snippet shi "shoulda-matchers: validate has db index"
+it { should have_db_index(:${1}) }
+endsnippet
+
+snippet shiu "shoulda-matchers: validate has uniqueness index"
+it { should have_db_index(:${1}).unique(:true) }
+endsnippet
+
+snippet svuo "shoulda-matchers: validate uniqueness"
+it { should_validate_uniqueness_of(:${0}) }
+endsnippet
+
+snippet sdm "shoulda-matchers: validate method delegation"
+it { should delegate_method(:${1}).to(:${0}) }
+endsnippet
+
+snippet sdmp "shoulda-matchers: validate method delegation with prefix"
+it { should delegate_method(:${1}).to(:${0}).with_prefix }
+endsnippet
+
+snippet sde "shoulda-matchers: validate enum with values"
+it { should define_enum_for(:${1}).with_values([:${0}]) }
+endsnippet

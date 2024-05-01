@@ -1,0 +1,55 @@
+################################################################################
+# FactoryBot :: https://github.com/thoughtbot/factory_bot_rails
+################################################################################
+
+snippet fb "FactoryBot: build stubbed"
+build_stubbed(:${0})
+endsnippet
+
+snippet fc "FactoryBot: create"
+$1 = create(:${1}${2})
+endsnippet
+
+snippet fact "FactoryBot: new factory"
+FactoryBot.define do
+	factory :${0} do
+	end
+end
+endsnippet
+
+snippet seq "FactoryBot: sequence"
+sequence(:${0}) { |n| "#{n}" }
+endsnippet
+
+snippet trait "FactoryBot: trait"
+trait :${0} do
+end
+endsnippet
+
+snippet fft "FactoryBot: factory from traits"
+factory :${1:factory_name}, traits: %i(${0})
+endsnippet
+
+snippet fbab "FactoryBot: after build"
+after(:build) do |`!p snip.rv = snip.basename[:-1]`|
+	${0}
+end
+endsnippet
+
+snippet fbbc "FactoryBot: before create"
+before(:create) do |`!p snip.rv = snip.basename[:-1]`|
+	${0}
+end
+endsnippet
+
+snippet fbac "FactoryBot: after create"
+after(:create) do |`!p snip.rv = snip.basename[:-1]`|
+	${0}
+end
+endsnippet
+
+snippet fbas "FactoryBot: after stub"
+after(:stub) do |`!p snip.rv = snip.basename[:-1]`|
+	${0}
+end
+endsnippet

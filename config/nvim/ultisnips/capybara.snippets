@@ -1,0 +1,96 @@
+################################################################################
+# Capybara :: https://github.com/thoughtbot/capybara-webkit
+################################################################################
+
+snippet dsc "Set javascript driver to selenium chrome"
+driver: :selenium_chrome
+endsnippet
+
+snippet sop "Save and open page"
+save_and_open_page
+endsnippet
+
+snippet sos "Save and open screenshot"
+save_and_open_screenshot("#{Time.now}.png", full: true)
+endsnippet
+
+snippet cb "Capybara: click button"
+click_button ${0}
+endsnippet
+
+snippet co "Capybara: click on"
+click_on ${0}
+endsnippet
+
+snippet vi "Capybara: visit"
+visit ${0}
+endsnippet
+
+snippet vl "Capybara: visit link"
+visit_link ${0}
+endsnippet
+
+snippet fi "Capybara: fill in"
+fill_in ${0}, with: "blah"
+endsnippet
+
+snippet sel "Capybara: select"
+select("${0:Option}", from: "Select Box")
+endsnippet
+
+snippet cho "Capybara: choose radio"
+choose "${0}"
+endsnippet
+
+snippet chk "Capybara: check checkbox"
+check "${0}"
+endsnippet
+
+snippet unchk "Capybara: uncheck checkbox"
+uncheck "${0}"
+endsnippet
+
+snippet attfile "Capybara: attach file"
+attach_file("${0:FileName}", "/path/to/image.jpg")
+endsnippet
+
+snippet feat
+require "rails_helper"
+
+feature "`!p snip.rv = snip.basename.replace("_", " ").replace(" spec",
+"").capitalize()`" do
+	scenario "successfully" do
+		${0}
+	end
+end
+endsnippet
+
+snippet scen "Capybara: scenario"
+scenario "${1}" do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet phc "Capybara: page has content"
+expect(page).to have_content(${0})
+endsnippet
+
+snippet pnhc "Capybara: page does not have content"
+expect(page).to_not have_content(${0})
+endsnippet
+
+snippet xj "Expect json body"
+expect(json_body[${1}]).to ${0}
+endsnippet
+
+snippet xr "Expect response"
+expect(response${1}).to ${0}
+endsnippet
+
+snippet hc "Capybara: have content"
+have_content(${0})
+endsnippet
+
+snippet hl "Capybara: have link"
+have_link ${1}, href: ${0}
+endsnippet

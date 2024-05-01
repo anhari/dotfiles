@@ -1,0 +1,77 @@
+################################################################################
+# Rspec :: https://github.com/rspec/rspec-rails
+################################################################################
+
+snippet rrh
+require "rails_helper"
+
+endsnippet
+
+snippet rql
+:require_login
+endsnippet
+
+snippet desc
+describe "${0}" do
+end
+endsnippet
+
+snippet cont
+context "${0}" do
+end
+endsnippet
+
+snippet it
+it "${0}" do
+end
+endsnippet
+
+snippet exp
+expect(${0}).to
+endsnippet
+
+snippet ccb
+expect{${0}}.to change{.count}.by
+endsnippet
+
+snippet eha
+expect(${0}).to have_attributes({
+
+})
+endsnippet
+
+snippet aed
+around(:each) do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet aad
+around(:all) do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet afed
+after(:each) do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet afad
+after(:all) do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet bed
+before(:each) do
+	${0:${VISUAL:}}
+end
+endsnippet
+
+snippet bad
+before(:all) do
+	${0:${VISUAL:}}
+end
+endsnippet

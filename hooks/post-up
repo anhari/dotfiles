@@ -6,7 +6,7 @@ ruby $HOME/dotfiles/install_vscode_extensions.rb
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 
-cp ~/dotfiles/dotfiles-precommit-hook ~/dotfiles/.git/hooks/pre-commit
+# cp ~/dotfiles/dotfiles-precommit-hook ~/dotfiles/.git/hooks/pre-commit
 
 reset -Q
 

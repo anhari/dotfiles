@@ -15,5 +15,13 @@ return {
 		SetKeyMap("n", "<leader>n", "<cmd>NvimTreeFindFile<cr>")
 
 		vim.g.db_ui_use_nerd_fonts = 1
+		vim.api.nvim_create_autocmd("VimEnter", {
+			callback = function()
+				if vim.fn.argv(0) == "" then
+					local api = require("nvim-tree.api")
+					api.tree.open()
+				end
+			end,
+		})
 	end,
 }

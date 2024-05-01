@@ -5,7 +5,7 @@
 return {
 	"christoomey/vim-tmux-runner",
 	config = function()
-		vim.g.VtrPercentage = 33
+		vim.g.VtrPercentage = 40
 
 		SetKeyMap("n", "<leader>xx", ":wa<cr>:VtrSendCommandToRunner!<cr>")
 		SetKeyMap("n", "<leader>v<space>", ":VtrClearRunner<cr>")

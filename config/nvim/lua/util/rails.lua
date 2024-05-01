@@ -2,9 +2,20 @@
 -- rails.vim: Ruby on Rails power tools
 -- https://github.com/tpope/vim-rails
 
+vim.cmd([[
+	let g:rails_projections = {
+	\ 'config/application.rb': {'command': 'application'},
+	\ 'Gemfile': {'command': 'gems'},
+	\ 'config/routes.rb': {'command': 'routes'},
+	\ 'config/locales/en.yml': {'command': 'locales'},
+	\ 'spec/features/*_spec.rb': {'command': 'feature'},
+	\ "spec/models/*_spec.rb": {"type": "unittest"}
+	\ }
+]])
+
 SetKeyMap("n", "<leader>db", ":Tschema<cr>")
 SetKeyMap("n", "<leader>eg", ":Egems<cr>")
-SetKeyMap("n", "<leader>mg", ":Emigration<cr>")
+SetKeyMap("n", "<leader>em", ":Emigration<cr>")
 SetKeyMap("n", "<leader>ec", ":VtrSendCommandToRunner! bin/rails credentials:edit<cr>")
 SetKeyMap("n", "<leader>jw", ":VtrSendCommandToRunner! bin/rails jobs:work")
 SetKeyMap("n", "<leader>mi", ":VtrSendCommandToRunner! migrate<cr>")

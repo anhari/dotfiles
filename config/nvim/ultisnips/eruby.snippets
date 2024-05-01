@@ -91,8 +91,8 @@ snippet rnd "render" w
 <%= render '${1}' %>
 endsnippet
 
-snippet rnp "render component" w
-<%= render "components/${1}" do |partial| %>
+snippet rnc "render component" w
+<%= render "components/${1}" do |$1| %>
 	${0}
 <% end %>
 endsnippet

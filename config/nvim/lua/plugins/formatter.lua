@@ -42,9 +42,9 @@ return {
 				scss = {
 					require("formatter.filetypes.css").prettier,
 				},
-				sql = {
-					require("formatter.filetypes.sql").sqlfluff,
-				},
+				-- sql = {
+				-- 	require("formatter.filetypes.sql").sqlfluff,
+				-- },
 				typescript = {
 					require("formatter.filetypes.typescript").prettier,
 				},

@@ -18,9 +18,11 @@ return {
 	"tpope/vim-dispatch",
 	"tpope/vim-endwise",
 	"tpope/vim-eunuch",
-	"tpope/vim-projectionist",
 	"tpope/vim-ragtag",
-	"tpope/vim-rails",
+	{
+		"tpope/vim-rails",
+		dependencies = { "tpope/vim-projectionist" },
+	},
 	"tpope/vim-rake",
 	"tpope/vim-repeat",
 	"tpope/vim-rhubarb",

@@ -1,0 +1,29 @@
+################################################################################
+# Turbo snippets
+################################################################################
+
+snippet tf
+<%= turbo_frame_tag $0 %>
+endsnippet
+
+snippet tfl
+<%= turbo_frame_tag $1, src: $0, loading: :lazy %>
+endsnippet
+
+snippet ts
+<%= turbo_stream.${1:append|append_all|prepend|prepend_all|morph|morph_all|replace}
+endsnippet
+
+snippet ats
+assert_turbo_stream action: "${1:replace}", target: "${2:message_1}"
+endsnippet
+
+snippet atsb
+assert_turbo_stream action: "${1:replace}", target: "${2:message_1}" do
+	assert_select "template p", text: "Hello!"
+end
+endsnippet
+
+snippet ants
+assert_no_turbo_stream action: "${1:replace}", target: "${2:message_1}"
+endsnippet

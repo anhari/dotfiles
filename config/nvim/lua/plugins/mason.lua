@@ -34,7 +34,13 @@ return {
 		})
 
 		require("lspconfig").bashls.setup({})
-		require("lspconfig").cssls.setup({})
+		require("lspconfig").cssls.setup({
+			settings = {
+				css = { validate = true, lint = { unknownAtRules = "ignore" } },
+				scss = { validate = true, lint = { unknownAtRules = "ignore" } },
+				less = { validate = true, lint = { unknownAtRules = "ignore" } },
+			},
+		})
 		require("lspconfig").elixirls.setup({})
 		require("lspconfig").eslint.setup({})
 		require("lspconfig").html.setup({})

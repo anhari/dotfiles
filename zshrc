@@ -61,14 +61,14 @@ source $HOMEBREW_PREFIX/opt/zsh-syntax-highlighting/share/zsh-syntax-highlightin
 source $HOMEBREW_PREFIX/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # # Always be tmux'ing
-# _not_inside_tmux() { [[ -z "$TMUX" ]] }
-# ensure_tmux_is_running() {
-#   if _not_inside_tmux; then
-#     cd ~/code/datawarehouse && tat
-#   fi
-# }
-# ensure_tmux_is_running
-#
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    cd ~/patch_monkey/datawarehouse && tat
+  fi
+}
+ensure_tmux_is_running
+
 source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

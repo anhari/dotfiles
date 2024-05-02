@@ -9,7 +9,7 @@ return {
 			erb = { "erb_lint " },
 			javascript = { "eslint" },
 			ruby = { "standardrb" },
-			sql = { "sqlfluff" },
+			-- sql = { "sqlfluff" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufReadPost" }, {

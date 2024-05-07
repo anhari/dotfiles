@@ -12,9 +12,9 @@ return {
 				css = {
 					require("formatter.filetypes.css").prettier,
 				},
-				-- eruby = {
-				-- 	require("formatter.filetypes.eruby").htmlbeautifier,
-				-- },
+				eruby = {
+					require("formatter.filetypes.eruby").htmlbeautifier,
+				},
 				html = {
 					require("formatter.filetypes.html").prettier,
 				},

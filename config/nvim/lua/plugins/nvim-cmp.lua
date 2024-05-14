@@ -30,8 +30,8 @@ return {
 		SetKeyMap("n", "<leader>es", ":UltiSnipsEdit<cr>")
 
 		vim.cmd([[
-        au FileType eruby UltiSnipsAddFiletypes eruby
-      ]])
+      au FileType eruby UltiSnipsAddFiletypes eruby
+    ]])
 
 		local t = function(str)
 			return vim.api.nvim_replace_termcodes(str, true, true, true)

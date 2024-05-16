@@ -29,7 +29,7 @@ alias tail-heroku='heroku logs --tail'
 alias tail-test='tail -f log/test.log'
 alias tko='tmux kill-server'
 alias trash='trash -F'
-alias tree='tree -C'
+alias tree='tree -C --gitignore'
 alias v="$VISUAL"
 alias wat='asdf current'
 

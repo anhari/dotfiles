@@ -10,7 +10,6 @@
     "**/*.code-search": true,
     "**/vendor": true
   },
-  "zenMode.hideTabs": false,
   "zenMode.centerLayout": false,
   "editor.wordWrapColumn": 80,
   "editor.wordWrap": "wordWrapColumn",
@@ -1047,7 +1046,7 @@
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
   "terminal.integrated.tabs.enabled": false,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Default Dark+",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,

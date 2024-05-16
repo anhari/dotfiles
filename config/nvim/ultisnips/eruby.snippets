@@ -190,8 +190,12 @@ snippet dob "do block" w
 endsnippet
 
 snippet card "card" w
-<%= card classes: "mb-4" do %>
-	<%= card_title do %>
+<%= render "components/card" do |card| %>
+	<% card.title do %>
+		$1
+	<% end %>
+	<% card.body do %>
+		$0
 	<% end %>
 <% end %>
 endsnippet

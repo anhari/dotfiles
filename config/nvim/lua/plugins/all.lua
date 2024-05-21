@@ -11,7 +11,6 @@ return {
 	"onsails/lspkind-nvim",
 	"pbrisbin/vim-mkdir",
 	"raimondi/delimitMate",
-	"rebelot/kanagawa.nvim",
 	"senbrow/vim-noerror-compiler",
 	"tommcdo/vim-exchange",
 	"tpope/vim-abolish",

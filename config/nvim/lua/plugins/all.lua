@@ -31,4 +31,12 @@ return {
 	"tpope/vim-unimpaired",
 	"vim-scripts/ReplaceWithRegister",
 	"vim-scripts/tComment",
+	{
+		"2kabhishek/co-author.nvim",
+		dependencies = {
+			"stevearc/dressing.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		cmd = { "CoAuthor" },
+	},
 }

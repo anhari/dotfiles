@@ -7,20 +7,23 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-symbols.nvim",
+		"nvim-telescope/telescope-fzf-native.nvim",
 	},
 	config = function()
-		require("telescope")
+		require("telescope").setup({
+			previewers = {},
+		})
 
 		SetKeyMap("n", "<C-b>", ":Telescope buffers previewer=false<cr>")
 		SetKeyMap("n", "<C-p>", ":Telescope find_files previewer=false<cr>")
 		SetKeyMap("n", "<leader>y", "<cmd>Telescope lsp_document_symbols<cr>")
-
-		vim.api.nvim_create_autocmd("VimEnter", {
-			callback = function()
-				if vim.fn.argv(0) == "" then
-					require("telescope.builtin").find_files()
-				end
-			end,
-		})
+		--
+		-- vim.api.nvim_create_autocmd("VimEnter", {
+		-- 	callback = function()
+		-- 		if vim.fn.argv(0) == "" then
+		-- 			require("telescope.builtin").find_files()
+		-- 		end
+		-- 	end,
+		-- })
 	end,
 }

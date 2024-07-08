@@ -41,7 +41,7 @@ return {
 			-- 	}
 			-- end,
 		})
-		vim.cmd([[colorscheme tokyonight]])
+		vim.cmd([[colorscheme tokyonight-storm]])
 		vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal" }
 	end,
 }

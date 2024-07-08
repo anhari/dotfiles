@@ -17,10 +17,7 @@
 -- }
 return {
 	"folke/trouble.nvim",
-	branch = "dev", -- IMPORTANT!
+	branch = "main", -- IMPORTANT!
 	dependencies = "nvim-tree/nvim-web-devicons",
-	opts = {
-		auto_open = true,
-		auto_close = true,
-	}, -- for default options, refer to the configuration section for custom setup.
+	opts = {}, -- for default options, refer to the configuration section for custom setup.
 }

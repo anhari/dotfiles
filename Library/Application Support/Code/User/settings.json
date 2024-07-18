@@ -1040,7 +1040,7 @@
     "FIG_NEW_SESSION": "1"
   },
   "workbench.preferredDarkColorTheme": "Tokyo Night",
-  "workbench.preferredLightColorTheme": "Tokyo Night",
+  "workbench.preferredLightColorTheme": "Default Dark+",
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
